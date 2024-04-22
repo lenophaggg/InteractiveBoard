@@ -1,0 +1,90 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 412",
+    "Group": "3430",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 412",
+    "Group": "3430",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 412",
+    "Group": "3430",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 201",
+    "Group": "3490",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 201",
+    "Group": "3490",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 201",
+    "Group": "3490",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 201",
+    "Group": "3490",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 201",
+    "Group": "3490",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  }
+]

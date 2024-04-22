@@ -1,0 +1,90 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 167",
+    "Group": "3270",
+    "Subject": "Языки ассемблера",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209",
+    "Group": "3270",
+    "Subject": "Языки ассемблера",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 408",
+    "Group": "3390",
+    "Subject": "Робототехнические системы",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209",
+    "Group": "3230",
+    "Subject": "Программирование бортовой вычислительной техники",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 209",
+    "Group": "3230",
+    "Subject": "Программирование бортовой вычислительной техники",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 405",
+    "Group": "3430",
+    "Subject": "Волоконно-оптические линии связи в морских объектах",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 408",
+    "Group": "3430",
+    "Subject": "Волоконно-оптические линии связи в морских объектах",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 408",
+    "Group": "3430",
+    "Subject": "Волоконно-оптические линии связи в морских объектах",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  }
+]

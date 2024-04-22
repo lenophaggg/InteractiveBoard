@@ -1,0 +1,112 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 414",
+    "Group": "2294",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 414",
+    "Group": "2294",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 414",
+    "Group": "2350",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 414",
+    "Group": "2351",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 414",
+    "Group": "5340",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 414",
+    "Group": "2295",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 414",
+    "Group": "2294",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 414",
+    "Group": "2295",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 414",
+    "Group": "2390",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 414",
+    "Group": "2391",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  }
+]

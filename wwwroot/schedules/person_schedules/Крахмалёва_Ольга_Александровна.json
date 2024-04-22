@@ -1,0 +1,156 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 218",
+    "Group": "1184",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 218",
+    "Group": "1184",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 144",
+    "Group": "1250",
+    "Subject": "Сопротивление материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 144",
+    "Group": "1250",
+    "Subject": "Дополнительные главы сопротивления материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 103",
+    "Group": "1210",
+    "Subject": "Сопротивление материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 103",
+    "Group": "1280",
+    "Subject": "Сопротивление материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 103",
+    "Group": "1250",
+    "Subject": "Сопротивление материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 103",
+    "Group": "1210",
+    "Subject": "Дополнительные главы сопротивления материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 103",
+    "Group": "1280",
+    "Subject": "Дополнительные главы сопротивления материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 103",
+    "Group": "1250",
+    "Subject": "Дополнительные главы сопротивления материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 155",
+    "Group": "1280",
+    "Subject": "Сопротивление материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 155",
+    "Group": "1280",
+    "Subject": "Дополнительные главы сопротивления материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 144",
+    "Group": "1210",
+    "Subject": "Сопротивление материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 314",
+    "Group": "1210",
+    "Subject": "Дополнительные главы сопротивления материалов",
+    "InstructorName": "Крахмалёва Ольга Александровна",
+    "InstructorLink": ""
+  }
+]

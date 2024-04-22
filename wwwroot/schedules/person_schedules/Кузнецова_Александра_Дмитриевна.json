@@ -1,0 +1,57 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 215",
+    "Group": "3340",
+    "Subject": "Методы натурных измерений физических полей",
+    "InstructorName": "Кузнецова Александра Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 214",
+    "Group": "3340",
+    "Subject": "Методы натурных измерений физических полей",
+    "InstructorName": "Кузнецова Александра Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 214",
+    "Group": "3340",
+    "Subject": "Методы натурных измерений физических полей",
+    "InstructorName": "Кузнецова Александра Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 214",
+    "Group": "3340",
+    "Subject": "Судовая акустика",
+    "InstructorName": "Кузнецова Александра Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 214",
+    "Group": "3340",
+    "Subject": "Судовая акустика",
+    "InstructorName": "Кузнецова Александра Дмитриевна",
+    "InstructorLink": ""
+  }
+]

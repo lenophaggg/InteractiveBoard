@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "ЦДО Дистанционно",
+    "Group": "6100",
+    "Subject": "История России",
+    "InstructorName": "Девятова Марина Эрастовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100324/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "ЦДО Дистанционно",
+    "Group": "6100",
+    "Subject": "История России",
+    "InstructorName": "Девятова Марина Эрастовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100324/"
+  }
+]

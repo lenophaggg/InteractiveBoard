@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 215",
+    "Group": "1186",
+    "Subject": "Механика разрушения",
+    "InstructorName": "Крыжевич Геннадий Брониславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100593/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 215",
+    "Group": "1186",
+    "Subject": "Механика разрушения",
+    "InstructorName": "Крыжевич Геннадий Брониславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100593/"
+  }
+]

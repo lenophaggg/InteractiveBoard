@@ -1,0 +1,233 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 410",
+    "Group": "1312",
+    "Subject": "Технология судостроения",
+    "InstructorName": "Щигорцов Михаил Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 410",
+    "Group": "1312",
+    "Subject": "Технология судостроения",
+    "InstructorName": "Щигорцов Михаил Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У каф.ФВ",
+    "Group": "1312",
+    "Subject": "Физическая культура и спорт (элективная)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 207",
+    "Group": "1312",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Юй Синьянь",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/117652/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 207",
+    "Group": "1312",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Юй Синьянь",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/117652/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 419",
+    "Group": "1312",
+    "Subject": "Теория корабля",
+    "InstructorName": "Альбаев Данил Айдарович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101505/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 419",
+    "Group": "1312",
+    "Subject": "Теория корабля",
+    "InstructorName": "Альбаев Данил Айдарович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101505/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 422",
+    "Group": "1312",
+    "Subject": "Теория корабля",
+    "InstructorName": "Альбаев Данил Айдарович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101505/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 419",
+    "Group": "1312",
+    "Subject": "Теория корабля",
+    "InstructorName": "Альбаев Данил Айдарович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101505/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1312",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Демешко Геннадий Федорович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100328/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 207",
+    "Group": "1312",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Юй Синьянь",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/117652/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 207",
+    "Group": "1312",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Юй Синьянь",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/117652/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 316",
+    "Group": "1312",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Юй Синьянь",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/117652/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 511",
+    "Group": "1312",
+    "Subject": "Экономика",
+    "InstructorName": "Полухина Софья Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100922/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 511",
+    "Group": "1312",
+    "Subject": "Экономика",
+    "InstructorName": "Полухина Софья Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100922/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 543",
+    "Group": "1312",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Белова Наталья Георгиевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100092/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 543",
+    "Group": "1312",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Белова Наталья Георгиевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100092/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У каф.ФВ",
+    "Group": "1312",
+    "Subject": "Физическая культура и спорт (элективная)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 609",
+    "Group": "1312",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Овчинников Кирилл Дмитриевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100836/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 215",
+    "Group": "1312",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 218",
+    "Group": "1312",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  }
+]

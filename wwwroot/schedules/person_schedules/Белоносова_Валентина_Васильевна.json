@@ -1,0 +1,90 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 415",
+    "Group": "2426",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Белоносова Валентина Васильевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "2494",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Белоносова Валентина Васильевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "2426",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Белоносова Валентина Васильевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "2495",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Белоносова Валентина Васильевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "2425",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Белоносова Валентина Васильевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 415",
+    "Group": "2494",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Белоносова Валентина Васильевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 415",
+    "Group": "2425",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Белоносова Валентина Васильевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 508",
+    "Group": "2495",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Белоносова Валентина Васильевна",
+    "InstructorLink": ""
+  }
+]

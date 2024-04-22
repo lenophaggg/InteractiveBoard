@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model (List<Document> Documents, List<VkPost> VkPostData)
+
+<title>@ViewData["Title"]</title>
+
+
+<link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+
+<div class="left-content">
+    <div class="inner-content">
+        @foreach (var doc in Model.Documents)
+        {
+            <div class="doc-preview" onclick="openModalPDF('@doc.DocumentPath.Replace("\\", "\\\\" )', '@doc.DocumentName')">
+                <h2>@doc.DocumentName</h2>
+            </div>
+        }
+    </div>
+</div>
+<div class="right-content">
+    <div class="masonry-grid">
+        @foreach (var post in Model.VkPostData)
+        {
+            <div class="masonry-grid-item" onclick="openModal('@post.Link')">
+                <div class="card">
+                    <img class="card-img-top" src="@try{
+                         @post.ImageUrl.First()
+                    }catch{}" alt="">
+                    <div class="card-body">
+                        <p class="card-text">@GetFirstThreeWords(post.Text)</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="docPreviewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-pdf-body">
+                <!-- Здесь будет вставлен HTML -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@functions {
+    string GetFirstThreeWords(string text)
+    {
+        return string.Join(" ", text.Split(' ').Take(7)) + "...";
+    }
+}
+
+
+<script>
+    // Инициализация Masonry после загрузки страницы
+    window.onload = function () {
+        var grid = document.querySelector('.masonry-grid');
+        var msnry = new Masonry(grid, {
+            itemSelector: '.masonry-grid-item',
+            percentPosition: true
+        });
+    }
+</script>
+<script src="~/js/HomeScript.js" asp-append-version="true"></script>

@@ -1,0 +1,102 @@
+﻿@model List<ScheduleData>
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px;height:288px;">
+        <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
+            <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
+        </a>
+        <h1 class="resizeble-font">@Model[0].InstructorName</h1>
+    </div>
+
+}
+else if (Model != null && Model.Any())
+{
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px;height:288px;">
+        <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
+            <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
+        </a>
+        <h1 class="resizeble-font">@Model[0].InstructorName</h1>
+    </div>
+
+
+    <div class="scheduleContainer">
+        <div class="сontainer">
+            <table class="table rounded-lg">
+                <tr class="title">
+                    <th>Тип недели</th>
+                    <th>Время</th>
+                    <th>Аудитория</th>
+
+                    <th>Группа</th>
+                    <th>Предмет</th>
+                </tr>
+                @foreach (var dayGroup in Model.GroupBy(item => item.DayOfWeek))
+                {
+                    <tr class="subtitle">
+                        <th colspan="6">@dayGroup.Key</th>
+                    </tr>
+                    foreach (var item in dayGroup)
+                    {
+                        <tr class="tableRow rounded-bottom">
+                            <td>@item.WeekType</td>
+                            <td>@item.StartTime.ToString("HH:mm") - @item.EndTime.ToString("HH:mm")</td>
+                            <td>@item.Classroom</td>
+                            <td>@item.Group</td>
+                            <td>@item.Subject</td>
+
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+}
+else
+{
+
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px; ">
+        <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
+            <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
+        </a>
+
+        <h1 style="margin: 0 auto;">Расписание отсутствует</h1>
+    </div>
+}
+
+<form>
+    <div class="input-group">
+        <input type="text" class="form-control" id="searchInput" placeholder="введите номер группы или ФИО преподавателя">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary search-button" type="button" onclick="getSchedule(document.getElementById('searchInput').value)">
+                <img src="../img/search_button.png" alt="Search">
+            </button>
+        </div>
+    </div>
+</form>
+<script>
+    $(document).ready(function () {
+        var h1Element = $('h1.resizeble-font');
+        var defaultFontSize = parseInt(h1Element.css('font-size')); // Получаем размер шрифта по умолчанию
+
+        function adjustFontSize() {
+            var textLength = h1Element.text().length;
+            if (textLength > 27 && textLength <= 32) {
+                h1Element.css('font-size', '150px');
+            }
+            else if (textLength > 32) {
+                h1Element.css('font-size', '120px');
+            } else {
+                h1Element.css('font-size', defaultFontSize + 'px'); // Возвращаем размер шрифта по умолчанию
+            }
+        }
+
+        // Вызываем функцию при загрузке страницы
+        adjustFontSize();
+
+        // Добавляем обработчик события, который будет вызывать функцию при изменении текста
+        h1Element.on('input', adjustFontSize);
+    });
+</script>

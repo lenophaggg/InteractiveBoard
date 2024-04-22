@@ -1,0 +1,68 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 450",
+    "Group": "2230",
+    "Subject": "Электротехника и электроника",
+    "InstructorName": "Сеньков Алексей Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101060/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 450",
+    "Group": "2231",
+    "Subject": "Электротехника и электроника",
+    "InstructorName": "Сеньков Алексей Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101060/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 319",
+    "Group": "2230",
+    "Subject": "Электротехника и электроника",
+    "InstructorName": "Сеньков Алексей Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101060/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 319",
+    "Group": "2230",
+    "Subject": "Электротехника и электроника",
+    "InstructorName": "Сеньков Алексей Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101060/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 319",
+    "Group": "2231",
+    "Subject": "Электротехника и электроника",
+    "InstructorName": "Сеньков Алексей Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101060/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 319",
+    "Group": "2231",
+    "Subject": "Электротехника и электроника",
+    "InstructorName": "Сеньков Алексей Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101060/"
+  }
+]

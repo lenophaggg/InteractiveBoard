@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 326",
+    "Group": "2241",
+    "Subject": "Инженерная психология",
+    "InstructorName": "Казакова Надежда Рашидовна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2241",
+    "Subject": "Инженерная психология",
+    "InstructorName": "Казакова Надежда Рашидовна",
+    "InstructorLink": ""
+  }
+]

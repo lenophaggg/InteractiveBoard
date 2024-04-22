@@ -1,0 +1,68 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 530а",
+    "Group": "4322",
+    "Subject": "Организация и управление производством",
+    "InstructorName": "Мамедова Лейла Эльдар гызы",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100723/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 518",
+    "Group": "4322",
+    "Subject": "Организация и управление производством",
+    "InstructorName": "Мамедова Лейла Эльдар гызы",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100723/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 530а",
+    "Group": "4322",
+    "Subject": "Организация и управление производством",
+    "InstructorName": "Мамедова Лейла Эльдар гызы",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100723/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 518",
+    "Group": "4322",
+    "Subject": "Организация и управление производством",
+    "InstructorName": "Мамедова Лейла Эльдар гызы",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100723/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 515А",
+    "Group": "4122",
+    "Subject": "Кибернетические основы управления",
+    "InstructorName": "Мамедова Лейла Эльдар гызы",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100723/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 515А",
+    "Group": "4122",
+    "Subject": "Кибернетические основы управления",
+    "InstructorName": "Мамедова Лейла Эльдар гызы",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100723/"
+  }
+]

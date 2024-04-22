@@ -1,0 +1,178 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 155",
+    "Group": "5130",
+    "Subject": "Правоведение",
+    "InstructorName": "Ладыка Сергей Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100652/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 447",
+    "Group": "5130",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 155",
+    "Group": "5130",
+    "Subject": "Правоведение",
+    "InstructorName": "Ладыка Сергей Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100652/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 105",
+    "Group": "5130",
+    "Subject": "Теоретическая механика",
+    "InstructorName": "Коробицин Антон Александрович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 506",
+    "Group": "5130",
+    "Subject": "Теоретическая механика",
+    "InstructorName": "Коробицин Антон Александрович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 320",
+    "Group": "5130",
+    "Subject": "Физика",
+    "InstructorName": "Рытов Евгений Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101015/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 107",
+    "Group": "5130",
+    "Subject": "Физика",
+    "InstructorName": "Рытов Евгений Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101015/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 521",
+    "Group": "5130",
+    "Subject": "Введение в специальность",
+    "InstructorName": "Марков Сергей Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100729/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 521",
+    "Group": "5130",
+    "Subject": "Введение в специальность",
+    "InstructorName": "Марков Сергей Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100729/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 101",
+    "Group": "5130",
+    "Subject": "История России",
+    "InstructorName": "Пантелеева Екатерина Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100873/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 101",
+    "Group": "5130",
+    "Subject": "Высшая математика",
+    "InstructorName": "Саенко Сергей Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/114495/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 440",
+    "Group": "5130",
+    "Subject": "Высшая математика",
+    "InstructorName": "Саенко Сергей Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/114495/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 414",
+    "Group": "5130",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Кудашов Роман Дмитриевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 211",
+    "Group": "5130",
+    "Subject": "Инженерная графика",
+    "InstructorName": "Куличкова Елена Асановна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123001/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 211",
+    "Group": "5130",
+    "Subject": "Инженерная графика",
+    "InstructorName": "Куличкова Елена Асановна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123001/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 414",
+    "Group": "5130",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Кудашов Роман Дмитриевич",
+    "InstructorLink": ""
+  }
+]

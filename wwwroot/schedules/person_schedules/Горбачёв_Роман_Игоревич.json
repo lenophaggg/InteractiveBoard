@@ -1,0 +1,90 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 520",
+    "Group": "3162",
+    "Subject": "Алгоритмы цифровой обработки гидроакустических сигналов",
+    "InstructorName": "Горбачёв Роман Игоревич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 520",
+    "Group": "3162",
+    "Subject": "Алгоритмы цифровой обработки гидроакустических сигналов",
+    "InstructorName": "Горбачёв Роман Игоревич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 420",
+    "Group": "5480",
+    "Subject": "Прикладное программирование",
+    "InstructorName": "Горбачёв Роман Игоревич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 420",
+    "Group": "5480",
+    "Subject": "Прикладное программирование",
+    "InstructorName": "Горбачёв Роман Игоревич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 420",
+    "Group": "3162",
+    "Subject": "",
+    "InstructorName": "Горбачёв Роман Игоревич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 420",
+    "Group": "3162",
+    "Subject": "Алгоритмы цифровой обработки гидроакустических сигналов",
+    "InstructorName": "Горбачёв Роман Игоревич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 420",
+    "Group": "5280",
+    "Subject": "Прикладное программирование",
+    "InstructorName": "Горбачёв Роман Игоревич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 420",
+    "Group": "5280",
+    "Subject": "Прикладное программирование",
+    "InstructorName": "Горбачёв Роман Игоревич",
+    "InstructorLink": ""
+  }
+]

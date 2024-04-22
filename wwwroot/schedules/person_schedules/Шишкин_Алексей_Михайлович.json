@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 503",
+    "Group": "5340",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Шишкин Алексей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106019/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "5340",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Шишкин Алексей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106019/"
+  }
+]

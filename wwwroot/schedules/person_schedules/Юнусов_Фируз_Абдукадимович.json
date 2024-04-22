@@ -1,0 +1,167 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245а",
+    "Group": "2270",
+    "Subject": "Технология конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245а",
+    "Group": "2270",
+    "Subject": "Технология конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245а",
+    "Group": "1101",
+    "Subject": "Теория конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245а",
+    "Group": "2230",
+    "Subject": "Технология конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245а",
+    "Group": "2231",
+    "Subject": "Технология конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 245а",
+    "Group": "1270",
+    "Subject": "Технология конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 245а",
+    "Group": "1220",
+    "Subject": "Теория конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245а",
+    "Group": "1210",
+    "Subject": "Теория конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 245а",
+    "Group": "2230",
+    "Subject": "Технология конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245а",
+    "Group": "2225",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 245а",
+    "Group": "2231",
+    "Subject": "Технология конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245а",
+    "Group": "2226",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 245а",
+    "Group": "1250",
+    "Subject": "Теория конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245а",
+    "Group": "1280",
+    "Subject": "Теория конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 245а",
+    "Group": "20271",
+    "Subject": "Технология конструкционных материалов",
+    "InstructorName": "Юнусов Фируз Абдукадимович",
+    "InstructorLink": ""
+  }
+]

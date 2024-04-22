@@ -1,0 +1,134 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "20313",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1314",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1317",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1319",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 101",
+    "Group": "1419",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 101",
+    "Group": "1417",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 101",
+    "Group": "1414",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 101",
+    "Group": "20413",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 207",
+    "Group": "20413",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 101",
+    "Group": "1162",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 101",
+    "Group": "1160",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 101",
+    "Group": "1173",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  }
+]

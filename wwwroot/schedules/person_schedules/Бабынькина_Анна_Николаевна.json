@@ -1,0 +1,101 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 191",
+    "Group": "3224",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Бабынькина Анна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100061/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 191",
+    "Group": "3226",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Бабынькина Анна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100061/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 191",
+    "Group": "3225",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Бабынькина Анна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100061/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 161",
+    "Group": "3224",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Бабынькина Анна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100061/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 161",
+    "Group": "3225",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Бабынькина Анна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100061/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 161",
+    "Group": "3226",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Бабынькина Анна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100061/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 165",
+    "Group": "3226",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Бабынькина Анна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100061/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 165",
+    "Group": "3225",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Бабынькина Анна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100061/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 165",
+    "Group": "3224",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Бабынькина Анна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100061/"
+  }
+]

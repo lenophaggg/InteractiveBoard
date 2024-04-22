@@ -1,0 +1,112 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 340",
+    "Group": "2410",
+    "Subject": "Учебно-исследовательская работа студентов",
+    "InstructorName": "Толмачев Валерий Вячеславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 340",
+    "Group": "2410",
+    "Subject": "Учебно-исследовательская работа студентов",
+    "InstructorName": "Толмачев Валерий Вячеславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 340",
+    "Group": "2410",
+    "Subject": "Учебно-исследовательская работа студентов",
+    "InstructorName": "Толмачев Валерий Вячеславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 505(1)",
+    "Group": "2426",
+    "Subject": "Основы теории горения",
+    "InstructorName": "Толмачев Валерий Вячеславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 415",
+    "Group": "2426",
+    "Subject": "Основы теории горения",
+    "InstructorName": "Толмачев Валерий Вячеславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 505(1)",
+    "Group": "2426",
+    "Subject": "Основы теории горения",
+    "InstructorName": "Толмачев Валерий Вячеславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 338",
+    "Group": "2326",
+    "Subject": "Динамика двигателей",
+    "InstructorName": "Толмачев Валерий Вячеславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 338",
+    "Group": "2326",
+    "Subject": "Динамика двигателей",
+    "InstructorName": "Толмачев Валерий Вячеславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 338",
+    "Group": "2310",
+    "Subject": "Парогенераторы на органическом топливе",
+    "InstructorName": "Толмачев Валерий Вячеславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 338",
+    "Group": "2310",
+    "Subject": "Парогенераторы на органическом топливе",
+    "InstructorName": "Толмачев Валерий Вячеславович",
+    "InstructorLink": ""
+  }
+]

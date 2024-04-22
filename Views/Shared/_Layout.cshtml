@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"]</title>
+
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyMvcApp.styles.css" asp-append-version="true" />
+
+    <!-- Подключение jQuery -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6" id="left-block">
+                    <img src="~/img/logo.png" alt="Alternate Text" height="270">
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column" id="right-block" style="text-align: right;">
+                    <div id="date" ></div>
+                    <div id="time" ></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигационная панель -->
+    <nav class="col d-none d-md-block sidebar sticky-top custom-sidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                @if (ViewData["Title"] == "Schedule Page")
+                {
+                    <a class="nav-link active" href="/Home/Index">
+                        <img src="~/img/home_but.png" alt="Дом">
+                    </a>
+                }
+                else
+                {
+                    <a class="nav-link active" href="/Schedule/Index">
+                        <img src="~/img/schedule_but.png" alt="Расписание">
+                    </a>
+                }
+            </li>
+
+            <li class="nav-item">
+                @if (ViewData["Title"] == "Contact Page")
+                {
+                    <a class="nav-link active" href="/Home/Index">
+                        <img src="~/img/home_but.png" alt="Дом">
+                    </a>
+                }
+                else
+                {
+                    <a class="nav-link active" href="/Contacts/Index">
+                        <img src="~/img/contacts_but.png" alt="Контакты">
+                    </a>
+                }
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="main">
+        @RenderBody()
+    </div>
+
+    <!-- Modal Error-->
+    <div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-error-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Здесь будет отображаться содержимое документа -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* <footer class="border-top footer text-muted">
+    <div class="container">
+    &copy; 2023 - MyMvcApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+    </footer> *@
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        updateDateTime();
+    </script>
+</body>
+
+</html>

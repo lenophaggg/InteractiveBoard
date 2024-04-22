@@ -1,0 +1,156 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 08Ю",
+    "Group": "5300",
+    "Subject": "Уголовный процесс",
+    "InstructorName": "Харин Сергей Самуилович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101273/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 08Ю",
+    "Group": "5300",
+    "Subject": "Оперативно-розыскная деятельность",
+    "InstructorName": "Харин Сергей Самуилович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101273/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 08Ю",
+    "Group": "5300",
+    "Subject": "Оперативно-розыскная деятельность",
+    "InstructorName": "Харин Сергей Самуилович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101273/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 08Ю",
+    "Group": "5300",
+    "Subject": "Уголовный процесс",
+    "InstructorName": "Харин Сергей Самуилович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101273/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5300",
+    "Subject": "Гражданский процесс",
+    "InstructorName": "Цыганова Татьяна Аллеговна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101296/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5300",
+    "Subject": "Римское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5300",
+    "Subject": "Римское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5300",
+    "Subject": "Гражданский процесс",
+    "InstructorName": "Цыганова Татьяна Аллеговна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101296/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 01Ю",
+    "Group": "5300",
+    "Subject": "Коммерческое право",
+    "InstructorName": "Фролова Светлана Маратовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122534/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 01Ю",
+    "Group": "5300",
+    "Subject": "Коммерческое право",
+    "InstructorName": "Фролова Светлана Маратовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122534/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5300",
+    "Subject": "Арбитражный процесс",
+    "InstructorName": "Богданова Татьяна Юрьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100123/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5300",
+    "Subject": "Арбитражный процесс",
+    "InstructorName": "Богданова Татьяна Юрьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100123/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "5300",
+    "Subject": "Международное частное право",
+    "InstructorName": "Мишальченко Юрий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100765/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "5300",
+    "Subject": "Международное частное право",
+    "InstructorName": "Мишальченко Юрий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100765/"
+  }
+]

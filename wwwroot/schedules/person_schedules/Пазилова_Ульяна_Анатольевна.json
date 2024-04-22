@@ -1,0 +1,112 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 312",
+    "Group": "5380",
+    "Subject": "Детали мехатронных модулей, роботов и их конструирование",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 312",
+    "Group": "5380",
+    "Subject": "Детали мехатронных модулей, роботов и их конструирование",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 311",
+    "Group": "5210",
+    "Subject": "Детали машин",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 311",
+    "Group": "5230",
+    "Subject": "Детали машин",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 311",
+    "Group": "5210",
+    "Subject": "Детали машин",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 311",
+    "Group": "5230",
+    "Subject": "Детали машин",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 311",
+    "Group": "5270",
+    "Subject": "Детали машин и основы конструирования",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 311",
+    "Group": "5210",
+    "Subject": "Детали машин",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 311",
+    "Group": "5230",
+    "Subject": "Детали машин",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 311",
+    "Group": "5270",
+    "Subject": "Детали машин и основы конструирования",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  }
+]

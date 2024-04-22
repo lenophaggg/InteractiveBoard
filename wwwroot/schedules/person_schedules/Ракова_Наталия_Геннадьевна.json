@@ -1,0 +1,90 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 505(2)",
+    "Group": "4410",
+    "Subject": "Сравнительный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 505(2)",
+    "Group": "4410",
+    "Subject": "Сравнительный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4141",
+    "Subject": "Кросс-культурный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4160",
+    "Subject": "Кросс-культурный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4161",
+    "Subject": "Кросс-культурный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4162",
+    "Subject": "Кросс-культурный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4215",
+    "Subject": "Сравнительный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4311",
+    "Subject": "Сравнительный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  }
+]

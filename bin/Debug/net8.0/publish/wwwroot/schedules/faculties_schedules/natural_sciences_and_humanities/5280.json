@@ -1,0 +1,156 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 434",
+    "Group": "5280",
+    "Subject": "Теория систем и системный анализ",
+    "InstructorName": "Дубин Марат Мухаметханович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123177/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 155",
+    "Group": "5280",
+    "Subject": "Правоведение",
+    "InstructorName": "Ладыка Сергей Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100652/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 434",
+    "Group": "5280",
+    "Subject": "Теория систем и системный анализ",
+    "InstructorName": "Дубин Марат Мухаметханович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123177/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 155",
+    "Group": "5280",
+    "Subject": "Правоведение",
+    "InstructorName": "Ладыка Сергей Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100652/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 155",
+    "Group": "5280",
+    "Subject": "Электротехника и электроника",
+    "InstructorName": "Лупкин Иван Дмитриевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100695/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 155",
+    "Group": "5280",
+    "Subject": "Электротехника и электроника",
+    "InstructorName": "Лупкин Иван Дмитриевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100695/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 534",
+    "Group": "5280",
+    "Subject": "Безопасность жизнедеятельности",
+    "InstructorName": "Бокатов Антон Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100134/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 105",
+    "Group": "5280",
+    "Subject": "Экология",
+    "InstructorName": "Чихонадских Елена Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101326/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 419",
+    "Group": "5280",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 105",
+    "Group": "5280",
+    "Subject": "Безопасность жизнедеятельности",
+    "InstructorName": "Бокатов Антон Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100134/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 420",
+    "Group": "5280",
+    "Subject": "Прикладное программирование",
+    "InstructorName": "Горбачёв Роман Игоревич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 520",
+    "Group": "5280",
+    "Subject": "Системы технического зрения",
+    "InstructorName": "Игнатьева Наталья Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 420",
+    "Group": "5280",
+    "Subject": "Прикладное программирование",
+    "InstructorName": "Горбачёв Роман Игоревич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 520",
+    "Group": "5280",
+    "Subject": "Системы технического зрения",
+    "InstructorName": "Игнатьева Наталья Владимировна",
+    "InstructorLink": ""
+  }
+]

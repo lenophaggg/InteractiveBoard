@@ -1,0 +1,134 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 415",
+    "Group": "2150",
+    "Subject": "Средства и системы технического обеспечения обработки, хранения и передачи информации",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 415",
+    "Group": "2150",
+    "Subject": "Средства и системы технического обеспечения обработки, хранения и передачи информации",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "20390",
+    "Subject": "ЭВМ и периферийные устройства",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "20350",
+    "Subject": "ЭВМ и периферийные устройства",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 510",
+    "Group": "20390",
+    "Subject": "ЭВМ и периферийные устройства",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 510",
+    "Group": "20350",
+    "Subject": "ЭВМ и периферийные устройства",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 510",
+    "Group": "2351",
+    "Subject": "Безопасность вычислительных сетей",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 510",
+    "Group": "2350",
+    "Subject": "Безопасность вычислительных сетей",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 510",
+    "Group": "2351",
+    "Subject": "Программно-аппаратные средства защиты информации",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 510",
+    "Group": "2350",
+    "Subject": "Программно-аппаратные средства защиты информации",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 510",
+    "Group": "2350",
+    "Subject": "Программно-аппаратные средства защиты информации",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 510",
+    "Group": "2351",
+    "Subject": "Программно-аппаратные средства защиты информации",
+    "InstructorName": "Галушин Сергей Яковлевич",
+    "InstructorLink": ""
+  }
+]

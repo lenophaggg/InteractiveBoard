@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Models",
+    "\\Views",
+    "\\Views\\Home",
+    "\\Views\\Schedule",
+    "\\Views\\Shared",
+    "\\wwwroot",
+    "\\wwwroot\\js"
+  ],
+  "PreviewInSolutionExplorer": false
+}

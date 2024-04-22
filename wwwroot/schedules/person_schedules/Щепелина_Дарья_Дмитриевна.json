@@ -1,0 +1,90 @@
+[
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 245",
+    "Group": "1220",
+    "Subject": "Теория конструкционных материалов",
+    "InstructorName": "Щепелина Дарья Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245",
+    "Group": "1210",
+    "Subject": "Теория конструкционных материалов",
+    "InstructorName": "Щепелина Дарья Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245",
+    "Group": "1218",
+    "Subject": "Теория конструкционных материалов",
+    "InstructorName": "Щепелина Дарья Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 191а",
+    "Group": "20213",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Щепелина Дарья Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245",
+    "Group": "2225",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Щепелина Дарья Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245",
+    "Group": "2226",
+    "Subject": "Материаловедение. Технология конструкционных материалов",
+    "InstructorName": "Щепелина Дарья Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 245",
+    "Group": "1250",
+    "Subject": "Теория конструкционных материалов",
+    "InstructorName": "Щепелина Дарья Дмитриевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 245",
+    "Group": "1280",
+    "Subject": "Теория конструкционных материалов",
+    "InstructorName": "Щепелина Дарья Дмитриевна",
+    "InstructorLink": ""
+  }
+]

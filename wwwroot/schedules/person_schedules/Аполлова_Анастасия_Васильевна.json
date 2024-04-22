@@ -1,0 +1,90 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 508",
+    "Group": "2495",
+    "Subject": "Проектирование парогенераторов",
+    "InstructorName": "Аполлова Анастасия Васильевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100049/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 505(1)",
+    "Group": "2494",
+    "Subject": "Проектирование парогенераторов",
+    "InstructorName": "Аполлова Анастасия Васильевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100049/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 505(1)",
+    "Group": "2495",
+    "Subject": "Проектирование парогенераторов",
+    "InstructorName": "Аполлова Анастасия Васильевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100049/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 417-3",
+    "Group": "2494",
+    "Subject": "Проектирование парогенераторов",
+    "InstructorName": "Аполлова Анастасия Васильевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100049/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 417-2",
+    "Group": "2331",
+    "Subject": "Судовое главное энергетическое оборудование (паропроизводящее)",
+    "InstructorName": "Аполлова Анастасия Васильевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100049/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 316",
+    "Group": "2331",
+    "Subject": "Судовое главное энергетическое оборудование (паропроизводящее)",
+    "InstructorName": "Аполлова Анастасия Васильевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100049/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 316",
+    "Group": "2330",
+    "Subject": "Судовое главное энергетическое оборудование (паропроизводящее)",
+    "InstructorName": "Аполлова Анастасия Васильевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100049/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 417-2",
+    "Group": "2330",
+    "Subject": "Судовое главное энергетическое оборудование (паропроизводящее)",
+    "InstructorName": "Аполлова Анастасия Васильевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100049/"
+  }
+]

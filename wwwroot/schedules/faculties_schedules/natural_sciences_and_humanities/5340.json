@@ -1,0 +1,167 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 517",
+    "Group": "5340",
+    "Subject": "Анализ и синтез логических устройств",
+    "InstructorName": "Буковский Илья Валерьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 318",
+    "Group": "5340",
+    "Subject": "Гидравлика",
+    "InstructorName": "Чепурко Сергей Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 517",
+    "Group": "5340",
+    "Subject": "Анализ и синтез логических устройств",
+    "InstructorName": "Буковский Илья Валерьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 318",
+    "Group": "5340",
+    "Subject": "Гидравлика",
+    "InstructorName": "Али Рами Мамдух",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106092/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 503",
+    "Group": "5340",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Шишкин Алексей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106019/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 414",
+    "Group": "5340",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Иванчик Ольга Игоревна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "5340",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Шишкин Алексей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106019/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 504",
+    "Group": "5340",
+    "Subject": "Экономика",
+    "InstructorName": "Кожина Елена Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123129/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 534",
+    "Group": "5340",
+    "Subject": "Безопасность жизнедеятельности",
+    "InstructorName": "Бокатов Антон Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100134/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 504",
+    "Group": "5340",
+    "Subject": "Экономика",
+    "InstructorName": "Кожина Елена Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123129/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 105",
+    "Group": "5340",
+    "Subject": "Безопасность жизнедеятельности",
+    "InstructorName": "Бокатов Антон Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100134/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 450",
+    "Group": "5340",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Согонов Сергей Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101123/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 450",
+    "Group": "5340",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Согонов Сергей Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101123/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "5340",
+    "Subject": "Микропроцессорная техника",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "5340",
+    "Subject": "Микропроцессорная техника",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  }
+]

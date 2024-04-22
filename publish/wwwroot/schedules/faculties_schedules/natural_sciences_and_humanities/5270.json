@@ -1,0 +1,189 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 319",
+    "Group": "5270",
+    "Subject": "Электротехника и электроника",
+    "InstructorName": "Низкий Роман Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 155",
+    "Group": "5270",
+    "Subject": "Правоведение",
+    "InstructorName": "Ладыка Сергей Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100652/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 319",
+    "Group": "5270",
+    "Subject": "Электротехника и электроника",
+    "InstructorName": "Низкий Роман Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 155",
+    "Group": "5270",
+    "Subject": "Правоведение",
+    "InstructorName": "Ладыка Сергей Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100652/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 338",
+    "Group": "5270",
+    "Subject": "Механика жидкости и газа (базовые модели)",
+    "InstructorName": "Андреев Константин Дмитриевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123490/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 338",
+    "Group": "5270",
+    "Subject": "Механика жидкости и газа (базовые модели)",
+    "InstructorName": "Андреев Константин Дмитриевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123490/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 301б",
+    "Group": "5270",
+    "Subject": "Информационные технологии в промышленности",
+    "InstructorName": "Галиев Ильдар Ринатович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 339",
+    "Group": "5270",
+    "Subject": "Теория рабочих процессов двигателей внутреннего сгорания",
+    "InstructorName": "Юрин Василий Владиславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 301б",
+    "Group": "5270",
+    "Subject": "Информационные технологии в промышленности",
+    "InstructorName": "Галиев Ильдар Ринатович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 339",
+    "Group": "5270",
+    "Subject": "Теория рабочих процессов двигателей внутреннего сгорания",
+    "InstructorName": "Юрин Василий Владиславович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 312",
+    "Group": "5270",
+    "Subject": "Прикладная механика",
+    "InstructorName": "Иванова Марина Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 311",
+    "Group": "5270",
+    "Subject": "Детали машин и основы конструирования",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 312",
+    "Group": "5270",
+    "Subject": "Прикладная механика",
+    "InstructorName": "Иванова Марина Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 311",
+    "Group": "5270",
+    "Subject": "Детали машин и основы конструирования",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 404",
+    "Group": "5270",
+    "Subject": "Термодинамика",
+    "InstructorName": "Глазырина Диана Олеговна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 404",
+    "Group": "5270",
+    "Subject": "Термодинамика",
+    "InstructorName": "Глазырина Диана Олеговна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 340",
+    "Group": "5270",
+    "Subject": "Механика поршневых машин",
+    "InstructorName": "Гурьянов Михаил Александрович",
+    "InstructorLink": ""
+  }
+]

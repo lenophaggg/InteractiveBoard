@@ -1,0 +1,200 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 115",
+    "Group": "3220",
+    "Subject": "Гидромеханика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 115",
+    "Group": "3250",
+    "Subject": "Гидромеханика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 115",
+    "Group": "3240",
+    "Subject": "Гидромеханика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 115",
+    "Group": "3200",
+    "Subject": "Гидромеханика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 115",
+    "Group": "3290",
+    "Subject": "Гидромеханика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 318",
+    "Group": "1380",
+    "Subject": "Механика сплошных сред",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 318",
+    "Group": "1380",
+    "Subject": "Механика сплошных сред",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 316",
+    "Group": "1333",
+    "Subject": "Механика сплошных сред",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 101",
+    "Group": "2325",
+    "Subject": "Гидравлика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 101",
+    "Group": "2395",
+    "Subject": "Гидравлика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 101",
+    "Group": "2394",
+    "Subject": "Гидравлика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 101",
+    "Group": "2326",
+    "Subject": "Гидравлика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 510",
+    "Group": "2391",
+    "Subject": "Гидравлика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 510",
+    "Group": "2390",
+    "Subject": "Гидравлика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "2391",
+    "Subject": "Гидравлика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "2390",
+    "Subject": "Гидравлика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 510",
+    "Group": "2390",
+    "Subject": "Гидравлика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 510",
+    "Group": "2391",
+    "Subject": "Гидравлика",
+    "InstructorName": "Яковлев Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101392/"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК104",
+    "Group": "20176",
+    "Subject": "Аддитивные технологии",
+    "InstructorName": "Вильданов Артур Маратович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123773/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК104",
+    "Group": "20178",
+    "Subject": "Аддитивные технологии",
+    "InstructorName": "Вильданов Артур Маратович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123773/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК104",
+    "Group": "20176",
+    "Subject": "Аддитивные технологии",
+    "InstructorName": "Вильданов Артур Маратович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123773/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК104",
+    "Group": "20178",
+    "Subject": "Аддитивные технологии",
+    "InstructorName": "Вильданов Артур Маратович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123773/"
+  }
+]

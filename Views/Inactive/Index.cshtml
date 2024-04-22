@@ -1,0 +1,106 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"]</title>
+
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/css/Inactive.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyMvcApp.styles.css" asp-append-version="true" />
+
+    <!-- Подключение jQuery -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body onclick="window.location.href = '/Home/Index';">
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="left-block" style="width: 50%;">
+                    <h1 class="title" style="font-weight:bold; font-size:168px; padding-top:50px; color:white;">ТЕКУЩИЕ ЗАНЯТИЯ</h1>
+                </div>
+
+                <div id="right-block" style="width: 50%; text-align: right;">
+                    <div id="date"></div>
+                    <div id="time"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+   
+    <br>
+    <div class="inactive-main">
+       
+    </div>
+    
+
+    <script>
+        updateDateTime();
+    </script>
+
+    <script>
+        // Функция для вызова метода GetCurrentSchedule
+        function callGetCurrentSchedule() {
+            $.ajax({
+                url: '@Url.Action("GetCurrentSchedule", "Inactive")', // Путь к методу в контроллере InactiveController
+                type: 'GET',
+                success: function (response) {
+                    // Обновляем содержимое страницы или делаем что-то еще с результатом
+                    $('.inactive-main').html(response);
+                },
+                error: function (error) {
+                    console.error('Произошла ошибка при вызове метода GetCurrentSchedule:', error);
+                }
+            });
+        }
+
+        // Вызываем метод GetCurrentSchedule при загрузке страницы
+        $(document).ready(function () {
+            callGetCurrentSchedule();
+
+            // Устанавливаем интервал для вызова метода каждую минуту
+            setInterval(callGetCurrentSchedule, 60000); // 60000 миллисекунд = 1 минута
+        });
+    </script>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var days = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+            var months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября',
+                'ноября', 'декабря'];
+            var day = days[now.getDay()];
+            var date = now.getDate();
+            var month = months[now.getMonth()];
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            if (minutes < 10) minutes = '0' + minutes;
+
+            // Обновление времени
+            document.getElementById('time').innerText = hours + ':' + minutes;
+
+            // Обновление даты
+            document.getElementById('date').innerText = day + ', ' + date + ' ' + month;
+        } setInterval(updateDateTime, 1000);
+    </script>
+
+</body>
+
+</html>

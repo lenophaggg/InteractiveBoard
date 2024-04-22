@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 218",
+    "Group": "20313",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Мудрик Роман Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/104150/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 218",
+    "Group": "20313",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Мудрик Роман Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/104150/"
+  }
+]

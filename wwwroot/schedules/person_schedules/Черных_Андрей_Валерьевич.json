@@ -1,0 +1,68 @@
+[
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 414",
+    "Group": "3224",
+    "Subject": "Источники энергии тепловых торпед",
+    "InstructorName": "Черных Андрей Валерьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 414",
+    "Group": "3224",
+    "Subject": "Источники энергии тепловых торпед",
+    "InstructorName": "Черных Андрей Валерьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 415",
+    "Group": "3225",
+    "Subject": "Источники энергии тепловых подводных аппаратов",
+    "InstructorName": "Черных Андрей Валерьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 415",
+    "Group": "3226",
+    "Subject": "Источники энергии тепловых подводных аппаратов",
+    "InstructorName": "Черных Андрей Валерьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 415",
+    "Group": "3225",
+    "Subject": "Источники энергии тепловых подводных аппаратов",
+    "InstructorName": "Черных Андрей Валерьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 415",
+    "Group": "3226",
+    "Subject": "Источники энергии тепловых подводных аппаратов",
+    "InstructorName": "Черных Андрей Валерьевич",
+    "InstructorLink": ""
+  }
+]

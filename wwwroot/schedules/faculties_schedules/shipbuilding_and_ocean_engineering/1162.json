@@ -1,0 +1,222 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А ВУЦ",
+    "Group": "1162",
+    "Subject": "Военная подготовка (офицеры запаса)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А ВУЦ",
+    "Group": "1162",
+    "Subject": "Военная подготовка (офицеры запаса)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А ВУЦ",
+    "Group": "1162",
+    "Subject": "Военная подготовка (офицеры запаса)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 115",
+    "Group": "1162",
+    "Subject": "Философские проблемы науки и техники",
+    "InstructorName": "Назиров Анатолий Эзелевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100796/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 167",
+    "Group": "1162",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Дышкантюк Александр Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123155/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 543",
+    "Group": "1162",
+    "Subject": "Философские проблемы науки и техники",
+    "InstructorName": "Назиров Анатолий Эзелевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100796/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 447",
+    "Group": "1162",
+    "Subject": "Иностранный язык в профессиональной деятельности",
+    "InstructorName": "Осипенко Елена Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122745/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 401",
+    "Group": "1162",
+    "Subject": "Метод конечных элементов в инженерных расчетах",
+    "InstructorName": "Родионов Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100985/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 415",
+    "Group": "1162",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Акуленок Ирина Николаевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 218",
+    "Group": "1162",
+    "Subject": "Метод конечных элементов в инженерных расчетах",
+    "InstructorName": "Родионов Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100985/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 415",
+    "Group": "1162",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Акуленок Ирина Николаевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 218",
+    "Group": "1162",
+    "Subject": "Метод конечных элементов в инженерных расчетах",
+    "InstructorName": "Родионов Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100985/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 101",
+    "Group": "1162",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Тряскин Владимир Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101209/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1162",
+    "Subject": "Морская ледотехника",
+    "InstructorName": "Сазонов Кирилл Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101023/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 309а",
+    "Group": "1162",
+    "Subject": "Морская ледотехника",
+    "InstructorName": "Сазонов Кирилл Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101023/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "1162",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Иванова Дианна Тимофеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102967/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "1162",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Иванова Дианна Тимофеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102967/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 309а",
+    "Group": "1162",
+    "Subject": "Проектирование морских нефтегазовых сооружений",
+    "InstructorName": "Бережной Константин Геннадьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100102/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 309а",
+    "Group": "1162",
+    "Subject": "Проектирование морских нефтегазовых сооружений",
+    "InstructorName": "Бережной Константин Геннадьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100102/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 309а",
+    "Group": "1162",
+    "Subject": "Проектирование морских нефтегазовых сооружений",
+    "InstructorName": "Бережной Константин Геннадьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100102/"
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 165",
+    "Group": "2225",
+    "Subject": "Теория механизмов и машин",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 165",
+    "Group": "2226",
+    "Subject": "Теория механизмов и машин",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 311",
+    "Group": "2225",
+    "Subject": "Теория механизмов и машин",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 311",
+    "Group": "2226",
+    "Subject": "Теория механизмов и машин",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 311",
+    "Group": "20271",
+    "Subject": "Теория механизмов и машин",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 161",
+    "Group": "20271",
+    "Subject": "Теория механизмов и машин",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 161",
+    "Group": "1270",
+    "Subject": "Теория механизмов и машин",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 312",
+    "Group": "20220",
+    "Subject": "Детали мехатронных модулей, роботов и их конструирование",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 312",
+    "Group": "20220",
+    "Subject": "Детали мехатронных модулей, роботов и их конструирование",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 311",
+    "Group": "1270",
+    "Subject": "Теория механизмов и машин",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 311",
+    "Group": "3280",
+    "Subject": "Детали мехатронных модулей, роботов и их конструирование",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 311",
+    "Group": "3280",
+    "Subject": "Детали мехатронных модулей, роботов и их конструирование",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 165",
+    "Group": "20220",
+    "Subject": "Детали мехатронных модулей, роботов и их конструирование",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 165",
+    "Group": "3280",
+    "Subject": "Детали мехатронных модулей, роботов и их конструирование",
+    "InstructorName": "Черенкова Светлана Валентиновна",
+    "InstructorLink": ""
+  }
+]

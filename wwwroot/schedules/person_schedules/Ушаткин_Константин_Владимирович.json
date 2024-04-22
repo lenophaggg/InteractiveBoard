@@ -1,0 +1,35 @@
+[
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 407",
+    "Group": "4322",
+    "Subject": "Ценообразование в судостроении",
+    "InstructorName": "Ушаткин Константин Владимирович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 407",
+    "Group": "4322",
+    "Subject": "Ценообразование в судостроении",
+    "InstructorName": "Ушаткин Константин Владимирович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 407",
+    "Group": "4322",
+    "Subject": "Ценообразование в судостроении",
+    "InstructorName": "Ушаткин Константин Владимирович",
+    "InstructorLink": ""
+  }
+]

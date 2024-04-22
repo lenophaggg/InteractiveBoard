@@ -1,0 +1,112 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 206",
+    "Group": "1350",
+    "Subject": "Подводно-технические работы на море",
+    "InstructorName": "Чеснокова Ирина Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101318/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 206",
+    "Group": "1350",
+    "Subject": "Подводно-технические работы на море",
+    "InstructorName": "Чеснокова Ирина Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101318/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 206",
+    "Group": "1350",
+    "Subject": "Технология буровых работ на море",
+    "InstructorName": "Чеснокова Ирина Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101318/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 206",
+    "Group": "1350",
+    "Subject": "Технология буровых работ на море",
+    "InstructorName": "Чеснокова Ирина Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101318/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 206",
+    "Group": "1320",
+    "Subject": "Основы морского бурения",
+    "InstructorName": "Чеснокова Ирина Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101318/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 206",
+    "Group": "1320",
+    "Subject": "Основы морского бурения",
+    "InstructorName": "Чеснокова Ирина Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101318/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 206",
+    "Group": "1320",
+    "Subject": "Процессы и агрегаты нефтегазовых технологий",
+    "InstructorName": "Чеснокова Ирина Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101318/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 206",
+    "Group": "1320",
+    "Subject": "Процессы и агрегаты нефтегазовых технологий",
+    "InstructorName": "Чеснокова Ирина Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101318/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 206",
+    "Group": "1320",
+    "Subject": "Подводная техника освоения моря",
+    "InstructorName": "Чеснокова Ирина Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101318/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 206",
+    "Group": "1320",
+    "Subject": "Подводная техника освоения моря",
+    "InstructorName": "Чеснокова Ирина Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101318/"
+  }
+]

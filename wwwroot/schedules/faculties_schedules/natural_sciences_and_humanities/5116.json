@@ -1,0 +1,145 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 543",
+    "Group": "5116",
+    "Subject": "Философские проблемы науки и техники",
+    "InstructorName": "Быстрянцев Сергей Борисович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101629/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 543",
+    "Group": "5116",
+    "Subject": "Философские проблемы науки и техники",
+    "InstructorName": "Быстрянцев Сергей Борисович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101629/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 610",
+    "Group": "5116",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Рюмин Сергей Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101017/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 218",
+    "Group": "5116",
+    "Subject": "Метод конечных элементов в инженерных расчетах",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 610",
+    "Group": "5116",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Рюмин Сергей Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101017/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 218",
+    "Group": "5116",
+    "Subject": "Метод конечных элементов в инженерных расчетах",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 309а",
+    "Group": "5116",
+    "Subject": "Морская ледотехника",
+    "InstructorName": "Сазонов Кирилл Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101023/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 215",
+    "Group": "5116",
+    "Subject": "Метод конечных элементов в инженерных расчетах",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 309а",
+    "Group": "5116",
+    "Subject": "Морская ледотехника",
+    "InstructorName": "Сазонов Кирилл Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101023/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 446",
+    "Group": "5116",
+    "Subject": "Иностранный язык в профессиональной деятельности",
+    "InstructorName": "Петренко Валентина Ивановна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/107963/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 439",
+    "Group": "5116",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 439",
+    "Group": "5116",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 439",
+    "Group": "5116",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 407",
+    "Group": "2390",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 407",
+    "Group": "2391",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 407",
+    "Group": "2350",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 407",
+    "Group": "2351",
+    "Subject": "Теория автоматического управления",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 517",
+    "Group": "2495",
+    "Subject": "Исполнительные устройства и регулирующие органы автоматических систем",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "2294",
+    "Subject": "Компьютерное моделирование",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 517",
+    "Group": "2295",
+    "Subject": "Компьютерное моделирование",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "2295",
+    "Subject": "Компьютерное моделирование",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "2294",
+    "Subject": "Компьютерное моделирование",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 517",
+    "Group": "2395",
+    "Subject": "Современные методы проектирования систем автоматизации судов",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 517",
+    "Group": "2394",
+    "Subject": "Современные методы проектирования систем автоматизации судов",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 435",
+    "Group": "2394",
+    "Subject": "Современные методы проектирования систем автоматизации судов",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 435",
+    "Group": "2395",
+    "Subject": "Современные методы проектирования систем автоматизации судов",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "2395",
+    "Subject": "Современные методы проектирования систем автоматизации судов",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "2394",
+    "Subject": "Современные методы проектирования систем автоматизации судов",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "2490",
+    "Subject": "Исполнительные устройства и регулирующие органы автоматических систем",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 339",
+    "Group": "2490",
+    "Subject": "Исполнительные устройства и регулирующие органы автоматических систем",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 413",
+    "Group": "2490",
+    "Subject": "Исполнительные устройства и регулирующие органы автоматических систем",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 413",
+    "Group": "2490",
+    "Subject": "Исполнительные устройства и регулирующие органы автоматических систем",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 413",
+    "Group": "2490",
+    "Subject": "Исполнительные устройства и регулирующие органы автоматических систем",
+    "InstructorName": "Кичигина Ольга Юрьевна",
+    "InstructorLink": ""
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 610",
+    "Group": "5310",
+    "Subject": "Экология и охрана окружающей среды при изготовлении и эксплуатации морской техники",
+    "InstructorName": "Власьев Максим Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106265/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 610",
+    "Group": "5310",
+    "Subject": "Экология и охрана окружающей среды при изготовлении и эксплуатации морской техники",
+    "InstructorName": "Власьев Максим Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106265/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 610",
+    "Group": "5410",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Власьев Максим Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106265/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 610",
+    "Group": "5410",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Власьев Максим Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106265/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 501(1)",
+    "Group": "1164",
+    "Subject": "Новые методы принятия проектных решений на различных стадиях проектирования судов и кораблей на основе цифровых технологий",
+    "InstructorName": "Власьев Максим Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106265/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 501(1)",
+    "Group": "1164",
+    "Subject": "Новые методы принятия проектных решений на различных стадиях проектирования судов и кораблей на основе цифровых технологий",
+    "InstructorName": "Власьев Максим Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106265/"
+  }
+]

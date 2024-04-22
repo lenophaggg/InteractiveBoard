@@ -1,0 +1,68 @@
+[
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 414",
+    "Group": "1170",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Вайнт Кристина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 414",
+    "Group": "1170",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Вайнт Кристина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 414",
+    "Group": "1117",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Вайнт Кристина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 414",
+    "Group": "1117",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Вайнт Кристина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 414",
+    "Group": "1180",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Вайнт Кристина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 414",
+    "Group": "1180",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Вайнт Кристина Сергеевна",
+    "InstructorLink": ""
+  }
+]

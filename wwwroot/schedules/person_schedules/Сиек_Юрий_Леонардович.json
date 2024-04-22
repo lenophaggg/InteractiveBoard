@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 405",
+    "Group": "3270",
+    "Subject": "Теория автоматов",
+    "InstructorName": "Сиек Юрий Леонардович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101074/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 405",
+    "Group": "3270",
+    "Subject": "Теория автоматов",
+    "InstructorName": "Сиек Юрий Леонардович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101074/"
+  }
+]

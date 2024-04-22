@@ -1,0 +1,35 @@
+[
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 410",
+    "Group": "20280",
+    "Subject": "Нормативное сопровождение информационной безопасности",
+    "InstructorName": "Карпова Ирина Леонидовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123207/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 410",
+    "Group": "20280",
+    "Subject": "Нормативное сопровождение информационной безопасности",
+    "InstructorName": "Карпова Ирина Леонидовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123207/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 10",
+    "Group": "20180",
+    "Subject": "Комплексная система защиты информации на предприятии",
+    "InstructorName": "Карпова Ирина Леонидовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123207/"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4303",
+    "Subject": "Организация и налогообложение предпринимательской деятельности",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4303",
+    "Subject": "Организация и налогообложение предпринимательской деятельности",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4141",
+    "Subject": "Анализ эффективности бизнеса",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4141",
+    "Subject": "Анализ эффективности бизнеса",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 518",
+    "Group": "4322",
+    "Subject": "Анализ и диагностика финансово-хозяйственной деятельности предприятия",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 518",
+    "Group": "4322",
+    "Subject": "Анализ и диагностика финансово-хозяйственной деятельности предприятия",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 518",
+    "Group": "4322",
+    "Subject": "Анализ и диагностика финансово-хозяйственной деятельности предприятия",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 518",
+    "Group": "4203",
+    "Subject": "Нормирование и оплата труда на промышленном предприятии",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 518",
+    "Group": "4203",
+    "Subject": "Нормирование и оплата труда на промышленном предприятии",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 518",
+    "Group": "4203",
+    "Subject": "Нормирование и оплата труда на промышленном предприятии",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  }
+]

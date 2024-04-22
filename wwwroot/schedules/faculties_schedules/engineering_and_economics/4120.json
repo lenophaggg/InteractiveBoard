@@ -1,0 +1,233 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б ЛУИТ",
+    "Group": "4120",
+    "Subject": "Национальная экономика",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 401",
+    "Group": "4120",
+    "Subject": "Информационные технологии в экономике и менеджменте",
+    "InstructorName": "Иванова Любовь Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122492/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б ЛУИТ",
+    "Group": "4120",
+    "Subject": "Национальная экономика",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б ЛУИТ",
+    "Group": "4120",
+    "Subject": "Международное предпринимательство",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4120",
+    "Subject": "Международное предпринимательство",
+    "InstructorName": "Загребельный Кирилл Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102751/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 511",
+    "Group": "4120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "4120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 444",
+    "Group": "4120",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Волкова Светлана Леонидовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123119/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У каф.ФВ",
+    "Group": "4120",
+    "Subject": "Физическая культура и спорт (элективная)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У каф.ФВ",
+    "Group": "4120",
+    "Subject": "Физическая культура и спорт (элективная)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "4120",
+    "Subject": "История России",
+    "InstructorName": "Массов Александр Яковлевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100736/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 504",
+    "Group": "4120",
+    "Subject": "Микроэкономика",
+    "InstructorName": "Санжина Ольга Петровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123539/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 511",
+    "Group": "4120",
+    "Subject": "Микроэкономика",
+    "InstructorName": "Санжина Ольга Петровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123539/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 101",
+    "Group": "4120",
+    "Subject": "История России",
+    "InstructorName": "Шмелева Марина Юрьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101369/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 105",
+    "Group": "4120",
+    "Subject": "Культурология",
+    "InstructorName": "Добряк Инна Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100346/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 531",
+    "Group": "4120",
+    "Subject": "Культурология",
+    "InstructorName": "Добряк Инна Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100346/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 444",
+    "Group": "4120",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Волкова Светлана Леонидовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123119/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 502",
+    "Group": "4120",
+    "Subject": "История России",
+    "InstructorName": "Массов Александр Яковлевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100736/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 508",
+    "Group": "4120",
+    "Subject": "Основы международного бизнеса",
+    "InstructorName": "Липис Евгения Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106291/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4120",
+    "Subject": "Информационные технологии в экономике и менеджменте",
+    "InstructorName": "Иванова Любовь Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122492/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4120",
+    "Subject": "Основы международного бизнеса",
+    "InstructorName": "Гельфонд Даниил Владиславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/131274/"
+  }
+]

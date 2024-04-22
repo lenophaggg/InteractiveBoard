@@ -1,0 +1,200 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 520",
+    "Group": "3324",
+    "Subject": "Схемотехника",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 315",
+    "Group": "3324",
+    "Subject": "Схемотехника",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 520",
+    "Group": "3324",
+    "Subject": "Схемотехника",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 520",
+    "Group": "3280",
+    "Subject": "Электронные устройства мехатронных и робототехнических систем",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 315",
+    "Group": "3200",
+    "Subject": "Электронные модули и измерения",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 315",
+    "Group": "3200",
+    "Subject": "Электронные модули и измерения",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 315",
+    "Group": "3200",
+    "Subject": "Электронные модули и измерения",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 315",
+    "Group": "3280",
+    "Subject": "Прикладное программирование",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 315",
+    "Group": "3280",
+    "Subject": "Электронные устройства мехатронных и робототехнических систем",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 315",
+    "Group": "3280",
+    "Subject": "Электронные устройства мехатронных и робототехнических систем",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 315",
+    "Group": "5380",
+    "Subject": "Электронные устройства мехатронных и робототехнических систем",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 315",
+    "Group": "5380",
+    "Subject": "Электронные устройства мехатронных и робототехнических систем",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 315",
+    "Group": "3380",
+    "Subject": "Теория информации и сигналов",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 312",
+    "Group": "3300",
+    "Subject": "Теория информации и сигналов",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 312",
+    "Group": "3380",
+    "Subject": "Теория информации и сигналов",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 312",
+    "Group": "3300",
+    "Subject": "Теория информации и сигналов",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 312",
+    "Group": "3380",
+    "Subject": "Теория информации и сигналов",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 315",
+    "Group": "3300",
+    "Subject": "Теория информации и сигналов",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5200",
+    "Subject": "Гражданское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5100",
+    "Subject": "Информационные технологии в юридической деятельности",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5100",
+    "Subject": "Информационные технологии в юридической деятельности",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5200",
+    "Subject": "Гражданское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5300",
+    "Subject": "Римское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5300",
+    "Subject": "Римское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 101",
+    "Group": "7163",
+    "Subject": "Информационные технологии в юридической деятельности",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 101",
+    "Group": "7162",
+    "Subject": "Информационные технологии в юридической деятельности",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 101",
+    "Group": "7161",
+    "Subject": "Информационные технологии в юридической деятельности",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 209ю",
+    "Group": "7161",
+    "Subject": "Информационные технологии в юридической деятельности",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 209ю",
+    "Group": "7162",
+    "Subject": "Информационные технологии в юридической деятельности",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 209ю",
+    "Group": "7163",
+    "Subject": "Информационные технологии в юридической деятельности",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 01Ю",
+    "Group": "7361",
+    "Subject": "Римское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 9",
+    "Group": "7361",
+    "Subject": "Римское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 9",
+    "Group": "7362",
+    "Subject": "Римское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 303ю",
+    "Group": "7362",
+    "Subject": "Римское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 303ю",
+    "Group": "7361",
+    "Subject": "Римское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 303ю",
+    "Group": "7362",
+    "Subject": "Римское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  }
+]

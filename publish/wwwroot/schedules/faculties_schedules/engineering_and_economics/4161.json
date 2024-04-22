@@ -1,0 +1,222 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 511",
+    "Group": "4161",
+    "Subject": "Управление проектами",
+    "InstructorName": "Алехин Михаил Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100023/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 514",
+    "Group": "4161",
+    "Subject": "Управление проектами",
+    "InstructorName": "Алехин Михаил Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100023/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4161",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4161",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4161",
+    "Subject": "Цифровая трансформация: управление на основе данных",
+    "InstructorName": "Будрина Елена Викторовна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4161",
+    "Subject": "Цифровая трансформация: управление на основе данных",
+    "InstructorName": "Будрина Елена Викторовна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4161",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4161",
+    "Subject": "Цифровая трансформация: управление на основе данных",
+    "InstructorName": "Будрина Елена Викторовна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4161",
+    "Subject": "Управление человеческим капиталом",
+    "InstructorName": "Рогавичене Лариса Ивановна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123212/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4161",
+    "Subject": "Дизайн-мышление в бизнесе",
+    "InstructorName": "Рогавичене Лариса Ивановна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123212/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4161",
+    "Subject": "Управление человеческим капиталом",
+    "InstructorName": "Рогавичене Лариса Ивановна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123212/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4161",
+    "Subject": "Дизайн-мышление в бизнесе",
+    "InstructorName": "Рогавичене Лариса Ивановна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123212/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4161",
+    "Subject": "Исследование новых рынков и продвижение  продукта",
+    "InstructorName": "Лебедева Анна Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123213/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4161",
+    "Subject": "Алгоритмы решения нестандартных задач",
+    "InstructorName": "Лебедева Анна Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123213/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4161",
+    "Subject": "Алгоритмы решения нестандартных задач",
+    "InstructorName": "Лебедева Анна Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123213/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4161",
+    "Subject": "Исследование новых рынков и продвижение  продукта",
+    "InstructorName": "Лебедева Анна Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123213/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4161",
+    "Subject": "Алгоритмы решения нестандартных задач",
+    "InstructorName": "Лебедева Анна Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123213/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б ЛУИТ",
+    "Group": "4161",
+    "Subject": "Исследование новых рынков и продвижение  продукта",
+    "InstructorName": "Лебедева Анна Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123213/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4161",
+    "Subject": "Кросс-культурный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4161",
+    "Subject": "Кросс-культурный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 407",
+    "Group": "7161",
+    "Subject": "Информатика и математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "2101",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "2170",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "2141",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "2130",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 440",
+    "Group": "2141",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 443",
+    "Group": "7163",
+    "Subject": "Информатика и математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 451",
+    "Group": "7162",
+    "Subject": "Информатика и математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 105",
+    "Group": "2130",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 105",
+    "Group": "2101",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 105",
+    "Group": "2170",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 105",
+    "Group": "2141",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 451",
+    "Group": "2130",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 451",
+    "Group": "2101",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 451",
+    "Group": "2130",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 410",
+    "Group": "2101",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 451",
+    "Group": "2101",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 451",
+    "Group": "2141",
+    "Subject": "Высшая математика",
+    "InstructorName": "Ионченкова Яна Юрьевна",
+    "InstructorLink": ""
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 339",
+    "Group": "2420",
+    "Subject": "Топливная аппаратура",
+    "InstructorName": "Телегин Василий Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101173/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 339",
+    "Group": "2420",
+    "Subject": "Топливная аппаратура",
+    "InstructorName": "Телегин Василий Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101173/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 458",
+    "Group": "2420",
+    "Subject": "Топливная аппаратура",
+    "InstructorName": "Телегин Василий Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101173/"
+  }
+]

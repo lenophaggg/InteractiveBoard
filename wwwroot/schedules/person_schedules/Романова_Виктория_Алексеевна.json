@@ -1,0 +1,57 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 543",
+    "Group": "7201",
+    "Subject": "Демография",
+    "InstructorName": "Романова Виктория Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/104884/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 543",
+    "Group": "7201",
+    "Subject": "Демография",
+    "InstructorName": "Романова Виктория Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/104884/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "7101",
+    "Subject": "Современные информационные технологии в социальных науках",
+    "InstructorName": "Романова Виктория Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/104884/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 544",
+    "Group": "7301",
+    "Subject": "Социология управления",
+    "InstructorName": "Романова Виктория Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/104884/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 544",
+    "Group": "7302",
+    "Subject": "Социология управления",
+    "InstructorName": "Романова Виктория Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/104884/"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 338",
+    "Group": "2210",
+    "Subject": "Механика и термодинамика в турбомашинах",
+    "InstructorName": "Утюшев Роман Рауфович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 338",
+    "Group": "2210",
+    "Subject": "Механика и термодинамика в турбомашинах",
+    "InstructorName": "Утюшев Роман Рауфович",
+    "InstructorLink": ""
+  }
+]

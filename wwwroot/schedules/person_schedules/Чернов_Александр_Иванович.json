@@ -1,0 +1,134 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 503",
+    "Group": "2330",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 401",
+    "Group": "9999",
+    "Subject": "27.03.2023 гр.2330, 2331",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 503",
+    "Group": "2331",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 340",
+    "Group": "9999",
+    "Subject": "20.03.2023 гр.2330, 2331",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 401",
+    "Group": "9999",
+    "Subject": "27.03.2023 гр.2330, 2331",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2330",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2331",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 503",
+    "Group": "2331",
+    "Subject": "Теплообменные аппараты систем судовых энергетических установок",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 503",
+    "Group": "2330",
+    "Subject": "Теплообменные аппараты систем судовых энергетических установок",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 522",
+    "Group": "2165",
+    "Subject": "Новые информационные технологии в учебном процессе",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2330",
+    "Subject": "Теплообменные аппараты систем судовых энергетических установок",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2331",
+    "Subject": "Теплообменные аппараты систем судовых энергетических установок",
+    "InstructorName": "Чернов Александр Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101313/"
+  }
+]

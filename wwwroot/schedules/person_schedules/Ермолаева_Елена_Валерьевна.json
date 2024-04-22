@@ -1,0 +1,57 @@
+[
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 318",
+    "Group": "1380",
+    "Subject": "Гидромеханика",
+    "InstructorName": "Ермолаева Елена Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102673/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 318",
+    "Group": "1220",
+    "Subject": "Гидродинамика морских инженерных сооружений",
+    "InstructorName": "Ермолаева Елена Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102673/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 316",
+    "Group": "1220",
+    "Subject": "Гидродинамика морских инженерных сооружений",
+    "InstructorName": "Ермолаева Елена Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102673/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 102",
+    "Group": "3220",
+    "Subject": "Гидромеханика",
+    "InstructorName": "Ермолаева Елена Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102673/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 102",
+    "Group": "3200",
+    "Subject": "Гидромеханика",
+    "InstructorName": "Ермолаева Елена Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102673/"
+  }
+]

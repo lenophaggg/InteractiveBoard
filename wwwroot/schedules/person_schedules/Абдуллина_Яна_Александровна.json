@@ -1,0 +1,145 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 326",
+    "Group": "8170",
+    "Subject": "Физика",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 322",
+    "Group": "1150",
+    "Subject": "Физика",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 320",
+    "Group": "1150",
+    "Subject": "Физика",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 322",
+    "Group": "2195",
+    "Subject": "Физика",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 320",
+    "Group": "2195",
+    "Subject": "Физика",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 322",
+    "Group": "1114",
+    "Subject": "Физика",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 320",
+    "Group": "1114",
+    "Subject": "Физика",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 326",
+    "Group": "8160",
+    "Subject": "Астрономия",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 326",
+    "Group": "8150",
+    "Subject": "Астрономия",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 326",
+    "Group": "8140",
+    "Subject": "Астрономия",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 326",
+    "Group": "8170",
+    "Subject": "Физика",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 320",
+    "Group": "20120",
+    "Subject": "Физика",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 322",
+    "Group": "20120",
+    "Subject": "Физика",
+    "InstructorName": "Абдуллина Яна Александровна",
+    "InstructorLink": ""
+  }
+]

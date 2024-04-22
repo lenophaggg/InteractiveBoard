@@ -1,0 +1,200 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5100",
+    "Subject": "Информационные технологии в юридической деятельности",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "5100",
+    "Subject": "Земельное право",
+    "InstructorName": "Котов Геннадий Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "5100",
+    "Subject": "Земельное право",
+    "InstructorName": "Котов Геннадий Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5100",
+    "Subject": "Информационные технологии в юридической деятельности",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 450",
+    "Group": "5100",
+    "Subject": "Информатика и математика",
+    "InstructorName": "Певзнер Виталий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100878/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "5100",
+    "Subject": "Конституционное право",
+    "InstructorName": "Нужин Константин Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 450",
+    "Group": "5100",
+    "Subject": "Информатика и математика",
+    "InstructorName": "Певзнер Виталий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100878/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "5100",
+    "Subject": "Конституционное право",
+    "InstructorName": "Нужин Константин Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5100",
+    "Subject": "Основы юридического консультирования",
+    "InstructorName": "Егорова Людмила Дмитриевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101333/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5100",
+    "Subject": "Правоохранительные органы",
+    "InstructorName": "Жулёв Сергей Константинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102976/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5100",
+    "Subject": "Правоохранительные органы",
+    "InstructorName": "Жулёв Сергей Константинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102976/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5100",
+    "Subject": "Основы юридического консультирования",
+    "InstructorName": "Егорова Людмила Дмитриевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101333/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 01Ю",
+    "Group": "5100",
+    "Subject": "Теория государства и права",
+    "InstructorName": "Лавров Вениамин Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122736/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 01Ю",
+    "Group": "5100",
+    "Subject": "Теория государства и права",
+    "InstructorName": "Лавров Вениамин Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122736/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 101",
+    "Group": "5100",
+    "Subject": "История России",
+    "InstructorName": "Пантелеева Екатерина Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100873/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 444",
+    "Group": "5100",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Кулаков Дмитрий Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103609/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 444",
+    "Group": "5100",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Кулаков Дмитрий Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103609/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 101",
+    "Group": "5100",
+    "Subject": "История России",
+    "InstructorName": "Пантелеева Екатерина Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100873/"
+  }
+]

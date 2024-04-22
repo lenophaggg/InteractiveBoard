@@ -1,0 +1,134 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4315",
+    "Subject": "Мотивация и стимулирование труда",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4315",
+    "Subject": "Государственное и муниципальное управление",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4315",
+    "Subject": "Мотивация и стимулирование труда",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4315",
+    "Subject": "Государственное и муниципальное управление",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4315",
+    "Subject": "Планирование и организация производства",
+    "InstructorName": "Малышев Евгений Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/127500/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4315",
+    "Subject": "Экономика сферы услуг",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4315",
+    "Subject": "Планирование и организация производства",
+    "InstructorName": "Малышев Евгений Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/127500/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4315",
+    "Subject": "Экономика сферы услуг",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4315",
+    "Subject": "Управление бизнесом",
+    "InstructorName": "Брагин Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122735/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4315",
+    "Subject": "Управление бизнесом",
+    "InstructorName": "Брагин Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122735/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 505(1)",
+    "Group": "4315",
+    "Subject": "Бизнес-логистика",
+    "InstructorName": "Палкина Елена Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126006/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 505(1)",
+    "Group": "4315",
+    "Subject": "Бизнес-логистика",
+    "InstructorName": "Палкина Елена Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126006/"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 508",
+    "Group": "1310",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Смирнов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101106/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 508",
+    "Group": "1311",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Смирнов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101106/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 207",
+    "Group": "1350",
+    "Subject": "Проектирование средств океанотехники",
+    "InstructorName": "Смирнов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101106/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 207",
+    "Group": "1350",
+    "Subject": "Проектирование средств океанотехники",
+    "InstructorName": "Смирнов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101106/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 207",
+    "Group": "1311",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Смирнов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101106/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 207",
+    "Group": "1310",
+    "Subject": "Конструкция корпуса судов",
+    "InstructorName": "Смирнов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101106/"
+  }
+]

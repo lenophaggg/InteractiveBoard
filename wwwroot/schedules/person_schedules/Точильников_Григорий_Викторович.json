@@ -1,0 +1,35 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Физические методы в онкологии и кардиологии",
+    "InstructorName": "Точильников Григорий Викторович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123221/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Физические методы в онкологии и кардиологии",
+    "InstructorName": "Точильников Григорий Викторович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123221/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Физические методы в онкологии и кардиологии",
+    "InstructorName": "Точильников Григорий Викторович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123221/"
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 218",
+    "Group": "5116",
+    "Subject": "Метод конечных элементов в инженерных расчетах",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 218",
+    "Group": "5116",
+    "Subject": "Метод конечных элементов в инженерных расчетах",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1318",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1313",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1384",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1310",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1311",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 218",
+    "Group": "1311",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 218",
+    "Group": "1318",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 215",
+    "Group": "5310",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 218",
+    "Group": "5310",
+    "Subject": "",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 215",
+    "Group": "5116",
+    "Subject": "Метод конечных элементов в инженерных расчетах",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 218",
+    "Group": "5310",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 215",
+    "Group": "1312",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 218",
+    "Group": "1312",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  }
+]

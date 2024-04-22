@@ -1,0 +1,118 @@
+@model VkPost
+
+@if (Model != null && Model.ImageUrl != null && Model.ImageUrl.Count > 0)
+{
+    @if (Model.ImageUrl.Count == 1)
+    {
+        <img src="@Model.ImageUrl[0]" class="d-block img-fluid" alt="Post Image">
+    }
+    else
+    {
+        <div class="slider">
+            <div class="slides">
+                @foreach (var imageUrl in Model.ImageUrl)
+                {
+                    <div class="slide">
+                        <img src="@imageUrl" alt="Slide Image">
+                    </div>
+                }
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    }
+    <p>@Model.Text</p>
+}
+else
+{
+    <h1>Произошла ошибка</h1>
+}
+<style>
+    .slider {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: #9268c1;
+        font-weight: bold;
+        font-size: 192px;
+        transition: 0.6s ease;
+        border-radius: 50%;
+        user-select: none;
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 50%;
+    }
+
+        .prev:hover, .next:hover {
+            color: #c0add6; /* Цвет при наведении */
+        }
+
+        .prev.active, .next.active {
+            color: #c0add6;
+        }
+</style>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+        updateButtonColors();
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+        updateButtonColors();
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+    function updateButtonColors() {
+        var prevButton = document.querySelector('.prev');
+        var nextButton = document.querySelector('.next');
+
+        prevButton.classList.remove('active');
+        nextButton.classList.remove('active');
+
+        if (slideIndex > 1) {
+            prevButton.classList.add('active');
+        }
+        if (slideIndex < slides.length) {
+            nextButton.classList.add('active');
+        }
+    }
+</script>

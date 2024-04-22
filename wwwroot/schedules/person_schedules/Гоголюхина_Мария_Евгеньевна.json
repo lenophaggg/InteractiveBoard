@@ -1,0 +1,112 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 530а",
+    "Group": "3163",
+    "Subject": "Планирование и контроль бизнес-процессов на предприятии судостроения",
+    "InstructorName": "Гоголюхина Мария Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100274/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 530а",
+    "Group": "3163",
+    "Subject": "Планирование и контроль бизнес-процессов на предприятии судостроения",
+    "InstructorName": "Гоголюхина Мария Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100274/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "4422",
+    "Subject": "Гибкие методики в управлении проектами, процессами, задачами",
+    "InstructorName": "Гоголюхина Мария Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100274/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "4422",
+    "Subject": "Гибкие методики в управлении проектами, процессами, задачами",
+    "InstructorName": "Гоголюхина Мария Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100274/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 530а",
+    "Group": "4422",
+    "Subject": "Гибкие методики в управлении проектами, процессами, задачами",
+    "InstructorName": "Гоголюхина Мария Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100274/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 518",
+    "Group": "4322",
+    "Subject": "Автоматизация производства",
+    "InstructorName": "Гоголюхина Мария Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100274/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 518",
+    "Group": "4322",
+    "Subject": "Автоматизация производства",
+    "InstructorName": "Гоголюхина Мария Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100274/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 515А",
+    "Group": "4322",
+    "Subject": "Инжиниринг бизнес-процессов",
+    "InstructorName": "Гоголюхина Мария Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100274/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 515А",
+    "Group": "4322",
+    "Subject": "Инжиниринг бизнес-процессов",
+    "InstructorName": "Гоголюхина Мария Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100274/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 515А",
+    "Group": "4322",
+    "Subject": "Инжиниринг бизнес-процессов",
+    "InstructorName": "Гоголюхина Мария Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100274/"
+  }
+]

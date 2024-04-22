@@ -1,0 +1,46 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4162",
+    "Subject": "Теория организации и организационное поведение",
+    "InstructorName": "Юрьева Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101915/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4162",
+    "Subject": "Теория организации и организационное поведение",
+    "InstructorName": "Юрьева Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101915/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б ЛУИТ",
+    "Group": "4211",
+    "Subject": "Конфликтология",
+    "InstructorName": "Юрьева Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101915/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б ЛУИТ",
+    "Group": "4211",
+    "Subject": "Конфликтология",
+    "InstructorName": "Юрьева Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101915/"
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "М 31",
+    "Group": "4220",
+    "Subject": "Корпоративная социальная ответственность",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 510",
+    "Group": "4200",
+    "Subject": "Международный бизнес",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 510",
+    "Group": "4204",
+    "Subject": "Международный бизнес",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "М 33",
+    "Group": "4103",
+    "Subject": "Мировая экономика и международные экономические отношения",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4204",
+    "Subject": "Международный бизнес",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4200",
+    "Subject": "Международный бизнес",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4315",
+    "Subject": "Мотивация и стимулирование труда",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4315",
+    "Subject": "Мотивация и стимулирование труда",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4103",
+    "Subject": "Мировая экономика и международные экономические отношения",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4320",
+    "Subject": "Международный маркетинг",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4300",
+    "Subject": "Международный маркетинг",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4300",
+    "Subject": "Международный маркетинг",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4320",
+    "Subject": "Международный маркетинг",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4162",
+    "Subject": "Международный бизнес",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4162",
+    "Subject": "Международный бизнес",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4162",
+    "Subject": "Международный бизнес",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  }
+]

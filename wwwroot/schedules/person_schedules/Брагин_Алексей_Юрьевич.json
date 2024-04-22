@@ -1,0 +1,68 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4111",
+    "Subject": "Основы предпринимательства",
+    "InstructorName": "Брагин Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122735/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4115",
+    "Subject": "Основы предпринимательства",
+    "InstructorName": "Брагин Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122735/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4315",
+    "Subject": "Управление бизнесом",
+    "InstructorName": "Брагин Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122735/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4115",
+    "Subject": "Основы предпринимательства",
+    "InstructorName": "Брагин Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122735/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4111",
+    "Subject": "Основы предпринимательства",
+    "InstructorName": "Брагин Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122735/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4315",
+    "Subject": "Управление бизнесом",
+    "InstructorName": "Брагин Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122735/"
+  }
+]

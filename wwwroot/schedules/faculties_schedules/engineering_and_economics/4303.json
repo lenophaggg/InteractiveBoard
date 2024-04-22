@@ -1,0 +1,200 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У каф.ФВ",
+    "Group": "4303",
+    "Subject": "Физическая культура и спорт (элективная)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209",
+    "Group": "4303",
+    "Subject": "Финансовые рынки и институты",
+    "InstructorName": "Калугина Яна Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123274/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209",
+    "Group": "4303",
+    "Subject": "Финансовые рынки и институты",
+    "InstructorName": "Калугина Яна Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123274/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 304ю",
+    "Group": "4303",
+    "Subject": "Коммерческое и трудовое право",
+    "InstructorName": "Богданова Татьяна Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100122/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 304ю",
+    "Group": "4303",
+    "Subject": "Коммерческое и трудовое право",
+    "InstructorName": "Богданова Татьяна Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100122/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4303",
+    "Subject": "Организация и налогообложение предпринимательской деятельности",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4303",
+    "Subject": "Организация и налогообложение предпринимательской деятельности",
+    "InstructorName": "Неуступова Алина Серафимовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100807/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 407",
+    "Group": "4303",
+    "Subject": "Бизнес-планирование на предприятии",
+    "InstructorName": "Фролова Вероника Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У каф.ФВ",
+    "Group": "4303",
+    "Subject": "Физическая культура и спорт (элективная)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 531",
+    "Group": "4303",
+    "Subject": "Экономическая и промышленная безопасность предприятия",
+    "InstructorName": "Калугина Яна Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123274/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 514",
+    "Group": "4303",
+    "Subject": "Экономическая и промышленная безопасность предприятия",
+    "InstructorName": "Калугина Яна Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123274/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 410",
+    "Group": "4303",
+    "Subject": "Экономическая и промышленная безопасность предприятия",
+    "InstructorName": "Калугина Яна Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123274/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4303",
+    "Subject": "Управленческий учет",
+    "InstructorName": "Кузминых Юлия Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100603/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209",
+    "Group": "4303",
+    "Subject": "Управленческий учет",
+    "InstructorName": "Кузминых Юлия Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100603/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 518",
+    "Group": "4303",
+    "Subject": "Бизнес-планирование на предприятии",
+    "InstructorName": "Смирнов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 518",
+    "Group": "4303",
+    "Subject": "Бизнес-планирование на предприятии",
+    "InstructorName": "Смирнов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4303",
+    "Subject": "Деньги, кредит, банки",
+    "InstructorName": "Хашаев Альви Адланович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4303",
+    "Subject": "Деньги, кредит, банки",
+    "InstructorName": "Хашаев Альви Адланович",
+    "InstructorLink": ""
+  }
+]

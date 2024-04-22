@@ -1,0 +1,57 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 215",
+    "Group": "3340",
+    "Subject": "Гидрофизические системы подводного поиска",
+    "InstructorName": "Розанов Михаил Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 215",
+    "Group": "3340",
+    "Subject": "Гидрофизические системы подводного поиска",
+    "InstructorName": "Розанов Михаил Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 130",
+    "Group": "3240",
+    "Subject": "Гидрофизические методы и средства подводного поиска",
+    "InstructorName": "Розанов Михаил Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 130",
+    "Group": "3240",
+    "Subject": "Гидрофизические методы и средства подводного поиска",
+    "InstructorName": "Розанов Михаил Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 130",
+    "Group": "3240",
+    "Subject": "Гидрофизические методы и средства подводного поиска",
+    "InstructorName": "Розанов Михаил Иванович",
+    "InstructorLink": ""
+  }
+]

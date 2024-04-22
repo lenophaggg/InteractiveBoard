@@ -1,0 +1,101 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 316",
+    "Group": "5216",
+    "Subject": "Проектирование судовых систем",
+    "InstructorName": "Чепурко Сергей Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 318",
+    "Group": "5340",
+    "Subject": "Гидравлика",
+    "InstructorName": "Чепурко Сергей Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 316",
+    "Group": "5216",
+    "Subject": "Проектирование судовых систем",
+    "InstructorName": "Чепурко Сергей Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 401",
+    "Group": "1284",
+    "Subject": "Механика жидкости и газа",
+    "InstructorName": "Чепурко Сергей Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 401",
+    "Group": "1280",
+    "Subject": "Механика жидкости и газа",
+    "InstructorName": "Чепурко Сергей Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 401",
+    "Group": "1250",
+    "Subject": "Механика жидкости и газа",
+    "InstructorName": "Чепурко Сергей Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 401",
+    "Group": "2241",
+    "Subject": "Механика жидкости и газа",
+    "InstructorName": "Чепурко Сергей Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 401",
+    "Group": "1210",
+    "Subject": "Механика жидкости и газа",
+    "InstructorName": "Чепурко Сергей Иванович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1220",
+    "Subject": "Гидродинамика морских инженерных сооружений",
+    "InstructorName": "Чепурко Сергей Иванович",
+    "InstructorLink": ""
+  }
+]

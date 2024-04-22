@@ -1,0 +1,57 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 316",
+    "Group": "2340",
+    "Subject": "Медико-биологические основы безопасности",
+    "InstructorName": "Граховский Геннадий Николаевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2340",
+    "Subject": "Медико-биологические основы безопасности",
+    "InstructorName": "Граховский Геннадий Николаевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 326",
+    "Group": "2340",
+    "Subject": "Медико-биологические основы безопасности",
+    "InstructorName": "Граховский Геннадий Николаевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2240",
+    "Subject": "Климатология",
+    "InstructorName": "Граховский Геннадий Николаевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2240",
+    "Subject": "Климатология",
+    "InstructorName": "Граховский Геннадий Николаевич",
+    "InstructorLink": ""
+  }
+]

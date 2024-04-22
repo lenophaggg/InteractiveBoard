@@ -1,0 +1,57 @@
+﻿@model List<MyMvcApp.Models.CurrentSchedule>
+
+<div class="row justify-content-center">
+    <div class="col-lg-6">
+        <!-- Первая таблица -->
+        <div class="scrollable-panel panel-container ">
+            <table class="table_inactive1 rounded-lg">
+                <tbody>
+                    <tr class="title">
+                        <th>группа</th>
+                        <th>статус</th>
+                        <th>предмет</th>
+                        <th>ауд.</th>
+                        <th>преподаватель</th>
+                    </tr>
+                    @foreach (var item in Model.Take(Model.Count / 2))
+                    {
+                        <tr class="panel">
+                            <td>@item.Group</td>
+                            <td>@item.Status</td>
+                            <td>@item.Subject</td>
+                            <td>@item.Classroom</td>
+                            <td>@item.InstructorName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <!-- Вторая таблица -->
+        <div class="scrollable-panel panel-container ">
+            <table class="table_inactive2 rounded-lg">
+                <tbody>
+                    <tr class="title">
+                        <th>группа</th>
+                        <th>статус</th>
+                        <th>предмет</th>
+                        <th>ауд.</th>
+                        <th>преподаватель</th>
+                    </tr>
+                    @foreach (var item in Model.Skip(Model.Count / 2))
+                    {
+                        <tr class="panel">
+                            <td>@item.Group</td>
+                            <td>@item.Status</td>
+                            <td>@item.Subject</td>
+                            <td>@item.Classroom</td>
+                            <td>@item.InstructorName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

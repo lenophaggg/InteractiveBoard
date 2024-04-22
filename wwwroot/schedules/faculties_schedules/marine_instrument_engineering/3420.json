@@ -1,0 +1,200 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 414",
+    "Group": "3420",
+    "Subject": "Теплоэнергетические системы и агрегаты самоходных подводных аппаратов",
+    "InstructorName": "Семко Иван Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 323",
+    "Group": "3420",
+    "Subject": "Теплоэнергетические системы и агрегаты самоходных подводных аппаратов",
+    "InstructorName": "Семко Иван Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 319",
+    "Group": "3420",
+    "Subject": "Организация и технология производства подводных аппаратов",
+    "InstructorName": "Мельников Юрий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100750/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 319",
+    "Group": "3420",
+    "Subject": "Организация и технология производства подводных аппаратов",
+    "InstructorName": "Мельников Юрий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100750/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 319",
+    "Group": "3420",
+    "Subject": "Организация и технология производства подводных аппаратов",
+    "InstructorName": "Мельников Юрий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100750/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 415",
+    "Group": "3420",
+    "Subject": "Динамика пропульсивного комплекса подводных аппаратов",
+    "InstructorName": "Боженов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100127/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 415",
+    "Group": "3420",
+    "Subject": "Динамика пропульсивного комплекса подводных аппаратов",
+    "InstructorName": "Боженов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100127/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 415",
+    "Group": "3420",
+    "Subject": "Динамика пропульсивного комплекса подводных аппаратов",
+    "InstructorName": "Боженов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100127/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 415",
+    "Group": "3420",
+    "Subject": "Динамика пропульсивного комплекса подводных аппаратов",
+    "InstructorName": "Боженов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100127/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 415",
+    "Group": "3420",
+    "Subject": "Динамика пропульсивного комплекса подводных аппаратов",
+    "InstructorName": "Боженов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100127/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 415",
+    "Group": "3420",
+    "Subject": "Динамика пропульсивного комплекса подводных аппаратов",
+    "InstructorName": "Боженов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100127/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 415",
+    "Group": "3420",
+    "Subject": "Динамика пропульсивного комплекса подводных аппаратов",
+    "InstructorName": "Боженов Юрий Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100127/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 319",
+    "Group": "3420",
+    "Subject": "Движительные комплексы самоходных подводных аппаратов",
+    "InstructorName": "Захаров Станислав Андреевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 319",
+    "Group": "3420",
+    "Subject": "Движительные комплексы самоходных подводных аппаратов",
+    "InstructorName": "Захаров Станислав Андреевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 319",
+    "Group": "3420",
+    "Subject": "Движительные комплексы самоходных подводных аппаратов",
+    "InstructorName": "Захаров Станислав Андреевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 319",
+    "Group": "3420",
+    "Subject": "Движительные комплексы самоходных подводных аппаратов",
+    "InstructorName": "Захаров Станислав Андреевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 319",
+    "Group": "3420",
+    "Subject": "Движительные комплексы самоходных подводных аппаратов",
+    "InstructorName": "Захаров Станислав Андреевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 319",
+    "Group": "3420",
+    "Subject": "Движительные комплексы самоходных подводных аппаратов",
+    "InstructorName": "Захаров Станислав Андреевич",
+    "InstructorLink": ""
+  }
+]

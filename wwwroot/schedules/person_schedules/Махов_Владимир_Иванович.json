@@ -1,0 +1,134 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 211",
+    "Group": "5380",
+    "Subject": "Акустические измерения",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 211",
+    "Group": "5380",
+    "Subject": "Первичные преобразователи информации",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 425",
+    "Group": "3380",
+    "Subject": "Первичные преобразователи информации",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 425",
+    "Group": "3380",
+    "Subject": "Первичные преобразователи информации",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 212",
+    "Group": "3200",
+    "Subject": "Датчики и преобразователи гидроакустических полей",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 212",
+    "Group": "3200",
+    "Subject": "Датчики и преобразователи гидроакустических полей",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 212",
+    "Group": "3280",
+    "Subject": "Акустические измерения",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 212",
+    "Group": "3280",
+    "Subject": "Акустические измерения",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 211",
+    "Group": "3162",
+    "Subject": "Датчики и преобразователи информационных систем мобильных роботов",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 211",
+    "Group": "3300",
+    "Subject": "Гидроакустические поля и антенны",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 211",
+    "Group": "3162",
+    "Subject": "Датчики и преобразователи информационных систем мобильных роботов",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 211",
+    "Group": "3300",
+    "Subject": "Гидроакустические поля и антенны",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  }
+]

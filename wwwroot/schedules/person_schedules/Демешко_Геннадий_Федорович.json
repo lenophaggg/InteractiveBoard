@@ -1,0 +1,101 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1414",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Демешко Геннадий Федорович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100328/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1417",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Демешко Геннадий Федорович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100328/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1419",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Демешко Геннадий Федорович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100328/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "20413",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Демешко Геннадий Федорович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100328/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1318",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Демешко Геннадий Федорович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100328/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1312",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Демешко Геннадий Федорович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100328/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1313",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Демешко Геннадий Федорович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100328/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1311",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Демешко Геннадий Федорович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100328/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1310",
+    "Subject": "Проектирование судов",
+    "InstructorName": "Демешко Геннадий Федорович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100328/"
+  }
+]

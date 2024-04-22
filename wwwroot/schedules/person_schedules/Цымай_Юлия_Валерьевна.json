@@ -1,0 +1,46 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 517",
+    "Group": "2250",
+    "Subject": "Защита от разрушающих программных воздействий",
+    "InstructorName": "Цымай Юлия Валерьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 517",
+    "Group": "2250",
+    "Subject": "Защита от разрушающих программных воздействий",
+    "InstructorName": "Цымай Юлия Валерьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 517",
+    "Group": "2251",
+    "Subject": "Защита от разрушающих программных воздействий",
+    "InstructorName": "Цымай Юлия Валерьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 517",
+    "Group": "2251",
+    "Subject": "Защита от разрушающих программных воздействий",
+    "InstructorName": "Цымай Юлия Валерьевна",
+    "InstructorLink": ""
+  }
+]

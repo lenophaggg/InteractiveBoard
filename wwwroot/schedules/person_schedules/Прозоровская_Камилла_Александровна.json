@@ -1,0 +1,145 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 543",
+    "Group": "7101",
+    "Subject": "Социология маркетинга",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 543",
+    "Group": "7101",
+    "Subject": "Социология маркетинга",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 544",
+    "Group": "7201",
+    "Subject": "Экономическая социология",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 544",
+    "Group": "7201",
+    "Subject": "Экономическая социология",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 502",
+    "Group": "5160",
+    "Subject": "Социология маркетинга",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 502",
+    "Group": "5260",
+    "Subject": "Экономическая социология",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 502",
+    "Group": "5260",
+    "Subject": "Экономическая социология",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 502",
+    "Group": "5160",
+    "Subject": "Социология маркетинга",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 543",
+    "Group": "7100",
+    "Subject": "Социология инноваций",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 543",
+    "Group": "7100",
+    "Subject": "Социология инноваций",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 543",
+    "Group": "7100",
+    "Subject": "Социология инноваций",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 543",
+    "Group": "7100",
+    "Subject": "Управление социальными проектами",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 543",
+    "Group": "7100",
+    "Subject": "Управление социальными проектами",
+    "InstructorName": "Прозоровская Камилла Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100945/"
+  }
+]

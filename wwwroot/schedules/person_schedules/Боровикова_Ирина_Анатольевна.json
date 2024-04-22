@@ -1,0 +1,178 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 407",
+    "Group": "2391",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 407",
+    "Group": "2390",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 503",
+    "Group": "2390",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 503",
+    "Group": "2391",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 503",
+    "Group": "2390",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 503",
+    "Group": "2391",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 503",
+    "Group": "2390",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 503",
+    "Group": "2391",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2395",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2394",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2395",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2394",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 503",
+    "Group": "2330",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 503",
+    "Group": "2331",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 503",
+    "Group": "2331",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 503",
+    "Group": "2330",
+    "Subject": "Судовое вспомогательное энергетическое оборудование",
+    "InstructorName": "Боровикова Ирина Анатольевна",
+    "InstructorLink": ""
+  }
+]

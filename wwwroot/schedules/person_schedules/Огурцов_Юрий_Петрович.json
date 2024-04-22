@@ -1,0 +1,101 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 418",
+    "Group": "5380",
+    "Subject": "Акустические измерения",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 418",
+    "Group": "5380",
+    "Subject": "Первичные преобразователи информации",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 201",
+    "Group": "3300",
+    "Subject": "Гидрофизические поля морских объектов",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 201",
+    "Group": "3300",
+    "Subject": "Гидрофизические поля морских объектов",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 520",
+    "Group": "3380",
+    "Subject": "Физические поля в морской среде",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 306",
+    "Group": "3380",
+    "Subject": "Физические поля в морской среде",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 306",
+    "Group": "3380",
+    "Subject": "Физические поля в морской среде",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 125",
+    "Group": "3300",
+    "Subject": "Гидроакустические поля и антенны",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 125",
+    "Group": "3380",
+    "Subject": "Первичные преобразователи информации",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  }
+]

@@ -1,0 +1,40 @@
+
+
+h1 {
+    line-height: inherit;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 192px;
+}
+
+h2 {
+    line-height: 135px;
+    font-weight: bold;
+    font-size: 96px;
+    text-align: center;
+}
+
+.col-lg-2 {
+    background: #9268C1;
+    border-radius: 50px;
+    box-shadow: 15px rgba(39, 15, 59, 0.5);
+    margin: 25px 10px 0px;
+    height:110px;
+    max-width: 501px;
+    display: flex; /* Применяем flexbox */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+    .col-lg-2 p {
+        line-height: 50px;
+        font-weight: bold;
+        font-size: 48px;
+        margin-bottom: 0px;
+    }
+
+

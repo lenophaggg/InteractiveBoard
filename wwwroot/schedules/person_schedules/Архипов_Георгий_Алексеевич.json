@@ -1,0 +1,123 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2330",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2331",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2331",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 503",
+    "Group": "2330",
+    "Subject": "Судовые энергетические установки",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 503",
+    "Group": "2394",
+    "Subject": "Судовое главное энергетическое оборудование",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 503",
+    "Group": "2395",
+    "Subject": "Судовое главное энергетическое оборудование",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 503",
+    "Group": "2394",
+    "Subject": "Судовое главное энергетическое оборудование",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 503",
+    "Group": "2395",
+    "Subject": "Судовое главное энергетическое оборудование",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 522",
+    "Group": "2165",
+    "Subject": "Системный подход при проектировании энергетических комплексов морских судов",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 522",
+    "Group": "2165",
+    "Subject": "Системный подход при проектировании энергетических комплексов морских судов",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 503",
+    "Group": "2165",
+    "Subject": "Системный подход при проектировании энергетических комплексов морских судов",
+    "InstructorName": "Архипов Георгий Алексеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100053/"
+  }
+]

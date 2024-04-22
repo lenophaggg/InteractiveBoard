@@ -1,0 +1,68 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 144",
+    "Group": "5210",
+    "Subject": "Дополнительные главы сопротивления материалов",
+    "InstructorName": "Койсин Виталий Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123830/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 144",
+    "Group": "5230",
+    "Subject": "Дополнительные главы сопротивления материалов",
+    "InstructorName": "Койсин Виталий Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123830/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 144",
+    "Group": "5230",
+    "Subject": "Дополнительные главы сопротивления материалов",
+    "InstructorName": "Койсин Виталий Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123830/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 144",
+    "Group": "5210",
+    "Subject": "Дополнительные главы сопротивления материалов",
+    "InstructorName": "Койсин Виталий Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123830/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 138",
+    "Group": "1186",
+    "Subject": "Вычислительный практикум по механике деформируемого твердого тела",
+    "InstructorName": "Койсин Виталий Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123830/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 138",
+    "Group": "1186",
+    "Subject": "Вычислительный практикум по механике деформируемого твердого тела",
+    "InstructorName": "Койсин Виталий Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123830/"
+  }
+]

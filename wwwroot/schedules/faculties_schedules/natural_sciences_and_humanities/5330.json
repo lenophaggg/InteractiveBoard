@@ -1,0 +1,178 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 536",
+    "Group": "5330",
+    "Subject": "Основы технологии машиностроения",
+    "InstructorName": "Доценко Анастасия Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 536",
+    "Group": "5330",
+    "Subject": "Основы технологии машиностроения",
+    "InstructorName": "Доценко Анастасия Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 536",
+    "Group": "5330",
+    "Subject": "Основы технологии машиностроения",
+    "InstructorName": "Доценко Анастасия Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 520",
+    "Group": "5330",
+    "Subject": "Термическая резка металлов",
+    "InstructorName": "Струков Илья Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 521",
+    "Group": "5330",
+    "Subject": "Термическая резка металлов",
+    "InstructorName": "Вострецов Геннадий Николаевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 319",
+    "Group": "5330",
+    "Subject": "Электроника",
+    "InstructorName": "Низкий Роман Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 319",
+    "Group": "5330",
+    "Subject": "Электроника",
+    "InstructorName": "Низкий Роман Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 319",
+    "Group": "5330",
+    "Subject": "Электроника",
+    "InstructorName": "Низкий Роман Яковлевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 514",
+    "Group": "5330",
+    "Subject": "Экономика",
+    "InstructorName": "Полухина Софья Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100922/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 514",
+    "Group": "5330",
+    "Subject": "Экономика",
+    "InstructorName": "Полухина Софья Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100922/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 534",
+    "Group": "5330",
+    "Subject": "Безопасность жизнедеятельности",
+    "InstructorName": "Бокатов Антон Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100134/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 105",
+    "Group": "5330",
+    "Subject": "Безопасность жизнедеятельности",
+    "InstructorName": "Бокатов Антон Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100134/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 521",
+    "Group": "5330",
+    "Subject": "Физика электрической дуги",
+    "InstructorName": "Карпов Вячеслав Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 435",
+    "Group": "5330",
+    "Subject": "Теория систем и системный анализ",
+    "InstructorName": "Ильменков Сергей Львович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100469/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 521",
+    "Group": "5330",
+    "Subject": "Физика электрической дуги",
+    "InstructorName": "Карпов Вячеслав Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 435",
+    "Group": "5330",
+    "Subject": "Теория систем и системный анализ",
+    "InstructorName": "Ильменков Сергей Львович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100469/"
+  }
+]

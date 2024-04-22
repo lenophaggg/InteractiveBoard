@@ -1,0 +1,101 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 500",
+    "Group": "4300",
+    "Subject": "Рынок ценных бумаг",
+    "InstructorName": "Кох Юрий Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126005/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 500",
+    "Group": "4300",
+    "Subject": "Рынок ценных бумаг",
+    "InstructorName": "Кох Юрий Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126005/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 500",
+    "Group": "4300",
+    "Subject": "Рынок ценных бумаг",
+    "InstructorName": "Кох Юрий Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126005/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4311",
+    "Subject": "Деньги, кредит, банки",
+    "InstructorName": "Кох Юрий Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126005/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4215",
+    "Subject": "Финансовый менеджмент",
+    "InstructorName": "Кох Юрий Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126005/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4215",
+    "Subject": "Деньги, кредит, банки",
+    "InstructorName": "Кох Юрий Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126005/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4215",
+    "Subject": "Финансовый менеджмент",
+    "InstructorName": "Кох Юрий Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126005/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4215",
+    "Subject": "Деньги, кредит, банки",
+    "InstructorName": "Кох Юрий Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126005/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4311",
+    "Subject": "Деньги, кредит, банки",
+    "InstructorName": "Кох Юрий Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126005/"
+  }
+]

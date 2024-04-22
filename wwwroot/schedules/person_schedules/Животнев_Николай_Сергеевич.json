@@ -1,0 +1,46 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 207",
+    "Group": "3324",
+    "Subject": "Методы моделирования динамических процессов",
+    "InstructorName": "Животнев Николай Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100387/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 208",
+    "Group": "3324",
+    "Subject": "Методы моделирования динамических процессов",
+    "InstructorName": "Животнев Николай Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100387/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 207",
+    "Group": "3350",
+    "Subject": "Цифровая управляющая техника корабельных противолодочных комплексов",
+    "InstructorName": "Животнев Николай Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100387/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 208",
+    "Group": "3350",
+    "Subject": "Цифровая управляющая техника корабельных противолодочных комплексов",
+    "InstructorName": "Животнев Николай Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100387/"
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б ЛУИТ",
+    "Group": "4120",
+    "Subject": "Национальная экономика",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "М 33",
+    "Group": "4320",
+    "Subject": "Инновационный менеджмент",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б ЛУИТ",
+    "Group": "4120",
+    "Subject": "Национальная экономика",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б ЛУИТ",
+    "Group": "4120",
+    "Subject": "Международное предпринимательство",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4315",
+    "Subject": "Государственное и муниципальное управление",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4315",
+    "Subject": "Государственное и муниципальное управление",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4315",
+    "Subject": "Экономика сферы услуг",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4315",
+    "Subject": "Экономика сферы услуг",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "М 33",
+    "Group": "4320",
+    "Subject": "Инновационный менеджмент",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "М 33",
+    "Group": "4320",
+    "Subject": "Инновационный менеджмент",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4215",
+    "Subject": "Реклама и PR",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4311",
+    "Subject": "Реклама и PR",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б ЛУИТ",
+    "Group": "4104",
+    "Subject": "Основы бизнес-планирования",
+    "InstructorName": "Майорова Ксения Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102450/"
+  }
+]

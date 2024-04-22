@@ -1,0 +1,45 @@
+.doc-preview {
+    background-color: #361778;
+    width: 100%;
+    padding: 80px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    height: auto;
+    border-radius: 50px;
+    color: white;
+    overflow-wrap: break-word;
+}
+
+.modal.fade#docPreviewModal .modal-content {
+    width: 3320px;
+    border-radius: 50px;
+    background-color: #361778;
+    justify-content: center;
+    overflow-y: auto;
+    text-align: left;
+    display: grid;
+    padding: 80px 120px;
+    color: white;
+}
+    .modal.fade#docPreviewModal .modal-content h2 {
+        line-height: 135px;
+        font-weight: bold;
+        font-size: 96px;
+        text-align: center;
+    }
+
+    .modal.fade#docPreviewModal .modal-dialog {
+        margin: 260px;
+    }
+
+.modal.fade#docPreviewModal .modal-pdf-body img {
+    border-radius: 50px;
+    margin: auto; /* Располагаем изображение по центру */
+    display: block; /* Обеспечиваем блочное расположение изображения */
+    max-width: 100%;
+    height: auto;
+}
+
+.modal.fade#docPreviewModal .modal-pdf-body .col {
+    padding: 0 50px; /* Добавляем небольшие отступы по бокам */
+}

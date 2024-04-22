@@ -1,0 +1,189 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 215",
+    "Group": "1186",
+    "Subject": "Оптимизация в механике",
+    "InstructorName": "Родионов Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100985/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 215",
+    "Group": "1186",
+    "Subject": "Механика разрушения",
+    "InstructorName": "Крыжевич Геннадий Брониславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100593/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 215",
+    "Group": "1186",
+    "Subject": "Механика разрушения",
+    "InstructorName": "Крыжевич Геннадий Брониславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100593/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 218",
+    "Group": "1186",
+    "Subject": "Оптимизация в механике",
+    "InstructorName": "Родионов Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100985/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 218",
+    "Group": "1186",
+    "Subject": "Оптимизация в механике",
+    "InstructorName": "Родионов Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100985/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 115",
+    "Group": "1186",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 415",
+    "Group": "1186",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 115",
+    "Group": "1186",
+    "Subject": "Философские проблемы науки и техники",
+    "InstructorName": "Назиров Анатолий Эзелевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100796/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 415",
+    "Group": "1186",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 408",
+    "Group": "1186",
+    "Subject": "Иностранный язык в профессиональной деятельности",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 543",
+    "Group": "1186",
+    "Subject": "Философские проблемы науки и техники",
+    "InstructorName": "Назиров Анатолий Эзелевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100796/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 215",
+    "Group": "1186",
+    "Subject": "Численные методы в строительной механике корабля",
+    "InstructorName": "Фрумен Александр Исаакович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101262/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 215",
+    "Group": "1186",
+    "Subject": "Гидроаэроупругость",
+    "InstructorName": "Фрумен Александр Исаакович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101262/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 218",
+    "Group": "1186",
+    "Subject": "Численные методы в строительной механике корабля",
+    "InstructorName": "Фрумен Александр Исаакович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101262/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 218",
+    "Group": "1186",
+    "Subject": "Гидроаэроупругость",
+    "InstructorName": "Фрумен Александр Исаакович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101262/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 138",
+    "Group": "1186",
+    "Subject": "Вычислительный практикум по механике деформируемого твердого тела",
+    "InstructorName": "Койсин Виталий Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123830/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 138",
+    "Group": "1186",
+    "Subject": "Вычислительный практикум по механике деформируемого твердого тела",
+    "InstructorName": "Койсин Виталий Евгеньевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123830/"
+  }
+]

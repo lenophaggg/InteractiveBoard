@@ -1,0 +1,178 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 207",
+    "Group": "20413",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 207",
+    "Group": "20413",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 207",
+    "Group": "5310",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 207",
+    "Group": "5310",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 415",
+    "Group": "1318",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 207",
+    "Group": "1310",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 610",
+    "Group": "1311",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 610",
+    "Group": "1310",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 316",
+    "Group": "1313",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 316",
+    "Group": "1318",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 207",
+    "Group": "1313",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 207",
+    "Group": "1311",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 207",
+    "Group": "1417",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 207",
+    "Group": "20413",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 207",
+    "Group": "1419",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 207",
+    "Group": "1419",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  }
+]

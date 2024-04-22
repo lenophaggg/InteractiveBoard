@@ -1,0 +1,101 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "5400",
+    "Subject": "Налоговое право",
+    "InstructorName": "Котов Геннадий Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "5400",
+    "Subject": "Налоговое право",
+    "InstructorName": "Котов Геннадий Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 304ю",
+    "Group": "5400",
+    "Subject": "Юридическая психология",
+    "InstructorName": "Сексте Янис Артурович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123541/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 304ю",
+    "Group": "5400",
+    "Subject": "Юридическая психология",
+    "InstructorName": "Сексте Янис Артурович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123541/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 304ю",
+    "Group": "5400",
+    "Subject": "Юридическая психология",
+    "InstructorName": "Сексте Янис Артурович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123541/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "5400",
+    "Subject": "Право социального обеспечения",
+    "InstructorName": "Цыганова Татьяна Аллеговна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101296/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "5400",
+    "Subject": "Право социального обеспечения",
+    "InstructorName": "Цыганова Татьяна Аллеговна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101296/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5400",
+    "Subject": "Основы адвокатской деятельности",
+    "InstructorName": "Мишальченко Мария Юрьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5400",
+    "Subject": "Основы адвокатской деятельности",
+    "InstructorName": "Мишальченко Мария Юрьевна",
+    "InstructorLink": ""
+  }
+]

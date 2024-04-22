@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 419",
+    "Group": "5310",
+    "Subject": "Теория корабля",
+    "InstructorName": "Четвертаков Алексей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101319/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 419",
+    "Group": "5310",
+    "Subject": "Теория корабля",
+    "InstructorName": "Четвертаков Алексей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101319/"
+  }
+]

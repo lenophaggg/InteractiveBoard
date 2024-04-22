@@ -1,0 +1,112 @@
+[
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 434",
+    "Group": "1416",
+    "Subject": "Управление проектами",
+    "InstructorName": "Куперштейн Владимир Ильич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 434",
+    "Group": "1414",
+    "Subject": "Управление проектами",
+    "InstructorName": "Куперштейн Владимир Ильич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 434",
+    "Group": "1419",
+    "Subject": "Управление проектами",
+    "InstructorName": "Куперштейн Владимир Ильич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 434",
+    "Group": "20413",
+    "Subject": "Управление проектами",
+    "InstructorName": "Куперштейн Владимир Ильич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 103",
+    "Group": "1419",
+    "Subject": "Управление проектами",
+    "InstructorName": "Куперштейн Владимир Ильич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 103",
+    "Group": "20413",
+    "Subject": "Управление проектами",
+    "InstructorName": "Куперштейн Владимир Ильич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 103",
+    "Group": "1414",
+    "Subject": "Управление проектами",
+    "InstructorName": "Куперштейн Владимир Ильич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 103",
+    "Group": "1416",
+    "Subject": "Управление проектами",
+    "InstructorName": "Куперштейн Владимир Ильич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 103",
+    "Group": "1417",
+    "Subject": "Управление проектами",
+    "InstructorName": "Куперштейн Владимир Ильич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 434",
+    "Group": "1417",
+    "Subject": "Управление проектами",
+    "InstructorName": "Куперштейн Владимир Ильич",
+    "InstructorLink": ""
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 320",
+    "Group": "5170",
+    "Subject": "Физика",
+    "InstructorName": "Рытов Евгений Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101015/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 320",
+    "Group": "5170",
+    "Subject": "Физика",
+    "InstructorName": "Рытов Евгений Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101015/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 320",
+    "Group": "5110",
+    "Subject": "Физика",
+    "InstructorName": "Рытов Евгений Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101015/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 320",
+    "Group": "5180",
+    "Subject": "Физика",
+    "InstructorName": "Рытов Евгений Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101015/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 320",
+    "Group": "5130",
+    "Subject": "Физика",
+    "InstructorName": "Рытов Евгений Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101015/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 107",
+    "Group": "5180",
+    "Subject": "Физика",
+    "InstructorName": "Рытов Евгений Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101015/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 107",
+    "Group": "5130",
+    "Subject": "Физика",
+    "InstructorName": "Рытов Евгений Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101015/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 107",
+    "Group": "5110",
+    "Subject": "Физика",
+    "InstructorName": "Рытов Евгений Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101015/"
+  }
+]

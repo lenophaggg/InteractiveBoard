@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 503",
+    "Group": "5110",
+    "Subject": "Энергетические установки судов",
+    "InstructorName": "Степанов Артём Валерьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 503",
+    "Group": "5110",
+    "Subject": "Энергетические установки судов",
+    "InstructorName": "Степанов Артём Валерьевич",
+    "InstructorLink": ""
+  }
+]

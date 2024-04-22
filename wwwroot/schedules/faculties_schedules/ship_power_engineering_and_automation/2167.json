@@ -1,0 +1,189 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 326",
+    "Group": "2167",
+    "Subject": "Проектирование судовых аппаратов защиты атмосферы и гидросферы",
+    "InstructorName": "Дрягина Дарья Романовна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2167",
+    "Subject": "Обеспечение экологической безопасности при эксплуатации энергетического оборудования морских нефтегазовых сооружений",
+    "InstructorName": "Нифонтов Юрий Аркадьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 453",
+    "Group": "2167",
+    "Subject": "Утилизация теплоты в судовом оборудовании",
+    "InstructorName": "Шаров Александр Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123126/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 453",
+    "Group": "2167",
+    "Subject": "Утилизация теплоты в судовом оборудовании",
+    "InstructorName": "Шаров Александр Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123126/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 453",
+    "Group": "2167",
+    "Subject": "Утилизация теплоты в судовом оборудовании",
+    "InstructorName": "Шаров Александр Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123126/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2167",
+    "Subject": "Проектирование судовых аппаратов защиты атмосферы и гидросферы",
+    "InstructorName": "Дрягина Дарья Романовна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 414",
+    "Group": "2167",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Алексеев Анатолий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100015/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 453",
+    "Group": "2167",
+    "Subject": "Проектирование судовых аппаратов защиты атмосферы и гидросферы",
+    "InstructorName": "Дрягина Дарья Романовна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 414",
+    "Group": "2167",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Алексеев Анатолий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100015/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 407",
+    "Group": "2167",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Алексеев Анатолий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100015/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 453",
+    "Group": "2167",
+    "Subject": "Экологические основы технологии судостроения",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 316",
+    "Group": "2167",
+    "Subject": "Экологические основы технологии судостроения",
+    "InstructorName": "Дрягина Дарья Романовна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 453",
+    "Group": "2167",
+    "Subject": "Обеспечение экологической безопасности при эксплуатации энергетического оборудования морских нефтегазовых сооружений",
+    "InstructorName": "Нифонтов Юрий Аркадьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 453",
+    "Group": "2167",
+    "Subject": "Обеспечение экологической безопасности при эксплуатации энергетического оборудования морских нефтегазовых сооружений",
+    "InstructorName": "Нифонтов Юрий Аркадьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 103",
+    "Group": "2167",
+    "Subject": "Философские проблемы науки и техники",
+    "InstructorName": "Назиров Анатолий Эзелевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100796/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 505",
+    "Group": "2167",
+    "Subject": "Иностранный язык в профессиональной деятельности",
+    "InstructorName": "Мусалаев Башир Гаджибуттаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122533/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 154",
+    "Group": "2167",
+    "Subject": "Философские проблемы науки и техники",
+    "InstructorName": "Назиров Анатолий Эзелевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100796/"
+  }
+]

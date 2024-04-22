@@ -1,0 +1,35 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Савинова Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123574/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Савинова Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123574/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Савинова Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123574/"
+  }
+]

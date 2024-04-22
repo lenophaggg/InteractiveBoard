@@ -1,0 +1,79 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4150",
+    "Subject": "Маркетинг",
+    "InstructorName": "Гельфонд Даниил Владиславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/131274/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "М 31",
+    "Group": "4220",
+    "Subject": "Корпоративная социальная ответственность",
+    "InstructorName": "Гельфонд Даниил Владиславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/131274/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4300",
+    "Subject": "Международная торговля",
+    "InstructorName": "Гельфонд Даниил Владиславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/131274/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4215",
+    "Subject": "Реклама и PR",
+    "InstructorName": "Гельфонд Даниил Владиславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/131274/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4311",
+    "Subject": "Реклама и PR",
+    "InstructorName": "Гельфонд Даниил Владиславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/131274/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4100",
+    "Subject": "Основы международного бизнеса",
+    "InstructorName": "Гельфонд Даниил Владиславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/131274/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4120",
+    "Subject": "Основы международного бизнеса",
+    "InstructorName": "Гельфонд Даниил Владиславович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/131274/"
+  }
+]

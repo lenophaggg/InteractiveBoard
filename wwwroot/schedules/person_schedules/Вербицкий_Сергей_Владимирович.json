@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 309а",
+    "Group": "1350",
+    "Subject": "Проектирование средств океанотехники",
+    "InstructorName": "Вербицкий Сергей Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100204/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 309а",
+    "Group": "1320",
+    "Subject": "Проектирование морских нефтегазовых сооружений",
+    "InstructorName": "Вербицкий Сергей Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100204/"
+  }
+]

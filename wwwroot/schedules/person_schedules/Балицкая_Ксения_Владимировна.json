@@ -1,0 +1,90 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "7261",
+    "Subject": "Защита информации",
+    "InstructorName": "Балицкая Ксения Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "7262",
+    "Subject": "Защита информации",
+    "InstructorName": "Балицкая Ксения Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "7263",
+    "Subject": "Защита информации",
+    "InstructorName": "Балицкая Ксения Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 167",
+    "Group": "7262",
+    "Subject": "Защита информации",
+    "InstructorName": "Балицкая Ксения Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 167",
+    "Group": "7261",
+    "Subject": "Защита информации",
+    "InstructorName": "Балицкая Ксения Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 167",
+    "Group": "7263",
+    "Subject": "Защита информации",
+    "InstructorName": "Балицкая Ксения Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5200",
+    "Subject": "Защита информации",
+    "InstructorName": "Балицкая Ксения Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5200",
+    "Subject": "Защита информации",
+    "InstructorName": "Балицкая Ксения Владимировна",
+    "InstructorLink": ""
+  }
+]

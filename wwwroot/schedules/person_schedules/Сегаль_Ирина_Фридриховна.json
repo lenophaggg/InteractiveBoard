@@ -1,0 +1,156 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 161",
+    "Group": "2120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 161",
+    "Group": "4105",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 161",
+    "Group": "2110",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 450",
+    "Group": "2120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 155",
+    "Group": "2110",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 155",
+    "Group": "2110",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 440",
+    "Group": "1170",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 440",
+    "Group": "1170",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 443",
+    "Group": "2120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 103",
+    "Group": "2120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 103",
+    "Group": "2110",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 103",
+    "Group": "4105",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 412",
+    "Group": "4105",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 412",
+    "Group": "4105",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  }
+]

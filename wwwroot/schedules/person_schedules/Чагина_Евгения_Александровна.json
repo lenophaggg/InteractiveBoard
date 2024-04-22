@@ -1,0 +1,57 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "М 33",
+    "Group": "4320",
+    "Subject": "Методы принятия управленческих решений",
+    "InstructorName": "Чагина Евгения Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/127509/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "М 33",
+    "Group": "4320",
+    "Subject": "Методы принятия управленческих решений",
+    "InstructorName": "Чагина Евгения Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/127509/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "М 31",
+    "Group": "4320",
+    "Subject": "Методы принятия управленческих решений",
+    "InstructorName": "Чагина Евгения Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/127509/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4215",
+    "Subject": "Методы принятия управленческих решений",
+    "InstructorName": "Чагина Евгения Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/127509/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4311",
+    "Subject": "Методы принятия управленческих решений",
+    "InstructorName": "Чагина Евгения Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/127509/"
+  }
+]

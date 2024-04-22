@@ -1,0 +1,88 @@
+﻿@model PersonContact
+
+<div style="width:3000px;">
+    <h1>@Model.NameContact</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-8 person_info">
+        <ul class="custom-list">
+            @if (Model.Position != null && Model.Position.Any())
+            {
+                <p><strong>Должность:</strong></p>
+                <ul>
+                    @foreach (var subject in Model.Position)
+                    {
+                        <li>@subject</li>
+                    }
+                </ul>
+            }
+
+            @if (Model.TaughtSubjects != null && Model.TaughtSubjects.Any())
+            {
+                <p><strong>Преподаваемые специальности:</strong></p>
+                <ul>
+                    @foreach (var subject in Model.TaughtSubjects)
+                    {
+                        <li>@subject</li>
+                    }
+                </ul>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.AcademicDegree))
+            {
+                <p><strong>Учёная степень педагогического работника:</strong></p>
+                <ul><li>@Model.AcademicDegree</li></ul>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.TeachingExperience))
+            {
+                <p><strong>Стаж работы:</strong></p>
+                <ul><li>@Model.TeachingExperience</li></ul>
+            }
+
+            <p style="display: flex; align-items: center;">
+
+                @if (!string.IsNullOrEmpty(Model.Telephone))
+                {
+                    <strong style="margin-right: 50px;">
+                        <img src="~/img/phone_img.png" style="max-height: 85px; border-radius: 0px; padding-right: 10px;" alt="Телефон">
+                    </strong>
+                    <strong>@Model.Telephone</strong>
+                }
+
+            </p>
+
+            <!-- Почта -->
+            <p style="display: flex; align-items: center;">
+
+                @if (!string.IsNullOrEmpty(Model.Email))
+                {
+                    <strong style="margin-right: 50px;">
+                        <img src="~/img/email_img.png" style="max-height: 85px; border-radius: 0px; padding-right: 10px;" alt="Почта">
+                    </strong>
+                    <strong>@Model.Email</strong>
+                }
+
+            </p>
+            @if (!string.IsNullOrEmpty(@Model.IdContact))
+            {
+                <p><a href="#" onclick="openPersonSchedule('@Model.NameContact')"><strong>Ссылка на расписание</strong></a></p>
+            }
+        </ul>
+    </div>
+    <div class="col-md-4" style="margin-right:-200px;">
+        @if (!string.IsNullOrEmpty(@Model.ImgPath))
+        {
+            <img src="@Model.ImgPath.Replace("small", "big")" alt="Contact Photo" class="img-fluid" style="max-width:120%;">
+        }
+        else
+        {
+            <img src="/img/no_photo.png" alt="Contact Photo" class="img-fluid" >
+        }
+    </div>
+    @if (!string.IsNullOrEmpty(@Model.Information))
+    {
+        <div style="padding-left:2rem;"><p>@Model.Information</p></div>
+    }
+</div>

@@ -1,0 +1,167 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 447",
+    "Group": "20190",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 447",
+    "Group": "5180",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 447",
+    "Group": "5130",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 447",
+    "Group": "5170",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 446",
+    "Group": "2191",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 446",
+    "Group": "2191",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 448",
+    "Group": "2110",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 445",
+    "Group": "20190",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 408",
+    "Group": "1186",
+    "Subject": "Иностранный язык в профессиональной деятельности",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 408",
+    "Group": "1176",
+    "Subject": "Иностранный язык в профессиональной деятельности",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 444",
+    "Group": "20190",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 409",
+    "Group": "2161",
+    "Subject": "Иностранный язык в профессиональной деятельности",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 409",
+    "Group": "2110",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 446",
+    "Group": "1120",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 446",
+    "Group": "1120",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  }
+]

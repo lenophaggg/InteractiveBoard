@@ -1,0 +1,156 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 531",
+    "Group": "4111",
+    "Subject": "Культурология",
+    "InstructorName": "Добряк Инна Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100346/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 531",
+    "Group": "4111",
+    "Subject": "Культурология",
+    "InstructorName": "Добряк Инна Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100346/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 451",
+    "Group": "4111",
+    "Subject": "Высшая математика",
+    "InstructorName": "Седова Елена Германовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101047/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 451",
+    "Group": "4111",
+    "Subject": "Высшая математика",
+    "InstructorName": "Седова Елена Германовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101047/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4111",
+    "Subject": "Основы предпринимательства",
+    "InstructorName": "Брагин Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122735/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 444",
+    "Group": "4111",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Кулаков Дмитрий Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103609/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 444",
+    "Group": "4111",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Кулаков Дмитрий Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103609/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4111",
+    "Subject": "Основы предпринимательства",
+    "InstructorName": "Брагин Алексей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122735/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4111",
+    "Subject": "Микроэкономика",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4111",
+    "Subject": "Информационные технологии в экономике и менеджменте",
+    "InstructorName": "Иванова Любовь Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122492/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4111",
+    "Subject": "Микроэкономика",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4111",
+    "Subject": "Информационные технологии в экономике и менеджменте",
+    "InstructorName": "Иванова Любовь Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122492/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 101",
+    "Group": "4111",
+    "Subject": "История России",
+    "InstructorName": "Пантелеева Екатерина Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100873/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 101",
+    "Group": "4111",
+    "Subject": "История России",
+    "InstructorName": "Пантелеева Екатерина Валерьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100873/"
+  }
+]

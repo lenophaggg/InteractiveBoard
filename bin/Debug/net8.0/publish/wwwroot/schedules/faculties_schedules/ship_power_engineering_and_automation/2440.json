@@ -1,0 +1,167 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 105",
+    "Group": "2440",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Мохов Александр Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 105",
+    "Group": "2440",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Мохов Александр Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Экологическое нормирование",
+    "InstructorName": "Алексеева Татьяна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100021/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Экологическое нормирование",
+    "InstructorName": "Алексеева Татьяна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100021/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Экологическое нормирование",
+    "InstructorName": "Алексеева Татьяна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100021/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Экологическая сертификация, ОВОС и экспертиза проектов",
+    "InstructorName": "Папцова Ирина Исааковна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Экологическое нормирование",
+    "InstructorName": "Алексеева Татьяна Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100021/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Экологическая сертификация, ОВОС и экспертиза проектов",
+    "InstructorName": "Папцова Ирина Исааковна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Экологическая сертификация, ОВОС и экспертиза проектов",
+    "InstructorName": "Папцова Ирина Исааковна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T08:30:00",
+    "EndTime": "2024-03-04T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Радиоэкология",
+    "InstructorName": "Вахрушин Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/107841/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Радиоэкология",
+    "InstructorName": "Вахрушин Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/107841/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2440",
+    "Subject": "Обеспечение экологической безопасности объектов энергетики",
+    "InstructorName": "Нифонтов Юрий Аркадьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 453",
+    "Group": "2440",
+    "Subject": "Обеспечение экологической безопасности объектов энергетики",
+    "InstructorName": "Нифонтов Юрий Аркадьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2440",
+    "Subject": "Надзор и контроль в сфере безопасности",
+    "InstructorName": "Папцова Ирина Исааковна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2440",
+    "Subject": "Надзор и контроль в сфере безопасности",
+    "InstructorName": "Папцова Ирина Исааковна",
+    "InstructorLink": ""
+  }
+]

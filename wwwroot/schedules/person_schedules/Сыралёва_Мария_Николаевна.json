@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 417-2",
+    "Group": "2301",
+    "Subject": "Введение в гидродинамику ядерных установок",
+    "InstructorName": "Сыралёва Мария Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/104696/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 417-2",
+    "Group": "2301",
+    "Subject": "Введение в гидродинамику ядерных установок",
+    "InstructorName": "Сыралёва Мария Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/104696/"
+  }
+]

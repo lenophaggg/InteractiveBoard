@@ -1,0 +1,189 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 208",
+    "Group": "3250",
+    "Subject": "Планирование эксперимента при поиске оптимальных условий",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 208",
+    "Group": "3250",
+    "Subject": "Планирование эксперимента при поиске оптимальных условий",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 208",
+    "Group": "3425",
+    "Subject": "Планирование эксперимента",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 208",
+    "Group": "3426",
+    "Subject": "Планирование эксперимента",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 208",
+    "Group": "3424",
+    "Subject": "Планирование эксперимента",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 207",
+    "Group": "3426",
+    "Subject": "Планирование эксперимента",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 207",
+    "Group": "3425",
+    "Subject": "Планирование эксперимента",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 207",
+    "Group": "3424",
+    "Subject": "Планирование эксперимента",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 207",
+    "Group": "3150",
+    "Subject": "Корабельные комплексы и информационно-управляющие системы",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 208",
+    "Group": "3150",
+    "Subject": "Корабельные комплексы и информационно-управляющие системы",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 208",
+    "Group": "3150",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 208",
+    "Group": "3150",
+    "Subject": "Информационные технологии",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 208",
+    "Group": "3424",
+    "Subject": "Планирование эксперимента",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 208",
+    "Group": "3426",
+    "Subject": "Планирование эксперимента",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 208",
+    "Group": "3425",
+    "Subject": "Планирование эксперимента",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 208",
+    "Group": "3161",
+    "Subject": "Методы оптимизации",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 208",
+    "Group": "3161",
+    "Subject": "Методы оптимизации",
+    "InstructorName": "Потапов Андрей Анатольевич",
+    "InstructorLink": ""
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "1173",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Иванова Дианна Тимофеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102967/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "1162",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Иванова Дианна Тимофеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102967/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 508",
+    "Group": "1160",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Иванова Дианна Тимофеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102967/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "1173",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Иванова Дианна Тимофеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102967/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "1162",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Иванова Дианна Тимофеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102967/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 508",
+    "Group": "1160",
+    "Subject": "Проектирование конструкций корпуса судна и плавучих инженерных сооружений",
+    "InstructorName": "Иванова Дианна Тимофеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102967/"
+  }
+]

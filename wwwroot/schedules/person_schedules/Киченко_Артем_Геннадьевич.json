@@ -1,0 +1,145 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 212",
+    "Group": "3125",
+    "Subject": "Океанология",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 212",
+    "Group": "3124",
+    "Subject": "Океанология",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 212",
+    "Group": "3126",
+    "Subject": "Океанология",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 167",
+    "Group": "3125",
+    "Subject": "Океанология",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 167",
+    "Group": "3126",
+    "Subject": "Океанология",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 167",
+    "Group": "3124",
+    "Subject": "Океанология",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 212",
+    "Group": "3290",
+    "Subject": "Физика моря",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 212",
+    "Group": "3290",
+    "Subject": "Физика моря",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 212",
+    "Group": "3290",
+    "Subject": "Морская акустика",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 212",
+    "Group": "3290",
+    "Subject": "Морская акустика",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 215-А",
+    "Group": "3340",
+    "Subject": "Методы и средства автоматического управления движением гидрофизических комплексов",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 130",
+    "Group": "3340",
+    "Subject": "Методы и средства автоматического управления движением гидрофизических комплексов",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 130",
+    "Group": "3340",
+    "Subject": "Методы и средства автоматического управления движением гидрофизических комплексов",
+    "InstructorName": "Киченко Артем Геннадьевич",
+    "InstructorLink": ""
+  }
+]

@@ -1,0 +1,109 @@
+﻿@model List<ScheduleData>
+
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+@if (ViewBag.ErrorMessage != null)
+{
+
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px; ">
+        <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
+            <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
+        </a>
+
+        <h1 style="margin: 0 auto;">@ViewBag.ErrorMessage</h1>
+    </div>
+}
+else if (Model != null && Model.Any())  // Проверка на наличие данных
+{
+
+
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px; ">
+        <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
+            <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
+        </a>
+
+        <h1 style="margin: 0 auto;">@Model[0].Group</h1>
+    </div>
+    <div class="scheduleContainer">
+        <div class="сontainer">
+            <table class="table rounded-lg">
+                <tr class="title">
+                    <th>Тип недели</th>
+                    <th>Время</th>
+                    <th>Аудитория</th>
+
+                    <th>Предмет</th>
+                    <th>Преподаватель</th>
+                </tr>
+                @foreach (var dayGroup in Model.GroupBy(item => item.DayOfWeek))
+                {
+                    <tr class="subtitle">
+                        <th colspan="5">@dayGroup.Key</th>
+                    </tr>
+                    foreach (var item in dayGroup)
+                    {
+                        <tr class="tableRow rounded-bottom">
+                            <td>@item.WeekType</td>
+                            <td>@item.StartTime.ToString("HH:mm") - @item.EndTime.ToString("HH:mm")</td>
+                            <td>@item.Classroom</td>
+
+                            <td>@item.Subject</td>
+                            <td onclick="openModalContact('@item.InstructorName')">
+
+
+                                @item.InstructorName
+
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+}
+else
+{
+
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px; ">
+        <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
+            <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
+        </a>
+
+        <h1 style="margin: 0 auto;">Расписание отсутствует</h1>
+    </div>
+}
+
+<form>
+    <div class="input-group">
+        <input type="text" class="form-control" id="searchInput" placeholder="введите номер группы или ФИО преподавателя">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary search-button" type="button" onclick="getSchedule(document.getElementById('searchInput').value)">
+                <img src="../img/search_button.png" alt="Search">
+            </button>
+        </div>
+    </div>
+</form>
+
+<script>
+    function openModalContact(personName) {
+        $.ajax({
+            url: '/Contacts/GetContactPerson',
+            type: 'GET',
+            data: { personName: personName },
+            success: function (data) {
+                // Очищаем содержимое модального окна
+                $('#myModal .modal-body').empty();
+
+                // Вставляем PartialView в модальное окно
+                $('#myModal .modal-body').html(data);
+
+                // Открываем модальное окно
+                $('#myModal').modal('show');
+            },
+            error: function () {
+                
+            }
+        });
+    }
+</script>

@@ -1,0 +1,211 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T08:30:00",
+    "EndTime": "2024-03-04T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 413",
+    "Group": "2450",
+    "Subject": "Системы массового обслуживания",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 413",
+    "Group": "2450",
+    "Subject": "Системы массового обслуживания",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 458",
+    "Group": "2450",
+    "Subject": "Основы проектирования систем автоматизации",
+    "InstructorName": "Хруцкий Олег Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101286/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 458",
+    "Group": "2450",
+    "Subject": "Основы проектирования систем автоматизации",
+    "InstructorName": "Хруцкий Олег Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101286/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 105",
+    "Group": "2450",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Мохов Александр Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 105",
+    "Group": "2450",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Мохов Александр Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 508",
+    "Group": "2450",
+    "Subject": "Системы массового обслуживания",
+    "InstructorName": "Ильменков Сергей Львович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100469/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 435",
+    "Group": "2450",
+    "Subject": "Основы проектирования систем автоматизации",
+    "InstructorName": "Хруцкий Олег Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101286/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 435",
+    "Group": "2450",
+    "Subject": "Основы проектирования систем автоматизации",
+    "InstructorName": "Хруцкий Олег Валентинович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101286/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 458",
+    "Group": "2450",
+    "Subject": "Проектирование защищенных автоматизированных систем",
+    "InstructorName": "Баглюк Юрий Васильевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 458",
+    "Group": "2450",
+    "Subject": "Проектирование защищенных автоматизированных систем",
+    "InstructorName": "Баглюк Юрий Васильевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 414",
+    "Group": "2450",
+    "Subject": "Комплексная система защиты информации на предприятии",
+    "InstructorName": "Михальчук Андрей Васильевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 414",
+    "Group": "2450",
+    "Subject": "Комплексная система защиты информации на предприятии",
+    "InstructorName": "Михальчук Андрей Васильевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 414",
+    "Group": "2450",
+    "Subject": "Управление информационной безопасностью",
+    "InstructorName": "Прокофьева Ольга Евгеньевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 414",
+    "Group": "2450",
+    "Subject": "Управление информационной безопасностью",
+    "InstructorName": "Прокофьева Ольга Евгеньевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 414",
+    "Group": "2450",
+    "Subject": "Управление информационной безопасностью",
+    "InstructorName": "Прокофьева Ольга Евгеньевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 414",
+    "Group": "2450",
+    "Subject": "Управление информационной безопасностью",
+    "InstructorName": "Прокофьева Ольга Евгеньевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 450",
+    "Group": "2450",
+    "Subject": "Проектирование защищенных автоматизированных систем",
+    "InstructorName": "Баглюк Юрий Васильевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 450",
+    "Group": "2450",
+    "Subject": "Проектирование защищенных автоматизированных систем",
+    "InstructorName": "Баглюк Юрий Васильевич",
+    "InstructorLink": ""
+  }
+]

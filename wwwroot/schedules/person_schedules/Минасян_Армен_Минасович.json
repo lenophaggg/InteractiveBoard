@@ -1,0 +1,156 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 416",
+    "Group": "20130",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 416",
+    "Group": "20126",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 439",
+    "Group": "20413",
+    "Subject": "Управление инженерными знаниями",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 439",
+    "Group": "20413",
+    "Subject": "Управление инженерными знаниями",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 415",
+    "Group": "20313",
+    "Subject": "Основы цифровых технологий",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 415",
+    "Group": "20313",
+    "Subject": "Основы цифровых технологий",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 115",
+    "Group": "20126",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 115",
+    "Group": "20130",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 115",
+    "Group": "1186",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 415",
+    "Group": "1186",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 415",
+    "Group": "1186",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 439",
+    "Group": "5116",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 439",
+    "Group": "5116",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 439",
+    "Group": "5116",
+    "Subject": "Информационные технологии в жизненном цикле морской техники",
+    "InstructorName": "Минасян Армен Минасович",
+    "InstructorLink": ""
+  }
+]

@@ -1,0 +1,32 @@
+﻿@model List<string>
+
+<div id="mainContainer">
+    <div class="top-panel">
+        @if (ViewData["Type"] == "Schedule") // Замените "Index" на действие, соответствующее вашей странице
+        {
+            <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
+                <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
+            </a>
+        }
+        else if (ViewData["Type"] == "Contacts")
+        {
+            <a class="nav-link active" href="/Contacts/Index" style="margin-left: 90px; display: inline-block;">
+                <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
+            </a>
+        }
+        <h1 style="margin: 0 auto;">Выберите:</h1>
+    </div>
+
+    <div class="scheduleContainer">
+        <ul class="custom-list">
+            @if (Model.Count() == 0)
+            {
+                <h4>Никого не найдено. Попробуйте изменить запрос.</h4>
+            }
+            @foreach (var item in Model)
+            {
+                <li class="clickable" onclick="openModalInfo('@item')">@item</li>
+            }
+        </ul>
+    </div>
+</div>

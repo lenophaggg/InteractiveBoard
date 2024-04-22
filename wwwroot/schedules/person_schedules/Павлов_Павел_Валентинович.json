@@ -1,0 +1,134 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 413",
+    "Group": "2450",
+    "Subject": "Системы массового обслуживания",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 413",
+    "Group": "2450",
+    "Subject": "Системы массового обслуживания",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 415",
+    "Group": "20350",
+    "Subject": "ЭВМ и периферийные устройства",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 415",
+    "Group": "20390",
+    "Subject": "ЭВМ и периферийные устройства",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 415",
+    "Group": "20390",
+    "Subject": "ЭВМ и периферийные устройства",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 415",
+    "Group": "20350",
+    "Subject": "ЭВМ и периферийные устройства",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 413",
+    "Group": "2495",
+    "Subject": "Системы массового обслуживания",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 413",
+    "Group": "2395",
+    "Subject": "Системы акустической защиты судового оборудования",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 413",
+    "Group": "5440",
+    "Subject": "Системы массового обслуживания",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 413",
+    "Group": "2490",
+    "Subject": "Системы массового обслуживания",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 413",
+    "Group": "2490",
+    "Subject": "Системы массового обслуживания",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "2490",
+    "Subject": "Системы массового обслуживания",
+    "InstructorName": "Павлов Павел Валентинович",
+    "InstructorLink": ""
+  }
+]

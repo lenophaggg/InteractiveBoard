@@ -1,0 +1,79 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 322",
+    "Group": "1119",
+    "Subject": "Физика",
+    "InstructorName": "Клещев Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100523/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 320",
+    "Group": "1119",
+    "Subject": "Физика",
+    "InstructorName": "Клещев Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100523/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 304",
+    "Group": "1119",
+    "Subject": "Физика",
+    "InstructorName": "Клещев Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100523/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 322",
+    "Group": "1180",
+    "Subject": "Физика",
+    "InstructorName": "Клещев Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100523/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 320",
+    "Group": "1180",
+    "Subject": "Физика",
+    "InstructorName": "Клещев Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100523/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 320",
+    "Group": "2190",
+    "Subject": "Физика",
+    "InstructorName": "Клещев Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100523/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 322",
+    "Group": "2190",
+    "Subject": "Физика",
+    "InstructorName": "Клещев Александр Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100523/"
+  }
+]

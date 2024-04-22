@@ -1,0 +1,35 @@
+[
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 438",
+    "Group": "4322",
+    "Subject": "Исследование операций",
+    "InstructorName": "Иванова Лариса Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100450/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 438",
+    "Group": "4322",
+    "Subject": "Исследование операций",
+    "InstructorName": "Иванова Лариса Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100450/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 438",
+    "Group": "4322",
+    "Subject": "Исследование операций",
+    "InstructorName": "Иванова Лариса Николаевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100450/"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 419",
+    "Group": "8120",
+    "Subject": "Основы проектной деятельности",
+    "InstructorName": "Кизилов Дмитрий Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/105211/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 419",
+    "Group": "8140",
+    "Subject": "Основы проектной деятельности",
+    "InstructorName": "Кизилов Дмитрий Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/105211/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 419",
+    "Group": "8170",
+    "Subject": "Основы проектной деятельности",
+    "InstructorName": "Кизилов Дмитрий Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/105211/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 419",
+    "Group": "8150",
+    "Subject": "Основы проектной деятельности",
+    "InstructorName": "Кизилов Дмитрий Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/105211/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 419",
+    "Group": "8130",
+    "Subject": "Основы проектной деятельности",
+    "InstructorName": "Кизилов Дмитрий Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/105211/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 419",
+    "Group": "8160",
+    "Subject": "Основы проектной деятельности",
+    "InstructorName": "Кизилов Дмитрий Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/105211/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 419",
+    "Group": "8150",
+    "Subject": "Основы проектной деятельности",
+    "InstructorName": "Кизилов Дмитрий Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/105211/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 419",
+    "Group": "8110",
+    "Subject": "Основы проектной деятельности",
+    "InstructorName": "Кизилов Дмитрий Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/105211/"
+  }
+]

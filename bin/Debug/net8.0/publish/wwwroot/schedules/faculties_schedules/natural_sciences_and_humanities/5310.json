@@ -1,0 +1,167 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 207",
+    "Group": "5310",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 419",
+    "Group": "5310",
+    "Subject": "Теория корабля",
+    "InstructorName": "Четвертаков Алексей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101319/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 207",
+    "Group": "5310",
+    "Subject": "Судовые устройства",
+    "InstructorName": "Долгов Дмитрий Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102536/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 419",
+    "Group": "5310",
+    "Subject": "Теория корабля",
+    "InstructorName": "Четвертаков Алексей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101319/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 316",
+    "Group": "5310",
+    "Subject": "Управление качеством, стандартизация, сертификация",
+    "InstructorName": "Мальцева Юлия Евгеньевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 610",
+    "Group": "5310",
+    "Subject": "Экология и охрана окружающей среды при изготовлении и эксплуатации морской техники",
+    "InstructorName": "Власьев Максим Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106265/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 316",
+    "Group": "5310",
+    "Subject": "Управление качеством, стандартизация, сертификация",
+    "InstructorName": "Мальцева Юлия Евгеньевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 610",
+    "Group": "5310",
+    "Subject": "Экология и охрана окружающей среды при изготовлении и эксплуатации морской техники",
+    "InstructorName": "Власьев Максим Валерьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106265/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 514",
+    "Group": "5310",
+    "Subject": "Экономика",
+    "InstructorName": "Полухина Софья Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100922/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 514",
+    "Group": "5310",
+    "Subject": "Экономика",
+    "InstructorName": "Полухина Софья Алексеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100922/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 534",
+    "Group": "5310",
+    "Subject": "Безопасность жизнедеятельности",
+    "InstructorName": "Бокатов Антон Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100134/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 105",
+    "Group": "5310",
+    "Subject": "Безопасность жизнедеятельности",
+    "InstructorName": "Бокатов Антон Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100134/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 215",
+    "Group": "5310",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 218",
+    "Group": "5310",
+    "Subject": "",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 218",
+    "Group": "5310",
+    "Subject": "Прочность корабля",
+    "InstructorName": "Манухин Вадим Анатольевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100726/"
+  }
+]

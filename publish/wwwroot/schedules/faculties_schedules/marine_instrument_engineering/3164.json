@@ -1,0 +1,178 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Савинова Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123574/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Савинова Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123574/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Комплексные информационные технологии",
+    "InstructorName": "Савинова Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123574/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Компьютерные технологии в моделировании медицинских роботов",
+    "InstructorName": "Сенчик Константин Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122994/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Компьютерные технологии в моделировании медицинских роботов",
+    "InstructorName": "Сенчик Константин Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122994/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Компьютерные технологии в моделировании медицинских роботов",
+    "InstructorName": "Сенчик Константин Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122994/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Приборы и методы лабораторной диагностики",
+    "InstructorName": "Сенчик Константин Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122994/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Приборы и методы лабораторной диагностики",
+    "InstructorName": "Сенчик Константин Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122994/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Методы искусственного интеллекта в обработки информации медицинских роботов",
+    "InstructorName": "Скородумова Елизавета Геннадьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Методы искусственного интеллекта в обработки информации медицинских роботов",
+    "InstructorName": "Скородумова Елизавета Геннадьевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Физические методы в онкологии и кардиологии",
+    "InstructorName": "Точильников Григорий Викторович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123221/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Физические методы в онкологии и кардиологии",
+    "InstructorName": "Точильников Григорий Викторович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123221/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 506",
+    "Group": "3164",
+    "Subject": "Физические методы в онкологии и кардиологии",
+    "InstructorName": "Точильников Григорий Викторович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123221/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 107",
+    "Group": "3164",
+    "Subject": "Философские проблемы науки и техники",
+    "InstructorName": "Медведев Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100748/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 543",
+    "Group": "3164",
+    "Subject": "Философские проблемы науки и техники",
+    "InstructorName": "Медведев Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100748/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 448",
+    "Group": "3164",
+    "Subject": "Иностранный язык в профессиональной деятельности",
+    "InstructorName": "Суринова Елена Аркадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101156/"
+  }
+]

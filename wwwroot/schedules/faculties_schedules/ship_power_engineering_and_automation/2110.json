@@ -1,0 +1,233 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У каф.ФВ",
+    "Group": "2110",
+    "Subject": "Физическая культура и спорт (элективная)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 448",
+    "Group": "2110",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 161",
+    "Group": "2110",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 304",
+    "Group": "2110",
+    "Subject": "Физика",
+    "InstructorName": "Колесников Юрий Леонидович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122535/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 322",
+    "Group": "2110",
+    "Subject": "Физика",
+    "InstructorName": "Колесников Юрий Леонидович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122535/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 320",
+    "Group": "2110",
+    "Subject": "Физика",
+    "InstructorName": "Колесников Юрий Леонидович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122535/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 531",
+    "Group": "2110",
+    "Subject": "История России",
+    "InstructorName": "Прудникова Татьяна Юрьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100952/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 161",
+    "Group": "2110",
+    "Subject": "Прикладная механика",
+    "InstructorName": "Иванова Марина Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 311",
+    "Group": "2110",
+    "Subject": "Прикладная механика",
+    "InstructorName": "Иванова Марина Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 155",
+    "Group": "2110",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 155",
+    "Group": "2110",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 103",
+    "Group": "2110",
+    "Subject": "Высшая математика",
+    "InstructorName": "Сегаль Ирина Фридриховна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101045/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 103",
+    "Group": "2110",
+    "Subject": "История России",
+    "InstructorName": "Прудникова Татьяна Юрьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100952/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 161",
+    "Group": "2110",
+    "Subject": "Физика",
+    "InstructorName": "Колесников Юрий Леонидович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122535/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У каф.ФВ",
+    "Group": "2110",
+    "Subject": "Физическая культура и спорт (элективная)",
+    "InstructorName": "",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 101",
+    "Group": "2110",
+    "Subject": "История России",
+    "InstructorName": "Добряк Инна Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100346/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 409",
+    "Group": "2110",
+    "Subject": "Иностранный язык",
+    "InstructorName": "Серова Людмила Павловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101067/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 217",
+    "Group": "2110",
+    "Subject": "Инженерная графика",
+    "InstructorName": "Замукова Татьяна Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100411/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 217",
+    "Group": "2110",
+    "Subject": "Инженерная графика",
+    "InstructorName": "Замукова Татьяна Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100411/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 442",
+    "Group": "2110",
+    "Subject": "Информационные технологии в промышленности",
+    "InstructorName": "Коок Петр Николаевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 442",
+    "Group": "2110",
+    "Subject": "Информационные технологии в промышленности",
+    "InstructorName": "Коок Петр Николаевич",
+    "InstructorLink": ""
+  }
+]

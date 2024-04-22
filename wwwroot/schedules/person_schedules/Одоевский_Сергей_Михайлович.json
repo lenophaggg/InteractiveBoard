@@ -1,0 +1,35 @@
+[
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 412",
+    "Group": "3230",
+    "Subject": "Вычислительные машины, системы и сети",
+    "InstructorName": "Одоевский Сергей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100841/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 407",
+    "Group": "3230",
+    "Subject": "Вычислительные машины, системы и сети",
+    "InstructorName": "Одоевский Сергей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100841/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 407",
+    "Group": "3230",
+    "Subject": "Вычислительные машины, системы и сети",
+    "InstructorName": "Одоевский Сергей Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100841/"
+  }
+]

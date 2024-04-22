@@ -1,0 +1,233 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 511",
+    "Group": "4120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "4150",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "4102",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "4103",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "4104",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "4120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "4122",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 107",
+    "Group": "4100",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 514",
+    "Group": "4122",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 514",
+    "Group": "4102",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 511",
+    "Group": "4104",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 511",
+    "Group": "4150",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 511",
+    "Group": "4100",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 10",
+    "Group": "3124",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 10",
+    "Group": "3126",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 10",
+    "Group": "3125",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 10",
+    "Group": "3125",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 10",
+    "Group": "3126",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 10",
+    "Group": "3124",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 437",
+    "Group": "4211",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 437",
+    "Group": "4211",
+    "Subject": "Высшая математика",
+    "InstructorName": "Крупицкая Ольга Савельевна",
+    "InstructorLink": ""
+  }
+]

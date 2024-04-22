@@ -1,0 +1,57 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Экологическая сертификация, ОВОС и экспертиза проектов",
+    "InstructorName": "Папцова Ирина Исааковна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Экологическая сертификация, ОВОС и экспертиза проектов",
+    "InstructorName": "Папцова Ирина Исааковна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 326",
+    "Group": "2440",
+    "Subject": "Экологическая сертификация, ОВОС и экспертиза проектов",
+    "InstructorName": "Папцова Ирина Исааковна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2440",
+    "Subject": "Надзор и контроль в сфере безопасности",
+    "InstructorName": "Папцова Ирина Исааковна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2440",
+    "Subject": "Надзор и контроль в сфере безопасности",
+    "InstructorName": "Папцова Ирина Исааковна",
+    "InstructorLink": ""
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 434",
+    "Group": "5280",
+    "Subject": "Теория систем и системный анализ",
+    "InstructorName": "Дубин Марат Мухаметханович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123177/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 434",
+    "Group": "5280",
+    "Subject": "Теория систем и системный анализ",
+    "InstructorName": "Дубин Марат Мухаметханович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123177/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 439",
+    "Group": "20413",
+    "Subject": "Управление инженерными знаниями",
+    "InstructorName": "Дубин Марат Мухаметханович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123177/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 439",
+    "Group": "20413",
+    "Subject": "Управление инженерными знаниями",
+    "InstructorName": "Дубин Марат Мухаметханович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123177/"
+  }
+]

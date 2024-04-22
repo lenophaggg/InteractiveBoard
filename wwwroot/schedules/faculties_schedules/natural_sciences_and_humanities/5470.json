@@ -1,0 +1,112 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 508",
+    "Group": "5470",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Морозов Александр Петрович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 339",
+    "Group": "5470",
+    "Subject": "Конструирование двигателей внутреннего сгорания",
+    "InstructorName": "Галиев Ильдар Ринатович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 339",
+    "Group": "5470",
+    "Subject": "Конструирование двигателей внутреннего сгорания",
+    "InstructorName": "Галиев Ильдар Ринатович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 340",
+    "Group": "5470",
+    "Subject": "Отечественное и зарубежное двигателестроение",
+    "InstructorName": "Мащенко Владимир Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100746/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 340",
+    "Group": "5470",
+    "Subject": "Учебно-исследовательская работа студентов",
+    "InstructorName": "Галиев Ильдар Ринатович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 340",
+    "Group": "5470",
+    "Subject": "Теоретические основы эксплуатации двигателей внутреннего сгорания",
+    "InstructorName": "Галиев Ильдар Ринатович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 339",
+    "Group": "5470",
+    "Subject": "Топливная аппаратура",
+    "InstructorName": "Столяров Андрей Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101147/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 339",
+    "Group": "5470",
+    "Subject": "Технология двигателестроения",
+    "InstructorName": "Пугач Андрей Анатольевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 339",
+    "Group": "5470",
+    "Subject": "Топливная аппаратура",
+    "InstructorName": "Столяров Андрей Сергеевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101147/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 339",
+    "Group": "5470",
+    "Subject": "Технология двигателестроения",
+    "InstructorName": "Пугач Андрей Анатольевич",
+    "InstructorLink": ""
+  }
+]

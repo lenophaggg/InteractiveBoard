@@ -1,0 +1,123 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 450",
+    "Group": "2231",
+    "Subject": "Энергетические комплексы морской техники",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 450",
+    "Group": "2200",
+    "Subject": "Энергетические комплексы морской техники",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 450",
+    "Group": "2230",
+    "Subject": "Энергетические комплексы морской техники",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 340",
+    "Group": "2200",
+    "Subject": "Энергетические комплексы морской техники",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 450",
+    "Group": "2231",
+    "Subject": "Энергетические комплексы морской техники",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 450",
+    "Group": "2230",
+    "Subject": "Энергетические комплексы морской техники",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 453",
+    "Group": "2241",
+    "Subject": "Основы надежности технических систем и техногенного риска на морских объектах",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 453",
+    "Group": "2241",
+    "Subject": "Основы надежности технических систем и техногенного риска на морских объектах",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 453",
+    "Group": "2167",
+    "Subject": "Экологические основы технологии судостроения",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2340",
+    "Subject": "Эффективность природопользования и природоохранной деятельности",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 453",
+    "Group": "2240",
+    "Subject": "Инженерная методология в природоохранной деятельности",
+    "InstructorName": "Черкаев Георгий Владимирович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101309/"
+  }
+]

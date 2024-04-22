@@ -1,0 +1,134 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 228",
+    "Group": "1477",
+    "Subject": "Технология конструирования художественных изделий",
+    "InstructorName": "Вьюношев Андрей Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100245/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 228",
+    "Group": "1477",
+    "Subject": "Технология конструирования художественных изделий",
+    "InstructorName": "Вьюношев Андрей Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100245/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 228",
+    "Group": "1477",
+    "Subject": "Технология конструирования художественных изделий",
+    "InstructorName": "Вьюношев Андрей Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100245/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 228",
+    "Group": "1477",
+    "Subject": "Технология конструирования художественных изделий",
+    "InstructorName": "Вьюношев Андрей Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100245/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 601",
+    "Group": "1477",
+    "Subject": "Конструкция корпуса судна",
+    "InstructorName": "Юй Синьянь",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/117652/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 601",
+    "Group": "1477",
+    "Subject": "Конструкция корпуса судна",
+    "InstructorName": "Юй Синьянь",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/117652/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 601",
+    "Group": "1477",
+    "Subject": "Конструкция корпуса судна",
+    "InstructorName": "Юй Синьянь",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/117652/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 601",
+    "Group": "1477",
+    "Subject": "Конструкция корпуса судна",
+    "InstructorName": "Юй Синьянь",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/117652/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 108",
+    "Group": "1477",
+    "Subject": "Технология художественных эмалей",
+    "InstructorName": "Емельянов Александр Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100368/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 108",
+    "Group": "1477",
+    "Subject": "Технология художественных эмалей",
+    "InstructorName": "Емельянов Александр Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100368/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 108",
+    "Group": "1477",
+    "Subject": "Технология художественных эмалей",
+    "InstructorName": "Емельянов Александр Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100368/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 108",
+    "Group": "1477",
+    "Subject": "Технология художественных эмалей",
+    "InstructorName": "Емельянов Александр Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100368/"
+  }
+]

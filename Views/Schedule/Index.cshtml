@@ -1,0 +1,60 @@
+﻿@model Dictionary<string, string[]>
+
+@{
+    ViewData["Title"] = "Schedule Page";
+}
+
+<title>@ViewData["Title"]</title>
+
+<style>
+    /* Добавление отступа между контейнерами */
+    .container + .container {
+        margin-top: 20px;
+    }
+</style>
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/Schedule.css" asp-append-version="true" />
+
+<div id="mainContainer">
+    <h1>Расписание занятий</h1>
+
+    <div class="scheduleContainer">
+        @foreach (var facultySchedule in Model)
+        {
+            var dataParser = new MyMvcApp.Models.DataParserModel();
+
+            <div class="container">
+                <h2 class="text-center">@dataParser.GetFacultyName(facultySchedule.Key)</h2>
+                <div class="row">
+                    @if (facultySchedule.Value.Any())
+                    {
+                        foreach (var scheduleItem in facultySchedule.Value)
+                        {
+                            <div class="col-lg-2" onclick="openScheduleByGroup('@scheduleItem', '@facultySchedule.Key')">
+                                <p class="schedule-item">@scheduleItem</p>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p class="col-lg-12">Нет данных о группах для данного факультета.</p>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+
+    <form>
+        <div class="input-group">
+            <input type="text" class="form-control" id="searchInput" placeholder="введите номер группы или ФИО преподавателя">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary search-button" type="button" onclick="getSchedule(document.getElementById('searchInput').value)">
+                    <img src="../img/search_button.png" alt="Search">
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="~/js/ScheduleScript.js"></script>

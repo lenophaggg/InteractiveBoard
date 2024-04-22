@@ -1,0 +1,24 @@
+﻿@model (List<byte[]>, string nameDoc)
+
+<h2>@Model.nameDoc</h2>
+@for (var i = 0; i < Model.Item1.Count; i += 2)
+{
+    <div class="row">
+        <div class="col">
+            <img class="max-width-1760" src="data:image/png;base64,@Convert.ToBase64String(Model.Item1[i])" alt="Image" />
+        </div>
+        @if (i + 1 < Model.Item1.Count)
+        {
+            <div class="col">
+                <img class="max-width-1760" src="data:image/png;base64,@Convert.ToBase64String(Model.Item1[i + 1])" alt="Image" />
+            </div>
+        }
+    </div>
+}
+
+<style>
+    .max-width-1760 {
+        width: 2360px;
+        height: auto;
+    }
+</style>

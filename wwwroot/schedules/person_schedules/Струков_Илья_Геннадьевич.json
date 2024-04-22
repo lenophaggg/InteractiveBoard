@@ -1,0 +1,24 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 521",
+    "Group": "1170",
+    "Subject": "Введение в специальность",
+    "InstructorName": "Струков Илья Геннадьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 520",
+    "Group": "5330",
+    "Subject": "Термическая резка металлов",
+    "InstructorName": "Струков Илья Геннадьевич",
+    "InstructorLink": ""
+  }
+]

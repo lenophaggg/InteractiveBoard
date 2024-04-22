@@ -1,0 +1,57 @@
+[
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 309а",
+    "Group": "1350",
+    "Subject": "Специальные системы и устройства средств океанотехники",
+    "InstructorName": "Любимов Евгений Васильевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/107912/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 309а",
+    "Group": "1350",
+    "Subject": "Специальные системы и устройства средств океанотехники",
+    "InstructorName": "Любимов Евгений Васильевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/107912/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 309а",
+    "Group": "1350",
+    "Subject": "Специальные системы и устройства средств океанотехники",
+    "InstructorName": "Любимов Евгений Васильевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/107912/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 309а",
+    "Group": "1320",
+    "Subject": "Устройства и системы морских нефтегазовых сооружений",
+    "InstructorName": "Любимов Евгений Васильевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/107912/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 309а",
+    "Group": "1320",
+    "Subject": "Устройства и системы морских нефтегазовых сооружений",
+    "InstructorName": "Любимов Евгений Васильевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/107912/"
+  }
+]

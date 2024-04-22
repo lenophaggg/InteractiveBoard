@@ -1,0 +1,167 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 514",
+    "Group": "1310",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 514",
+    "Group": "1311",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 514",
+    "Group": "1310",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 514",
+    "Group": "1311",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 514",
+    "Group": "1318",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 511",
+    "Group": "1318",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 161",
+    "Group": "1350",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 161",
+    "Group": "1384",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 161",
+    "Group": "1380",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 161",
+    "Group": "1320",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 154",
+    "Group": "1320",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 154",
+    "Group": "1384",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 154",
+    "Group": "1350",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 154",
+    "Group": "1380",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 419",
+    "Group": "5280",
+    "Subject": "Деловые коммуникации",
+    "InstructorName": "Бабаева Наталья Михайловна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100060/"
+  }
+]

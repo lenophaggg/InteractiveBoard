@@ -1,0 +1,233 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 514",
+    "Group": "4162",
+    "Subject": "Управление проектами",
+    "InstructorName": "Алехин Михаил Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100023/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 511",
+    "Group": "4162",
+    "Subject": "Управление проектами",
+    "InstructorName": "Алехин Михаил Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100023/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4162",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4162",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 446",
+    "Group": "4162",
+    "Subject": "Бизнес-английский",
+    "InstructorName": "Ковалев Андрей Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122808/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 446",
+    "Group": "4162",
+    "Subject": "Бизнес-английский",
+    "InstructorName": "Ковалев Андрей Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122808/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4162",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4162",
+    "Subject": "Теория организации и организационное поведение",
+    "InstructorName": "Юрьева Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101915/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4162",
+    "Subject": "Экономический анализ деятельности предприятий",
+    "InstructorName": "Палкина Елена Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126006/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4162",
+    "Subject": "Теория организации и организационное поведение",
+    "InstructorName": "Юрьева Наталья Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101915/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4162",
+    "Subject": "Экономический анализ деятельности предприятий",
+    "InstructorName": "Палкина Елена Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126006/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 31",
+    "Group": "4162",
+    "Subject": "Экономический анализ деятельности предприятий",
+    "InstructorName": "Палкина Елена Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126006/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4162",
+    "Subject": "Современные технологии цифровой экономики",
+    "InstructorName": "Рогавичене Лариса Ивановна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123212/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4162",
+    "Subject": "Международный бизнес",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4162",
+    "Subject": "Современные технологии цифровой экономики",
+    "InstructorName": "Рогавичене Лариса Ивановна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123212/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4162",
+    "Subject": "Международный бизнес",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4162",
+    "Subject": "Международный бизнес",
+    "InstructorName": "Плис Кристина Сергеевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/126007/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4162",
+    "Subject": "Кросс-культурный менеджмент",
+    "InstructorName": "Липис Евгения Александровна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106291/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4162",
+    "Subject": "Кросс-культурный менеджмент",
+    "InstructorName": "Ракова Наталия Геннадьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123336/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4162",
+    "Subject": "Современные модели и методы управления персоналом",
+    "InstructorName": "Стрельникова Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106255/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 33",
+    "Group": "4162",
+    "Subject": "Современные модели и методы управления персоналом",
+    "InstructorName": "Стрельникова Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106255/"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4102",
+    "Subject": "Микроэкономика",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4105",
+    "Subject": "Микроэкономика",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4102",
+    "Subject": "Микроэкономика",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4105",
+    "Subject": "Микроэкономика",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4160",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4141",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4161",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4162",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4141",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4161",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4162",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T17:20:00",
+    "EndTime": "2024-04-07T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4160",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4141",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4161",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4160",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 510",
+    "Group": "4162",
+    "Subject": "Макроэкономика: продвинутый курс",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4115",
+    "Subject": "Макроэкономика",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4111",
+    "Subject": "Микроэкономика",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 32",
+    "Group": "4115",
+    "Subject": "Макроэкономика",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "М 11",
+    "Group": "4111",
+    "Subject": "Микроэкономика",
+    "InstructorName": "Зефиров Владимир Игоревич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106021/"
+  }
+]

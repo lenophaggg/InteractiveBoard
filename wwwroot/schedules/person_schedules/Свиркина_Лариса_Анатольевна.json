@@ -1,0 +1,189 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 514",
+    "Group": "20120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 514",
+    "Group": "20171",
+    "Subject": "Высшая математика",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 438",
+    "Group": "20120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 514",
+    "Group": "20120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 514",
+    "Group": "20171",
+    "Subject": "Высшая математика",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 437",
+    "Group": "20171",
+    "Subject": "Высшая математика",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 511",
+    "Group": "9999",
+    "Subject": "гр 20200  20.03.2024  Дополнительные главы мат анализа.",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 511",
+    "Group": "9999",
+    "Subject": "гр 20200  20.03.2024  Дополнительные главы мат анализа.",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 511",
+    "Group": "9999",
+    "Subject": "гр 20200  20.03.2024  Дополнительные главы мат анализа.",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 438",
+    "Group": "20120",
+    "Subject": "Высшая математика",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 437",
+    "Group": "20171",
+    "Subject": "Высшая математика",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 437",
+    "Group": "20271",
+    "Subject": "Дополнительные главы математического анализа",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 438",
+    "Group": "20271",
+    "Subject": "Дополнительные главы математического анализа",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 438",
+    "Group": "20200",
+    "Subject": "Дополнительные главы математического анализа",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 438",
+    "Group": "20200",
+    "Subject": "Дополнительные главы математического анализа",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 438",
+    "Group": "20200",
+    "Subject": "Дополнительные главы математического анализа",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 438",
+    "Group": "9999",
+    "Subject": "гр 20271 30.03.2024   Дополнительные главы мат анализа",
+    "InstructorName": "Свиркина Лариса Анатольевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122619/"
+  }
+]

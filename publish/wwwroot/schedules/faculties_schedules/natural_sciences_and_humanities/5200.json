@@ -1,0 +1,178 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5200",
+    "Subject": "Гражданское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 444",
+    "Group": "5200",
+    "Subject": "Иностранный язык в сфере юриспруденции",
+    "InstructorName": "Кулаков Дмитрий Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103609/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 444",
+    "Group": "5200",
+    "Subject": "Иностранный язык в сфере юриспруденции",
+    "InstructorName": "Кулаков Дмитрий Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103609/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "5200",
+    "Subject": "Гражданское право",
+    "InstructorName": "Павленко Ксения Ивановна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 01Ю",
+    "Group": "5200",
+    "Subject": "Экологическое право",
+    "InstructorName": "Котов Геннадий Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 01Ю",
+    "Group": "5200",
+    "Subject": "Экологическое право",
+    "InstructorName": "Котов Геннадий Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 304ю",
+    "Group": "5200",
+    "Subject": "Криминология",
+    "InstructorName": "Шеншин Виктор Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122519/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 304ю",
+    "Group": "5200",
+    "Subject": "Уголовное право",
+    "InstructorName": "Шеншин Виктор Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122519/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 304ю",
+    "Group": "5200",
+    "Subject": "Уголовное право",
+    "InstructorName": "Шеншин Виктор Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122519/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 304ю",
+    "Group": "5200",
+    "Subject": "Криминология",
+    "InstructorName": "Шеншин Виктор Михайлович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122519/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 504",
+    "Group": "5200",
+    "Subject": "Философия",
+    "InstructorName": "Голованова Оксана Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100277/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5200",
+    "Subject": "Защита информации",
+    "InstructorName": "Балицкая Ксения Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 504",
+    "Group": "5200",
+    "Subject": "Философия",
+    "InstructorName": "Голованова Оксана Владимировна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100277/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5200",
+    "Subject": "Защита информации",
+    "InstructorName": "Балицкая Ксения Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5200",
+    "Subject": "Современные юридические информационные системы",
+    "InstructorName": "Игнатенко Сергей Владимирович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T20:40:00",
+    "EndTime": "2024-03-04T22:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 209ю",
+    "Group": "5200",
+    "Subject": "Современные юридические информационные системы",
+    "InstructorName": "Игнатенко Сергей Владимирович",
+    "InstructorLink": ""
+  }
+]

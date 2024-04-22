@@ -1,0 +1,200 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 211",
+    "Group": "5380",
+    "Subject": "Акустические измерения",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 418",
+    "Group": "5380",
+    "Subject": "Акустические измерения",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 211",
+    "Group": "5380",
+    "Subject": "Первичные преобразователи информации",
+    "InstructorName": "Махов Владимир Иванович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100742/"
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 418",
+    "Group": "5380",
+    "Subject": "Первичные преобразователи информации",
+    "InstructorName": "Огурцов Юрий Петрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100838/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 420",
+    "Group": "5380",
+    "Subject": "Микропроцессорная техника в мехатронике и робототехнике",
+    "InstructorName": "Коротицкий Евгений Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 420",
+    "Group": "5380",
+    "Subject": "Микропроцессорная техника в мехатронике и робототехнике",
+    "InstructorName": "Коротицкий Евгений Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 420",
+    "Group": "5380",
+    "Subject": "Микропроцессорная техника в мехатронике и робототехнике",
+    "InstructorName": "Коротицкий Евгений Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 420",
+    "Group": "5380",
+    "Subject": "Теория информации и сигналов",
+    "InstructorName": "Костин Максим Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 312",
+    "Group": "5380",
+    "Subject": "Детали мехатронных модулей, роботов и их конструирование",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 511",
+    "Group": "5380",
+    "Subject": "Экономика",
+    "InstructorName": "Малышева Татьяна Евгеньевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/127515/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 312",
+    "Group": "5380",
+    "Subject": "Детали мехатронных модулей, роботов и их конструирование",
+    "InstructorName": "Пазилова Ульяна Анатольевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 511",
+    "Group": "5380",
+    "Subject": "Экономика",
+    "InstructorName": "Васильева Светлана Альбертовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/122788/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 520",
+    "Group": "5380",
+    "Subject": "Теория информации и сигналов",
+    "InstructorName": "Шилин Михаил Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 315",
+    "Group": "5380",
+    "Subject": "Электронные устройства мехатронных и робототехнических систем",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 520",
+    "Group": "5380",
+    "Subject": "Теория информации и сигналов",
+    "InstructorName": "Шилин Михаил Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 315",
+    "Group": "5380",
+    "Subject": "Электронные устройства мехатронных и робототехнических систем",
+    "InstructorName": "Шилина Екатерина Сергеевна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 315",
+    "Group": "5380",
+    "Subject": "Программное обеспечение мехатронных и робототехнических систем",
+    "InstructorName": "Семенов Николай Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101053/"
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 315",
+    "Group": "5380",
+    "Subject": "Программное обеспечение мехатронных и робототехнических систем",
+    "InstructorName": "Семенов Николай Николаевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101053/"
+  }
+]

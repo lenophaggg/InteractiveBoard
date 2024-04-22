@@ -1,0 +1,222 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "20313",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1319",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1317",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1314",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 330",
+    "Group": "1317",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 330",
+    "Group": "20313",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 330",
+    "Group": "1319",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 330",
+    "Group": "1314",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 419",
+    "Group": "1310",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 330",
+    "Group": "1310",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 419",
+    "Group": "1313",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 330",
+    "Group": "1313",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 419",
+    "Group": "1311",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 330",
+    "Group": "1311",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1318",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1311",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1313",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Б 101",
+    "Group": "1310",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Б 419",
+    "Group": "1318",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Б 330",
+    "Group": "1318",
+    "Subject": "Теория корабля",
+    "InstructorName": "Макарова Валентина Вячеславовна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/103860/"
+  }
+]

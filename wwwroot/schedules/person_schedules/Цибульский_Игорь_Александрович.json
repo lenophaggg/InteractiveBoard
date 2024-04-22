@@ -1,0 +1,112 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК104",
+    "Group": "20371",
+    "Subject": "Лазерные технологии обработки материалов",
+    "InstructorName": "Цибульский Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106209/"
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК207",
+    "Group": "20371",
+    "Subject": "Лазерные технологии обработки материалов",
+    "InstructorName": "Цибульский Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106209/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК104",
+    "Group": "20178",
+    "Subject": "Технологии обработки материалов концентрированными потоками энергии",
+    "InstructorName": "Цибульский Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106209/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК104",
+    "Group": "20178",
+    "Subject": "Технологии обработки материалов концентрированными потоками энергии",
+    "InstructorName": "Цибульский Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106209/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У УИК104",
+    "Group": "20176",
+    "Subject": "Технологии обработки материалов концентрированными потоками энергии",
+    "InstructorName": "Цибульский Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106209/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК207",
+    "Group": "20176",
+    "Subject": "Технологии обработки материалов концентрированными потоками энергии",
+    "InstructorName": "Цибульский Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106209/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК207",
+    "Group": "20178",
+    "Subject": "Технологии обработки материалов концентрированными потоками энергии",
+    "InstructorName": "Цибульский Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106209/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК207",
+    "Group": "1173",
+    "Subject": "Технологии обработки материалов концентрированными потоками энергии",
+    "InstructorName": "Цибульский Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106209/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У УИК104",
+    "Group": "20176",
+    "Subject": "Технологии обработки материалов концентрированными потоками энергии",
+    "InstructorName": "Цибульский Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106209/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-04-07T15:40:00",
+    "EndTime": "2024-04-07T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У УИК104",
+    "Group": "1173",
+    "Subject": "Технологии обработки материалов концентрированными потоками энергии",
+    "InstructorName": "Цибульский Игорь Александрович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106209/"
+  }
+]

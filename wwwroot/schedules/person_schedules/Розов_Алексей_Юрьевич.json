@@ -1,0 +1,123 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 407",
+    "Group": "2390",
+    "Subject": "Микропроцессорная техника",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 517",
+    "Group": "2390",
+    "Subject": "Микропроцессорная техника",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T08:30:00",
+    "EndTime": "2024-04-07T10:00:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "2494",
+    "Subject": "Микропроцессорные системы управления",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 414",
+    "Group": "2494",
+    "Subject": "Микропроцессорные системы управления",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 435",
+    "Group": "2495",
+    "Subject": "Микропроцессорные системы управления",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "А 435",
+    "Group": "2494",
+    "Subject": "Микропроцессорные системы управления",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T10:10:00",
+    "EndTime": "2024-04-07T11:40:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 517",
+    "Group": "2495",
+    "Subject": "Микропроцессорные системы управления",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T11:50:00",
+    "EndTime": "2024-04-07T13:20:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 517",
+    "Group": "2495",
+    "Subject": "Микропроцессорные системы управления",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T14:00:00",
+    "EndTime": "2024-04-07T15:30:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "А 517",
+    "Group": "2495",
+    "Subject": "Микропроцессорные системы управления",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T19:00:00",
+    "EndTime": "2024-04-07T20:30:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "5340",
+    "Subject": "Микропроцессорная техника",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-04-07T20:40:00",
+    "EndTime": "2024-04-07T22:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "А 517",
+    "Group": "5340",
+    "Subject": "Микропроцессорная техника",
+    "InstructorName": "Розов Алексей Юрьевич",
+    "InstructorLink": ""
+  }
+]
