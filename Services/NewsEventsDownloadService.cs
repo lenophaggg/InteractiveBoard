@@ -44,7 +44,7 @@ namespace MyMvcApp.Services
 
             api.Authorize(new ApiAuthParams
             {
-                AccessToken = "21a09de121a09de121a09de15722b6c098221a021a09de144fb01384c67302821e770c3"
+                AccessToken = ""
             });
 
             var postsOVDFdit = ParseVkGroupData(api, "ovdsmtu",15);
