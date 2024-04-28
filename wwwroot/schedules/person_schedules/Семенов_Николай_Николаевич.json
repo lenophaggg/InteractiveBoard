@@ -1,30 +1,8 @@
 [
   {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T08:30:00",
-    "EndTime": "2024-04-07T10:00:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Г 315",
-    "Group": "3480",
-    "Subject": "Методы искусственного интеллекта в управлении и обработки информации",
-    "InstructorName": "Семенов Николай Николаевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101053/"
-  },
-  {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Г 315",
-    "Group": "3480",
-    "Subject": "Методы искусственного интеллекта в управлении и обработки информации",
-    "InstructorName": "Семенов Николай Николаевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101053/"
-  },
-  {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T08:30:00",
-    "EndTime": "2024-04-07T10:00:00",
+    "StartTime": "08:30:00",
+    "EndTime": "10:00:00",
     "WeekType": "Обе недели",
     "Classroom": "Г 315",
     "Group": "3162",
@@ -34,8 +12,8 @@
   },
   {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Г 315",
     "Group": "3162",
@@ -44,64 +22,9 @@
     "InstructorLink": "https://www.smtu.ru/ru/viewperson/101053/"
   },
   {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T08:30:00",
-    "EndTime": "2024-04-07T10:00:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Г 315",
-    "Group": "3480",
-    "Subject": "Методы искусственного интеллекта в управлении и обработки информации",
-    "InstructorName": "Семенов Николай Николаевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101053/"
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Г 520",
-    "Group": "3480",
-    "Subject": "Методы искусственного интеллекта в управлении и обработки информации",
-    "InstructorName": "Семенов Николай Николаевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101053/"
-  },
-  {
     "DayOfWeek": "Пятница",
-    "StartTime": "2024-04-07T08:30:00",
-    "EndTime": "2024-04-07T10:00:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Б 500",
-    "Group": "20400",
-    "Subject": "Теория автоматического управления",
-    "InstructorName": "Семенов Николай Николаевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101053/"
-  },
-  {
-    "DayOfWeek": "Пятница",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Б 500",
-    "Group": "20400",
-    "Subject": "Теория автоматического управления",
-    "InstructorName": "Семенов Николай Николаевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101053/"
-  },
-  {
-    "DayOfWeek": "Пятница",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Б 500",
-    "Group": "20400",
-    "Subject": "Теория автоматического управления",
-    "InstructorName": "Семенов Николай Николаевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101053/"
-  },
-  {
-    "DayOfWeek": "Пятница",
-    "StartTime": "2024-04-07T19:00:00",
-    "EndTime": "2024-04-07T20:30:00",
+    "StartTime": "19:00:00",
+    "EndTime": "20:30:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Г 315",
     "Group": "5380",
@@ -111,8 +34,8 @@
   },
   {
     "DayOfWeek": "Пятница",
-    "StartTime": "2024-04-07T20:40:00",
-    "EndTime": "2024-04-07T22:10:00",
+    "StartTime": "20:40:00",
+    "EndTime": "22:10:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Г 315",
     "Group": "5380",

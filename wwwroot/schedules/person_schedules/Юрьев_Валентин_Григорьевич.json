@@ -1,8 +1,8 @@
 [
   {
     "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "А 536",
     "Group": "1374",
@@ -12,8 +12,8 @@
   },
   {
     "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "А 536",
     "Group": "1374",
@@ -22,31 +22,9 @@
     "InstructorLink": "https://www.smtu.ru/ru/viewperson/102747/"
   },
   {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Нижняя неделя",
-    "Classroom": "А 536",
-    "Group": "2470",
-    "Subject": "Технологические процессы в машиностроении",
-    "InstructorName": "Юрьев Валентин Григорьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102747/"
-  },
-  {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 536",
-    "Group": "2470",
-    "Subject": "Технологические процессы в машиностроении",
-    "InstructorName": "Юрьев Валентин Григорьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102747/"
-  },
-  {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "А 536",
     "Group": "2370",
@@ -56,67 +34,12 @@
   },
   {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Нижняя неделя",
-    "Classroom": "А 536",
-    "Group": "2470",
-    "Subject": "Технологические процессы в машиностроении",
-    "InstructorName": "Юрьев Валентин Григорьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102747/"
-  },
-  {
-    "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "А 536",
     "Group": "2370",
     "Subject": "Автоматизированное нормирование технологических процессов в машиностроении",
-    "InstructorName": "Юрьев Валентин Григорьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102747/"
-  },
-  {
-    "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Нижняя неделя",
-    "Classroom": "А 536",
-    "Group": "2470",
-    "Subject": "Технологические процессы в машиностроении",
-    "InstructorName": "Юрьев Валентин Григорьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102747/"
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Верхняя неделя",
-    "Classroom": "А 536",
-    "Group": "2470",
-    "Subject": "Технологические процессы в машиностроении",
-    "InstructorName": "Юрьев Валентин Григорьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102747/"
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 536",
-    "Group": "2470",
-    "Subject": "Технологические процессы в машиностроении",
-    "InstructorName": "Юрьев Валентин Григорьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/102747/"
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 536",
-    "Group": "2470",
-    "Subject": "Технологические процессы в машиностроении",
     "InstructorName": "Юрьев Валентин Григорьевич",
     "InstructorLink": "https://www.smtu.ru/ru/viewperson/102747/"
   }

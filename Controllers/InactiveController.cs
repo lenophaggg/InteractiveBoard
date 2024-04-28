@@ -98,13 +98,13 @@ namespace MyMvcApp.Controllers
                 {
                     if ((item.WeekType == typeWeek &&
                         item.DayOfWeek == currentDayOfWeek &&
-                        item.StartTime.TimeOfDay <= currentTime.TimeOfDay &&
-                        item.EndTime.TimeOfDay >= currentTime.TimeOfDay)
+                        item.StartTime <= currentTime.TimeOfDay &&
+                        item.EndTime >= currentTime.TimeOfDay)
                         || (
                         item.WeekType == "Обе недели" &&
                         item.DayOfWeek == currentDayOfWeek &&
-                        item.StartTime.TimeOfDay <= currentTime.TimeOfDay &&
-                        item.EndTime.TimeOfDay >= currentTime.TimeOfDay))
+                        item.StartTime <= currentTime.TimeOfDay &&
+                        item.EndTime >= currentTime.TimeOfDay))
                     {
                         scheduleItems.Add(new MyMvcApp.Models.CurrentSchedule
                         {

@@ -84,8 +84,8 @@ namespace MyMvcApp.Models
     public class ScheduleData
     {
         public string DayOfWeek { get; set; } // День недели
-        public DateTime StartTime { get; set; } // Время начала
-        public DateTime EndTime { get; set; } // Время конца
+        public TimeSpan StartTime { get; set; } // Время начала
+        public TimeSpan EndTime { get; set; } // Время конца
         public string WeekType { get; set; } // Тип недели (верхняя, нижняя, обе)
         public string Classroom { get; set; } // Аудитория
         public string Group { get; set; } // Группа

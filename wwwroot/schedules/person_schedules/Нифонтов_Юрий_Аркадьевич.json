@@ -1,30 +1,8 @@
 [
   {
     "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 453",
-    "Group": "2400",
-    "Subject": "Экологическая безопасность нефтегазовых комплексов",
-    "InstructorName": "Нифонтов Юрий Аркадьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
-  },
-  {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 453",
-    "Group": "2400",
-    "Subject": "Экологическая безопасность нефтегазовых комплексов",
-    "InstructorName": "Нифонтов Юрий Аркадьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
-  },
-  {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T15:40:00",
-    "EndTime": "2024-04-07T17:10:00",
+    "StartTime": "15:40:00",
+    "EndTime": "17:10:00",
     "WeekType": "Обе недели",
     "Classroom": "А 453",
     "Group": "2167",
@@ -33,75 +11,9 @@
     "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
   },
   {
-    "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 453",
-    "Group": "2400",
-    "Subject": "Экологическая безопасность нефтегазовых комплексов",
-    "InstructorName": "Нифонтов Юрий Аркадьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
-  },
-  {
-    "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 453",
-    "Group": "2400",
-    "Subject": "Экологическая безопасность нефтегазовых комплексов",
-    "InstructorName": "Нифонтов Юрий Аркадьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
-  },
-  {
-    "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 453",
-    "Group": "2400",
-    "Subject": "Экологическая безопасность нефтегазовых комплексов",
-    "InstructorName": "Нифонтов Юрий Аркадьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
-  },
-  {
-    "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T15:40:00",
-    "EndTime": "2024-04-07T17:10:00",
-    "WeekType": "Верхняя неделя",
-    "Classroom": "А 407",
-    "Group": "9999",
-    "Subject": "05.03.2024; 19.03.2024, гр. 2400 - Экологическая безопасность",
-    "InstructorName": "Нифонтов Юрий Аркадьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
-  },
-  {
-    "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T15:40:00",
-    "EndTime": "2024-04-07T17:10:00",
-    "WeekType": "Нижняя неделя",
-    "Classroom": "А 407",
-    "Group": "9999",
-    "Subject": "12.03.2024, гр. 2400 - Экологическая безопасность",
-    "InstructorName": "Нифонтов Юрий Аркадьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
-  },
-  {
     "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 453",
-    "Group": "2440",
-    "Subject": "Обеспечение экологической безопасности объектов энергетики",
-    "InstructorName": "Нифонтов Юрий Аркадьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
+    "StartTime": "14:00:00",
+    "EndTime": "15:30:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "А 453",
     "Group": "2167",
@@ -111,19 +23,8 @@
   },
   {
     "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Нижняя неделя",
-    "Classroom": "А 453",
-    "Group": "2440",
-    "Subject": "Обеспечение экологической безопасности объектов энергетики",
-    "InstructorName": "Нифонтов Юрий Аркадьевич",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100824/"
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T15:40:00",
-    "EndTime": "2024-04-07T17:10:00",
+    "StartTime": "15:40:00",
+    "EndTime": "17:10:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "А 453",
     "Group": "2167",

@@ -1,41 +1,8 @@
 [
   {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 417-2",
-    "Group": "2401",
-    "Subject": "Судовые ядерные энергетические установки",
-    "InstructorName": "Гоняева Софья Сергеевна",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106541/"
-  },
-  {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 417-2",
-    "Group": "2401",
-    "Subject": "Техника освоения океана",
-    "InstructorName": "Гоняева Софья Сергеевна",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106541/"
-  },
-  {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 417-2",
-    "Group": "2401",
-    "Subject": "Техника освоения океана",
-    "InstructorName": "Гоняева Софья Сергеевна",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106541/"
-  },
-  {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "А 417-2",
     "Group": "2201",
@@ -45,8 +12,8 @@
   },
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
+    "StartTime": "14:00:00",
+    "EndTime": "15:30:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "А 417-2",
     "Group": "2201",
@@ -56,8 +23,8 @@
   },
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T15:40:00",
-    "EndTime": "2024-04-07T17:10:00",
+    "StartTime": "15:40:00",
+    "EndTime": "17:10:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "А 417-2",
     "Group": "2201",
@@ -67,8 +34,8 @@
   },
   {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "А 417-2",
     "Group": "2201",
@@ -78,56 +45,12 @@
   },
   {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
+    "StartTime": "14:00:00",
+    "EndTime": "15:30:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "А 417-2",
     "Group": "2201",
     "Subject": "Основы теплотехнических расчетов ядерных установок",
-    "InstructorName": "Гоняева Софья Сергеевна",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106541/"
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T08:30:00",
-    "EndTime": "2024-04-07T10:00:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 417-2",
-    "Group": "2401",
-    "Subject": "Судовые ядерные энергетические установки",
-    "InstructorName": "Гоняева Софья Сергеевна",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106541/"
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 417-2",
-    "Group": "2401",
-    "Subject": "Судовые ядерные энергетические установки",
-    "InstructorName": "Гоняева Софья Сергеевна",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106541/"
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Обе недели",
-    "Classroom": "А 417-2",
-    "Group": "2401",
-    "Subject": "Судовые ядерные энергетические установки",
-    "InstructorName": "Гоняева Софья Сергеевна",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/106541/"
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Верхняя неделя",
-    "Classroom": "А 417-3",
-    "Group": "2401",
-    "Subject": "Судовые ядерные энергетические установки",
     "InstructorName": "Гоняева Софья Сергеевна",
     "InstructorLink": "https://www.smtu.ru/ru/viewperson/106541/"
   }

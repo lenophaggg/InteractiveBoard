@@ -1,8 +1,8 @@
 [
   {
     "DayOfWeek": "Пятница",
-    "StartTime": "2024-04-07T15:40:00",
-    "EndTime": "2024-04-07T17:10:00",
+    "StartTime": "15:40:00",
+    "EndTime": "17:10:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Б 207",
     "Group": "1416",
@@ -12,8 +12,8 @@
   },
   {
     "DayOfWeek": "Пятница",
-    "StartTime": "2024-04-07T17:20:00",
-    "EndTime": "2024-04-07T18:50:00",
+    "StartTime": "17:20:00",
+    "EndTime": "18:50:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Б 207",
     "Group": "1416",
@@ -23,8 +23,8 @@
   },
   {
     "DayOfWeek": "Пятница",
-    "StartTime": "2024-04-07T19:00:00",
-    "EndTime": "2024-04-07T20:30:00",
+    "StartTime": "19:00:00",
+    "EndTime": "20:30:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Б 207",
     "Group": "1416",

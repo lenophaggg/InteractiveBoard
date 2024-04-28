@@ -1,8 +1,8 @@
 [
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Б 500",
     "Group": "20300",
@@ -12,8 +12,8 @@
   },
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Обе недели",
     "Classroom": "Б 500",
     "Group": "20300",
@@ -23,8 +23,8 @@
   },
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
+    "StartTime": "14:00:00",
+    "EndTime": "15:30:00",
     "WeekType": "Обе недели",
     "Classroom": "Б 500",
     "Group": "20300",
@@ -34,8 +34,8 @@
   },
   {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T08:30:00",
-    "EndTime": "2024-04-07T10:00:00",
+    "StartTime": "08:30:00",
+    "EndTime": "10:00:00",
     "WeekType": "Обе недели",
     "Classroom": "Б 500",
     "Group": "20300",
@@ -45,8 +45,8 @@
   },
   {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Обе недели",
     "Classroom": "Б 500",
     "Group": "20300",
@@ -56,8 +56,8 @@
   },
   {
     "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T08:30:00",
-    "EndTime": "2024-04-07T10:00:00",
+    "StartTime": "08:30:00",
+    "EndTime": "10:00:00",
     "WeekType": "Обе недели",
     "Classroom": "Б 511",
     "Group": "20200",
@@ -67,67 +67,12 @@
   },
   {
     "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Б 511",
     "Group": "20200",
     "Subject": "Теория вероятностей и математическая статистика",
-    "InstructorName": "Сафронов Кирилл Сергеевич",
-    "InstructorLink": ""
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Нижняя неделя",
-    "Classroom": "Б 505(2)",
-    "Group": "20400",
-    "Subject": "Стохастические методы",
-    "InstructorName": "Сафронов Кирилл Сергеевич",
-    "InstructorLink": ""
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Верхняя неделя",
-    "Classroom": "Б 511",
-    "Group": "20400",
-    "Subject": "Стохастические методы",
-    "InstructorName": "Сафронов Кирилл Сергеевич",
-    "InstructorLink": ""
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Нижняя неделя",
-    "Classroom": "Б 505(2)",
-    "Group": "20400",
-    "Subject": "Стохастические методы",
-    "InstructorName": "Сафронов Кирилл Сергеевич",
-    "InstructorLink": ""
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Верхняя неделя",
-    "Classroom": "Б 511",
-    "Group": "20400",
-    "Subject": "Стохастические методы",
-    "InstructorName": "Сафронов Кирилл Сергеевич",
-    "InstructorLink": ""
-  },
-  {
-    "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Нижняя неделя",
-    "Classroom": "Б 511",
-    "Group": "20400",
-    "Subject": "Стохастические методы",
     "InstructorName": "Сафронов Кирилл Сергеевич",
     "InstructorLink": ""
   }

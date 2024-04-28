@@ -1,8 +1,8 @@
 [
   {
     "DayOfWeek": "Суббота",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Б 508",
     "Group": "1173",
@@ -12,8 +12,8 @@
   },
   {
     "DayOfWeek": "Суббота",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Б 508",
     "Group": "1162",
@@ -23,8 +23,8 @@
   },
   {
     "DayOfWeek": "Суббота",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Б 508",
     "Group": "1160",
@@ -34,8 +34,8 @@
   },
   {
     "DayOfWeek": "Суббота",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Б 508",
     "Group": "1173",
@@ -45,8 +45,8 @@
   },
   {
     "DayOfWeek": "Суббота",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Б 508",
     "Group": "1162",
@@ -56,8 +56,8 @@
   },
   {
     "DayOfWeek": "Суббота",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Б 508",
     "Group": "1160",

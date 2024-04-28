@@ -521,10 +521,6 @@
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\digital_industrial_technologies\\20390.json"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\digital_industrial_technologies\\20400.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\digital_industrial_technologies\\20400.json"
-    },
-    {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\digital_industrial_technologies\\20413.json",
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\digital_industrial_technologies\\20413.json"
     },
@@ -641,24 +637,8 @@
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\engineering_and_economics\\4322.json"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\engineering_and_economics\\4400.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\engineering_and_economics\\4400.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\engineering_and_economics\\4403.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\engineering_and_economics\\4403.json"
-    },
-    {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\engineering_and_economics\\4410.json",
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\engineering_and_economics\\4410.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\engineering_and_economics\\4420.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\engineering_and_economics\\4420.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\engineering_and_economics\\4422.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\engineering_and_economics\\4422.json"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3100.json",
@@ -817,14 +797,6 @@
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3390.json"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3400.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3400.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3420.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3420.json"
-    },
-    {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3424.json",
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3424.json"
     },
@@ -835,34 +807,6 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3426.json",
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3426.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3430.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3430.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3440.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3440.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3450.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3450.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3470.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3470.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3471.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3471.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3480.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3480.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3490.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\marine_instrument_engineering\\3490.json"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\marine_instrument_engineering\\3524.json",
@@ -1067,14 +1011,6 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\natural_sciences_and_humanities\\7362.json",
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\natural_sciences_and_humanities\\7362.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\natural_sciences_and_humanities\\7461.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\natural_sciences_and_humanities\\7461.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\natural_sciences_and_humanities\\7462.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\natural_sciences_and_humanities\\7462.json"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2101.json",
@@ -1305,56 +1241,12 @@
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2395.json"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2400.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2400.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2401.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2401.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2410.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2410.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2420.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2420.json"
-    },
-    {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2425.json",
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2425.json"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2426.json",
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2426.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2430.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2430.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2431.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2431.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2440.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2440.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2450.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2450.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2470.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2470.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2490.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2490.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2491.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2491.json"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\ship_power_engineering_and_automation\\2494.json",
@@ -1603,14 +1495,6 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\shipbuilding_and_ocean_engineering\\1419.json",
       "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\shipbuilding_and_ocean_engineering\\1419.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\shipbuilding_and_ocean_engineering\\1474.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\shipbuilding_and_ocean_engineering\\1474.json"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\faculties_schedules\\shipbuilding_and_ocean_engineering\\1477.json",
-      "PackagePath": "staticwebassets\\schedules\\faculties_schedules\\shipbuilding_and_ocean_engineering\\1477.json"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\ucheba\\MyMvcApp\\wwwroot\\schedules\\person_schedules\\Абдуллина_Яна_Александровна.json",

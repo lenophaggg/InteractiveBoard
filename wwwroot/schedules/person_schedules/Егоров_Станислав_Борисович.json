@@ -1,30 +1,8 @@
 [
   {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Г 306",
-    "Group": "3400",
-    "Subject": "Основы проектирования каналов морских информационных систем",
-    "InstructorName": "Егоров Станислав Борисович",
-    "InstructorLink": ""
-  },
-  {
-    "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Г 306",
-    "Group": "3400",
-    "Subject": "Основы проектирования каналов морских информационных систем",
-    "InstructorName": "Егоров Станислав Борисович",
-    "InstructorLink": ""
-  },
-  {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T19:00:00",
-    "EndTime": "2024-04-07T20:30:00",
+    "StartTime": "19:00:00",
+    "EndTime": "20:30:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Г 520",
     "Group": "5480",
@@ -34,30 +12,19 @@
   },
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T20:40:00",
-    "EndTime": "2024-04-07T22:10:00",
+    "StartTime": "20:40:00",
+    "EndTime": "22:10:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Г 520",
     "Group": "5480",
     "Subject": "Физические поля в морской среде",
-    "InstructorName": "Егоров Станислав Борисович",
-    "InstructorLink": ""
-  },
-  {
-    "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Г 306",
-    "Group": "3400",
-    "Subject": "Основы проектирования каналов морских информационных систем",
     "InstructorName": "Егоров Станислав Борисович",
     "InstructorLink": ""
   },
   {
     "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Обе недели",
     "Classroom": "Г 306",
     "Group": "3160",
@@ -67,8 +34,8 @@
   },
   {
     "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
+    "StartTime": "14:00:00",
+    "EndTime": "15:30:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Г 306",
     "Group": "3160",

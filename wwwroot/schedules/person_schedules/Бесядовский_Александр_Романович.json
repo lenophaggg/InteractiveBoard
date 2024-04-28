@@ -1,8 +1,8 @@
 [
   {
     "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Б 318",
     "Group": "1380",
@@ -12,8 +12,8 @@
   },
   {
     "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Обе недели",
     "Classroom": "Б 508",
     "Group": "1333",
@@ -23,8 +23,8 @@
   },
   {
     "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Обе недели",
     "Classroom": "Б 508",
     "Group": "1380",
@@ -34,8 +34,8 @@
   },
   {
     "DayOfWeek": "Понедельник",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
+    "StartTime": "14:00:00",
+    "EndTime": "15:30:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Б 318",
     "Group": "1333",
@@ -45,8 +45,8 @@
   },
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
+    "StartTime": "14:00:00",
+    "EndTime": "15:30:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Б 318",
     "Group": "1280",
@@ -56,8 +56,8 @@
   },
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
+    "StartTime": "14:00:00",
+    "EndTime": "15:30:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Б 102",
     "Group": "1168",
@@ -67,8 +67,8 @@
   },
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T15:40:00",
-    "EndTime": "2024-04-07T17:10:00",
+    "StartTime": "15:40:00",
+    "EndTime": "17:10:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "Б 316",
     "Group": "1168",
@@ -78,8 +78,8 @@
   },
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T15:40:00",
-    "EndTime": "2024-04-07T17:10:00",
+    "StartTime": "15:40:00",
+    "EndTime": "17:10:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Б 316",
     "Group": "1168",

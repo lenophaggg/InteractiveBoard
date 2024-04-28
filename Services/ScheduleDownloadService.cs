@@ -31,49 +31,49 @@ namespace MyMvcApp.Services
 
         private async Task DownloadSchedules(CancellationToken cancellationToken)
         {
-            while (!cancellationToken.IsCancellationRequested)
-            {
-                var now = DateTime.Now;
+            //while (!cancellationToken.IsCancellationRequested)
+            //{
+            //    var now = DateTime.Now;
 
-                if ((now.Month == 8 && now.Day >= 20) || (now.Month == 9 && now.Day <= 15) ||
-                    (now.Month == 1 && now.Day >= 20) || (now.Month == 2 && now.Day <= 15))
-                {
-                    if (now.Hour == 1 && now.Minute == 0)
-                    {
-                        ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/listschedule/", facultiesSchedulePath);
-                        ParseAndSavePersonSchedule(personSchedulePath);
-                    }
+            //    if ((now.Month == 8 && now.Day >= 20) || (now.Month == 9 && now.Day <= 15) ||
+            //        (now.Month == 1 && now.Day >= 20) || (now.Month == 2 && now.Day <= 15))
+            //    {
+            //        if (now.Hour == 1 && now.Minute == 0)
+            //        {
+            //            ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/listschedule/", facultiesSchedulePath);
+            //            ParseAndSavePersonSchedule(personSchedulePath);
+            //        }
 
-                    DateTime nextTime;
+            //        DateTime nextTime;
 
-                    if (now.Hour >= 1)
-                    {
-                        nextTime = now.Date.AddDays(1).AddHours(1);
-                    }
-                    else
-                    {
-                        nextTime = now.Date.AddMinutes(60 - now.Minute);
-                    }
+            //        if (now.Hour >= 1)
+            //        {
+            //            nextTime = now.Date.AddDays(1).AddHours(1);
+            //        }
+            //        else
+            //        {
+            //            nextTime = now.Date.AddMinutes(60 - now.Minute);
+            //        }
 
-                    CheckInterval = nextTime - now;
-                }
-                else
-                {
-                    if (now.DayOfWeek == DayOfWeek.Sunday && now.Hour == 23 && now.Minute == 00)
-                    {
-                        ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/listschedule/", facultiesSchedulePath);
-                        ParseAndSavePersonSchedule(personSchedulePath);
-                    }
+            //        CheckInterval = nextTime - now;
+            //    }
+            //    else
+            //    {
+            //        if (now.DayOfWeek == DayOfWeek.Sunday && now.Hour == 23 && now.Minute == 00)
+            //        {
+            //            ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/listschedule/", facultiesSchedulePath);
+            //            ParseAndSavePersonSchedule(personSchedulePath);
+            //        }
 
-                    var nextTime = now.Date.AddDays((7 - (int)now.DayOfWeek) % 7).AddHours(23);
-                    CheckInterval = nextTime - now;
-                }
+            //        var nextTime = now.Date.AddDays((7 - (int)now.DayOfWeek) % 7).AddHours(23);
+            //        CheckInterval = nextTime - now;
+            //    }
 
-                await Task.Delay(CheckInterval, cancellationToken);
-            }
-            //ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/listschedule/", facultiesSchedulePath);
-            //ParseAndSavePersonSchedule(personSchedulePath);
-            //await Task.Delay(CheckInterval, cancellationToken);
+            //    await Task.Delay(CheckInterval, cancellationToken);
+            //}
+            ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/listschedule/", facultiesSchedulePath);
+            ParseAndSavePersonSchedule(personSchedulePath);
+            await Task.Delay(CheckInterval, cancellationToken);
         }
         #region Group
         private void ParseAndSaveGroupSchedule(string universityUrl, string dataFolderPath)
@@ -166,8 +166,12 @@ namespace MyMvcApp.Services
                             var timeRange = timeNode.InnerText.Trim();
                             var timeParts = timeRange?.Split('-');
 
-                            DateTime startTime = DateTime.ParseExact(timeParts[0], "HH:mm", CultureInfo.InvariantCulture);
-                            DateTime endTime = DateTime.ParseExact(timeParts[1], "HH:mm", CultureInfo.InvariantCulture);
+                            DateTime startDateTime = DateTime.ParseExact(timeParts[0], "HH:mm", CultureInfo.InvariantCulture);
+                            TimeSpan startTime = startDateTime.TimeOfDay;
+
+
+                            DateTime endDateTime = DateTime.ParseExact(timeParts[1], "HH:mm", CultureInfo.InvariantCulture);
+                            TimeSpan endTime = endDateTime.TimeOfDay;
 
                             var weekTypeNode = timeNode.ParentNode.SelectSingleNode(".//td[contains(@class, 'text-warning')]/i " +
                                 "| .//td[contains(@class, 'text-success')]/i | .//td[contains(@class, 'text-info')]/i");

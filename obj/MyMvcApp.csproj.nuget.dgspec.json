@@ -59,7 +59,7 @@
             },
             "HtmlAgilityPack": {
               "target": "Package",
-              "version": "[1.11.59, )"
+              "version": "[1.11.60, )"
             },
             "Humanizer": {
               "target": "Package",
@@ -75,7 +75,7 @@
             },
             "Spire.PDF": {
               "target": "Package",
-              "version": "[10.3.7, )"
+              "version": "[10.4.7, )"
             },
             "Telegram.Bot": {
               "target": "Package",

@@ -95,7 +95,7 @@
           }
         }
       },
-      "HtmlAgilityPack/1.11.59": {
+      "HtmlAgilityPack/1.11.60": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
@@ -1676,7 +1676,7 @@
           }
         }
       },
-      "Spire.PDF/10.3.7": {
+      "Spire.PDF/10.4.7": {
         "type": "package",
         "dependencies": {
           "System.Drawing.Common": "6.0.0",
@@ -2426,14 +2426,14 @@
         "runtimes/win10-x86/nativeassets/uap10.0/libHarfBuzzSharp.dll"
       ]
     },
-    "HtmlAgilityPack/1.11.59": {
-      "sha512": "0tMaGzTJ5uFFMCYvprZ4hRYg6Dm5E+/WeMFJiD5K83Fe/Y6kyLaRKcfrfUwfb1j428XzB4/2RR7sdxoQX5eaEA==",
+    "HtmlAgilityPack/1.11.60": {
+      "sha512": "7Uzaf1Mxeuxne33LpTZfSsuRW4sRRX6FWMolOSxXcaAwcKvFevH2E+P6tb4dMWhdyUdBfi0N0yyPZ8hqodfEYg==",
       "type": "package",
-      "path": "htmlagilitypack/1.11.59",
+      "path": "htmlagilitypack/1.11.60",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "htmlagilitypack.1.11.59.nupkg.sha512",
+        "htmlagilitypack.1.11.60.nupkg.sha512",
         "htmlagilitypack.nuspec",
         "lib/Net35/HtmlAgilityPack.dll",
         "lib/Net35/HtmlAgilityPack.pdb",
@@ -5495,10 +5495,10 @@
         "xamarin.interactive/SkiaSharp.Workbooks.dll"
       ]
     },
-    "Spire.PDF/10.3.7": {
-      "sha512": "d3rLv4+cFypa2vKgSkc8GAnDbQboLJwIHwiX7rEPROhj6S+G369alxtaYCqkPQMxHFG+5HWEbJgF/j2h972z4w==",
+    "Spire.PDF/10.4.7": {
+      "sha512": "DPDO38SXh6JrgerLN8W7vHw7jnJ1jRYjXs+A7XSBRlCN9jqg4cAqLpjuU2zGVZVQWBCxRa4NARCGLJiUPrth/A==",
       "type": "package",
-      "path": "spire.pdf/10.3.7",
+      "path": "spire.pdf/10.4.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5511,7 +5511,7 @@
         "lib/netstandard2.0/Spire.Pdf.dll",
         "lib/netstandard2.0/Spire.Pdf.xml",
         "license.txt",
-        "spire.pdf.10.3.7.nupkg.sha512",
+        "spire.pdf.10.4.7.nupkg.sha512",
         "spire.pdf.nuspec"
       ]
     },
@@ -6508,11 +6508,11 @@
       "Chronic >= 0.3.2",
       "FreeSpire.Doc >= 12.2.0",
       "FreeSpire.PDF >= 10.2.0",
-      "HtmlAgilityPack >= 1.11.59",
+      "HtmlAgilityPack >= 1.11.60",
       "Humanizer >= 2.14.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
       "Newtonsoft.Json >= 13.0.3",
-      "Spire.PDF >= 10.3.7",
+      "Spire.PDF >= 10.4.7",
       "Telegram.Bot >= 19.0.0",
       "VkNet >= 1.78.0",
       "iTextSharp >= 5.5.13.3"
@@ -6576,7 +6576,7 @@
           },
           "HtmlAgilityPack": {
             "target": "Package",
-            "version": "[1.11.59, )"
+            "version": "[1.11.60, )"
           },
           "Humanizer": {
             "target": "Package",
@@ -6592,7 +6592,7 @@
           },
           "Spire.PDF": {
             "target": "Package",
-            "version": "[10.3.7, )"
+            "version": "[10.4.7, )"
           },
           "Telegram.Bot": {
             "target": "Package",

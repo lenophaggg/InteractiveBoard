@@ -588,3 +588,4 @@ C:\Users\user\Desktop\ucheba\MyMvcApp\bin\Debug\net8.0\publish\wwwroot\schedules
 C:\Users\user\Desktop\ucheba\MyMvcApp\bin\Debug\net8.0\publish\wwwroot\schedules\faculties_schedules\ship_power_engineering_and_automation\2595.json
 C:\Users\user\Desktop\ucheba\MyMvcApp\bin\Debug\net8.0\publish\wwwroot\schedules\person_schedules\Епифанцева Кристина Анатольевна.json
 C:\Users\user\Desktop\ucheba\MyMvcApp\bin\Debug\net8.0\publish\wwwroot\schedules\person_schedules\Серебряков Михаил Юрьевич.json
+C:\Users\user\Desktop\ucheba\MyMvcApp\obj\Debug\net8.0\MyMvcApp.sourcelink.json

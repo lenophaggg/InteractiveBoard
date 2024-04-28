@@ -33,15 +33,15 @@ namespace MyMvcApp.Services
 
         private void CleanupOldFiles()
         {
-            var files = Directory.GetFiles(DocumentsPath);
+            var directories = Directory.GetDirectories(DocumentsPath);
 
-            foreach (var file in files)
+            foreach (var directory in directories)
             {
-                var fileInfo = new FileInfo(file);
+                var directoryInfo = new DirectoryInfo(directory);
 
-                if (DateTime.UtcNow - fileInfo.LastWriteTimeUtc > FileAgeLimit)
+                if (DateTime.Now - directoryInfo.LastWriteTime > FileAgeLimit)
                 {
-                    fileInfo.Delete();
+                    directoryInfo.Delete(true); // true для рекурсивного удаления
                 }
             }
         }

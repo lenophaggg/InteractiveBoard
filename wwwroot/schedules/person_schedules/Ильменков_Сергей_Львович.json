@@ -1,8 +1,8 @@
 [
   {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "А 413",
     "Group": "2150",
@@ -12,8 +12,8 @@
   },
   {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T10:10:00",
-    "EndTime": "2024-04-07T11:40:00",
+    "StartTime": "10:10:00",
+    "EndTime": "11:40:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "А 435",
     "Group": "2150",
@@ -23,8 +23,8 @@
   },
   {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T11:50:00",
-    "EndTime": "2024-04-07T13:20:00",
+    "StartTime": "11:50:00",
+    "EndTime": "13:20:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "Б 508",
     "Group": "2395",
@@ -34,30 +34,8 @@
   },
   {
     "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Б 508",
-    "Group": "2490",
-    "Subject": "Системы массового обслуживания",
-    "InstructorName": "Ильменков Сергей Львович",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100469/"
-  },
-  {
-    "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
-    "WeekType": "Обе недели",
-    "Classroom": "Б 508",
-    "Group": "2450",
-    "Subject": "Системы массового обслуживания",
-    "InstructorName": "Ильменков Сергей Львович",
-    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100469/"
-  },
-  {
-    "DayOfWeek": "Среда",
-    "StartTime": "2024-04-07T15:40:00",
-    "EndTime": "2024-04-07T17:10:00",
+    "StartTime": "15:40:00",
+    "EndTime": "17:10:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "А 417-1",
     "Group": "2495",
@@ -67,8 +45,8 @@
   },
   {
     "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T19:00:00",
-    "EndTime": "2024-04-07T20:30:00",
+    "StartTime": "19:00:00",
+    "EndTime": "20:30:00",
     "WeekType": "Верхняя неделя",
     "Classroom": "А 435",
     "Group": "5440",
@@ -78,8 +56,8 @@
   },
   {
     "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T19:00:00",
-    "EndTime": "2024-04-07T20:30:00",
+    "StartTime": "19:00:00",
+    "EndTime": "20:30:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "А 435",
     "Group": "5330",
@@ -89,8 +67,8 @@
   },
   {
     "DayOfWeek": "Четверг",
-    "StartTime": "2024-04-07T20:40:00",
-    "EndTime": "2024-04-07T22:10:00",
+    "StartTime": "20:40:00",
+    "EndTime": "22:10:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "А 435",
     "Group": "5330",

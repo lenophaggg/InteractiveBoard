@@ -1,8 +1,8 @@
 [
   {
     "DayOfWeek": "Вторник",
-    "StartTime": "2024-04-07T14:00:00",
-    "EndTime": "2024-04-07T15:30:00",
+    "StartTime": "14:00:00",
+    "EndTime": "15:30:00",
     "WeekType": "Нижняя неделя",
     "Classroom": "М 33",
     "Group": "4320",
