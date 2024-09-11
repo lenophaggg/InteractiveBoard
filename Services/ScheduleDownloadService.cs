@@ -49,8 +49,8 @@ namespace MyMvcApp.Services
                 var now = DateTime.Now;
 
                 // Проверяем, 02:00 ли сейчас
-                //if (now.Hour == 2 && now.Minute == 0)
-                //{
+                if (now.Hour == 2 && now.Minute == 0)
+                {
                     using (var scope = _serviceProvider.CreateScope())
                     {
                         var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
@@ -67,7 +67,7 @@ namespace MyMvcApp.Services
                         // Загрузка и сохранение расписаний для преподавателей
                         await ParseAndSavePersonSchedule(context);
                     }
-                //}
+                }
 
                 // Вычисляем время до следующего запуска: следующий день в 02:00
                 DateTime nextRunTime = now.Date.AddDays(1).AddHours(2);
