@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MyMvcApp.Models;
 using System.Data.SqlTypes;
+using System.Linq;
 using VkNet.Model;
 
 namespace MyMvcApp.Controllers
@@ -9,74 +11,65 @@ namespace MyMvcApp.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IWebHostEnvironment _hostingEnvironment;
+        private readonly ApplicationDbContext _context;
 
-
-        public ContactsController(ILogger<HomeController> logger, IWebHostEnvironment hostingEnvironment)
+        public ContactsController(ILogger<HomeController> logger, IWebHostEnvironment hostingEnvironment, ApplicationDbContext context)
         {
             _logger = logger;
             _hostingEnvironment = hostingEnvironment;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            string filePath = Path.Combine(_hostingEnvironment.WebRootPath, "main_contact", "main_university_contacts.json");
-            List<Models.MainUniversityContact> contactDataList = new List<Models.MainUniversityContact>();
+            List<MainUniversityContact> contactDataList = _context.MainUniversityContacts.ToList();
 
-            var dataParser = new DataParserModel();
+            // Инвертировать список без изменения исходного списка
+            List<MainUniversityContact> reversedContactDataList = new List<MainUniversityContact>(contactDataList.Reverse<MainUniversityContact>());
 
-            contactDataList = dataParser.LoadDataFromJson<Models.MainUniversityContact>(filePath);
+            // Или инвертировать исходный список на месте
+            contactDataList.Reverse();
 
-            return View(contactDataList);
+            // Теперь reversedContactDataList содержит инвертированный список, а contactDataList - инвертированный список
+            return View(reversedContactDataList);
         }
 
         [HttpGet]
-        public IActionResult ClarifyPerson(string personTerm)
+        public IActionResult ClarifyPerson(string personTerm, string universityIdContact)
         {
-            string directoryPath = Path.Combine(_hostingEnvironment.WebRootPath, "main_contact", "person_contacts.json");
-            var dataParser = new DataParserModel();
-            List<Models.PersonContact> allPersonContactDataList = new List<Models.PersonContact>();
-            List<string> similarContacts = new List<string>();
-
-            if (personTerm.Length != 1)
+            if (personTerm == null)
             {
-                allPersonContactDataList = dataParser.LoadDataFromJson<Models.PersonContact>(directoryPath);
-
-                foreach (var contact in allPersonContactDataList)
-                {
-                    if (FindSubstring(contact.NameContact.ToLower(), personTerm.ToLower()))
-                    {
-                        similarContacts.Add(contact.NameContact);
-                    }
-                }
+                ViewData["ErrorMessage"] = "Введите термин для поиска.";
+                return PartialView("~/Views/Shared/_PotentialPersonList.cshtml", new List<ScheduleData>());
             }
-            
+
+            string searchPattern = personTerm.ToLower();
+
+            List<PersonContact> similarContacts = _context.PersonContacts
+                 .Where(p => p.NameContact.ToLower().Contains(searchPattern))                 
+                 .ToList();
+
             ViewData["Type"] = "Contacts";
 
             return PartialView("~/Views/Shared/_PotentialPersonList.cshtml", similarContacts);
         }
 
-        public static bool FindSubstring(string mainString, string substring)
-        {
-            return mainString.IndexOf(substring) != -1;
-        }
-
         [HttpGet]
-        public IActionResult GetContactPerson(string personName)
+        public IActionResult GetContactPerson(string personName, string universityIdContact)
         {
-            DataParserModel dataParser = new DataParserModel();
-            string jsonFilePath = Path.Combine(_hostingEnvironment.WebRootPath, $"main_contact/person_contacts.json");
+            var personContact = _context.PersonContacts
+                .Where(p => p.NameContact == personName && p.UniversityIdContact == universityIdContact)
+                    .Include(p => p.TaughtSubjects)  // Убедитесь, что у вас есть навигационное свойство TaughtSubjects в классе PersonContact
+                .FirstOrDefault();
 
-            var personsContact = dataParser.LoadDataFromJson<MyMvcApp.Models.PersonContact>(jsonFilePath);
-
-            var personContact = personsContact.Find(contact => contact.NameContact == personName);
-            if (personContact != null) 
-            { 
-                return PartialView("~/Views/Shared/_ContactPersonInfo.cshtml", personContact); 
-            } 
+            if (personContact != null)
+            {
+                return PartialView("~/Views/Shared/_ContactPersonInfo.cshtml", personContact);
+            }
             else
-            { 
-                return null; 
-            }           
+            {
+                return null;
+            }
         }
     }
 }

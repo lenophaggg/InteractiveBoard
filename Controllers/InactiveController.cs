@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MyMvcApp.Models;
 using Newtonsoft.Json;
+using static iTextSharp.text.pdf.AcroFields;
 
 
 namespace MyMvcApp.Controllers
@@ -10,28 +12,39 @@ namespace MyMvcApp.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IWebHostEnvironment _hostingEnvironment;
         private readonly IConfiguration _configuration;
+        private readonly ApplicationDbContext _context;
 
-        public InactiveController(ILogger<HomeController> logger, IWebHostEnvironment hostingEnvironment, IConfiguration configuration)
+        public InactiveController(ILogger<HomeController> logger, IWebHostEnvironment hostingEnvironment, IConfiguration configuration, ApplicationDbContext context)
         {
             _logger = logger;
             _hostingEnvironment = hostingEnvironment;
             _configuration = configuration;
+            _context = context;
         }
 
         public IActionResult Index()
-        {            
+        {
             return View();
         }
 
         [HttpGet]
         public IActionResult GetCurrentSchedule()
         {
-            List<MyMvcApp.Models.CurrentSchedule> scheduleItems = new List<MyMvcApp.Models.CurrentSchedule>();
+            //var allSchedule = _context.ScheduleData.ToList();
+
+            List<CurrentSchedule> scheduleItems = new List<CurrentSchedule>();
 
             var dataParser = new DataParserModel();
-            string facultyCode = _configuration["ScheduleOptions:Faculty"];
+            string nameFaculty = _configuration["ScheduleOptions:Faculty"];
+            
 
-            var nameFolder = dataParser.GetFacultyName(facultyCode);
+            var allScheduleForFaculty = _context.ScheduleData
+                .Where(s => _context.Groups
+                                .Where(g => g.FacultyName == nameFaculty)
+                                .Select(g => g.Number)
+                    .Contains(s.Group))
+                    .Include(s => s.Instructor)
+                .ToList();
 
             // Получение текущего дня недели
             string currentDayOfWeek = DateTime.Today.ToString("dddd", new System.Globalization.CultureInfo("ru-RU"));
@@ -70,9 +83,7 @@ namespace MyMvcApp.Controllers
                 new TimeSpan(19, 0, 0),
                 new TimeSpan(20, 40, 0)
             };
-
-            string[] jsonFiles = Directory.GetFiles(Path.Combine(_hostingEnvironment.WebRootPath, "schedules", "faculties_schedules", nameFolder), "*.json");
-
+                        
             for (int i = 0; i < startTimes.Length; i++)
             {
                 if (currentTime.TimeOfDay >= startTimes[i] && currentTime.TimeOfDay <= endTimes[i])
@@ -85,37 +96,23 @@ namespace MyMvcApp.Controllers
                 }
             }
 
-            foreach (string jsonFile in jsonFiles)
+            foreach (var scheduleGroup in allScheduleForFaculty)
             {
-                // Читаем содержимое JSON-файла
-                string jsonContent = System.IO.File.ReadAllText(jsonFile);
-
-                // Десериализуем JSON-строку в список объектов ScheduleItem
-                List<MyMvcApp.Models.ScheduleData> items = JsonConvert.DeserializeObject<List<MyMvcApp.Models.ScheduleData>>(jsonContent);
-
-                // Фильтруем объекты по заданным критериям
-                foreach (MyMvcApp.Models.ScheduleData item in items)
+                if ((scheduleGroup.WeekType == typeWeek || scheduleGroup.WeekType == "Обе недели") &&
+                    scheduleGroup.DayOfWeek == currentDayOfWeek &&
+                    scheduleGroup.StartTime <= currentTime.TimeOfDay &&
+                    scheduleGroup.EndTime >= currentTime.TimeOfDay)                    
                 {
-                    if ((item.WeekType == typeWeek &&
-                        item.DayOfWeek == currentDayOfWeek &&
-                        item.StartTime <= currentTime.TimeOfDay &&
-                        item.EndTime >= currentTime.TimeOfDay)
-                        || (
-                        item.WeekType == "Обе недели" &&
-                        item.DayOfWeek == currentDayOfWeek &&
-                        item.StartTime <= currentTime.TimeOfDay &&
-                        item.EndTime >= currentTime.TimeOfDay))
+                    scheduleItems.Add(new CurrentSchedule
                     {
-                        scheduleItems.Add(new MyMvcApp.Models.CurrentSchedule
-                        {
-                            Group = Path.GetFileNameWithoutExtension(jsonFile),
-                            Subject = item.Subject,
-                            Classroom = item.Classroom,
-                            InstructorName = item.InstructorName,
-                            Status = status
-                        });
-                    }
-                }
+                        Group = scheduleGroup.Group,
+                        Subject = scheduleGroup.Subject,
+                        Classroom = scheduleGroup.Classroom,
+                        InstructorName = scheduleGroup.Instructor.NameContact,
+                        Status = status, 
+                        ScheduleInfo = scheduleGroup.ScheduleInfo
+                    });
+                }                
             }
 
             return PartialView("_DIT", scheduleItems);

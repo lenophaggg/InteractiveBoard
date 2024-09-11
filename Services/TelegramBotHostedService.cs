@@ -16,6 +16,10 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using Spire.Pdf;
 using System.Xml.XPath;
+using Newtonsoft.Json.Linq;
+using Microsoft.Extensions.Options;
+using MyMvcApp.Models;
+using static System.Net.WebRequestMethods;
 
 namespace MyMvcApp.Services
 {
@@ -23,6 +27,7 @@ namespace MyMvcApp.Services
     {
         private readonly TelegramBotClient _botClient;
         private CancellationTokenSource _cts;
+        private readonly IConfiguration _configuration;
 
         private readonly List<string> _allowedUsernames;
 
@@ -36,7 +41,7 @@ namespace MyMvcApp.Services
         public TelegramBotHostedService(string botToken, IConfiguration _configuration)
         {
             _botClient = new TelegramBotClient(botToken);
-
+            _configuration = _configuration;
             _allowedUsernames = _configuration.GetSection("TelegramBotSettings:AllowedUsernames").Get<List<string>>();
         }
 
@@ -108,6 +113,15 @@ namespace MyMvcApp.Services
                 return;
             }
 
+            string usernamePattern = @"(?<=^|\s)(?:@(?<name>[\w]+)|https://t\.me/(?<name>\w+))";
+            Match usernameMatch = Regex.Match(messageText, usernamePattern);
+
+            if (usernameMatch.Success)
+            {
+                string usernameValue = usernameMatch.Groups["name"].Value; // Используем именованную группу для извлечения нужной части
+                GetAccesToUser(chatId, usernameValue, cancellationToken);
+                return;
+            }
 
             string pattern = @"^(\S+)\s+\[([^\[\]]+)\]\s+\[([^\[\]]+)\]";
             Match match = Regex.Match(messageText, pattern);
@@ -207,16 +221,112 @@ namespace MyMvcApp.Services
             await _botClient.SendTextMessageAsync(chatId, "🤖 Приложите документ/ы в сообщении", cancellationToken: cancellationToken);
 
         }
+
+        private async Task GetAccesToUser(long chatId, string param, CancellationToken cancellationToken)
+        {
+            try
+            {
+                if (!_allowedUsernames.Contains(param))
+                {
+                    _allowedUsernames.Add(param);
+
+                    var configPath = Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json");
+                    var configJson = System.IO.File.ReadAllText(configPath);
+                    var configDoc = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(configJson);
+
+                    var allowedUsernames = configDoc["TelegramBotSettings"]["AllowedUsernames"] as JArray;
+                    if (allowedUsernames != null)
+                    {
+                        // Проверяем, содержит ли массив allowedUsernames значение param
+                        if (!allowedUsernames.Contains(param))
+                        {
+                            // Добавляем новое значение в массив
+                            allowedUsernames.Add(param);
+                        }
+                    }
+                    var updatedConfigJson = Newtonsoft.Json.JsonConvert.SerializeObject(configDoc, Newtonsoft.Json.Formatting.Indented);
+                    System.IO.File.WriteAllText(configPath, updatedConfigJson);
+
+                    await _botClient.SendTextMessageAsync(chatId, $"✅ Пользователю @{param} успешно предаставлены права на использование бота");
+                }
+                else
+                {
+                    await _botClient.SendTextMessageAsync(chatId, $"❌ Пользователь @{param} уже имеет права на использование бота");
+                }
+            }
+            catch (Exception ex)
+            {
+                await _botClient.SendTextMessageAsync(chatId, $"❌ Ошибка предоставления пользователю прав: {ex.Message}\n\n{mySolutions[new Random().Next(0, mySolutions.Count())]}");
+            }
+        }
+
+        private async Task CloseAccesFromUser(long chatId, string param, CancellationToken cancellationToken)
+        {
+            try
+            {
+                if (_allowedUsernames.Contains(param))
+                {
+                    _allowedUsernames.Remove(param);
+
+                    var configPath = Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json");
+                    var configJson = System.IO.File.ReadAllText(configPath);
+                    var configDoc = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(configJson);
+
+                    var allowedUsernames = configDoc["TelegramBotSettings"]["AllowedUsernames"];
+                    if (allowedUsernames != null)
+                    {
+                        // Ищем индекс элемента, который нужно удалить
+                        int indexToRemove = -1;
+                        for (int i = 0; i < allowedUsernames.Count; i++)
+                        {
+                            if (allowedUsernames[i].ToString() == param)
+                            {
+                                indexToRemove = i;
+                                break;
+                            }
+                        }
+
+                        // Если нашли элемент, удаляем его
+                        if (indexToRemove != -1)
+                        {
+                            allowedUsernames.RemoveAt(indexToRemove);
+                        }
+                    }
+                    var updatedConfigJson = Newtonsoft.Json.JsonConvert.SerializeObject(configDoc, Newtonsoft.Json.Formatting.Indented);
+                    System.IO.File.WriteAllText(configPath, updatedConfigJson);
+
+                    await _botClient.SendTextMessageAsync(chatId, $"✅ Пользователь @{param} успешно удален из списка разрешенных");
+                }
+                else
+                {
+                    await _botClient.SendTextMessageAsync(chatId, $"❌ Пользователь @{param} не найден в списке разрешенных");
+                }
+            }
+            catch (Exception ex)
+            {
+                await _botClient.SendTextMessageAsync(chatId, $"❌ Ошибка удаления прав у пользователя: {ex.Message}\n\n{mySolutions[new Random().Next(0, mySolutions.Count())]}");
+            }
+        }
+
         private async Task AskGetAccesToUserAsync(long chatId, CancellationToken cancellationToken)
         {
-            await _botClient.SendTextMessageAsync(chatId, "🤖 Скоро можно будет давать доступ пользователю", cancellationToken: cancellationToken);
-
+            await _botClient.SendTextMessageAsync(chatId, "🤖 Отправте мне контакт в сообщении", cancellationToken: cancellationToken);
         }
+
         private async Task AskCloseUserAccesAsync(long chatId, CancellationToken cancellationToken)
         {
-            await _botClient.SendTextMessageAsync(chatId, "🤖 Скоро можно будет забирать доступ у пользователя", cancellationToken: cancellationToken);
-
+            string command = "closeAccesUser";
+            try
+            {
+                await SendAllowedUsersListAsync(chatId, 1, command, cancellationToken);
+            }
+            catch (Exception ex)
+            {
+                await _botClient.SendTextMessageAsync(chatId, $"❌ Ошибка удаления прав у пользователя: {ex.Message}\n\n{mySolutions[new Random().Next(0, mySolutions.Count())]}");
+            }
+            //await _botClient.SendTextMessageAsync(chatId, "🤖 Скоро можно будет забирать доступ у пользователя", cancellationToken: cancellationToken);
         }
+
         private async Task SendDocumentListAsync(long chatId, int pageNumber, string command, CancellationToken cancellationToken)
         {
             try
@@ -279,6 +389,75 @@ namespace MyMvcApp.Services
                 await _botClient.SendTextMessageAsync(chatId, $"❌ Ошибка запроса документов: {ex.Message}\n\n{mySolutions[new Random().Next(0, mySolutions.Count())]}");
             }
         }
+
+        private async Task SendAllowedUsersListAsync(long chatId, int pageNumber, string command, CancellationToken cancellationToken)
+        {
+            try
+            {
+                var configPath = Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json");
+                var configJson = System.IO.File.ReadAllText(configPath);
+                var configDoc = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(configJson);
+                var allowedUsernames = configDoc["TelegramBotSettings"]["AllowedUsernames"] as JArray;
+
+                if (allowedUsernames == null)
+                {
+                    throw new Exception("❌ Список разрешенных пользователей не найден.");
+                }
+
+                const int pageSize = 5;
+                var startIndex = (pageNumber - 1) * pageSize;
+                var endIndex = Math.Min(startIndex + pageSize, allowedUsernames.Count);
+
+                var usernamesSubset = allowedUsernames.Skip(startIndex).Take(endIndex - startIndex);
+
+                var buttons = new List<List<InlineKeyboardButton>>();
+
+                foreach (var username in usernamesSubset)
+                {
+                    string displayName = username.ToString();
+                    StringBuilder com = new StringBuilder();
+                    com.AppendFormat("{0}:{1}", command, displayName);
+
+                    buttons.Add(new List<InlineKeyboardButton>
+                    {
+                        InlineKeyboardButton.WithCallbackData(displayName, com.ToString())
+                    });
+                }
+
+                List<InlineKeyboardButton> navigationButtons = new List<InlineKeyboardButton>();
+
+                if (pageNumber > 1)
+                {
+                    StringBuilder com = new StringBuilder();
+                    com.AppendFormat("previous-{1}:{0}", pageNumber - 1, command);
+                    navigationButtons.Add(InlineKeyboardButton.WithCallbackData("<", com.ToString()));
+                }
+
+                StringBuilder info = new StringBuilder();
+                info.AppendFormat("{0}/{1}", pageNumber, (int)Math.Ceiling((double)allowedUsernames.Count / pageSize));
+                navigationButtons.Add(InlineKeyboardButton.WithCallbackData(info.ToString(), " "));
+
+                if (endIndex < allowedUsernames.Count)
+                {
+                    StringBuilder com = new StringBuilder();
+                    com.AppendFormat("next-{1}:{0}", pageNumber + 1, command);
+                    navigationButtons.Add(InlineKeyboardButton.WithCallbackData(">", com.ToString()));
+                }
+
+                buttons.Add(navigationButtons);
+
+                // Отправляем сообщение с инлайн кнопками
+                await _botClient.SendTextMessageAsync(
+                    chatId,
+                    "🤖 Выберите контакт:",
+                    replyMarkup: new InlineKeyboardMarkup(buttons));
+            }
+            catch (Exception ex)
+            {
+                await _botClient.SendTextMessageAsync(chatId, $"❌ Ошибка запроса контактов: {ex.Message}");
+            }
+        }
+
         #endregion
 
         #region CallBackQueryHandler
@@ -308,16 +487,24 @@ namespace MyMvcApp.Services
                         break;
                     case "previous":
                     case "next":
-                        await SendDocumentListAsync(chatId, int.Parse(param), sub_command, cancellationToken);
+                        switch (sub_command)
+                        {
+                            case "closeAccesUser":
+                                await SendAllowedUsersListAsync(chatId, int.Parse(param), sub_command, cancellationToken);
+                                break;
+                            default:
+                                await SendDocumentListAsync(chatId, int.Parse(param), sub_command, cancellationToken);
+                                break;
+                        }
                         break;
                     case "rename":
                         await AskRenameFileFromBoardAsync(param, chatId, cancellationToken);
                         break;
-                    case "Закрыть доступ 🚷":
-                        await AskCloseUserAccesAsync(chatId, cancellationToken);
+                    case "closeAccesUser":
+                        await CloseAccesFromUser(chatId, param, cancellationToken);
                         break;
-                    case "Переименовать документ ✏️":
-                        await AskRenameFileForBoardAsync(chatId, cancellationToken);
+                    case "getAccesUser":
+                        await AskGetAccesToUserAsync(chatId, cancellationToken);
                         break;
 
                 }
@@ -375,7 +562,6 @@ namespace MyMvcApp.Services
             }
         }
 
-
         #endregion
 
         private async Task RenameFileAsync(long chatId, string oldName, string newName)
@@ -406,7 +592,7 @@ namespace MyMvcApp.Services
                 }
                 else
                 {
-                    await _botClient.SendTextMessageAsync(chatId, $"Папка с именем \"{oldName}\" не найдена.");
+                    await _botClient.SendTextMessageAsync(chatId, $"Документ с именем \"{oldName}\" не найден.");
                 }
             }
             catch (Exception ex)
@@ -415,14 +601,18 @@ namespace MyMvcApp.Services
             }
         }
 
-
-
         private async Task CreateFileForBoardAsync(long chatId, Telegram.Bot.Types.Document document, CancellationToken cancellationToken)
         {
+            var extension = Path.GetExtension(document.FileName).ToLower();
+            if (extension != ".pdf" && extension != ".docx" && extension != ".doc")
+            {
+                await _botClient.SendTextMessageAsync(chatId, $"❌ Формат файла \"{document.FileName}\" не поддерживается. Поддерживаются только файлы PDF и Word.");
+                return;
+            }
+
             var fileId = document.FileId;
 
             var tempFilePath = Path.Combine("wwwroot", "documents-news-events", "documents", document.FileName);
-
 
             var directoryName = Path.GetFileNameWithoutExtension(document.FileName); // Имя папки будет без расширения файла
             var directoryPath = Path.Combine("wwwroot", "documents-news-events", "documents", directoryName);
@@ -437,47 +627,38 @@ namespace MyMvcApp.Services
                 Directory.CreateDirectory(directoryPath);
             }
 
-            var extension = Path.GetExtension(document.FileName).ToLower();
-            if (extension != ".pdf" && extension != ".docx" && extension != ".doc")
+            var file = await _botClient.GetFileAsync(fileId);
+
+            try
             {
-                await _botClient.SendTextMessageAsync(chatId, $"❌ Формат файла \"{document.FileName}\" не поддерживается. Поддерживаются только файлы PDF и Word.");
-                return;
+                using (var saveImageStream = System.IO.File.Open(tempFilePath, FileMode.Create))
+                {
+                    await _botClient.DownloadFileAsync(file.FilePath, saveImageStream, cancellationToken);
+                }
+
+                var savedExtension = Path.GetExtension(tempFilePath).ToLower();
+                if (savedExtension == ".pdf")
+                {
+                    SavePdfToImg(tempFilePath, Path.Combine("wwwroot", "documents-news-events", "documents", Path.GetFileNameWithoutExtension(document.FileName)));
+
+                    System.IO.File.Delete(tempFilePath);
+                }
+                else
+                {
+                    string newSourcePath = Path.Combine(Path.GetDirectoryName(tempFilePath), $"{Path.GetFileNameWithoutExtension(tempFilePath)}.pdf");
+
+                    ConvertDocToPdf(tempFilePath, newSourcePath);
+                    SavePdfToImg(newSourcePath, Path.Combine("wwwroot", "documents-news-events", "documents", Path.GetFileNameWithoutExtension(document.FileName)));
+
+                    System.IO.File.Delete(newSourcePath);
+                }
+
+                await _botClient.SendTextMessageAsync(chatId, $"✅ Документ \"{Path.GetFileName(document.FileName)}\" успешно сохранен");
             }
-            else
+            catch (Exception ex)
             {
-                var file = await _botClient.GetFileAsync(fileId);
-
-                try
-                {
-                    using (var saveImageStream = System.IO.File.Open(tempFilePath, FileMode.Create))
-                    {
-                        await _botClient.DownloadFileAsync(file.FilePath, saveImageStream, cancellationToken);
-                    }
-
-                    var savedExtension = Path.GetExtension(tempFilePath).ToLower();
-                    if (savedExtension == ".pdf")
-                    {
-                        SavePdfToImg(tempFilePath, Path.Combine("wwwroot", "documents-news-events", "documents", Path.GetFileNameWithoutExtension(document.FileName)));
-                        
-                        System.IO.File.Delete(tempFilePath);
-                    }
-                    else
-                    {
-                        string newSourcePath = Path.Combine(Path.GetDirectoryName(tempFilePath), $"{Path.GetFileNameWithoutExtension(tempFilePath)}.pdf");
-
-                        ConvertDocToPdf(tempFilePath, newSourcePath);
-                        SavePdfToImg(newSourcePath, Path.Combine("wwwroot", "documents-news-events", "documents", Path.GetFileNameWithoutExtension(document.FileName)));
-                        
-                        System.IO.File.Delete(newSourcePath);
-                    }
-                   
-                    await _botClient.SendTextMessageAsync(chatId, $"✅ Документ \"{Path.GetFileName(document.FileName)}\" успешно сохранен");
-                }
-                catch (Exception ex)
-                {
-                    Directory.Delete(Path.Combine("wwwroot", "documents-news-events", "documents", Path.GetFileNameWithoutExtension(document.FileName)),true);
-                    await _botClient.SendTextMessageAsync(chatId, $"❌ Ошибка сохранения документа \"{Path.GetFileName(document.FileName)}\": {ex.Message}");
-                }
+                Directory.Delete(Path.Combine("wwwroot", "documents-news-events", "documents", Path.GetFileNameWithoutExtension(document.FileName)), true);
+                await _botClient.SendTextMessageAsync(chatId, $"❌ Ошибка сохранения документа \"{Path.GetFileName(document.FileName)}\": {ex.Message}");
             }
         }
 
@@ -538,7 +719,6 @@ namespace MyMvcApp.Services
             }
         }
 
-
         public static void ConvertPdfToImages(MemoryStream pdfStream, string outputFolder, int partNumber)
         {
             // Загрузка PDF-документа из MemoryStream
@@ -569,6 +749,5 @@ namespace MyMvcApp.Services
             // Освобождение ресурсов, связанных с PDF-документом
             doc.Close();
         }
-
     }
 }

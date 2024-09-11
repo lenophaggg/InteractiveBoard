@@ -1,13 +1,13 @@
 @model VkPost
 
-@if (Model != null && Model.ImageUrl != null && Model.ImageUrl.Count > 0)
+@if (Model != null)
 {
-    @if (Model.ImageUrl.Count == 1)
+    @* @if (Model.ImageUrl.Count == 0)
     {
-        <img src="@Model.ImageUrl[0]" class="d-block img-fluid" alt="Post Image">
+        <img src="" class="d-block img-fluid" alt="Post Image">
     }
     else
-    {
+    { *@
         <div class="slider">
             <div class="slides">
                 @foreach (var imageUrl in Model.ImageUrl)
@@ -17,11 +17,20 @@
                     </div>
                 }
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            @if (Model.ImageUrl.Count() != 1)
+            {
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            }            
         </div>
-    }
-    <p>@Model.Text</p>
+   @*  } *@
+    <p>
+        @Html.Raw(Model.Text
+                .Replace("____________________________________ ", "</p><p>")
+                .Replace("——————————————————", "</p><p>")
+                .Replace("—— ", ""))
+    </p>
 }
 else
 {

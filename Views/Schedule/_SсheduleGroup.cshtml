@@ -2,22 +2,22 @@
 
 
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<script src="~/js/ScheduleScript.js"></script>
 
 @if (ViewBag.ErrorMessage != null)
 {
-
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px; ">
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px;height:288px;">
         <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
             <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
         </a>
 
-        <h1 style="margin: 0 auto;">@ViewBag.ErrorMessage</h1>
+    </div>
+    <div class="scheduleContainer">
+        <h2 style="padding: 50px; margin: 50px; text-align:center;">@ViewBag.ErrorMessage</h2>
     </div>
 }
 else if (Model != null && Model.Any())  // Проверка на наличие данных
 {
-
-
     <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px; ">
         <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
             <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
@@ -45,16 +45,28 @@ else if (Model != null && Model.Any())  // Проверка на наличие 
                     {
                         <tr class="tableRow rounded-bottom">
                             <td>@item.WeekType</td>
-                            <td>@item.StartTime.ToString("hh\\:mm") - @item.EndTime.ToString("hh\\:mm")</td>
+                            <td>@($"{item.StartTime:hh\\:mm} - {item.EndTime:hh\\:mm}")</td>
                             <td>@item.Classroom</td>
 
-                            <td>@item.Subject</td>
-                            <td onclick="openModalContact('@item.InstructorName')">
+                            @if (!string.IsNullOrEmpty(item.Subject))
+                            {
+                                <td style="max-width:1050px;">@Html.Raw(@item.Subject)<br><small>@Html.Raw(@item.ScheduleInfo)</small></td>
+                            }
+                            else
+                            {
+                                <td style="max-width:1050px;">@Html.Raw(@item.ScheduleInfo)</td>
+                            }
 
-
-                                @item.InstructorName
-
-                            </td>
+                            @if (item.Instructor != null)
+                            {
+                                <td onclick="openModalInfo('@item.Instructor.NameContact','@item.Instructor.UniversityIdContact')">
+                                    @item.Instructor.NameContact
+                                </td>
+                            }
+                            else
+                            {
+                                <td></td>
+                            }
                         </tr>
                     }
                 }
@@ -64,13 +76,15 @@ else if (Model != null && Model.Any())  // Проверка на наличие 
 }
 else
 {
-
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px; ">
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px;height:288px;">
         <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
             <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
         </a>
 
-        <h1 style="margin: 0 auto;">Расписание отсутствует</h1>
+    </div>
+
+    <div class="scheduleContainer">
+        <h2 style="padding: 50px; margin: 50px; text-align:center;">Расписание отсутствует</h2>
     </div>
 }
 
@@ -85,25 +99,3 @@ else
     </div>
 </form>
 
-<script>
-    function openModalContact(personName) {
-        $.ajax({
-            url: '/Contacts/GetContactPerson',
-            type: 'GET',
-            data: { personName: personName },
-            success: function (data) {
-                // Очищаем содержимое модального окна
-                $('#myModal .modal-body').empty();
-
-                // Вставляем PartialView в модальное окно
-                $('#myModal .modal-body').html(data);
-
-                // Открываем модальное окно
-                $('#myModal').modal('show');
-            },
-            error: function () {
-                
-            }
-        });
-    }
-</script>

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/Contact.css" asp-append-version="true" />
 
-<script src="~/js/ScheduleScript.js"></script>
+<script src="~/js/ContactScript.js"></script>
 
 <!-- Контейнер для отображения данных о расписании -->
 <div id="mainContainer">
@@ -16,25 +16,29 @@
     <div class="contactContainer">
         @foreach (var contact in Model)
         {
-            <div class="contact">
+            <div class="contact" onclick="toggleDetails(this)">
                 <h2>@contact.NameContact</h2>
-                <h3>@contact.AdditionalName</h3>
-                @if (!string.IsNullOrEmpty(contact.Telephone))
-                {
-                    <p><img src="/img/phone_img.png">@contact.Telephone</p>
-                }
-                @if (!string.IsNullOrEmpty(contact.WorkTime))
-                {
-                    <p><img src="/img/clock.png">@contact.WorkTime</p>
-                }
-                @if (!string.IsNullOrEmpty(contact.Address))
-                {
-                    <p><img src="/img/address_img.png">@contact.Address</p>
-                }
-                @if (!string.IsNullOrEmpty(contact.Information))
-                {
-                    <p>@contact.Information</p>
-                }
+                <h4>@contact.AdditionalName</h4>
+                <div class="contact-details" style="display: none;">
+                    @if (!string.IsNullOrEmpty(contact.Telephone))
+                    {
+                        <p><img src="/img/phone_img.png">@contact.Telephone</p>
+                    }
+                    @if (!string.IsNullOrEmpty(contact.WorkTime))
+                    {
+                        <p><img src="/img/clock.png">@contact.WorkTime</p>
+                    }
+                    @if (!string.IsNullOrEmpty(contact.Address))
+                    {
+                        <p><img src="/img/address_img.png">@contact.Address</p>
+                    }
+                    @if (!string.IsNullOrEmpty(contact.Information))
+                    {
+                        <p>
+                            @Html.Raw(contact.Information.Replace("\\n", "<br>"))
+                        </p>
+                    }
+                </div>
             </div>
         }
     </div>
@@ -50,6 +54,21 @@
     </form>
 </div>
 
-<script src="~/js/ContactScript.js"></script>
-
-
+<script>
+    function toggleDetails(contact) {
+        var details = contact.querySelector('.contact-details');
+        if (details.style.display === 'none') {
+            // Скрываем все открытые детали
+            document.querySelectorAll('.contact-details').forEach(function (detail) {
+                detail.style.display = 'none';
+                detail.parentElement.style.position = 'relative'; // Возвращаем нормальное состояние
+            });
+            // Показываем выбранные детали
+            details.style.display = 'block';
+            contact.style.position = 'static'; // Убираем влияние на соседние блоки
+        } else {
+            details.style.display = 'none';
+            contact.style.position = 'relative'; // Возвращаем нормальное состояние
+        }
+    }
+</script>

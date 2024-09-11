@@ -1,4 +1,4 @@
-﻿@model List<MyMvcApp.Models.CurrentSchedule>
+﻿@model List<CurrentSchedule>
 
 <div class="row justify-content-center">
     <div class="col-lg-6">
@@ -18,7 +18,14 @@
                         <tr class="panel">
                             <td>@item.Group</td>
                             <td>@item.Status</td>
-                            <td>@item.Subject</td>
+                            @if (!string.IsNullOrEmpty(item.Subject))
+                            {
+                                <td>@item.Subject<br><small>@item.ScheduleInfo</small></td>
+                            }
+                            else
+                            {
+                                <td>@item.ScheduleInfo</td>
+                            }
                             <td>@item.Classroom</td>
                             <td>@item.InstructorName</td>
                         </tr>
@@ -44,7 +51,14 @@
                         <tr class="panel">
                             <td>@item.Group</td>
                             <td>@item.Status</td>
-                            <td>@item.Subject</td>
+                            @if (!string.IsNullOrEmpty(item.Subject))
+                            {
+                                <td>@item.Subject<br><small>@item.ScheduleInfo</small></td>
+                            }
+                            else
+                            {
+                                <td>@item.ScheduleInfo</td>
+                            }
                             <td>@item.Classroom</td>
                             <td>@item.InstructorName</td>
                         </tr>

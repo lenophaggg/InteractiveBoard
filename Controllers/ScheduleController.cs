@@ -1,5 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MyMvcApp.Models;
+using System.Collections.Generic;
+using System.Linq;
+using VkNet.Model;
 
 namespace MyMvcApp.Controllers
 {
@@ -7,25 +11,29 @@ namespace MyMvcApp.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IWebHostEnvironment _hostingEnvironment;
+        private readonly ApplicationDbContext _context;
 
-        public ScheduleController(ILogger<HomeController> logger, IWebHostEnvironment hostingEnvironment)
+        public ScheduleController(ILogger<HomeController> logger, IWebHostEnvironment hostingEnvironment, ApplicationDbContext context)
         {
             _logger = logger;
             _hostingEnvironment = hostingEnvironment;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            string facultiesSchedulePath = Path.Combine(_hostingEnvironment.WebRootPath, "schedules", "faculties_schedules");
             Dictionary<string, string[]> facultyGroups = new Dictionary<string, string[]>();
 
-            string[] subDirectories = Directory.GetDirectories(facultiesSchedulePath);
+            string[] faculties = _context.Faculties.Select(f => f.Name).ToArray();
 
-            foreach (string subDirectory in subDirectories)
+            foreach (var faculty in faculties.Reverse())
             {
-                string facultyName = Path.GetFileName(subDirectory);
-                var files = Directory.GetFiles(subDirectory).Select(fullPath => Path.GetFileNameWithoutExtension(fullPath)).ToArray();
-                facultyGroups.Add(facultyName, files);
+                var groups = _context.Groups
+                    .Where(g => g.FacultyName == faculty)
+                    .Select(g => g.Number)
+                    .ToArray();
+
+                facultyGroups.Add(faculty, groups);
             }
 
             return View(facultyGroups);
@@ -34,29 +42,39 @@ namespace MyMvcApp.Controllers
         [HttpGet]
         public IActionResult ClarifyPerson(string personTerm)
         {
-            string directoryPath = Path.Combine(_hostingEnvironment.WebRootPath, $"schedules/person_schedules");
-            string[] files = Directory.GetFiles(directoryPath, "*" + personTerm + "*");
-
-            List<string> fileNames = new List<string>();
-            foreach (var file in files)
+            if (personTerm.Length < 3)
             {
-                fileNames.Add(Path.GetFileNameWithoutExtension(file.Replace("_", " ")));
+                // Файл не найден, добавляем сообщение об ошибке в ModelState
+                ViewBag.ErrorMessage = $"Никого не найдено. Попробуйте изменить запрос.";
+                // Возвращаем частичное представление с сообщением об ошибке
+                return PartialView("_SchedulePerson", new List<ScheduleData>());
             }
+
+            if (personTerm == null)
+            {
+                ViewData["ErrorMessage"] = "Введите запрос для поиска.";
+                return PartialView("~/Views/Shared/_PotentialPersonList.cshtml", new List<ScheduleData>());
+            }
+
+            string searchPattern = personTerm.ToLower();
+
+            List<PersonContact> similarContacts = _context.PersonContacts
+                 .Where(p => p.NameContact.ToLower().Contains(searchPattern))
+                 .ToList();
 
             ViewData["Type"] = "Schedule";
 
-            return PartialView("~/Views/Shared/_PotentialPersonList.cshtml", fileNames);
-
+            return PartialView("~/Views/Shared/_PotentialPersonList.cshtml", similarContacts);
         }
 
 
         [HttpGet]
-        public IActionResult GetScheduleForSearchTerm(string searchTerm, string facultyName = "")
+        public IActionResult GetScheduleForSearchTerm(string searchTerm)
         {
             // Проверяем, является ли поисковый запрос числом
             if (int.TryParse(searchTerm, out _))
             {
-                return GetScheduleByGroup(searchTerm, facultyName);
+                return GetScheduleByGroup(searchTerm);
             }
             else
             {
@@ -66,9 +84,8 @@ namespace MyMvcApp.Controllers
 
         // Метод GetScheduleByGroup
         [HttpGet]
-        public IActionResult GetScheduleByGroup(string groupNumber, string facultyName = "")
+        public IActionResult GetScheduleByGroup(string groupNumber)
         {
-            var dataParser = new DataParserModel();
             string errorMessage;
 
             if (!IsValidGroupNumber(groupNumber, out errorMessage))
@@ -77,47 +94,72 @@ namespace MyMvcApp.Controllers
                 ViewBag.ErrorMessage = errorMessage;
 
                 // Возвращаем частичное представление с сообщением об ошибке
-                return PartialView("_SсheduleGroup", new List<Models.ScheduleData>());
+                return PartialView("_SсheduleGroup", new List<ScheduleData>());
             }
 
-            try
+            List<ScheduleData> scheduleData = _context.ScheduleData
+            .Where(s => s.Group == groupNumber)
+                .Include(s => s.Instructor)
+                .Include(s => s.ClassroomNumber)
+                .Include(s => s.GroupNumber)
+                .Include(s => s.SubjectName)
+            .AsEnumerable()  // Переключаемся на клиентскую обработку
+            .OrderBy(s => s.DayOfWeek, new DayOfWeekComparer()) // Клиентская сортировка по дням недели
+            .ThenBy(s => s.StartTime) // Затем сортировка по времени начала
+            .ToList();
+
+            // Возвращаем частичное представление с расписанием
+            return PartialView("_SсheduleGroup", scheduleData);
+        }
+
+        public class DayOfWeekComparer : IComparer<string>
+        {
+            private static readonly string[] daysOfWeek =
             {
-                List<Models.ScheduleData> scheduleData = dataParser.LoadDataFromJson<Models.ScheduleData>(Path.Combine(_hostingEnvironment.WebRootPath, $"schedules/faculties_schedules/{facultyName}/{groupNumber}.json"));
+                "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"
+            };
 
-                // Возвращаем частичное представление с расписанием
-                return PartialView("_SсheduleGroup", scheduleData);
-            }
-            catch (Exception)
+            public int Compare(string x, string y)
             {
-                List<Models.ScheduleData> scheduleData = new List<Models.ScheduleData>();
-                ViewBag.ErrorMessage = "Проверьте правильность номера группы";
-
-                // Возвращаем частичное представление с расписанием
-                return PartialView("_SсheduleGroup", scheduleData);
+                int indexX = Array.IndexOf(daysOfWeek, x);
+                int indexY = Array.IndexOf(daysOfWeek, y);
+                return indexX.CompareTo(indexY);
             }
-
         }
 
         [HttpGet]
-        public PartialViewResult GetScheduleByPerson(string personName)
+        public PartialViewResult GetScheduleByPerson(string personName, string universityIdContact = null)
         {
-            personName = personName.Replace(" ", "_");
+            var person = _context.PersonContacts.FirstOrDefault(p => p.NameContact == personName && p.UniversityIdContact == universityIdContact);
 
-            var dataParser = new DataParserModel();
-            string filePath = Path.Combine(_hostingEnvironment.WebRootPath, "schedules", "person_schedules", $"{personName}.json");
-
-            // Проверяем, существует ли файл
-            if (!System.IO.File.Exists(filePath))
+            // Проверяем, существует ли файл 
+            if (person == null)
             {
                 // Файл не найден, добавляем сообщение об ошибке в ModelState
-                ModelState.AddModelError(string.Empty, $"Расписание для преподавателя {personName} не найдено.");
+                ViewBag.ErrorMessage = $"Преподаватель {personName} не найден";
                 // Возвращаем частичное представление с сообщением об ошибке
-                return PartialView("_SchedulePerson", new List<Models.ScheduleData>());
+                return PartialView("_SchedulePerson", new List<ScheduleData>());
             }
 
             // Загрузите расписание для указанного пользователя
-            List<Models.ScheduleData> scheduleData = dataParser.LoadDataFromJson<Models.ScheduleData>(filePath);
+            List<ScheduleData> scheduleData = _context.ScheduleData
+            .Where(s => s.InstructorId == person.IdContact)
+                .Include(s => s.Instructor)
+                .Include(s => s.ClassroomNumber)
+                .Include(s => s.GroupNumber)
+                .Include(s => s.SubjectName)
+            .AsEnumerable()  // Переключаемся на клиентскую обработку
+            .OrderBy(s => s.DayOfWeek, new DayOfWeekComparer()) // Клиентская сортировка по дням недели
+            .ThenBy(s => s.StartTime) // Затем сортировка по времени начала
+            .ToList();
 
+            if (!scheduleData.Any())
+            {
+                // Файл не найден, добавляем сообщение об ошибке в ModelState
+                ViewBag.ErrorMessage = $"Расписание для преподавателя {personName} не найдено";
+                // Возвращаем частичное представление с сообщением об ошибке
+                return PartialView("_SchedulePerson", new List<ScheduleData>());
+            }
             // Очистите ModelState от предыдущих ошибок
             ModelState.Clear();
 

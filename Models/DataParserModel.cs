@@ -1,4 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using NuGet.DependencyResolver;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyMvcApp.Models
 {
@@ -17,22 +21,22 @@ namespace MyMvcApp.Models
             string jsonData = System.IO.File.ReadAllText(filePath);
 
             // Десериализация JSON в список ScheduleData
-            List<T> data = JsonConvert.DeserializeObject<List<T>>(jsonData);
+            List<T> data =   JsonConvert.DeserializeObject<List<T>>(jsonData);
 
             return data;
         }
 
-        public List<Models.Document> LoadFilesFromDocumentsFolder(string documentsFolderPath)
+        public List<Document> LoadFilesFromDocumentsFolder(string documentsFolderPath)
         {
             string documentsPath = Path.Combine(documentsFolderPath, "documents-news-events", "documents");
-            List<Models.Document> documents = new List<Models.Document>();
+            List<Document> documents = new List<Document>();
 
             string[] directories = Directory.GetDirectories(documentsPath);
 
 
             foreach (string directory in directories)
             {
-                Models.Document document = new Models.Document
+                Document document = new Document
                 {
                     DocumentName = Path.GetFileName(directory).Replace("_", " "),
                     DocumentPath = directory
@@ -41,36 +45,6 @@ namespace MyMvcApp.Models
             }
 
             return documents;
-        }
-
-        private Dictionary<string, string> facultyCodes = new Dictionary<string, string>
-        {
-            {"digital_industrial_technologies", "Факультет цифровых промышленных технологий"},
-            {"college_of_SMTU", "Колледж СПбГМТУ (СТФ)"},
-            {"ship_power_engineering_and_automation", "Факультет корабельной энергетики и автоматики"},
-            {"natural_sciences_and_humanities", "Факультет естественнонаучного и гуманитарного образования"},
-            {"engineering_and_economics", "Инженерно-экономический факультет"},
-            {"marine_instrument_engineering", "Факультет морского приборостроения"},
-            {"shipbuilding_and_ocean_engineering", "Факультет кораблестроения и океанотехники"}
-        };
-
-        public string GetFacultyName(string facultyCode)
-        {
-            // Проверяем, является ли входная строка кодом факультета
-            if (facultyCodes.ContainsKey(facultyCode))
-            {
-                return facultyCodes[facultyCode];
-            }
-            // Проверяем, является ли входная строка названием факультета
-            else if (facultyCodes.ContainsValue(facultyCode))
-            {
-                return facultyCodes.FirstOrDefault(x => x.Value == facultyCode).Key;
-            }
-            // Если входная строка не соответствует коду или названию факультета
-            else
-            {
-                return facultyCode;
-            }
         }
     }
 
@@ -81,28 +55,115 @@ namespace MyMvcApp.Models
     }
 
     #region LoadingSchedules
+    [PrimaryKey("ScheduleId")]
+    [Table("schedules")]
     public class ScheduleData
     {
-        public string DayOfWeek { get; set; } // День недели
-        public TimeSpan StartTime { get; set; } // Время начала
-        public TimeSpan EndTime { get; set; } // Время конца
-        public string WeekType { get; set; } // Тип недели (верхняя, нижняя, обе)
-        public string Classroom { get; set; } // Аудитория
-        public string Group { get; set; } // Группа
-        public string Subject { get; set; } // Предмет
-        public string InstructorName { get; set; } // ФИО преподавателя
-        public string InstructorLink { get; set; } // Ссылка на преподавателя
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column("scheduleid")]
+        public int ScheduleId { get; set; } // Первичный ключ
+
+        [Column("dayofweek")]
+        public string? DayOfWeek { get; set; } // День недели
+
+        [Column("starttime")]
+        public TimeSpan? StartTime { get; set; } // Время начала
+
+        [Column("endtime")]
+        public TimeSpan? EndTime { get; set; } // Время конца
+
+        [Column("weektype")]
+        public string? WeekType { get; set; } // Тип недели (верхняя, нижняя, обе)
+
+        [Column("classroomnumber")]
+        public string? Classroom { get; set; } // Аудитория
+        [ForeignKey("Classroom")]
+        public Classrooms ClassroomNumber { get; set; }
+
+        [Column("groupnumber")]
+        public string? Group { get; set; } // Группа
+        [ForeignKey("Group")]
+        public Groups GroupNumber { get; set; }
+
+        [Column("subjectname")]
+        public string? Subject { get; set; }
+        [ForeignKey("Subject")]
+        public Subject SubjectName { get; set; }
+        
+        [Column("instructorid")]     
+        public int? InstructorId { get; set; }
+        [ForeignKey("InstructorId")]
+        public PersonContact Instructor { get; set; }
+
+        [Column("scheduleinfo")]
+        public string? ScheduleInfo { get; set; }
     }
 
     public class CurrentSchedule
     {
         public string Group { get; set; }
         public string Subject { get; set; }
+        public string ScheduleInfo { get; set; }
         public string Classroom { get; set; }
         public string InstructorName { get; set; }
         public string Status { get; set; }
+
     }
+
     #endregion
+
+    [PrimaryKey("SubjectName")]
+    [Table("subjects")]
+    public class Subject
+    {
+        [Column("subjectname")]
+        public string SubjectName { get; set; }       
+    }
+
+    [PrimaryKey("IdContact", "SubjectName")]
+    [Table("person_taughtsubjects")]
+    public class PersonTaughtSubject
+    {
+        [Column("idcontact")]
+        public int IdContact { get; set; }
+        [Column("subjectname")]
+        public string SubjectName { get; set; }
+
+        [ForeignKey("IdContact")]
+        public PersonContact Person { get; set; }
+
+        [ForeignKey("SubjectName")]
+        public Subject Subject { get; set; }
+    }
+
+    [PrimaryKey("Name")]
+    [Table("faculties")]
+    public class Faculties
+    {
+        [Column("name")]
+        public string Name { get; set; }
+    }
+
+    [PrimaryKey("Number")]
+    [Table("groups")]
+    public class Groups
+    {
+        [Column("groupnumber")]
+        public string Number { get; set; }
+        [Column("facultyname")]
+        public string? FacultyName { get; set; }
+        [ForeignKey("FacultyName")]
+        public Faculties Faculty { get; set; }
+    }
+
+    [PrimaryKey("ClassroomNumber")]
+    [Table("classrooms")]
+    public class Classrooms
+    {
+        [Column("classroomnumber")]
+        public string ClassroomNumber { get; set; }
+    }
 
     #region LoadingVk
 

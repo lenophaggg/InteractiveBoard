@@ -1,26 +1,33 @@
 // Регистрация сервиса телеграм-бота
-using MyMvcApp.Services; // Replace "YourNamespace" with the actual namespace of the TelegramBotHostedService class
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using MyMvcApp.Models;
+using MyMvcApp.Services;
+using System.Configuration; // Replace "YourNamespace" with the actual namespace of the TelegramBotHostedService class
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddHostedService<TypeWeekDownloadService>();
 
 builder.Services.AddHostedService(provider =>
 {
-    var botToken = ""; // Получить токен бота из конфигурации
+    var botToken = "6715640503:AAH0j3XDbuWuAo2mSIULSrNct_8mj5Y41wY"; // Получить токен бота из конфигурации
     var configuration = provider.GetRequiredService<IConfiguration>();
     return new TelegramBotHostedService(botToken, configuration);
 });
 
 builder.Services.AddHostedService<DocumentCleanupService>();
-//builder.Services.AddHostedService<NewsEventsDownloadService>();
-//builder.Services.AddHostedService<ScheduleDownloadService>();
+builder.Services.AddHostedService<NewsEventsDownloadService>();
 //builder.Services.AddHostedService<ContactDownloadService>();
+builder.Services.AddHostedService<ScheduleDownloadService>();
 // ...
-builder.Services.AddHostedService<TypeWeekDownloadService>();
 
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 

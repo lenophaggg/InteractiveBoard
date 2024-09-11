@@ -3,29 +3,40 @@ using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 using VkNet;
 using VkNet.Model;
-using static System.Net.Mime.MediaTypeNames;
-
-
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using MyMvcApp.Models;
 
 namespace MyMvcApp.Services
 {
     public class NewsEventsDownloadService : IHostedService
     {
-
+        private static TimeSpan CheckInterval = TimeSpan.FromMinutes(30);
         private CancellationTokenSource _cts;
+        private readonly IServiceProvider _serviceProvider;
+        private VkApi _vkApi;
 
-        public async Task StartAsync(CancellationToken cancellationToken)
+        public NewsEventsDownloadService(IServiceProvider serviceProvider)
+        {
+            _serviceProvider = serviceProvider;
+            _vkApi = new VkApi();
+            _vkApi.Authorize(new ApiAuthParams
+            {
+                AccessToken = "21a09de121a09de121a09de15722b6c098221a021a09de144fb01384c67302821e770c3"
+            });
+        }
+
+        public Task StartAsync(CancellationToken cancellationToken)
         {
             _cts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
-
-            // Запуск цикла в отдельной задаче
             _ = DownloadVkGroupData(_cts.Token);
+            return Task.CompletedTask;
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
             _cts.Cancel();
-
             return Task.CompletedTask;
         }
 
@@ -33,100 +44,95 @@ namespace MyMvcApp.Services
         {
             while (!cancellationToken.IsCancellationRequested)
             {
-                ParseAndSaveVkGroupData(Path.Combine("wwwroot", "documents-news-events"));
-                await Task.Delay(TimeSpan.FromMinutes(2), cancellationToken);
+                await ParseAndSaveVkGroupData(Path.Combine("wwwroot", "documents-news-events"), cancellationToken);
+                await Task.Delay(CheckInterval, cancellationToken);
             }
         }
 
-        private void ParseAndSaveVkGroupData(string dataFolderPath)
+        private async Task ParseAndSaveVkGroupData(string dataFolderPath, CancellationToken cancellationToken)
         {
-            var api = new VkApi();
-
-            api.Authorize(new ApiAuthParams
+            var tasks = new List<Task<List<VkPost>>>
             {
-                AccessToken = ""
-            });
+                ParseVkGroupDataAsync(_vkApi, "ovdsmtu", 15),
+                ParseVkGroupDataAsync(_vkApi, "fditsmtu", 5),
+                ParseVkGroupDataAsync(_vkApi, "stipendiasmtu", 5)
+            };
 
-            var postsOVDFdit = ParseVkGroupData(api, "ovdsmtu",15);
-            var postsFdit = ParseVkGroupData(api, "fditsmtu",5);
+            var results = await Task.WhenAll(tasks);
+            var allPosts = results.SelectMany(x => x).ToList();
 
-            var allPosts = postsFdit.Concat(postsOVDFdit).ToList();
+            // Сортировка постов по дате публикации, от новых к старым
+            var prioritizedPosts = allPosts.OrderByDescending(post => post.DatePost).ToList();
 
             var jsonFilePath = Path.Combine(dataFolderPath, "vk_groups_info.json");
 
-            File.WriteAllText(jsonFilePath, JsonConvert.SerializeObject(allPosts, Formatting.Indented));
+            using (var writer = new StreamWriter(jsonFilePath))
+            {
+                string json = JsonConvert.SerializeObject(prioritizedPosts, Formatting.Indented);
+                await writer.WriteAsync(json);
+            }
         }
 
-        public List<Models.VkPost> ParseVkGroupData(VkApi api, string screenName, int countPosts)
+        public async Task<List<VkPost>> ParseVkGroupDataAsync(VkApi api, string screenName, int countPosts)
         {
-            var groupId = api.Utils.ResolveScreenName(screenName).Id.Value;
-
-            var posts = api.Wall.Get(new WallGetParams
+            var groupId = (await api.Utils.ResolveScreenNameAsync(screenName)).Id.Value;
+            var posts = await api.Wall.GetAsync(new WallGetParams
             {
-                OwnerId = -groupId, // Идентификатор группы должен быть отрицательным
+                OwnerId = -groupId,
                 Count = (ulong)countPosts
             });
 
-            var postInfos = new List<Models.VkPost>();
-
-            foreach (var post in posts.WallPosts)
-            {
-                Post originalPost;
-
-                if (post.CopyHistory != null && post.CopyHistory.Count > 0)
-                {
-                    originalPost = post.CopyHistory[0];
-                }
-                else
-                {
-                    originalPost = post;
-                }
-
-                List<string> imageUrls = new List<string>();
-
-                if (originalPost.Attachments != null)
-                {
-                    foreach (var attachment in originalPost.Attachments)
-                    {
-                        if (attachment.Type == typeof(Photo))
-                        {
-                            imageUrls.Add(((Photo)attachment.Instance).Sizes.Last().Url.AbsoluteUri);
-                        }
-                        else if (attachment.Type == typeof(Video))
-                        {
-                            imageUrls.Add(((Video)attachment.Instance).Image.Last().Url.AbsoluteUri);
-                        }
-                        else if (attachment.Type == typeof(Album))
-                        {
-                            imageUrls.Add(((Album)attachment.Instance).Thumb.Sizes.Last().Url.AbsoluteUri);
-                        }
-
-                    }
-                }
-
-
-                string text = post.Text;
-                // Регулярное выражение для поиска и замены вида [id32136|Ирины Тряскиной]
-                string pattern = @"\[id(\d+)\|(.*?)\]";
-
-                string replacement = "$2 (vk.com/id$1)";
-
-                string output = Regex.Replace(text, pattern, replacement);
-
-                postInfos.Add(new Models.VkPost
-                {
-                    Text = output,
-                    ImageUrl = (imageUrls.Count > 0) ? imageUrls : new List<string> { "img/no_photo_post.png" },
-                    Link = $"https://vk.com/wall{post.OwnerId}_{post.Id}",
-                    DatePost = post.Date.GetValueOrDefault()
-                });
-
-
-            }
-
-            return postInfos.Distinct().ToList();
+            return posts.WallPosts.Select(post => CreateVkPost(post)).ToList();
         }
 
+        private VkPost CreateVkPost(Post post)
+        {
+            var originalPost = post.CopyHistory?.FirstOrDefault() ?? post;
+            var imageUrls = originalPost.Attachments?
+                .Where(a => a.Instance != null)
+                .SelectMany(a => ExtractImageUrls(a))
+                .ToList();
 
+            if (imageUrls == null || imageUrls.Count == 0)
+            {
+                imageUrls = new List<string> { "/img/no_photo_post.png" };
+            }
+
+
+            string pattern = @"\[id(\d+)\|(.*?)\]";
+            string replacement = "$2 (vk.com/id$1)";
+            string output = Regex.Replace(post.Text, pattern, replacement);
+
+            return new VkPost
+            {
+                Text = output,
+                ImageUrl = imageUrls,
+                Link = $"https://vk.com/wall{post.OwnerId}_{post.Id}",
+                DatePost = post.Date.GetValueOrDefault()
+            };
+        }
+
+        private IEnumerable<string> ExtractImageUrls(Attachment attachment)
+        {
+            switch (attachment.Type.Name)
+            {
+                case "Photo":
+                    Photo photo = (Photo)attachment.Instance;
+                    if (photo.Sizes.Any())
+                        return new List<string> { photo.Sizes.LastOrDefault()?.Url.AbsoluteUri };
+                    break;
+                case "Video":
+                    Video video = (Video)attachment.Instance;
+                    if (video.Image.Any())
+                        return new List<string> { video.Image.LastOrDefault()?.Url.AbsoluteUri };
+                    break;
+                case "Album":
+                    Album album = (Album)attachment.Instance;
+                    if (album.Thumb.Sizes.Any())
+                        return new List<string> { album.Thumb.Sizes.LastOrDefault()?.Url.AbsoluteUri };
+                    break;
+            }
+            return Enumerable.Empty<string>(); // Возвращаем пустое перечисление, если нет подходящих данных
+        }
     }
 }

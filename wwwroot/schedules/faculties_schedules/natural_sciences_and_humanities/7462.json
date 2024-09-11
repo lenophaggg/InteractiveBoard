@@ -1,0 +1,189 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 9",
+    "Group": "7462",
+    "Subject": "Морское право Российской Федерации",
+    "InstructorName": "Бутакова Надежда Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 304ю",
+    "Group": "7462",
+    "Subject": "Морское право Российской Федерации",
+    "InstructorName": "Бутакова Надежда Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 9",
+    "Group": "7462",
+    "Subject": "Юридическая психология",
+    "InstructorName": "Сексте Янис Артурович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123541/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 9",
+    "Group": "7462",
+    "Subject": "Юридическая психология",
+    "InstructorName": "Сексте Янис Артурович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123541/"
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "7462",
+    "Subject": "Теория государства и права",
+    "InstructorName": "Нужин Константин Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 303ю",
+    "Group": "7462",
+    "Subject": "Юридическая психология",
+    "InstructorName": "Сексте Янис Артурович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123541/"
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 115",
+    "Group": "7462",
+    "Subject": "Налоговое право",
+    "InstructorName": "Котов Геннадий Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "7462",
+    "Subject": "Налоговое право",
+    "InstructorName": "Котов Геннадий Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "У 9",
+    "Group": "7462",
+    "Subject": "Налоговое право",
+    "InstructorName": "Котов Геннадий Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 9",
+    "Group": "7462",
+    "Subject": "Теория государства и права",
+    "InstructorName": "Нужин Константин Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "У 304ю",
+    "Group": "7462",
+    "Subject": "Налоговое право",
+    "InstructorName": "Котов Геннадий Михайлович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 02ю",
+    "Group": "7462",
+    "Subject": "Теория государства и права",
+    "InstructorName": "Нужин Константин Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 9",
+    "Group": "7462",
+    "Subject": "Теория государства и права",
+    "InstructorName": "Нужин Константин Викторович",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 01Ю",
+    "Group": "7462",
+    "Subject": "Юридическая психология",
+    "InstructorName": "Сексте Янис Артурович",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/123541/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 9",
+    "Group": "7462",
+    "Subject": "Семейное право",
+    "InstructorName": "Богданова Татьяна Юрьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100123/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 01Ю",
+    "Group": "7462",
+    "Subject": "Семейное право",
+    "InstructorName": "Богданова Татьяна Юрьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100123/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 01Ю",
+    "Group": "7462",
+    "Subject": "Семейное право",
+    "InstructorName": "Богданова Татьяна Юрьевна",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/100123/"
+  }
+]

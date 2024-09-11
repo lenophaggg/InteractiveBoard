@@ -1,0 +1,156 @@
+[
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 412",
+    "Group": "3430",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 412",
+    "Group": "3430",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 412",
+    "Group": "3430",
+    "Subject": "Приборы автоматики и телемеханики",
+    "InstructorName": "Петров Василий Григорьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 205",
+    "Group": "3430",
+    "Subject": "Адаптивное управление морскими подвижными объектами",
+    "InstructorName": "Скобов Евгений Дмитриевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 205",
+    "Group": "3430",
+    "Subject": "Адаптивное управление морскими подвижными объектами",
+    "InstructorName": "Скобов Евгений Дмитриевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 426",
+    "Group": "3430",
+    "Subject": "Теория и проектирование морских компьютерных систем",
+    "InstructorName": "Ясинская Юлия Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Нижняя неделя",
+    "Classroom": "Г 412",
+    "Group": "3430",
+    "Subject": "Теория и проектирование морских компьютерных систем",
+    "InstructorName": "Ясинская Юлия Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 426",
+    "Group": "3430",
+    "Subject": "Теория и проектирование морских компьютерных систем",
+    "InstructorName": "Ясинская Юлия Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T10:10:00",
+    "EndTime": "2024-03-04T11:40:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 426",
+    "Group": "3430",
+    "Subject": "Интеллектуальные системы морского приборостроения",
+    "InstructorName": "Яковлева Марина Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 426",
+    "Group": "3430",
+    "Subject": "Интеллектуальные системы морского приборостроения",
+    "InstructorName": "Яковлева Марина Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Пятница",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 212",
+    "Group": "3430",
+    "Subject": "Интеллектуальные системы морского приборостроения",
+    "InstructorName": "Яковлева Марина Владимировна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T11:50:00",
+    "EndTime": "2024-03-04T13:20:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 405",
+    "Group": "3430",
+    "Subject": "Волоконно-оптические линии связи в морских объектах",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "Г 408",
+    "Group": "3430",
+    "Subject": "Волоконно-оптические линии связи в морских объектах",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  },
+  {
+    "DayOfWeek": "Суббота",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Верхняя неделя",
+    "Classroom": "Г 408",
+    "Group": "3430",
+    "Subject": "Волоконно-оптические линии связи в морских объектах",
+    "InstructorName": "Сакович Сергей Юрьевич",
+    "InstructorLink": "https://www.smtu.ru/ru/viewperson/101024/"
+  }
+]

@@ -1,153 +1,170 @@
 using HtmlAgilityPack;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Globalization;
+using Microsoft.EntityFrameworkCore;
+using MyMvcApp.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
 using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using System.IO;
+using System.Globalization;
+using System.Data.SqlClient;
+
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace MyMvcApp.Services
 {
     public class ScheduleDownloadService : IHostedService
     {
-        private static TimeSpan CheckInterval = TimeSpan.FromDays(1);
-        private static readonly string facultiesSchedulePath = Path.Combine("wwwroot", "schedules", "faculties_schedules");
-        private static readonly string personSchedulePath = Path.Combine("wwwroot", "schedules", "person_schedules");
-        private static readonly string personContactsPath = Path.Combine("wwwroot", "main_contact", "person_contacts.json");
+        private static TimeSpan CheckInterval = TimeSpan.FromDays(1); // Интервал проверки 1 день
         private CancellationTokenSource _cts;
+        private readonly IServiceProvider _serviceProvider;
 
-        public async Task StartAsync(CancellationToken cancellationToken)
+        public ScheduleDownloadService(IServiceProvider serviceProvider)
+        {
+            _serviceProvider = serviceProvider;
+        }
+
+        public Task StartAsync(CancellationToken cancellationToken)
         {
             _cts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
-
-            // Запуск цикла в отдельной задаче
             _ = DownloadSchedules(_cts.Token);
+            return Task.CompletedTask;
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
             _cts.Cancel();
-
             return Task.CompletedTask;
         }
 
         private async Task DownloadSchedules(CancellationToken cancellationToken)
         {
-            //while (!cancellationToken.IsCancellationRequested)
-            //{
-            //    var now = DateTime.Now;
-
-            //    if ((now.Month == 8 && now.Day >= 20) || (now.Month == 9 && now.Day <= 15) ||
-            //        (now.Month == 1 && now.Day >= 20) || (now.Month == 2 && now.Day <= 15))
-            //    {
-            //        if (now.Hour == 1 && now.Minute == 0)
-            //        {
-            //            ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/listschedule/", facultiesSchedulePath);
-            //            ParseAndSavePersonSchedule(personSchedulePath);
-            //        }
-
-            //        DateTime nextTime;
-
-            //        if (now.Hour >= 1)
-            //        {
-            //            nextTime = now.Date.AddDays(1).AddHours(1);
-            //        }
-            //        else
-            //        {
-            //            nextTime = now.Date.AddMinutes(60 - now.Minute);
-            //        }
-
-            //        CheckInterval = nextTime - now;
-            //    }
-            //    else
-            //    {
-            //        if (now.DayOfWeek == DayOfWeek.Sunday && now.Hour == 23 && now.Minute == 00)
-            //        {
-            //            ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/listschedule/", facultiesSchedulePath);
-            //            ParseAndSavePersonSchedule(personSchedulePath);
-            //        }
-
-            //        var nextTime = now.Date.AddDays((7 - (int)now.DayOfWeek) % 7).AddHours(23);
-            //        CheckInterval = nextTime - now;
-            //    }
-
-            //    await Task.Delay(CheckInterval, cancellationToken);
-            //}
-            ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/listschedule/", facultiesSchedulePath);
-            ParseAndSavePersonSchedule(personSchedulePath);
-            await Task.Delay(CheckInterval, cancellationToken);
-        }
-        #region Group
-        private void ParseAndSaveGroupSchedule(string universityUrl, string dataFolderPath)
-        {
-            var web = new HtmlWeb();
-            var doc = web.Load(universityUrl);
-
-            var groupLinks = doc.DocumentNode.SelectNodes("//div[@class='gr']/a[@href]")
-                .Select(linkNode => Regex.Match(linkNode.GetAttributeValue("href", ""), @"\d+").Value)
-                .Where(link => !string.IsNullOrEmpty(link))
-                //.Where(linkNode => linkNode.Length == 5 && linkNode.StartsWith("20"))
-                .ToList();
-
-            foreach (var groupLink in groupLinks)
+            while (!cancellationToken.IsCancellationRequested)
             {
-                // Формируем полный URL для каждой группы
-                var fullGroupUrl = new Uri($"https://www.smtu.ru/ru/viewschedule/{groupLink}/").AbsoluteUri;
+                var now = DateTime.Now;
 
-                // Реализуем логику парсинга и сохранения расписания для каждой группы
-                var scheduleData = ParseScheduleForItem(fullGroupUrl);
+                // Проверяем, 02:00 ли сейчас
+                //if (now.Hour == 2 && now.Minute == 0)
+                //{
+                    using (var scope = _serviceProvider.CreateScope())
+                    {
+                        var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
-                // Получаем название папки для каждой группы на основе номера группы
-                var facultyFolderName = GetFacultyFolderName(groupLink);
+                        // Очистка старых расписаний
+                        await context.ClearOldSchedulesFacultiesClassroomsGroupsAsync();
 
-                // Создаем путь к папке для каждой группы
-                var groupFolderPath = Path.Combine(dataFolderPath, facultyFolderName);
+                        // Загрузка и сохранение факультетов и групп
+                        await ManageAndSaveFacultiesAndGroups("https://www.smtu.ru/ru/listschedule/", context);
 
-                // Создаем папку, если ее нет
-                Directory.CreateDirectory(groupFolderPath);
+                        // Загрузка и сохранение расписаний для групп
+                        await ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/viewschedule/", context);
 
-                // Формируем путь к JSON-файлу для каждой группы
-                var jsonFilePath = Path.Combine(groupFolderPath, $"{groupLink}.json");
+                        // Загрузка и сохранение расписаний для преподавателей
+                        await ParseAndSavePersonSchedule(context);
+                    }
+                //}
 
-                // Сохраняем данные в JSON-файл
-                File.WriteAllText(jsonFilePath, JsonConvert.SerializeObject(scheduleData, Formatting.Indented));
-            }
-        }
+                // Вычисляем время до следующего запуска: следующий день в 02:00
+                DateTime nextRunTime = now.Date.AddDays(1).AddHours(2);
+                TimeSpan delay = nextRunTime - now;
 
-        private string GetFacultyFolderName(string groupNumber)
-        {
-            if (groupNumber.Length == 4)
-            {
-                switch (groupNumber[0])
+                // Задержка до следующего запуска
+                try
                 {
-                    case '1':
-                        return "shipbuilding_and_ocean_engineering";
-                    case '2':
-                        return "ship_power_engineering_and_automation";
-                    case '3':
-                        return "marine_instrument_engineering";
-                    case '4':
-                        return "engineering_and_economics";
-                    case '5':
-                    case '6':
-                    case '7':
-                        return "natural_sciences_and_humanities";
-                    case '8':
-                        return "college_of_SMTU";
+                    await Task.Delay(delay, cancellationToken);
+                }
+                catch (TaskCanceledException)
+                {
+                    // Task was canceled, exit the loop
+                    break;
                 }
             }
-            else if (groupNumber.Length == 5 && groupNumber.StartsWith("20"))
-            {
-                return "digital_industrial_technologies";
-            }
-
-            return "unknown_faculty";
         }
-        #endregion
 
-        private List<Models.ScheduleData> ParseScheduleForItem(string groupUrl)
+        private async Task ManageAndSaveFacultiesAndGroups(string universityUrl, ApplicationDbContext context)
         {
-            var scheduleDataList = new List<Models.ScheduleData>();
             var web = new HtmlWeb();
-            var doc = web.Load(groupUrl);
+            var doc = await Task.Run(() => web.Load(universityUrl));
+
+            var nodes = doc.DocumentNode.SelectNodes("//h3[contains(@style, 'clear:both')]");
+            foreach (var node in nodes)
+            {
+                var facultyName = node.InnerText.Trim();
+                var existingFaculties = await context.Faculties.FirstOrDefaultAsync(f => f.Name == facultyName);
+
+                if (existingFaculties == null)
+                {
+                    existingFaculties = new Faculties { Name = facultyName };
+                    context.Faculties.Add(existingFaculties);
+                }
+
+                var next = node.NextSibling;
+                while (next != null && next.Name != "h3" && !next.OuterHtml.Contains("<br><br><br><br><br>"))
+                {
+                    if (next.Name == "div" && next.GetAttributeValue("class", "") == "gr")
+                    {
+                        var groupNode = next.SelectSingleNode(".//a");
+                        if (groupNode != null)
+                        {
+                            var groupNumber = groupNode.InnerText.Trim();
+                            var existingGroup = await context.Groups.FirstOrDefaultAsync(g => g.Number == groupNumber && g.FacultyName == facultyName);
+
+                            if (existingGroup == null)
+                            {
+                                var group = new Groups { Number = groupNumber, FacultyName = facultyName };
+                                context.Groups.Add(group);
+                            }
+                        }
+                    }
+                    next = next.NextSibling;
+                }
+            }
+            await context.SaveChangesAsync(); // Сохранение изменений в базе данных
+        }
+
+        private async Task ParseAndSaveGroupSchedule(string url, ApplicationDbContext context)
+        {
+            var groupNumberList = await context.Groups.Select(g => g.Number).ToListAsync();
+
+            if (groupNumberList != null && groupNumberList.Any())
+            {
+                foreach (var groupNumber in groupNumberList)
+                {
+                    await ProcessItemSchedule(url, groupNumber, context);
+                }
+            }
+        }
+              
+
+        private async Task ProcessItemSchedule(string url, string item, ApplicationDbContext context)
+        {
+            var web = new HtmlWeb();
+            HtmlDocument doc;
+
+            try
+            {
+                doc = await Task.Run(() => web.Load(url + item + "/"));
+            }
+            catch
+            {
+                // Ожидание перед повторной загрузкой
+                await Task.Delay(10000);
+
+                // Попытка повторной загрузки
+                try
+                {
+                    doc = await Task.Run(() => web.Load(url + item + "/"));
+                }
+                catch
+                {
+                    return;
+                }
+            }
 
             var dayNodes = doc.DocumentNode.SelectNodes("//div[@class='card my-4']");
 
@@ -156,7 +173,6 @@ namespace MyMvcApp.Services
                 foreach (var dayNode in dayNodes)
                 {
                     var dayOfWeek = dayNode.SelectSingleNode(".//div[@class='card-header']/h3")?.InnerText.Trim();
-
                     var timeNodes = dayNode.SelectNodes(".//tr/th[@scope='row']");
 
                     if (timeNodes != null)
@@ -169,7 +185,6 @@ namespace MyMvcApp.Services
                             DateTime startDateTime = DateTime.ParseExact(timeParts[0], "HH:mm", CultureInfo.InvariantCulture);
                             TimeSpan startTime = startDateTime.TimeOfDay;
 
-
                             DateTime endDateTime = DateTime.ParseExact(timeParts[1], "HH:mm", CultureInfo.InvariantCulture);
                             TimeSpan endTime = endDateTime.TimeOfDay;
 
@@ -177,21 +192,34 @@ namespace MyMvcApp.Services
                                 "| .//td[contains(@class, 'text-success')]/i | .//td[contains(@class, 'text-info')]/i");
                             var weekType = weekTypeNode?.Attributes["data-bs-title"]?.Value.Trim();
 
-                            var classroom = GetColumnValue(timeNode.ParentNode, 2);
-                            var group = GetColumnValue(timeNode.ParentNode, 3);
+                            var classroomNumber = GetColumnValue(timeNode.ParentNode, 2);
+                            var groupNumber = GetColumnValue(timeNode.ParentNode, 3);
 
                             var instructorNode = timeNode.ParentNode.SelectSingleNode(".//td[last()]");
 
                             string instructorName = string.Empty;
-                            string instructorLink = string.Empty;
+                            string instructorId = string.Empty;
 
                             if (instructorNode != null)
                             {
+                                var imgNode = instructorNode.SelectSingleNode(".//img");
+                                if (imgNode != null)
+                                {
+                                    var instructorImageUrl = imgNode.GetAttributeValue("src", "");
+                                    instructorImageUrl = instructorImageUrl.Split('?')[0]; // Удаление параметров запроса из URL
+
+                                    var pattern = @"https://isu\.smtu\.ru/images/isu_person/small/p(\d+)\.jpg";
+                                    var idMatch = Regex.Match(instructorImageUrl, pattern);
+                                    if (idMatch.Success)
+                                    {
+                                        instructorId = idMatch.Groups[1].Value;
+                                    }
+                                }
+
                                 var anchorNode = instructorNode.SelectSingleNode(".//a");
                                 if (anchorNode != null)
                                 {
                                     instructorName = anchorNode.InnerText.Trim();
-                                    instructorLink = "https://www.smtu.ru" + anchorNode.GetAttributeValue("href", "").Trim();
                                 }
                                 else
                                 {
@@ -204,71 +232,97 @@ namespace MyMvcApp.Services
                             }
 
                             var subjectNode = timeNode.ParentNode.SelectSingleNode(".//td/span");
-                            var subject = subjectNode?.InnerText.Trim();
+                            var subjectName = subjectNode?.InnerText.Trim();
 
+                            var subjectInfoNode = timeNode.ParentNode.SelectSingleNode(".//td//small[not(contains(@class, 'text-muted'))]");
+                            var subjectInfo = subjectInfoNode?.InnerText.Trim();
 
-                            scheduleDataList.Add(new Models.ScheduleData
+                            var existingSubject = await context.Subjects.FirstOrDefaultAsync(s => s.SubjectName == subjectName);
+                            if (existingSubject == null)
                             {
-                                DayOfWeek = dayOfWeek,
-                                StartTime = startTime,
-                                EndTime = endTime,
-                                WeekType = weekType,
-                                Classroom = classroom,
-                                Group = group,
-                                Subject = subject,
-                                InstructorName = instructorName,
-                                InstructorLink = instructorLink
-                            });
+                                subjectInfo = subjectName;
+                                subjectName = null;
+                            }
+
+                            var existingClassroom = await context.Classrooms.FirstOrDefaultAsync(c => c.ClassroomNumber == classroomNumber);
+                            if (existingClassroom == null)
+                            {
+                                var classroom = new Classrooms { ClassroomNumber = classroomNumber };
+                                context.Classrooms.Add(classroom);
+                                await context.SaveChangesAsync();
+                            }
+
+                            var existingGroup = await context.Groups.FirstOrDefaultAsync(g => g.Number == groupNumber);
+                            if (existingGroup == null)
+                            {
+                                var group = new Groups { Number = groupNumber };
+                                context.Groups.Add(group);
+                                await context.SaveChangesAsync();
+                            }
+
+                            PersonContact? existingInstructor = null;
+
+                            if (!string.IsNullOrEmpty(instructorId))
+                            {
+                                existingInstructor = await context.PersonContacts
+                                    .FirstOrDefaultAsync(p => p.UniversityIdContact == instructorId);
+                            }
+
+                            // Проверка на наличие существующей записи
+                            bool scheduleExists = await context.ScheduleData.AnyAsync(sd =>
+                                sd.DayOfWeek == dayOfWeek &&
+                                sd.StartTime == startTime &&
+                                sd.EndTime == endTime &&
+                                sd.WeekType == weekType &&
+                                sd.Classroom == classroomNumber &&
+                                sd.Group == groupNumber &&
+                                sd.Subject == subjectName &&
+                                sd.InstructorId == (existingInstructor != null ? existingInstructor.IdContact : (int?)null) &&
+                                sd.ScheduleInfo == subjectInfo
+                            );
+
+                            if (!scheduleExists)
+                            {
+                                var newScheduleData = new ScheduleData
+                                {
+                                    DayOfWeek = dayOfWeek,
+                                    StartTime = startTime,
+                                    EndTime = endTime,
+                                    WeekType = weekType,
+                                    Classroom = classroomNumber,
+                                    Group = groupNumber,
+                                    Subject = subjectName,
+                                    InstructorId = existingInstructor?.IdContact,
+                                    ScheduleInfo = subjectInfo
+                                };
+
+                                context.ScheduleData.Add(newScheduleData);
+                                await context.SaveChangesAsync();
+                            }
                         }
                     }
                 }
             }
-            return scheduleDataList;
         }
+
+        private async Task ParseAndSavePersonSchedule(ApplicationDbContext context)
+        {
+            var personList = await context.PersonContacts.ToListAsync();
+
+            foreach (var person in personList)
+            {
+                // Формируем полный URL для каждого преподавателя по UniversityIdContact
+                var fullPersonUrl = new Uri($"https://www.smtu.ru/ru/viewschedule/teacher/{person.UniversityIdContact}/").AbsoluteUri;
+
+                // Реализуем логику парсинга и сохранения расписания для каждого преподавателя
+                await ProcessItemSchedule(fullPersonUrl, person.UniversityIdContact, context);
+            }
+        }
+
         private string GetColumnValue(HtmlNode dayNode, int columnNumber)
         {
             var columnNode = dayNode.SelectSingleNode($".//td[{columnNumber}]");
             return columnNode?.InnerText.Trim() ?? "";
         }
-
-        #region Person
-        private void ParseAndSavePersonSchedule(string dataFolderPath)
-        {
-            // Читаем все данные из файла
-            string jsonData = File.ReadAllText(personContactsPath);
-            // Десериализуем JSON в динамический объект
-            JArray jsonArray = JArray.Parse(jsonData);
-
-            // Создаем список для хранения ID контактов и имен
-            var personDetails = new List<(string Id, string Name)>();
-
-            // Извлекаем IdContact и NameContact каждого объекта в массиве
-            foreach (JObject item in jsonArray)
-            {
-                if ((item["IdContact"] != null && item["IdContact"].ToString() != "")||(item["IdContact"].ToString() != "")|| (item["NameContact"].ToString() != ""))
-                {
-                    var id = item["IdContact"].ToString();
-                    var name = item["NameContact"]?.ToString().Replace(" ", "_");
-                    personDetails.Add((Id: id, Name: name));
-                }
-            }
-
-            foreach (var (Id, Name) in personDetails)
-            {
-                // Формируем полный URL для каждого преподавателя по ID
-                var fullPersonUrl = new Uri($"https://www.smtu.ru/ru/viewschedule/teacher/{Id}/").AbsoluteUri;
-
-                // Реализуем логику парсинга и сохранения расписания для каждого преподавателя
-                var scheduleData = ParseScheduleForItem(fullPersonUrl);
-
-                // Формируем путь к JSON-файлу для каждого преподавателя, используя его имя
-                var jsonFilePath = Path.Combine(dataFolderPath, $"{Name}.json");
-
-                // Сохраняем данные в JSON-файл
-                File.WriteAllText(jsonFilePath, JsonConvert.SerializeObject(scheduleData, Formatting.Indented));
-            }
-        }
-        #endregion
-
     }
 }

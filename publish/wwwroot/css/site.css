@@ -301,9 +301,10 @@ header {
     }
 
 .custom-list {
-    font-size: 36px;
+    font-size: 50px !important;
     list-style-type: disc;
-    margin-left: 20px;
+    margin: 50px !important;
+    padding: 50px;
 }
 
 .person_info strong {

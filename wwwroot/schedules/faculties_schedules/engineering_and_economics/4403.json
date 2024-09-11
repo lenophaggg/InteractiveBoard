@@ -1,0 +1,112 @@
+[
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4403",
+    "Subject": "Корпоративные финансы",
+    "InstructorName": "Фролова Вероника Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4403",
+    "Subject": "Корпоративные финансы",
+    "InstructorName": "Фролова Вероника Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Понедельник",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 515А",
+    "Group": "4403",
+    "Subject": "Корпоративные финансы",
+    "InstructorName": "Фролова Вероника Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T14:00:00",
+    "EndTime": "2024-03-04T15:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 518",
+    "Group": "4403",
+    "Subject": "Финансовый механизм государственных закупок",
+    "InstructorName": "Фролова Вероника Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Вторник",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 518",
+    "Group": "4403",
+    "Subject": "Финансовый механизм государственных закупок",
+    "InstructorName": "Фролова Вероника Александровна",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 518",
+    "Group": "4403",
+    "Subject": "Оценка и внедрение инноваций",
+    "InstructorName": "Смирнов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Среда",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 518",
+    "Group": "4403",
+    "Subject": "Оценка и внедрение инноваций",
+    "InstructorName": "Смирнов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T15:40:00",
+    "EndTime": "2024-03-04T17:10:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 518",
+    "Group": "4403",
+    "Subject": "Стратегическое планирование",
+    "InstructorName": "Смирнов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T17:20:00",
+    "EndTime": "2024-03-04T18:50:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 518",
+    "Group": "4403",
+    "Subject": "Стратегическое планирование",
+    "InstructorName": "Смирнов Алексей Юрьевич",
+    "InstructorLink": ""
+  },
+  {
+    "DayOfWeek": "Четверг",
+    "StartTime": "2024-03-04T19:00:00",
+    "EndTime": "2024-03-04T20:30:00",
+    "WeekType": "Обе недели",
+    "Classroom": "У 518",
+    "Group": "4403",
+    "Subject": "Стратегическое планирование",
+    "InstructorName": "Смирнов Алексей Юрьевич",
+    "InstructorLink": ""
+  }
+]

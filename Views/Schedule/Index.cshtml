@@ -10,11 +10,14 @@
     /* Добавление отступа между контейнерами */
     .container + .container {
         margin-top: 20px;
+        padding: 0px;
     }
 </style>
 
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/Schedule.css" asp-append-version="true" />
+
+<script src="~/js/ScheduleScript.js"></script>
 
 <div id="mainContainer">
     <h1>Расписание занятий</h1>
@@ -22,16 +25,14 @@
     <div class="scheduleContainer">
         @foreach (var facultySchedule in Model)
         {
-            var dataParser = new MyMvcApp.Models.DataParserModel();
-
             <div class="container">
-                <h2 class="text-center">@dataParser.GetFacultyName(facultySchedule.Key)</h2>
+                <h2 class="text-center">@facultySchedule.Key</h2>
                 <div class="row">
                     @if (facultySchedule.Value.Any())
                     {
                         foreach (var scheduleItem in facultySchedule.Value)
                         {
-                            <div class="col-lg-2" onclick="openScheduleByGroup('@scheduleItem', '@facultySchedule.Key')">
+                            <div class="col-lg-2" onclick="openScheduleByGroup('@scheduleItem')">
                                 <p class="schedule-item">@scheduleItem</p>
                             </div>
                         }
@@ -56,5 +57,3 @@
         </div>
     </form>
 </div>
-
-<script src="~/js/ScheduleScript.js"></script>

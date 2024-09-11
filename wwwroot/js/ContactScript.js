@@ -17,11 +17,11 @@
     });
 }
 
-function openPersonSchedule(personName) {
+function openPersonSchedule(personName, universityIdContact) {
     $.ajax({
         url: '/Schedule/GetScheduleByPerson',
         type: 'GET',
-        data: { personName: personName },
+        data: { personName: personName, universityIdContact: universityIdContact },
         success: function (response) {
             $('#myModal').modal('hide');
 
@@ -36,12 +36,11 @@ function openPersonSchedule(personName) {
     });
 }
 
-
-function openModalInfo(personName) {
+function openModalInfo(personName, universityIdContact) {
     $.ajax({
         url: '/Contacts/GetContactPerson',
         type: 'GET',
-        data: { personName: personName },
+        data: { personName: personName, universityIdContact: universityIdContact },
         success: function (data) {
             // Очищаем содержимое модального окна
             $('#myModal .modal-body').empty();
@@ -60,4 +59,3 @@ function openModalInfo(personName) {
         }
     });
 }
-

@@ -1,37 +1,59 @@
-﻿.contact {
-    width: calc(50% - 90px); /* Ширина блока - половина ширины родительского контейнера (50%) минус внешние отступы (20px) */
-    justify-content: left;
-    border-radius: 50px;
-    box-sizing: border-box; /* Учитываем границу в общей ширине блока */
-    margin: 30px;
-    background-color: #9268C1;
-    color: #270F3B;
-    text-align: center;
-}
-
-.contactContainer {
-    width: 3370px;
+﻿.contactContainer {
+    width: 3370px; /* Задана фиксированная ширина, но это может быть изменено на 100%, если требуется адаптивность */
     height: 1250px;
     overflow-y: auto !important;
-    display: flex; /* Использование flexbox для расположения элементов по горизонтали */
-    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку при необходимости */
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Изначально было center, заменено на flex-start для смещения */
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.contact {
+    max-width: 50%; /* Максимальная ширина, не более 50% от ширины родителя */
+    background-color: #9268C1; /* Фоновый цвет */
+    color: #270F3B; /* Цвет текста */
+    margin: 25px;
+    border-radius: 50px; /* Закругленные углы */
+    text-align: center; /* Горизонтальное выравнивание текста */
+    box-sizing: border-box; /* Размеры элемента включают границы и внутренние отступы */ 
+}
+
+/* Стиль для смещения каждого второго ряда */
+.contactContainer > .contact:nth-child(odd) {
+    margin-top: 25px;
+}
+
+.contact:hover .contact-details {
+    display: block;
 }
 
 .contact h2 {
-    background-color: #270F3B;
+    font-size: 62px; /* Уменьшение размера шрифта */
     color: #9268C1;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    padding:25px;
+    background-color: #270F3B;
+    border-radius: 50px;
+    padding: 15px; /* Уменьшение внутренних отступов */
+    margin-bottom: 5px; /* Уменьшение отступа между h2 и h4 */
+    text-align: center;
 }
 
-    /* Пример стилей для заголовка и параграфов внутри блока .contact */
+.contact h4 {
+    font-size: 42px; /* Уменьшение размера шрифта */
+    color: #270F3B;
+    background-color: transparent; /* Если не нужен фон как у h2 */
+    padding: 5px; /* Уменьшение внутренних отступов */
+    margin-top: 0; /* Убираем верхний отступ, если он не нужен */
+    text-align: center;
+    padding: 25px;
+}
+/* Пример стилей для заголовка и параграфов внутри блока .contact */
 h1 {
     line-height: inherit;
     font-weight: bold;
     font-size: 192px;
     text-align: center;
+    margin: 0 auto;
 }
 
 h2 {
@@ -44,14 +66,14 @@ h2 {
     background-color: #c0add6;
     border-radius: 50px;
     margin: 35px;
-    font-size: 40px;
+    font-size: 36px;
     color: #270F3B;
-    font-weight:550;
+    font-weight: 550;
     text-align: left;
     padding: 50px;
     display: inline-block;
 }
 
-.contact p img{
-    padding-right:20px;
-}
+    .contact p img {
+        padding-right: 20px;
+    }

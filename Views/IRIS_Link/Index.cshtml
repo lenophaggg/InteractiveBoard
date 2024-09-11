@@ -1,0 +1,113 @@
+﻿@{
+    
+    ViewData["Title"] = "IRIS_link Page";
+
+}
+
+
+<title>@ViewData["Title"]</title>
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<link rel="stylesheet" href="~/css/IRIS_link.css" asp-append-version="true" />
+
+
+<div id="mainContainer" >
+    <h1>Институт робототехники и интеллектуальных систем</h1>
+    
+    <div id="content" >
+
+        <div class="row content">
+            <div class="col-md-4">
+                <h2>Цель</h2>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    ИРИС реализует разработку, развитие и внедрение комплекса передовых технологий,
+                    обеспечивающих создание перспективных робототехнических комплексов и беспилотных систем,
+                    конкурентных на российском и мировом рынках, обеспечивая вклад в достижение национальных
+                    целей развития страны, развитие междисциплинарности и повышение актуальности образовательных
+                    программ и научных исследований в университете, межрегиональность исследований, кооперация с
+                    ведущими академическими научными институтами и индустриальными партнёрами в рамках создаваемых
+                    консорциумов.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-6 mr-3">
+                            <img class="d-block w-100 custom_rounded" src="https://ds1.smtu.ru/files/sitenews/2024/05/29/big/807.jpg?token_static=7944eb7466d0b28fa4a3596e8c6d7503" alt="First slide">
+                        </div>
+                        <div class="col-6 ml-3">
+                            <img class="d-block w-100 custom_rounded" src="https://ds1.smtu.ru/files/isu_file/2024/05/29/21390.jpg?token_static=62800d7712541e693292c0d4ec093b7b" alt="Second slide">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-6 mr-3">
+                            <img class="d-block w-100 custom_rounded" src="https://ds1.smtu.ru/files/isu_file/2024/05/29/21389.jpg?token_static=8828baa226bd377e5b5368928e0a3337" alt="Third slide">
+                        </div>
+                        <div class="col-6 ml-3">
+                            <img class="d-block w-100 custom_rounded" src="https://ds1.smtu.ru/files/isu_file/2024/05/29/21388.jpg?token_static=d42188b0eb81a60910f62f0bc6a40562" alt="Fourth slide">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-6 mr-3">
+                            <img class="d-block w-100 custom_rounded" src="https://ds1.smtu.ru/files/isu_file/2024/05/29/21385.jpg?token_static=5b53134d3aa7abc30a7537e677d0b1de" alt="Fifth slide">
+                        </div>
+                        <div class="col-6 ml-3">
+                            <img class="d-block w-100 custom_rounded" src="https://ds1.smtu.ru/files/isu_file/2024/05/29/21390.jpg?token_static=62800d7712541e693292c0d4ec093b7b" alt="Sixth slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a href="https://ирис.tech/"><h2>Вступить к нам 👆</h2></a>
+        </div>
+
+    </div>
+    
+</div>
+
+@section Scripts {
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#carouselExampleIndicators').carousel({
+                interval: 3000,
+                ride: 'carousel'
+            });
+
+            $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+                var $e = $(e.relatedTarget);
+                var idx = $e.index();
+                var itemsPerSlide = 2;
+                var totalItems = $('.carousel-item').length;
+
+                if (idx >= totalItems - (itemsPerSlide - 1)) {
+                    var it = itemsPerSlide - (totalItems - idx);
+                    for (var i = 0; i < it; i++) {
+                        // Append slides to end
+                        if (e.direction == "left") {
+                            $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                        } else {
+                            $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+}

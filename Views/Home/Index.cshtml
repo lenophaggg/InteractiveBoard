@@ -20,18 +20,26 @@
 </div>
 <div class="right-content">
     <div class="masonry-grid">
-        @foreach (var post in Model.VkPostData)
+        @if (Model.VkPostData != null)
         {
-            <div class="masonry-grid-item" onclick="openModal('@post.Link')">
-                <div class="card">
-                    <img class="card-img-top" src="@try{
-                         @post.ImageUrl.First()
-                    }catch{}" alt="">
-                    <div class="card-body">
-                        <p class="card-text">@GetFirstThreeWords(post.Text)</p>
+            @foreach (var post in Model.VkPostData)
+            {
+                <div class="masonry-grid-item" onclick="openModal('@post.Link')">
+                    <div class="card">
+
+                        <img class="card-img-top" src="@post.ImageUrl[0]" alt="">
+
+                        <div class="card-body">   
+                            <p class="card-text">
+                                @Html.Raw(@GetFirstThreeWords(post.Text)
+                                         .Replace("____________________________________ ", "")
+                                         .Replace("——————————————————", "")
+                                         .Replace("—— ", ""))
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
         }
     </div>
 </div>

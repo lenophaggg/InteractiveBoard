@@ -13,7 +13,7 @@
                 <ul>
                     @foreach (var subject in Model.Position)
                     {
-                        <li>@subject</li>
+                        <li>@Html.Raw(@subject)</li>
                     }
                 </ul>
             }
@@ -24,7 +24,7 @@
                 <ul>
                     @foreach (var subject in Model.TaughtSubjects)
                     {
-                        <li>@subject</li>
+                        <li>@subject.SubjectName</li>
                     }
                 </ul>
             }
@@ -65,9 +65,9 @@
                 }
 
             </p>
-            @if (!string.IsNullOrEmpty(@Model.IdContact))
+            @if (!string.IsNullOrEmpty(@Model.UniversityIdContact))
             {
-                <p><a href="#" onclick="openPersonSchedule('@Model.NameContact')"><strong>Ссылка на расписание</strong></a></p>
+                <p><a href="#" onclick="openPersonSchedule('@Model.NameContact','@Model.UniversityIdContact')"><strong>Ссылка на расписание</strong></a></p>
             }
         </ul>
     </div>

@@ -16,6 +16,8 @@
     display: flex; /* Использование flexbox для расположения элементов по горизонтали */
     flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку при необходимости */
     justify-content: center;
+    padding-left:50px;
+    padding-right:50px;
 }
 
 .contact h2 {

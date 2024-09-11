@@ -1,0 +1,1024 @@
+{
+  "ContentRoots": [
+    "/app/wwwroot/",
+    "/app/obj/Debug/net8.0/scopedcss/bundle/"
+  ],
+  "Root": {
+    "Children": {
+      "css": {
+        "Children": {
+          "Contact.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/Contact.css"
+            },
+            "Patterns": null
+          },
+          "Home.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/Home.css"
+            },
+            "Patterns": null
+          },
+          "Inactive.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/Inactive.css"
+            },
+            "Patterns": null
+          },
+          "Schedule.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/Schedule.css"
+            },
+            "Patterns": null
+          },
+          "site.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/site.css"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "documents-news-events": {
+        "Children": {
+          "documents": {
+            "Children": {
+              "вопросы": {
+                "Children": {
+                  "Part_1_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/вопросы/Part_1_Page_1.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "диплом_с_конференции_ренжин": {
+                "Children": {
+                  "Part_1_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/диплом_с_конференции_ренжин/Part_1_Page_1.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "Задание 1": {
+                "Children": {
+                  "Part_1_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/Задание 1/Part_1_Page_1.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_2.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/Задание 1/Part_1_Page_2.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "Задание 3": {
+                "Children": {
+                  "Part_1_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/Задание 3/Part_1_Page_1.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_2.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/Задание 3/Part_1_Page_2.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "Задание 4": {
+                "Children": {
+                  "Part_1_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/Задание 4/Part_1_Page_1.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_2.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/Задание 4/Part_1_Page_2.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "оооооо": {
+                "Children": {
+                  "Part_1_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/оооооо/Part_1_Page_1.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_2.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/оооооо/Part_1_Page_2.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_3.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/оооооо/Part_1_Page_3.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_2_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/оооооо/Part_2_Page_1.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "практика": {
+                "Children": {
+                  "Part_1_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/практика/Part_1_Page_1.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_2.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/практика/Part_1_Page_2.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_3.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/практика/Part_1_Page_3.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_2_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/практика/Part_2_Page_1.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "ренжин_справка_судимость": {
+                "Children": {
+                  "Part_1_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/ренжин_справка_судимость/Part_1_Page_1.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "РЕФЕРАТ_Ренжин_20126": {
+                "Children": {
+                  "Part_1_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/РЕФЕРАТ_Ренжин_20126/Part_1_Page_1.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_2.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/РЕФЕРАТ_Ренжин_20126/Part_1_Page_2.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_3.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/РЕФЕРАТ_Ренжин_20126/Part_1_Page_3.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_2_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/РЕФЕРАТ_Ренжин_20126/Part_2_Page_1.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "Текст к реферату": {
+                "Children": {
+                  "Part_1_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/Текст к реферату/Part_1_Page_1.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_2.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/Текст к реферату/Part_1_Page_2.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_1_Page_3.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/Текст к реферату/Part_1_Page_3.png"
+                    },
+                    "Patterns": null
+                  },
+                  "Part_2_Page_1.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "documents-news-events/documents/Текст к реферату/Part_2_Page_1.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "vk_groups_info.json": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "documents-news-events/vk_groups_info.json"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "favicon.ico": {
+        "Children": null,
+        "Asset": {
+          "ContentRootIndex": 0,
+          "SubPath": "favicon.ico"
+        },
+        "Patterns": null
+      },
+      "img": {
+        "Children": {
+          "address_img.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/address_img.png"
+            },
+            "Patterns": null
+          },
+          "back_but.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/back_but.png"
+            },
+            "Patterns": null
+          },
+          "clock.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/clock.png"
+            },
+            "Patterns": null
+          },
+          "contacts_but.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/contacts_but.png"
+            },
+            "Patterns": null
+          },
+          "email_img.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/email_img.png"
+            },
+            "Patterns": null
+          },
+          "home_but.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/home_but.png"
+            },
+            "Patterns": null
+          },
+          "logo.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/logo.png"
+            },
+            "Patterns": null
+          },
+          "no_photo.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/no_photo.png"
+            },
+            "Patterns": null
+          },
+          "no_photo_post.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/no_photo_post.png"
+            },
+            "Patterns": null
+          },
+          "phone_img.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/phone_img.png"
+            },
+            "Patterns": null
+          },
+          "schedule_but.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/schedule_but.png"
+            },
+            "Patterns": null
+          },
+          "search_button.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/search_button.png"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "js": {
+        "Children": {
+          "ContactScript.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "js/ContactScript.js"
+            },
+            "Patterns": null
+          },
+          "ContentScript.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "js/ContentScript.js"
+            },
+            "Patterns": null
+          },
+          "HomeScript.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "js/HomeScript.js"
+            },
+            "Patterns": null
+          },
+          "ScheduleScript.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "js/ScheduleScript.js"
+            },
+            "Patterns": null
+          },
+          "site.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "js/site.js"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "lib": {
+        "Children": {
+          "bootstrap": {
+            "Children": {
+              "dist": {
+                "Children": {
+                  "css": {
+                    "Children": {
+                      "bootstrap-grid.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-grid.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-grid.min.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.min.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-grid.min.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-grid.rtl.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-grid.rtl.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-grid.rtl.min.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-grid.rtl.min.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-reboot.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-reboot.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-reboot.min.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-reboot.min.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-reboot.rtl.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-reboot.rtl.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-reboot.rtl.min.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-reboot.rtl.min.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-utilities.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-utilities.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-utilities.min.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-utilities.min.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-utilities.rtl.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-utilities.rtl.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-utilities.rtl.min.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap-utilities.rtl.min.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.min.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap.min.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.min.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap.min.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.rtl.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap.rtl.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.rtl.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.rtl.min.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.rtl.min.css.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+                        },
+                        "Patterns": null
+                      }
+                    },
+                    "Asset": null,
+                    "Patterns": null
+                  },
+                  "js": {
+                    "Children": {
+                      "bootstrap.bundle.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.bundle.js"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.bundle.js.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.bundle.min.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.bundle.min.js.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.esm.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.esm.js"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.esm.js.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.esm.js.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.esm.min.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.esm.min.js"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.esm.min.js.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.js"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.js.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.js.map"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.min.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.min.js"
+                        },
+                        "Patterns": null
+                      },
+                      "bootstrap.min.js.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "lib/bootstrap/dist/js/bootstrap.min.js.map"
+                        },
+                        "Patterns": null
+                      }
+                    },
+                    "Asset": null,
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "LICENSE": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "lib/bootstrap/LICENSE"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "jquery-validation-unobtrusive": {
+            "Children": {
+              "jquery.validate.unobtrusive.js": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+                },
+                "Patterns": null
+              },
+              "jquery.validate.unobtrusive.min.js": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+                },
+                "Patterns": null
+              },
+              "LICENSE.txt": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "lib/jquery-validation-unobtrusive/LICENSE.txt"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "jquery-validation": {
+            "Children": {
+              "dist": {
+                "Children": {
+                  "additional-methods.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "lib/jquery-validation/dist/additional-methods.js"
+                    },
+                    "Patterns": null
+                  },
+                  "additional-methods.min.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "lib/jquery-validation/dist/additional-methods.min.js"
+                    },
+                    "Patterns": null
+                  },
+                  "jquery.validate.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "lib/jquery-validation/dist/jquery.validate.js"
+                    },
+                    "Patterns": null
+                  },
+                  "jquery.validate.min.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "lib/jquery-validation/dist/jquery.validate.min.js"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "LICENSE.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "lib/jquery-validation/LICENSE.md"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "jquery": {
+            "Children": {
+              "dist": {
+                "Children": {
+                  "jquery.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "lib/jquery/dist/jquery.js"
+                    },
+                    "Patterns": null
+                  },
+                  "jquery.min.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "lib/jquery/dist/jquery.min.js"
+                    },
+                    "Patterns": null
+                  },
+                  "jquery.min.map": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "lib/jquery/dist/jquery.min.map"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "LICENSE.txt": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "lib/jquery/LICENSE.txt"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "MyMvcApp.styles.css": {
+        "Children": null,
+        "Asset": {
+          "ContentRootIndex": 1,
+          "SubPath": "MyMvcApp.styles.css"
+        },
+        "Patterns": null
+      }
+    },
+    "Asset": null,
+    "Patterns": [
+      {
+        "ContentRootIndex": 0,
+        "Pattern": "**",
+        "Depth": 0
+      }
+    ]
+  }
+}

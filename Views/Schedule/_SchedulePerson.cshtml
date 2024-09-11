@@ -1,6 +1,7 @@
 ﻿@model List<ScheduleData>
 
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<script src="~/js/ScheduleScript.js"></script>
 
 @if (ViewBag.ErrorMessage != null)
 {
@@ -8,9 +9,11 @@
         <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
             <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
         </a>
-        <h1 class="resizeble-font">@Model[0].InstructorName</h1>
+        
     </div>
-
+    <div class="scheduleContainer">
+        <h2 style="padding: 50px; margin: 50px; text-align:center;">@ViewBag.ErrorMessage</h2>
+    </div>
 }
 else if (Model != null && Model.Any())
 {
@@ -18,9 +21,8 @@ else if (Model != null && Model.Any())
         <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
             <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
         </a>
-        <h1 class="resizeble-font">@Model[0].InstructorName</h1>
+        <h1 class="resizeble-font">@Model[0].Instructor.NameContact</h1>
     </div>
-
 
     <div class="scheduleContainer">
         <div class="сontainer">
@@ -30,8 +32,8 @@ else if (Model != null && Model.Any())
                     <th>Время</th>
                     <th>Аудитория</th>
 
-                    <th>Группа</th>
                     <th>Предмет</th>
+                    <th>Группа</th>
                 </tr>
                 @foreach (var dayGroup in Model.GroupBy(item => item.DayOfWeek))
                 {
@@ -42,11 +44,21 @@ else if (Model != null && Model.Any())
                     {
                         <tr class="tableRow rounded-bottom">
                             <td>@item.WeekType</td>
-                            <td>@item.StartTime.ToString("hh\\:mm") - @item.EndTime.ToString("hh\\:mm")</td>
+                            <td>@($"{item.StartTime:hh\\:mm} - {item.EndTime:hh\\:mm}")</td>
                             <td>@item.Classroom</td>
-                            <td>@item.Group</td>
-                            <td>@item.Subject</td>
 
+                            @if (!string.IsNullOrEmpty(item.Subject))
+                            {
+                                <td style="max-width:1050px;">@Html.Raw(@item.Subject)<br><small>@Html.Raw(@item.ScheduleInfo)</small></td>
+                            }
+                            else
+                            {
+                                <td style="max-width:1050px;">@Html.Raw(@item.ScheduleInfo)</td>
+                            }
+
+                            <td>
+                                @item.Group
+                            </td>
                         </tr>
                     }
                 }
@@ -56,13 +68,15 @@ else if (Model != null && Model.Any())
 }
 else
 {
-
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px; ">
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 3370px;height:288px;">
         <a class="nav-link active" href="/Schedule/Index" style="margin-left: 90px; display: inline-block;">
             <img src="~/img/back_but.png" alt="назад" style="width: auto; height: auto;">
         </a>
 
-        <h1 style="margin: 0 auto;">Расписание отсутствует</h1>
+    </div>
+
+    <div class="scheduleContainer">
+        <h2>Расписание отсутствует</h2>
     </div>
 }
 
@@ -83,7 +97,7 @@ else
 
         function adjustFontSize() {
             var textLength = h1Element.text().length;
-            if (textLength > 27 && textLength <= 32) {
+            if (textLength > 25 && textLength <= 32) {
                 h1Element.css('font-size', '150px');
             }
             else if (textLength > 32) {

@@ -216,7 +216,7 @@ header {
 }
 
 #mainContainer {
-    width: 3370px !important;
+    min-width: 3370px !important;
     height: 1750px !important;
     box-sizing: border-box;
     background-color: #361778;
@@ -305,9 +305,9 @@ header {
     }
 
 .custom-list {
-    font-size: 36px;
+    font-size: 50px;
     list-style-type: disc;
-    margin-left: 20px;
+    margin: 50px;
 }
 
 .person_info strong {
