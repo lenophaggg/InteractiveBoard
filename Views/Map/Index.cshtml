@@ -1,14 +1,10 @@
 ﻿@{
-
     ViewData["Title"] = "Campus map";
-
 }
-
 
 <title>@ViewData["Title"]</title>
 
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-
 
 <div id="mainContainer">
     <div class="text-center mb-4" style="margin: 75px 150px 75px;">
@@ -24,13 +20,21 @@
         <button onclick="changeFloor(5)">5 этаж</button>
     </div>
 
-    <div id="svg-container">
-        <!-- Контейнер для SVG карты -->
+    <!-- Кнопки масштабирования -->
+    <div id="zoom-buttons" class="text-center mb-4">
+        <button onclick="zoomIn()">+</button>
+        <button onclick="zoomOut()">−</button>
     </div>
+
+    <div id="svg-container" style="width: 100%; height: 1250px; overflow: hidden; border: 1px solid #000;">
+        <svg id="svg-content" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <!-- SVG содержимое будет загружаться сюда -->
+        </svg>
+    </div>
+
+
 </div>
 
 @section Scripts {
     <script src="~/js/MapScript.js"></script>
 }
-
-
