@@ -37,12 +37,12 @@ function updateDateTime() {
 var idleTime = 0;
 var idleInterval = setInterval(timerIncrement, 1000);
 
-//function timerIncrement() {
-//    idleTime++;
-//    if (idleTime > 90) { // 30 секунд бездействия
-//        window.location.href = "/Inactive/Index"; // Перенаправление на указанный адрес
-//    }
-//}
+function timerIncrement() {
+    idleTime++;
+    if (idleTime > 90) { // 30 секунд бездействия
+        window.location.href = "/Inactive/Index"; // Перенаправление на указанный адрес
+    }
+}
 
 $(document).on('mousemove keydown scroll', function () {
     idleTime = 0; // Сброс счетчика бездействия

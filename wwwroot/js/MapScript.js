@@ -115,5 +115,7 @@ svgContainer.addEventListener("mouseup", endDrag);
 svgContainer.addEventListener("touchend", endDrag);
 svgContainer.addEventListener("mouseleave", endDrag);
 
+
+
 // По умолчанию загружаем 1 этаж
 changeFloor(1);
