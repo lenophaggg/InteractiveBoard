@@ -41,6 +41,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\img\\FloorPlans\\1fl.svg",
+      "PackagePath": "staticwebassets\\img\\FloorPlans\\1fl.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\img\\FloorPlans\\2fl.svg",
+      "PackagePath": "staticwebassets\\img\\FloorPlans\\2fl.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\img\\FloorPlans\\3fl.svg",
+      "PackagePath": "staticwebassets\\img\\FloorPlans\\3fl.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\img\\FloorPlans\\4fl.svg",
+      "PackagePath": "staticwebassets\\img\\FloorPlans\\4fl.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\img\\FloorPlans\\5fl.svg",
+      "PackagePath": "staticwebassets\\img\\FloorPlans\\5fl.svg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\img\\IRIS_logo.png",
       "PackagePath": "staticwebassets\\img\\IRIS_logo.png"
     },
@@ -89,6 +109,10 @@
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\img\\map_but.png",
+      "PackagePath": "staticwebassets\\img\\map_but.png"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\img\\no_photo.png",
       "PackagePath": "staticwebassets\\img\\no_photo.png"
     },
@@ -123,6 +147,10 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\js\\HomeScript.js",
       "PackagePath": "staticwebassets\\js\\HomeScript.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\js\\MapScript.js",
+      "PackagePath": "staticwebassets\\js\\MapScript.js"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\papka\\MyMvcApp\\wwwroot\\js\\ScheduleScript.js",
