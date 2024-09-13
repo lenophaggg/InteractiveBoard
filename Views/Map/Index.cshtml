@@ -1,0 +1,36 @@
+﻿@{
+
+    ViewData["Title"] = "Campus map";
+
+}
+
+
+<title>@ViewData["Title"]</title>
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+
+<div id="mainContainer">
+    <div class="text-center mb-4" style="margin: 75px 150px 75px;">
+        <h1 id="floor-title">1 этаж</h1> <!-- Заголовок этажа -->
+    </div>
+
+    <div id="floor-buttons" class="text-center mb-4">
+        <!-- Кнопки выбора этажа -->
+        <button onclick="changeFloor(1)">1 этаж</button>
+        <button onclick="changeFloor(2)">2 этаж</button>
+        <button onclick="changeFloor(3)">3 этаж</button>
+        <button onclick="changeFloor(4)">4 этаж</button>
+        <button onclick="changeFloor(5)">5 этаж</button>
+    </div>
+
+    <div id="svg-container">
+        <!-- Контейнер для SVG карты -->
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/MapScript.js"></script>
+}
+
+
