@@ -15,11 +15,23 @@ using System.Text.RegularExpressions;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using Spire.Pdf;
+using Patagames.Pdf;
+using Patagames.Pdf.Net; // Подключаем библиотеку Patagames.Pdf.Net
+using Patagames.Pdf.Enums;
+
+using PdfSharpCore.Drawing;
+using PdfSharpCore.Pdf;
+using Xceed.Words.NET;
+
 using System.Xml.XPath;
 using Newtonsoft.Json.Linq;
 using Microsoft.Extensions.Options;
 using MyMvcApp.Models;
 using static System.Net.WebRequestMethods;
+using System.Drawing.Imaging;
+using System.Drawing;
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Wordprocessing;
 
 namespace MyMvcApp.Services
 {
@@ -662,15 +674,102 @@ namespace MyMvcApp.Services
             }
         }
 
-        static void ConvertDocToPdf(string sourcePath, string newSourcePath)
+        static void ConvertDocToPdf(string docFilePath, string pdfFilePath)
         {
-            Spire.Doc.Document document = new Spire.Doc.Document();
+            // Открываем DOCX файл с помощью библиотеки DocX
+            using (var document = DocX.Load(docFilePath))
+            {
+                // Создаем новый PDF документ
+                var pdf = new PdfSharpCore.Pdf.PdfDocument();
+                PdfSharpCore.Pdf.PdfPage page = pdf.AddPage();
+                XGraphics gfx = XGraphics.FromPdfPage(page);
 
-            document.LoadFromFile(sourcePath);
+                // Настраиваем шрифт и другие параметры
+                XFont font = new XFont("Arial", 12, XFontStyle.Regular);
+                double yPosition = 20;
 
-            document.SaveToFile(newSourcePath, Spire.Doc.FileFormat.PDF);
+                // Читаем каждый параграф из Word документа и добавляем его в PDF
+                foreach (var paragraph in document.Paragraphs)
+                {
+                    gfx.DrawString(paragraph.Text, font, XBrushes.Black,
+                        new XRect(20, yPosition, page.Width - 40, page.Height - 40),
+                        XStringFormats.TopLeft);
+                    yPosition += 20; // Переход на следующую строку
 
-            System.IO.File.Delete(sourcePath);
+                    // Добавляем новую страницу, если место на текущей странице закончилось
+                    if (yPosition > page.Height - 40)
+                    {
+                        page = pdf.AddPage();
+                        gfx = XGraphics.FromPdfPage(page);
+                        yPosition = 20;
+                    }
+                }
+
+                // Обрабатываем таблицы
+                foreach (var table in document.Tables)
+                {
+                    double tableYPosition = yPosition;
+                    double tableXPosition = 20;
+                    double columnWidth = (page.Width - 40) / table.ColumnCount; // ширина каждой колонки
+                    double rowHeight = 20; // высота строки
+
+                    // Рисуем таблицу
+                    foreach (var row in table.Rows)
+                    {
+                        double rowYPosition = tableYPosition;
+                        tableXPosition = 20;
+
+                        foreach (var cell in row.Cells)
+                        {
+                            // Рисуем границы ячеек
+                            gfx.DrawRectangle(XPens.Black, tableXPosition, rowYPosition, columnWidth, rowHeight);
+
+                            // Рисуем текст в ячейках
+                            gfx.DrawString(cell.Paragraphs[0].Text, font, XBrushes.Black,
+                                new XRect(tableXPosition + 2, rowYPosition + 2, columnWidth - 4, rowHeight - 4),
+                                XStringFormats.TopLeft);
+
+                            tableXPosition += columnWidth; // Переход к следующей колонке
+                        }
+
+                        tableYPosition += rowHeight; // Переход к следующей строке
+
+                        // Добавляем новую страницу, если место на текущей странице закончилось
+                        if (tableYPosition + rowHeight > page.Height - 40)
+                        {
+                            page = pdf.AddPage();
+                            gfx = XGraphics.FromPdfPage(page);
+                            tableYPosition = 20;
+                        }
+                    }
+                }
+
+                // Обрабатываем изображения
+                foreach (var image in document.Images)
+                {
+                    using (var imageStream = image.GetStream(FileMode.Open, FileAccess.Read))
+                    {
+                        var pdfImage = XImage.FromStream(() => imageStream);
+
+                        gfx.DrawImage(pdfImage, 20, yPosition, pdfImage.PixelWidth, pdfImage.PixelHeight);
+                        yPosition += pdfImage.PixelHeight + 10; // Переход на следующую строку
+
+                        // Добавляем новую страницу, если место на текущей странице закончилось
+                        if (yPosition > page.Height - 40)
+                        {
+                            page = pdf.AddPage();
+                            gfx = XGraphics.FromPdfPage(page);
+                            yPosition = 20;
+                        }
+                    }
+                }
+
+                // Сохраняем PDF документ
+                using (FileStream stream = new FileStream(pdfFilePath, FileMode.Create, FileAccess.Write))
+                {
+                    pdf.Save(stream);
+                }
+            }
         }
 
         static void SavePdfToImg(string sourcePath, string destinationFolder)
@@ -681,73 +780,49 @@ namespace MyMvcApp.Services
                 Directory.CreateDirectory(destinationFolder);
             }
 
-            using (PdfReader reader = new PdfReader(sourcePath))
+            using (var document = Patagames.Pdf.Net.PdfDocument.Load(sourcePath))
             {
-                int totalPages = reader.NumberOfPages;
-                int parts = (int)Math.Ceiling((double)totalPages / pagesPerPart);
+                int totalPages = document.Pages.Count; // Получаем количество страниц в документе
 
-                for (int i = 0; i < parts; i++)
+                // Цикл по каждой странице и конвертация в изображение
+                for (int page = 0; page < totalPages; page++)
                 {
-                    int startPage = i * pagesPerPart + 1;
-                    int endPage = Math.Min(startPage + pagesPerPart - 1, totalPages);
+                    // Получаем размер страницы
+                    var pdfPage = document.Pages[page];
+                    int width = (int)(pdfPage.Width * 2);  // Увеличиваем разрешение для рендеринга (например, в 2 раза)
+                    int height = (int)(pdfPage.Height * 2);
 
-                    // Используем MemoryStream вместо FileStream
-                    using (MemoryStream ms = new MemoryStream())
+                    // Рендерим страницу с заданными параметрами (300 DPI)
+                    using (var image = new Bitmap(width, height))
                     {
-                        using (iTextSharp.text.Document document = new iTextSharp.text.Document())
-                        using (PdfCopy copy = new PdfCopy(document, ms))
+                        using (var graphics = Graphics.FromImage(image))
                         {
-                            document.Open();
-                            for (int page = startPage; page <= endPage; page++)
+                            // Устанавливаем фон на белый (PDF-страницы могут иметь прозрачный фон)
+                            graphics.Clear(System.Drawing.Color.White);
+
+                            // Получаем HDC из Graphics
+                            IntPtr hdc = graphics.GetHdc();
+                            try
                             {
-                                PdfImportedPage importedPage = copy.GetImportedPage(reader, page);
-                                copy.AddPage(importedPage);
+                                // Рендерим страницу на HDC
+                                pdfPage.Render(hdc, 0, 0, width, height, PageRotate.Normal, RenderFlags.FPDF_LCD_TEXT);
                             }
-                            document.Close();
-                        }
+                            finally
+                            {
+                                // Освобождаем HDC
+                                graphics.ReleaseHdc(hdc);
+                            }
 
-                        // Получаем массив байтов из MemoryStream
-                        byte[] pdfBytes = ms.ToArray();
+                            // Сохраняем изображение
+                            string outputPath = Path.Combine(destinationFolder, $"Page_{page + 1}.png");
+                            image.Save(outputPath, ImageFormat.Png);
 
-                        // Преобразуем байты в MemoryStream
-                        using (MemoryStream partStream = new MemoryStream(pdfBytes))
-                        {
-                            ConvertPdfToImages(partStream, destinationFolder, i + 1);
                         }
                     }
                 }
             }
         }
 
-        public static void ConvertPdfToImages(MemoryStream pdfStream, string outputFolder, int partNumber)
-        {
-            // Загрузка PDF-документа из MemoryStream
-            Spire.Pdf.PdfDocument doc = new Spire.Pdf.PdfDocument(pdfStream);
 
-            // Создаем папку для сохранения изображений, если она не существует
-            if (!Directory.Exists(outputFolder))
-            {
-                Directory.CreateDirectory(outputFolder);
-            }
-
-            // Преобразование каждой страницы в изображение
-            for (int i = 0; i < doc.Pages.Count; i++)
-            {
-                // Извлекаем изображение из страницы PDF
-                System.Drawing.Image image = doc.SaveAsImage(i);
-
-                // Формируем имя файла для каждого изображения
-                string outputPath = Path.Combine(outputFolder, $"Part_{partNumber}_Page_{i + 1}.png");
-
-                // Сохраняем изображение в файл
-                image.Save(outputPath, System.Drawing.Imaging.ImageFormat.Png);
-
-                // Освобождаем ресурсы используемого изображения
-                image.Dispose();
-            }
-
-            // Освобождение ресурсов, связанных с PDF-документом
-            doc.Close();
-        }
     }
 }

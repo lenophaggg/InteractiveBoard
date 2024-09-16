@@ -7,6 +7,10 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using MyMvcApp.Models;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using System.Diagnostics;
 
 namespace MyMvcApp.Services
 {
@@ -98,7 +102,6 @@ namespace MyMvcApp.Services
                 imageUrls = new List<string> { "/img/no_photo_post.png" };
             }
 
-
             string pattern = @"\[id(\d+)\|(.*?)\]";
             string replacement = "$2 (vk.com/id$1)";
             string output = Regex.Replace(post.Text, pattern, replacement);
@@ -122,9 +125,31 @@ namespace MyMvcApp.Services
                         return new List<string> { photo.Sizes.LastOrDefault()?.Url.AbsoluteUri };
                     break;
                 case "Video":
-                    Video video = (Video)attachment.Instance;
-                    if (video.Image.Any())
-                        return new List<string> { video.Image.LastOrDefault()?.Url.AbsoluteUri };
+
+                    string vkVideoUrl = "https://vk.com/video-177798967_456239646";
+
+                    string ytDlpPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "yt-dlp", "yt-dlp.exe");
+                    string arguments = $"--get-url {vkVideoUrl}";
+
+                    Process process = new Process();
+                    process.StartInfo.FileName = ytDlpPath;
+                    process.StartInfo.Arguments = arguments;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.CreateNoWindow = true;
+
+                    // Запуск процесса
+                    process.Start();
+
+                    // Чтение результата (прямая ссылка на видео)
+                    string videoUrl = process.StandardOutput.ReadToEnd();
+
+                    // Ожидание завершения процесса
+                    process.WaitForExit();
+
+                    // Возвращаем полученную ссылку
+                    return new List<string> { videoUrl.Trim() };
+
                     break;
                 case "Album":
                     Album album = (Album)attachment.Instance;
@@ -132,7 +157,71 @@ namespace MyMvcApp.Services
                         return new List<string> { album.Thumb.Sizes.LastOrDefault()?.Url.AbsoluteUri };
                     break;
             }
-            return Enumerable.Empty<string>(); // Возвращаем пустое перечисление, если нет подходящих данных
+            return Enumerable.Empty<string>();
+        }
+
+        private string GetDirectVideoUrl(string iframeUrl)
+        {
+            var options = new ChromeOptions();
+            options.AddArgument("headless"); // Запуск в headless-режиме, без графического интерфейса
+
+            using (IWebDriver driver = new ChromeDriver(options))
+            {
+                driver.Navigate().GoToUrl(iframeUrl);
+
+                try
+                {
+                    // Ожидание загрузки страницы и выполнения всех скриптов
+                    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+                    wait.Until(d => ((IJavaScriptExecutor)d).ExecuteScript("return document.readyState").Equals("complete"));
+
+                    // Попытка найти элемент <video>
+                    var videoElement = wait.Until(d => d.FindElement(By.TagName("video")));
+                    string videoUrl = videoElement.GetAttribute("src");
+
+                    // Проверяем, что URL не пустой
+                    if (!string.IsNullOrEmpty(videoUrl))
+                    {
+                        return videoUrl; // Возвращаем прямую ссылку на видео
+                    }
+                    else
+                    {
+                        // Если URL пустой, попробуем найти другие ссылки
+                        return FindVideoLinkInPage(driver);
+                    }
+                }
+                catch (NoSuchElementException)
+                {
+                    // Если элемент <video> не найден, попробуем найти другие ресурсы на странице
+                    return FindVideoLinkInPage(driver);
+                }
+            }
+        }
+
+        private string FindVideoLinkInPage(IWebDriver driver)
+        {
+            try
+            {
+                // Поиск всех ссылок на странице
+                var allLinks = driver.FindElements(By.TagName("a"));
+
+                foreach (var link in allLinks)
+                {
+                    string href = link.GetAttribute("href");
+
+                    // Проверяем, есть ли ссылка на видеофайл
+                    if (!string.IsNullOrEmpty(href) && (href.Contains(".mp4") || href.Contains("video")))
+                    {
+                        return href; // Возвращаем первую найденную ссылку на видео
+                    }
+                }
+
+                return "Прямая ссылка на видео не найдена";
+            }
+            catch (Exception ex)
+            {
+                return $"Ошибка при поиске видеоссылок: {ex.Message}";
+            }
         }
     }
 }

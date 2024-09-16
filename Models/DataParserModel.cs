@@ -20,10 +20,21 @@ namespace MyMvcApp.Models
             // Загрузка данных из JSON файла
             string jsonData = System.IO.File.ReadAllText(filePath);
 
-            // Десериализация JSON в список ScheduleData
-            List<T> data =   JsonConvert.DeserializeObject<List<T>>(jsonData);
+            try
+            {
+                // Десериализация JSON в список ScheduleData
+                List<T> data = JsonConvert.DeserializeObject<List<T>>(jsonData);
+                return data;
+            }
+            catch (JsonReaderException ex)
+            {
+                // Логируем ошибку и выводим проблемный участок
+                Console.WriteLine($"Ошибка при чтении JSON файла: {ex.Message}");
+                Console.WriteLine($"Путь к ошибке: {ex.Path}, строка: {ex.LineNumber}, позиция: {ex.LinePosition}");
 
-            return data;
+                // Возвращаем null или пустой список для продолжения работы
+                return null;
+            }
         }
 
         public List<Document> LoadFilesFromDocumentsFolder(string documentsFolderPath)
