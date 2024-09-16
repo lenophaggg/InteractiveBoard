@@ -26,10 +26,18 @@
             {
                 <div class="masonry-grid-item" onclick="openModal('@post.Link')">
                     <div class="card">
+                        @if (post.VideoUrl != null && post.VideoUrl.Any())
+                        {
+                            <div class="video-container">
+                                <iframe src="@post.VideoUrl[0]" style="width: 100%; height: 360px;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        }
+                        else if (post.ImageUrl != null && post.ImageUrl.Any())
+                        {
+                            <img class="card-img-top" src="@post.ImageUrl[0]" alt="">
+                        }
 
-                        <img class="card-img-top" src="@post.ImageUrl[0]" alt="">
-
-                        <div class="card-body">   
+                        <div class="card-body">
                             <p class="card-text">
                                 @Html.Raw(@GetFirstThreeWords(post.Text)
                                          .Replace("____________________________________ ", "")
@@ -43,6 +51,8 @@
         }
     </div>
 </div>
+
+
 
 
 <!-- Модальное окно -->

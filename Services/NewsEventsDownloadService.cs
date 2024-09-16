@@ -88,9 +88,16 @@ namespace MyMvcApp.Services
         private VkPost CreateVkPost(Post post)
         {
             var originalPost = post.CopyHistory?.FirstOrDefault() ?? post;
+            // Извлечение изображений
             var imageUrls = originalPost.Attachments?
                 .Where(a => a.Instance != null)
                 .SelectMany(a => ExtractImageUrls(a))
+                .ToList();
+
+            // Извлечение видео
+            var videoUrls = originalPost.Attachments?
+                .Where(a => a.Instance != null)
+                .SelectMany(a => ExtractVideoUrls(a))
                 .ToList();
 
             if (imageUrls == null || imageUrls.Count == 0)
@@ -107,6 +114,7 @@ namespace MyMvcApp.Services
             {
                 Text = output,
                 ImageUrl = imageUrls,
+                VideoUrl = videoUrls, // Устанавливаем URL видео
                 Link = $"https://vk.com/wall{post.OwnerId}_{post.Id}",
                 DatePost = post.Date.GetValueOrDefault()
             };
@@ -134,5 +142,22 @@ namespace MyMvcApp.Services
             }
             return Enumerable.Empty<string>(); // Возвращаем пустое перечисление, если нет подходящих данных
         }
+
+        private IEnumerable<string> ExtractVideoUrls(Attachment attachment)
+        {
+            if (attachment.Type.Name == "Video")
+            {
+                Video video = (Video)attachment.Instance;
+                if (video.Id.HasValue && video.OwnerId.HasValue)
+                {
+                    string iframeUrl = $"https://vk.com/video_ext.php?oid={video.OwnerId}&id={video.Id}";
+                    return new List<string> { iframeUrl }; // Ссылка для встраивания видео через iFrame
+                }
+            }
+            return Enumerable.Empty<string>(); // Возвращаем пустое перечисление, если нет подходящих данных
+        }
+
+
+
     }
 }

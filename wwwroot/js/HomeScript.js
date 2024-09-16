@@ -40,3 +40,16 @@ function openModalPDF(documentPath, nameDoc) {
         }
     });
 }
+
+//document.addEventListener("DOMContentLoaded", function () {
+//    // Проверьте наличие видео iframe и его инициализацию
+//    var iframes = document.querySelectorAll('iframe');
+//    if (iframes.length > 0) {
+//        iframes.forEach(function (iframe) {
+//            if (iframe.src.includes("youtube.com") && !iframe.id) {
+//                console.error("Error: YouTube player element ID required.");
+//                iframe.id = "youtube-player-" + Math.random().toString(36).substr(2, 9); // Генерация уникального ID
+//            }
+//        });
+//    }
+//});

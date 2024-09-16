@@ -15,6 +15,9 @@ const svgFiles = {
 // Переменные для перемещения и масштаба
 let viewBoxX = 0, viewBoxY = 0, viewBoxWidth, viewBoxHeight;
 
+// Фиксированная точка маршрута (вход)
+const entryPoint = { x: 100, y: 200 };
+
 // Функция для смены этажа
 function changeFloor(floorNumber) {
     document.getElementById("floor-title").innerText = floorNumber + " этаж";
@@ -36,6 +39,9 @@ function changeFloor(floorNumber) {
 
             currentZoom = 1;  // Сбрасываем масштаб
             updateSvgViewBox();
+
+            // Обновляем обработчики кликов на кабинеты для маршрута
+            addRouteClickListeners();
         })
         .catch(error => console.error('Ошибка при загрузке SVG:', error));
 }
@@ -60,12 +66,50 @@ function zoomOut() {
 function updateSvgViewBox() {
     const svgElement = document.getElementById("svg-container").querySelector("svg");
     if (svgElement) {
-        // Масштабирование через изменение viewBox
         const newViewBoxWidth = viewBoxWidth / currentZoom;
         const newViewBoxHeight = viewBoxHeight / currentZoom;
         svgElement.setAttribute('viewBox', `${viewBoxX} ${viewBoxY} ${newViewBoxWidth} ${newViewBoxHeight}`);
     }
 }
+
+// Функция для получения координат кабинета
+function getPolygonCoordinates(polygonId) {
+    const polygon = document.getElementById(polygonId);
+    if (polygon) {
+        const points = polygon.getAttribute('points');
+        const coordinates = points.split(' ').map(point => point.split(',').map(Number));
+        return coordinates;
+    }
+    return null;
+}
+
+// Функция для рисования маршрута
+function drawRoute(startX, startY, endX, endY) {
+    const svgElement = document.getElementById("svg-container").querySelector("svg");
+    const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    line.setAttribute("x1", startX);
+    line.setAttribute("y1", startY);
+    line.setAttribute("x2", endX);
+    line.setAttribute("y2", endY);
+    line.setAttribute("stroke", "red");
+    line.setAttribute("stroke-width", "2");
+    svgElement.appendChild(line);
+}
+
+// Функция для добавления обработчиков кликов на кабинеты
+function addRouteClickListeners() {
+    // Ищем только полигоны с классом "cls-5"
+    document.querySelectorAll('polygon.cls-5').forEach(polygon => {
+        polygon.addEventListener('click', function () {
+            const cabinetCoordinates = getPolygonCoordinates(this.id);
+            if (cabinetCoordinates) {
+                const [endX, endY] = cabinetCoordinates[0];  // Первая точка кабинета
+                drawRoute(entryPoint.x, entryPoint.y, endX, endY);
+            }
+        });
+    });
+}
+
 
 // Переменные для перемещения
 let isDragging = false;
@@ -85,7 +129,6 @@ function drag(event) {
     const currentX = event.clientX || event.touches[0].clientX;
     const currentY = event.clientY || event.touches[0].clientY;
 
-    // Скорость перемещения уменьшена в зависимости от текущего масштаба
     const dx = (startX - currentX) / currentZoom;
     const dy = (startY - currentY) / currentZoom;
 
@@ -114,8 +157,6 @@ svgContainer.addEventListener("touchmove", drag);
 svgContainer.addEventListener("mouseup", endDrag);
 svgContainer.addEventListener("touchend", endDrag);
 svgContainer.addEventListener("mouseleave", endDrag);
-
-
 
 // По умолчанию загружаем 1 этаж
 changeFloor(1);

@@ -170,10 +170,12 @@ namespace MyMvcApp.Models
     public class VkPost
     {
         public List<string> ImageUrl { get; set; }
+        public List<string> VideoUrl { get; set; } // Добавлено для видео
         public string Text { get; set; }
         public string Link { get; set; }
         public DateTime DatePost { get; set; }
     }
+
 
     #endregion
 }
