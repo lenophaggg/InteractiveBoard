@@ -1,4 +1,6 @@
 @model VkPost
+@using System.Drawing;
+@using System.Net.Http;
 @using System.Text.RegularExpressions
 
 @if (Model != null)
@@ -6,37 +8,32 @@
     <!-- Проверка и вывод видео -->
     @if (Model.VideoUrl != null && Model.VideoUrl.Any())
     {
-        <div class="video-container">
-            @foreach (var videoUrl in Model.VideoUrl)
-            {
-                var youtubeLink = Regex.Match(Model.Text, @"(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/[^\s]+");
+        @foreach (var videoUrl in Model.VideoUrl)
+        {
+            var youtubeLink = Regex.Match(Model.Text, @"(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/[^\s]+");
 
-                if (youtubeLink.Success)
-                {
-                    <div class="slider">
-                        <div class="slides">
-                            @foreach (var imageUrl in Model.ImageUrl)
-                            {
-                                <div class="slide">
-                                    <img src="@imageUrl" alt="Slide Image">
-                                </div>
-                            }
-                        </div>
-                    </div>
-                }
-                else
-                {
-                    // Если это обычное VK видео, отображаем его как плеер с автоплеем и скрытыми кнопками
-                    <div class="video-container">
-                        <iframe class="card-img-top" src="@videoUrl?autoplay=1&mute=1&controls=0&loop=1"
-                                style="width: 100%; min-height:480px; max-height: 1080px; pointer-events: none;"
-                                frameborder="0" allow="autoplay; encrypted-media"
-                                allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-                                allowfullscreen></iframe>
-                    </div>
-                }
+            if (youtubeLink.Success)
+            {
+                <!-- Отображаем изображение-превью, если это YouTube -->
+                <div class="video-container">
+                    <img src="@Model.ImageUrl[0]" alt="Slide Image" class="rounded-video" />
+                </div>
             }
-        </div>
+            else
+            {
+                // Получаем размеры изображения и рисуем видео пропорционально
+                var (width, height) = GetRemoteImageDimensions(Model.ImageUrl.FirstOrDefault());
+
+                // Если это VK-видео, отображаем плеер с Full HD и автоплеем, но пропорционально размерам изображения
+                <div style="position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: auto; margin-bottom: 30px;">
+                    <iframe src="@videoUrl?autoplay=1&mute=1&controls=0&loop=1"
+                            style="width:@Math.Max(width, 1280)px; height:@Math.Max(height, 720)px; border-radius: 50px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                            allowfullscreen></iframe>
+                </div>
+            }
+        }
     }
     else
     {
@@ -48,7 +45,7 @@
                     @foreach (var imageUrl in Model.ImageUrl)
                     {
                         <div class="slide">
-                            <img src="@imageUrl" alt="Slide Image">
+                            <img src="@imageUrl" alt="Slide Image" class="rounded-video" />
                         </div>
                     }
                 </div>
@@ -165,3 +162,30 @@ else
         }
     }
 </script>
+
+@functions {
+    // Функция для получения размеров удаленного изображения
+    (int width, int height) GetRemoteImageDimensions(string imageUrl)
+    {
+        try
+        {
+            // Загрузка изображения по URL
+            using (var client = new HttpClient())
+            {
+                var imageBytes = client.GetByteArrayAsync(imageUrl).Result;
+
+                using (var ms = new MemoryStream(imageBytes))
+                using (var image = Image.FromStream(ms))
+                {
+                    return (image.Width, image.Height);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            // Лог ошибки и возврат стандартных размеров, если изображение не загрузилось
+            Console.WriteLine($"Ошибка при загрузке изображения: {ex.Message}");
+            return (1280, 720); // Минимальные размеры для видео
+        }
+    }
+}

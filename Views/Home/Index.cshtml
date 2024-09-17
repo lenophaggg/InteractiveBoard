@@ -111,8 +111,6 @@
         }
         catch (Exception ex)
         {
-            // Log the error and return default dimensions if the image can't be loaded
-            Console.WriteLine($"Error loading image: {ex.Message}");
             return 360; // Default iframe size
         }
     }

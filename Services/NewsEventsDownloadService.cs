@@ -151,7 +151,7 @@ namespace MyMvcApp.Services
                 Video video = (Video)attachment.Instance;
                 if (video.Id.HasValue && video.OwnerId.HasValue)
                 {
-                    string iframeUrl = $"https://vk.com/video_ext.php?oid={video.OwnerId}&id={video.Id}&hd=2&autoplay=1&mute=1&controls=0&loop=1";
+                    string iframeUrl = $"https://vk.com/video_ext.php?oid={video.OwnerId}&id={video.Id}?autoplay=1&mute=1&controls=0&loop=1";
                     return new List<string> { iframeUrl }; // Ссылка для встраивания видео через iFrame
                 }
             }
