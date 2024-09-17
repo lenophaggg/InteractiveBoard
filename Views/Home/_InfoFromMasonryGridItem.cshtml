@@ -1,30 +1,67 @@
 @model VkPost
+@using System.Text.RegularExpressions
 
 @if (Model != null)
 {
-    @* @if (Model.ImageUrl.Count == 0)
+    <!-- Проверка и вывод видео -->
+    @if (Model.VideoUrl != null && Model.VideoUrl.Any())
     {
-        <img src="" class="d-block img-fluid" alt="Post Image">
-    }
-    else
-    { *@
-        <div class="slider">
-            <div class="slides">
-                @foreach (var imageUrl in Model.ImageUrl)
+        <div class="video-container">
+            @foreach (var videoUrl in Model.VideoUrl)
+            {
+                var youtubeLink = Regex.Match(Model.Text, @"(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/[^\s]+");
+
+                if (youtubeLink.Success)
                 {
-                    <div class="slide">
-                        <img src="@imageUrl" alt="Slide Image">
+                    <div class="slider">
+                        <div class="slides">
+                            @foreach (var imageUrl in Model.ImageUrl)
+                            {
+                                <div class="slide">
+                                    <img src="@imageUrl" alt="Slide Image">
+                                </div>
+                            }
+                        </div>
                     </div>
                 }
-            </div>
-
-            @if (Model.ImageUrl.Count() != 1)
-            {
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            }            
+                else
+                {
+                    // Если это обычное VK видео, отображаем его как плеер с автоплеем и скрытыми кнопками
+                    <div class="video-container">
+                        <iframe class="card-img-top" src="@videoUrl?autoplay=1&mute=1&controls=0&loop=1"
+                                style="width: 100%; min-height:480px; max-height: 1080px; pointer-events: none;"
+                                frameborder="0" allow="autoplay; encrypted-media"
+                                allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                                allowfullscreen></iframe>
+                    </div>
+                }
+            }
         </div>
-   @*  } *@
+    }
+    else
+    {
+        <!-- Проверка и вывод фотографий -->
+        @if (Model.ImageUrl.Count > 0 && !(Model.ImageUrl.Count == 1 && Model.ImageUrl[0] == "/img/no_photo_post.png"))
+        {
+            <div class="slider">
+                <div class="slides">
+                    @foreach (var imageUrl in Model.ImageUrl)
+                    {
+                        <div class="slide">
+                            <img src="@imageUrl" alt="Slide Image">
+                        </div>
+                    }
+                </div>
+
+                @if (Model.ImageUrl.Count > 1)
+                {
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                }
+            </div>
+        }
+    }
+
     <p>
         @Html.Raw(Model.Text
                 .Replace("____________________________________ ", "</p><p>")
@@ -36,6 +73,8 @@ else
 {
     <h1>Произошла ошибка</h1>
 }
+
+<!-- Стили слайдера -->
 <style>
     .slider {
         position: relative;
@@ -85,6 +124,7 @@ else
         }
 </style>
 
+<!-- Скрипт слайдера -->
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);

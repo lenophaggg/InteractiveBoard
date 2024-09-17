@@ -1,6 +1,5 @@
 using Microsoft.Extensions.FileSystemGlobbing.Internal;
 using Newtonsoft.Json;
-using System.Diagnostics;
 using System.Text.RegularExpressions;
 using VkNet;
 using VkNet.Model;
@@ -17,7 +16,6 @@ namespace MyMvcApp.Services
         private CancellationTokenSource _cts;
         private readonly IServiceProvider _serviceProvider;
         private VkApi _vkApi;
-        private readonly string ytDlpPath = @"C:\Users\user\Desktop\papka\MyMvcApp\yt-dlp\yt-dlp.exe";  // путь к yt-dlp
 
         public NewsEventsDownloadService(IServiceProvider serviceProvider)
         {
@@ -63,6 +61,7 @@ namespace MyMvcApp.Services
             var results = await Task.WhenAll(tasks);
             var allPosts = results.SelectMany(x => x).ToList();
 
+            // Сортировка постов по дате публикации, от новых к старым
             var prioritizedPosts = allPosts.OrderByDescending(post => post.DatePost).ToList();
 
             var jsonFilePath = Path.Combine(dataFolderPath, "vk_groups_info.json");
@@ -83,43 +82,46 @@ namespace MyMvcApp.Services
                 Count = (ulong)countPosts
             });
 
-            return await Task.WhenAll(posts.WallPosts.Select(post => CreateVkPostAsync(post)));
+            return posts.WallPosts.Select(post => CreateVkPost(post)).ToList();
         }
 
-        private async Task<VkPost> CreateVkPostAsync(Post post)
+        private VkPost CreateVkPost(Post post)
         {
             var originalPost = post.CopyHistory?.FirstOrDefault() ?? post;
 
-            // Обрабатываем вложения асинхронно
-            var imageUrlsTasks = originalPost.Attachments?
+            // Извлечение изображений и видео
+            var imageUrls = originalPost.Attachments?
                 .Where(a => a.Instance != null)
-                .Select(a => ExtractImageUrlsOrDownloadVideo(a))
-                ?? Enumerable.Empty<Task<IEnumerable<string>>>();
+                .SelectMany(a => ExtractImageUrls(a))
+                .ToList();
 
-            var imageUrlsResults = await Task.WhenAll(imageUrlsTasks);
+            var videoUrls = originalPost.Attachments?
+                .Where(a => a.Instance != null)
+                .SelectMany(a => ExtractVideoUrls(a))
+                .ToList();
 
-            // Объединяем результаты из всех задач
-            var imageUrls = imageUrlsResults.SelectMany(urls => urls).ToList();
-
-            if (imageUrls.Count == 0)
+            if (imageUrls == null || imageUrls.Count == 0)
             {
                 imageUrls = new List<string> { "/img/no_photo_post.png" };
             }
 
+            // Обработка текста с заменой
             string pattern = @"\[id(\d+)\|(.*?)\]";
             string replacement = "$2 (vk.com/id$1)";
             string output = Regex.Replace(post.Text, pattern, replacement);
 
             return new VkPost
             {
+                Id = post.Id ?? 0, // Уникальный идентификатор поста
                 Text = output,
                 ImageUrl = imageUrls,
+                VideoUrl = videoUrls,
                 Link = $"https://vk.com/wall{post.OwnerId}_{post.Id}",
                 DatePost = post.Date.GetValueOrDefault()
             };
         }
 
-        private async Task<IEnumerable<string>> ExtractImageUrlsOrDownloadVideo(Attachment attachment)
+        private IEnumerable<string> ExtractImageUrls(Attachment attachment)
         {
             switch (attachment.Type.Name)
             {
@@ -130,12 +132,8 @@ namespace MyMvcApp.Services
                     break;
                 case "Video":
                     Video video = (Video)attachment.Instance;
-                    if (video.Player != null)
-                    {
-                        var videoUrl = video.Player.AbsoluteUri; // Преобразуем Uri в строку
-                        var savedPath = await DownloadVideoWithYtDlpAsync(videoUrl); // Асинхронная загрузка видео
-                        return new List<string> { savedPath };
-                    }
+                    if (video.Image.Any())
+                        return new List<string> { video.Image.LastOrDefault()?.Url.AbsoluteUri };
                     break;
                 case "Album":
                     Album album = (Album)attachment.Instance;
@@ -143,47 +141,24 @@ namespace MyMvcApp.Services
                         return new List<string> { album.Thumb.Sizes.LastOrDefault()?.Url.AbsoluteUri };
                     break;
             }
-            return Enumerable.Empty<string>();
+            return Enumerable.Empty<string>(); // Возвращаем пустое перечисление, если нет подходящих данных
         }
 
-        private async Task<string> DownloadVideoWithYtDlpAsync(string videoUrl)
+        private IEnumerable<string> ExtractVideoUrls(Attachment attachment)
         {
-            // Путь для сохранения видео
-            var saveFolderPath = Path.Combine("wwwroot", "videos");
-            if (!Directory.Exists(saveFolderPath))
+            if (attachment.Type.Name == "Video")
             {
-                Directory.CreateDirectory(saveFolderPath);
-            }
-
-            var videoFileName = $"{Guid.NewGuid()}.mp4"; // уникальное имя файла
-            var saveFilePath = Path.Combine(saveFolderPath, videoFileName);
-
-            // Запуск yt-dlp для загрузки видео
-            var processInfo = new ProcessStartInfo
-            {
-                FileName = ytDlpPath,
-                Arguments = $"\"{videoUrl}\" -o \"{saveFilePath}\"",
-                RedirectStandardOutput = true,
-                RedirectStandardError = true,
-                UseShellExecute = false,
-                CreateNoWindow = true
-            };
-
-            using (var process = new Process { StartInfo = processInfo })
-            {
-                process.Start();
-
-                // Асинхронное ожидание завершения процесса
-                await process.WaitForExitAsync();
-
-                if (process.ExitCode != 0)
+                Video video = (Video)attachment.Instance;
+                if (video.Id.HasValue && video.OwnerId.HasValue)
                 {
-                    var error = await process.StandardError.ReadToEndAsync();
-                    throw new Exception($"Ошибка при загрузке видео: {error}");
+                    string iframeUrl = $"https://vk.com/video_ext.php?oid={video.OwnerId}&id={video.Id}&hd=2&autoplay=1&mute=1&controls=0&loop=1";
+                    return new List<string> { iframeUrl }; // Ссылка для встраивания видео через iFrame
                 }
             }
-
-            return saveFilePath; // Возвращаем путь к скачанному видео
+            return Enumerable.Empty<string>(); // Возвращаем пустое перечисление, если нет подходящих данных
         }
+
+
+
     }
 }

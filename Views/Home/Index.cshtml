@@ -1,12 +1,12 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-@model (List<Document> Documents, List<VkPost> VkPostData)
+﻿@model (List<Document> Documents, List<VkPost> VkPostData)
+@using System.Drawing;
+@using System.Net.Http; 
+@using System.Text.RegularExpressions
 
 <title>@ViewData["Title"]</title>
-
-
 <link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+
+<script src="~/js/HomeScript.js" asp-append-version="true"></script>
 
 <div class="left-content">
     <div class="inner-content">
@@ -18,6 +18,7 @@
         }
     </div>
 </div>
+
 <div class="right-content">
     <div class="masonry-grid">
         @if (Model.VkPostData != null)
@@ -26,10 +27,39 @@
             {
                 <div class="masonry-grid-item" onclick="openModal('@post.Link')">
                     <div class="card">
+                        @if (post.VideoUrl != null && post.VideoUrl.Any())
+                        {
+                            var youtubeLink = Regex.Match(post.Text, @"(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/[^\s]+");
 
-                        <img class="card-img-top" src="@post.ImageUrl[0]" alt="">
+                            if (youtubeLink.Success)
+                            {
+                                // Display preview image if it's a YouTube video
+                                <img class="card-img-top" src="@post.ImageUrl[0]" alt="Video Preview" />
+                            }
+                            else
+                            {
+                                // Get image dimensions from a remote URL (i.mycdn.me)
+                                int height = GetRemoteImageDimensions(@post.ImageUrl[0]);
 
-                        <div class="card-body">   
+                                // Render VK video with calculated width and height
+                                <div class="video-container">
+                                    <iframe class="card-img-top"
+                                            src="@post.VideoUrl[0]?autoplay=1&mute=1&controls=0&loop=1"
+                                            style="width:100%; min-height:360px;pointer-events: none;"
+                                            height="@height px";
+                                            frameborder="0"
+                                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                            }
+                        }
+                        else if (post.ImageUrl != null && post.ImageUrl.Any())
+                        {
+                            <img class="card-img-top" src="@post.ImageUrl[0]" alt="">
+                        }
+
+                        <div class="card-body">
                             <p class="card-text">
                                 @Html.Raw(@GetFirstThreeWords(post.Text)
                                          .Replace("____________________________________ ", "")
@@ -44,25 +74,49 @@
     </div>
 </div>
 
-
-<!-- Модальное окно -->
+<!-- Modal for Document Preview -->
 <div class="modal fade" id="docPreviewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-pdf-body">
-                <!-- Здесь будет вставлен HTML -->
+                <!-- HTML will be inserted here -->
             </div>
         </div>
     </div>
 </div>
 
 @functions {
+    // Function to get the first three words
     string GetFirstThreeWords(string text)
     {
         return string.Join(" ", text.Split(' ').Take(7)) + "...";
     }
-}
 
+    // Function to get the dimensions of a remote image by its URL
+    int GetRemoteImageDimensions(string imageUrl)
+    {
+        try
+        {
+            // Download the image from the remote URL
+            using (var client = new HttpClient())
+            {
+                var imageBytes = client.GetByteArrayAsync(imageUrl).Result;
+
+                using (var ms = new MemoryStream(imageBytes))
+                using (var image = Image.FromStream(ms))
+                {
+                    return image.Height;
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            // Log the error and return default dimensions if the image can't be loaded
+            Console.WriteLine($"Error loading image: {ex.Message}");
+            return 360; // Default iframe size
+        }
+    }
+}
 
 <script>
     // Инициализация Masonry после загрузки страницы
@@ -74,4 +128,3 @@
         });
     }
 </script>
-<script src="~/js/HomeScript.js" asp-append-version="true"></script>

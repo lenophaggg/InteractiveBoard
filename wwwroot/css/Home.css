@@ -43,3 +43,8 @@
 .modal.fade#docPreviewModal .modal-pdf-body .col {
     padding: 0 50px; /* Добавляем небольшие отступы по бокам */
 }
+
+.video-container iframe {
+    /* Полностью убираем контролы плеера */
+    pointer-events: none; /* Отключает возможность взаимодействия */
+}

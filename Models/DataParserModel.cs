@@ -180,10 +180,12 @@ namespace MyMvcApp.Models
 
     public class VkPost
     {
+        public long Id { get; set; }           // Уникальный идентификатор поста
+        public string Text { get; set; }        // Текст поста
         public List<string> ImageUrl { get; set; }
-        public string Text { get; set; }
-        public string Link { get; set; }
+        public List<string> VideoUrl { get; set; }
         public DateTime DatePost { get; set; }
+        public string Link { get; set; }
     }
 
     #endregion
