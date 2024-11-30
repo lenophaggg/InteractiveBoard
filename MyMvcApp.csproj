@@ -39,6 +39,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\documents-news-events\documents\" />
+    <Folder Include="wwwroot\documents-news-events\videos\" />
     <Folder Include="wwwroot\schedules\faculties_schedules" />
     <Folder Include="wwwroot\schedules\person_schedules" />
 </ItemGroup>
