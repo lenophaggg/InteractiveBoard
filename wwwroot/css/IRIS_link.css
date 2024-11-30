@@ -29,11 +29,11 @@
     }
 
 h1 {
-    line-height: normal;
+    line-height: 156px;
     font-weight: bold;
     text-align: center;
-    width: 100%;    
-    font-size: 192px;
+    width: 100%;
+    font-size: 156px;
 }
 
 h2 {

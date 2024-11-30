@@ -37,12 +37,12 @@ function updateDateTime() {
 var idleTime = 0;
 var idleInterval = setInterval(timerIncrement, 1000);
 
-//function timerIncrement() {
-//    idleTime++;
-//    if (idleTime > 90) { // 30 секунд бездействия
-//        window.location.href = "/Inactive/Index"; // Перенаправление на указанный адрес
-//    }
-//}
+function timerIncrement() {
+    idleTime++;
+    if (idleTime > 90) { // 30 секунд бездействия
+        window.location.href = "/Inactive/Index"; // Перенаправление на указанный адрес
+    }
+}
 
 $(document).on('mousemove keydown scroll', function () {
     idleTime = 0; // Сброс счетчика бездействия
@@ -52,28 +52,30 @@ document.addEventListener('touchstart', function () {
     idleTime = 0; // Сброс счетчика бездействия при касании экрана
 });
 
-$(document).ready(function () {
-    $('#carouselExampleIndicators').carousel({
-        interval: 3000,
-        ride: 'carousel'
-    });
+//$(document).ready(function () {
+//    $('#carouselExampleIndicators').carousel({
+//        interval: 3000,
+//        ride: 'carousel'
+//    });
 
-    $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
-        var $e = $(e.relatedTarget);
-        var idx = $e.index();
-        var itemsPerSlide = 2;
-        var totalItems = $('.carousel-item').length;
+//    $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+//        var $e = $(e.relatedTarget);
+//        var idx = $e.index();
+//        var itemsPerSlide = 2;
+//        var totalItems = $('.carousel-item').length;
 
-        if (idx >= totalItems - (itemsPerSlide - 1)) {
-            var it = itemsPerSlide - (totalItems - idx);
-            for (var i = 0; i < it; i++) {
-                // Append slides to end
-                if (e.direction == "left") {
-                    $('.carousel-item').eq(i).appendTo('.carousel-inner');
-                } else {
-                    $('.carousel-item').eq(0).appendTo('.carousel-inner');
-                }
-            }
-        }
-    });
-});
+//        if (idx >= totalItems - (itemsPerSlide - 1)) {
+//            var it = itemsPerSlide - (totalItems - idx);
+//            for (var i = 0; i < it; i++) {
+//                // Append slides to end
+//                if (e.direction == "left") {
+//                    $('.carousel-item').eq(i).appendTo('.carousel-inner');
+//                } else {
+//                    $('.carousel-item').eq(0).appendTo('.carousel-inner');
+//                }
+//            }
+//        }
+//    });
+//});
+
+    

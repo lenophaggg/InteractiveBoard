@@ -1,12 +1,10 @@
 ﻿@model (List<Document> Documents, List<VkPost> VkPostData)
-@using System.Drawing;
-@using System.Net.Http; 
 @using System.Text.RegularExpressions
+@using System.Text.Json
+@using System.Text
 
 <title>@ViewData["Title"]</title>
 <link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
-
-<script src="~/js/HomeScript.js" asp-append-version="true"></script>
 
 <div class="left-content">
     <div class="inner-content">
@@ -20,43 +18,37 @@
 </div>
 
 <div class="right-content">
-    <div class="masonry-grid">
+    <div class="masonry-grid" style="gap: 30px !important;">
         @if (Model.VkPostData != null)
         {
             @foreach (var post in Model.VkPostData)
             {
-                <div class="masonry-grid-item" onclick="openModal('@post.Link')">
+                <div class="masonry-grid-item" onclick="openModal(@post.Id)">
                     <div class="card">
                         @if (post.VideoUrl != null && post.VideoUrl.Any())
                         {
-                            var youtubeLink = Regex.Match(post.Text, @"(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/[^\s]+");
-
-                            if (youtubeLink.Success)
-                            {
-                                // Display preview image if it's a YouTube video
-                                <img class="card-img-top" src="@post.ImageUrl[0]" alt="Video Preview" />
-                            }
-                            else
-                            {
-                                // Get image dimensions from a remote URL (i.mycdn.me)
-                                int height = GetRemoteImageDimensions(@post.ImageUrl[0]);
-
-                                // Render VK video with calculated width and height
-                                <div class="video-container">
-                                    <iframe class="card-img-top"
-                                            src="@post.VideoUrl[0]?autoplay=1&mute=1&controls=0&loop=1"
-                                            style="width:100%; min-height:360px;pointer-events: none;"
-                                            height="@height px";
-                                            frameborder="0"
-                                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-                                            allowfullscreen>
-                                    </iframe>
-                                </div>
-                            }
+                            <div class="video-container">
+                                <video class="card-img-top"
+                                       src="@post.VideoUrl[0]"
+                                       autoplay muted loop
+                                       playsinline
+                                       style="width: 100%; height: auto; pointer-events: none;">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         }
-                        else if (post.ImageUrl != null && post.ImageUrl.Any())
+                        else if (post.ImageUrl != null && post.ImageUrl.Count > 1)
                         {
-                            <img class="card-img-top" src="@post.ImageUrl[0]" alt="">
+                            var imageUrlsJson = JsonSerializer.Serialize(post.ImageUrl);
+                            var imageUrlsBase64 = Convert.ToBase64String(Encoding.UTF8.GetBytes(imageUrlsJson));
+
+                            <div class="image-carousel" data-images-base64="@imageUrlsBase64" data-height="@post.ImageHeight[0]">
+                                <img class="card-img-top" src="@post.ImageUrl[0]" alt="" style="width: 646px; height: @post.ImageHeight[0]px;" />
+                            </div>
+                        }
+                        else if (post.ImageUrl != null && post.ImageUrl.Count == 1)
+                        {
+                            <img class="card-img-top" src="@post.ImageUrl[0]" alt="" style="width: 646px; height: @post.ImageHeight[0]px;" />
                         }
 
                         <div class="card-body">
@@ -74,55 +66,17 @@
     </div>
 </div>
 
-<!-- Modal for Document Preview -->
+<!-- Модальное окно для предпросмотра документа -->
 <div class="modal fade" id="docPreviewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-pdf-body">
-                <!-- HTML will be inserted here -->
-            </div>
-        </div>
-    </div>
+    <!-- Содержимое модального окна -->
 </div>
 
 @functions {
-    // Function to get the first three words
+    // Функция для получения первых семи слов
     string GetFirstThreeWords(string text)
     {
         return string.Join(" ", text.Split(' ').Take(7)) + "...";
     }
-
-    // Function to get the dimensions of a remote image by its URL
-    int GetRemoteImageDimensions(string imageUrl)
-    {
-        try
-        {
-            // Download the image from the remote URL
-            using (var client = new HttpClient())
-            {
-                var imageBytes = client.GetByteArrayAsync(imageUrl).Result;
-
-                using (var ms = new MemoryStream(imageBytes))
-                using (var image = Image.FromStream(ms))
-                {
-                    return image.Height;
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            return 360; // Default iframe size
-        }
-    }
 }
-
-<script>
-    // Инициализация Masonry после загрузки страницы
-    window.onload = function () {
-        var grid = document.querySelector('.masonry-grid');
-        var msnry = new Masonry(grid, {
-            itemSelector: '.masonry-grid-item',
-            percentPosition: true
-        });
-    }
-</script>
+<script src="~/js/HomeScript.js" asp-append-version="true"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>

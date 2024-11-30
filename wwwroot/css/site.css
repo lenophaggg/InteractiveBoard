@@ -331,3 +331,7 @@ header {
     overflow-y: auto !important;
 }
 
+.video-container iframe {
+    /* Полностью убираем контролы плеера */
+    pointer-events: none; /* Отключает возможность взаимодействия */
+}

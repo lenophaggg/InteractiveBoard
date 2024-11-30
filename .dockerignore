@@ -28,3 +28,9 @@ README.md
 !.git/config
 !.git/packed-refs
 !.git/refs/heads/**
+wwwroot/documents-news-events/videos/*
+publish/*
+Release/*
+*.mp4
+*.part
+*.ytdl

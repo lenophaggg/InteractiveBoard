@@ -12,26 +12,13 @@ using System.Text;
 using System.IO;
 using System.Text.RegularExpressions;
 
-using iTextSharp.text;
-using iTextSharp.text.pdf;
-using Spire.Pdf;
-using Patagames.Pdf;
-using Patagames.Pdf.Net; // Подключаем библиотеку Patagames.Pdf.Net
-using Patagames.Pdf.Enums;
-
-using PdfSharpCore.Drawing;
-using PdfSharpCore.Pdf;
-using Xceed.Words.NET;
-
-using System.Xml.XPath;
 using Newtonsoft.Json.Linq;
 using Microsoft.Extensions.Options;
 using MyMvcApp.Models;
-using static System.Net.WebRequestMethods;
-using System.Drawing.Imaging;
-using System.Drawing;
-using DocumentFormat.OpenXml.Packaging;
-using DocumentFormat.OpenXml.Wordprocessing;
+
+using System.Diagnostics;
+
+
 
 namespace MyMvcApp.Services
 {
@@ -615,214 +602,94 @@ namespace MyMvcApp.Services
 
         private async Task CreateFileForBoardAsync(long chatId, Telegram.Bot.Types.Document document, CancellationToken cancellationToken)
         {
-            var extension = Path.GetExtension(document.FileName).ToLower();
-            if (extension != ".pdf" && extension != ".docx" && extension != ".doc")
+            string extension = Path.GetExtension(document.FileName).ToLower();
+            if (extension != ".pdf")
             {
-                await _botClient.SendTextMessageAsync(chatId, $"❌ Формат файла \"{document.FileName}\" не поддерживается. Поддерживаются только файлы PDF и Word.");
+                await _botClient.SendTextMessageAsync(chatId, "❌ Только PDF файлы поддерживаются.");
                 return;
             }
 
-            var fileId = document.FileId;
+            // Главная папка для сохранения документов
+            string targetDirectory = Path.Combine("wwwroot", "documents-news-events", "documents");
+            Directory.CreateDirectory(targetDirectory);
 
-            var tempFilePath = Path.Combine("wwwroot", "documents-news-events", "documents", document.FileName);
-
-            var directoryName = Path.GetFileNameWithoutExtension(document.FileName); // Имя папки будет без расширения файла
-            var directoryPath = Path.Combine("wwwroot", "documents-news-events", "documents", directoryName);
-
-            if (Directory.Exists(directoryPath))
-            {
-                await _botClient.SendTextMessageAsync(chatId, $"✅ Документ с именем \"{directoryName}\" уже существует.");
-                return;
-            }
-            else
-            {
-                Directory.CreateDirectory(directoryPath);
-            }
-
-            var file = await _botClient.GetFileAsync(fileId);
+            // Имя файла и имя папки по названию документа
+            string folderName = Path.GetFileNameWithoutExtension(document.FileName);
+            string destinationFolder = Path.Combine(targetDirectory, folderName);
+            string filePath = Path.Combine(targetDirectory, document.FileName);
 
             try
             {
-                using (var saveImageStream = System.IO.File.Open(tempFilePath, FileMode.Create))
+                // Скачиваем PDF
+                var fileInfo = await _botClient.GetFileAsync(document.FileId, cancellationToken);
+                using (var stream = System.IO.File.Open(filePath, FileMode.Create))
                 {
-                    await _botClient.DownloadFileAsync(file.FilePath, saveImageStream, cancellationToken);
+                    await _botClient.DownloadFile(fileInfo.FilePath, stream, cancellationToken);
                 }
 
-                var savedExtension = Path.GetExtension(tempFilePath).ToLower();
-                if (savedExtension == ".pdf")
+                // Создаём папку с именем документа
+                Directory.CreateDirectory(destinationFolder);
+
+                // Конвертируем PDF в изображения
+                ConvertPdfToImages(filePath, destinationFolder);
+
+                // Удаляем исходный PDF
+                if (System.IO.File.Exists(filePath))
                 {
-                    SavePdfToImg(tempFilePath, Path.Combine("wwwroot", "documents-news-events", "documents", Path.GetFileNameWithoutExtension(document.FileName)));
-
-                    System.IO.File.Delete(tempFilePath);
-                }
-                else
-                {
-                    string newSourcePath = Path.Combine(Path.GetDirectoryName(tempFilePath), $"{Path.GetFileNameWithoutExtension(tempFilePath)}.pdf");
-
-                    ConvertDocToPdf(tempFilePath, newSourcePath);
-                    SavePdfToImg(newSourcePath, Path.Combine("wwwroot", "documents-news-events", "documents", Path.GetFileNameWithoutExtension(document.FileName)));
-
-                    System.IO.File.Delete(newSourcePath);
+                    System.IO.File.Delete(filePath);
                 }
 
-                await _botClient.SendTextMessageAsync(chatId, $"✅ Документ \"{Path.GetFileName(document.FileName)}\" успешно сохранен");
+                await _botClient.SendTextMessageAsync(chatId, $"✅ Документ \"{Path.GetFileName(document.FileName)}\" был успешно преобразован.");
             }
             catch (Exception ex)
             {
-                Directory.Delete(Path.Combine("wwwroot", "documents-news-events", "documents", Path.GetFileNameWithoutExtension(document.FileName)), true);
-                await _botClient.SendTextMessageAsync(chatId, $"❌ Ошибка сохранения документа \"{Path.GetFileName(document.FileName)}\": {ex.Message}");
+                await _botClient.SendTextMessageAsync(chatId, $"❌ Ошибка: {ex.Message}");
             }
         }
 
-        static void ConvertDocToPdf(string docFilePath, string pdfFilePath)
+        static void ConvertPdfToImages(string sourcePath, string destinationFolder)
         {
-            // Открываем DOCX файл с помощью библиотеки DocX
-            using (var document = DocX.Load(docFilePath))
+            var startInfo = new ProcessStartInfo
             {
-                // Создаем новый PDF документ
-                var pdf = new PdfSharpCore.Pdf.PdfDocument();
-                PdfSharpCore.Pdf.PdfPage page = pdf.AddPage();
-                XGraphics gfx = XGraphics.FromPdfPage(page);
+                FileName = "pdftoppm", // Убедитесь, что pdftoppm доступен в PATH или используйте полный путь
+                Arguments = $"-png -r 300 {sourcePath} {Path.Combine(destinationFolder, "page")}",
+                UseShellExecute = false,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                CreateNoWindow = true
+            };
 
-                // Настраиваем шрифт и другие параметры
-                XFont font = new XFont("Arial", 12, XFontStyle.Regular);
-                double yPosition = 20;
+            using (var process = new Process { StartInfo = startInfo })
+            {
+                process.Start();
+                string error = process.StandardError.ReadToEnd();
+                process.WaitForExit();
 
-                // Читаем каждый параграф из Word документа и добавляем его в PDF
-                foreach (var paragraph in document.Paragraphs)
+                if (process.ExitCode != 0)
                 {
-                    gfx.DrawString(paragraph.Text, font, XBrushes.Black,
-                        new XRect(20, yPosition, page.Width - 40, page.Height - 40),
-                        XStringFormats.TopLeft);
-                    yPosition += 20; // Переход на следующую строку
-
-                    // Добавляем новую страницу, если место на текущей странице закончилось
-                    if (yPosition > page.Height - 40)
-                    {
-                        page = pdf.AddPage();
-                        gfx = XGraphics.FromPdfPage(page);
-                        yPosition = 20;
-                    }
-                }
-
-                // Обрабатываем таблицы
-                foreach (var table in document.Tables)
-                {
-                    double tableYPosition = yPosition;
-                    double tableXPosition = 20;
-                    double columnWidth = (page.Width - 40) / table.ColumnCount; // ширина каждой колонки
-                    double rowHeight = 20; // высота строки
-
-                    // Рисуем таблицу
-                    foreach (var row in table.Rows)
-                    {
-                        double rowYPosition = tableYPosition;
-                        tableXPosition = 20;
-
-                        foreach (var cell in row.Cells)
-                        {
-                            // Рисуем границы ячеек
-                            gfx.DrawRectangle(XPens.Black, tableXPosition, rowYPosition, columnWidth, rowHeight);
-
-                            // Рисуем текст в ячейках
-                            gfx.DrawString(cell.Paragraphs[0].Text, font, XBrushes.Black,
-                                new XRect(tableXPosition + 2, rowYPosition + 2, columnWidth - 4, rowHeight - 4),
-                                XStringFormats.TopLeft);
-
-                            tableXPosition += columnWidth; // Переход к следующей колонке
-                        }
-
-                        tableYPosition += rowHeight; // Переход к следующей строке
-
-                        // Добавляем новую страницу, если место на текущей странице закончилось
-                        if (tableYPosition + rowHeight > page.Height - 40)
-                        {
-                            page = pdf.AddPage();
-                            gfx = XGraphics.FromPdfPage(page);
-                            tableYPosition = 20;
-                        }
-                    }
-                }
-
-                // Обрабатываем изображения
-                foreach (var image in document.Images)
-                {
-                    using (var imageStream = image.GetStream(FileMode.Open, FileAccess.Read))
-                    {
-                        var pdfImage = XImage.FromStream(() => imageStream);
-
-                        gfx.DrawImage(pdfImage, 20, yPosition, pdfImage.PixelWidth, pdfImage.PixelHeight);
-                        yPosition += pdfImage.PixelHeight + 10; // Переход на следующую строку
-
-                        // Добавляем новую страницу, если место на текущей странице закончилось
-                        if (yPosition > page.Height - 40)
-                        {
-                            page = pdf.AddPage();
-                            gfx = XGraphics.FromPdfPage(page);
-                            yPosition = 20;
-                        }
-                    }
-                }
-
-                // Сохраняем PDF документ
-                using (FileStream stream = new FileStream(pdfFilePath, FileMode.Create, FileAccess.Write))
-                {
-                    pdf.Save(stream);
+                    throw new Exception($"pdftoppm завершился с ошибкой: {error}");
                 }
             }
+
+            // Переименовываем файлы для сохранения в формате 1.png, 2.png и т.д.
+            RenameImages(destinationFolder);
         }
 
-        static void SavePdfToImg(string sourcePath, string destinationFolder)
+        static void RenameImages(string directoryPath)
         {
-            int pagesPerPart = 3; // Количество страниц на каждую часть
-            if (!Directory.Exists(destinationFolder))
+            var imageFiles = Directory.GetFiles(directoryPath, "page-*.png")
+                                      .OrderBy(f => int.Parse(Path.GetFileNameWithoutExtension(f).Split('-').Last()));
+
+            int pageIndex = 1;
+            foreach (var filePath in imageFiles)
             {
-                Directory.CreateDirectory(destinationFolder);
-            }
+                string newFileName = $"{pageIndex}.png";
+                string newPath = Path.Combine(directoryPath, newFileName);
 
-            using (var document = Patagames.Pdf.Net.PdfDocument.Load(sourcePath))
-            {
-                int totalPages = document.Pages.Count; // Получаем количество страниц в документе
-
-                // Цикл по каждой странице и конвертация в изображение
-                for (int page = 0; page < totalPages; page++)
-                {
-                    // Получаем размер страницы
-                    var pdfPage = document.Pages[page];
-                    int width = (int)(pdfPage.Width * 2);  // Увеличиваем разрешение для рендеринга (например, в 2 раза)
-                    int height = (int)(pdfPage.Height * 2);
-
-                    // Рендерим страницу с заданными параметрами (300 DPI)
-                    using (var image = new Bitmap(width, height))
-                    {
-                        using (var graphics = Graphics.FromImage(image))
-                        {
-                            // Устанавливаем фон на белый (PDF-страницы могут иметь прозрачный фон)
-                            graphics.Clear(System.Drawing.Color.White);
-
-                            // Получаем HDC из Graphics
-                            IntPtr hdc = graphics.GetHdc();
-                            try
-                            {
-                                // Рендерим страницу на HDC
-                                pdfPage.Render(hdc, 0, 0, width, height, PageRotate.Normal, RenderFlags.FPDF_LCD_TEXT);
-                            }
-                            finally
-                            {
-                                // Освобождаем HDC
-                                graphics.ReleaseHdc(hdc);
-                            }
-
-                            // Сохраняем изображение
-                            string outputPath = Path.Combine(destinationFolder, $"Page_{page + 1}.png");
-                            image.Save(outputPath, ImageFormat.Png);
-
-                        }
-                    }
-                }
+                System.IO.File.Move(filePath, newPath, overwrite: true);
+                pageIndex++;
             }
         }
-
 
     }
 }

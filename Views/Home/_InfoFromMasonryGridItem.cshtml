@@ -24,13 +24,15 @@
                 // Получаем размеры изображения и рисуем видео пропорционально
                 var (width, height) = GetRemoteImageDimensions(Model.ImageUrl.FirstOrDefault());
 
-                // Если это VK-видео, отображаем плеер с Full HD и автоплеем, но пропорционально размерам изображения
-                <div style="position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: auto; margin-bottom: 30px;">
-                    <iframe src="@videoUrl?autoplay=1&mute=1&controls=0&loop=1"
-                            style="width:@Math.Max(width, 1280)px; height:@Math.Max(height, 720)px; border-radius: 50px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);"
-                            frameborder="0"
-                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-                            allowfullscreen></iframe>
+                            // Отображаем видео с пропорциональными размерами и закруглёнными углами
+                <div class="video-container">
+                    <video class="card-img-top rounded-video"
+                           src="@videoUrl"
+                           autoplay muted loop
+                           playsinline
+                           style="max-width:100%; max-height:1500px; width:auto; height:auto; pointer-events:none; border-radius:50px; overflow:hidden;">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             }
         }
@@ -59,6 +61,7 @@
         }
     }
 
+    <!-- Вывод текста поста -->
     <p>
         @Html.Raw(Model.Text
                 .Replace("____________________________________ ", "</p><p>")
@@ -71,7 +74,7 @@ else
     <h1>Произошла ошибка</h1>
 }
 
-<!-- Стили слайдера -->
+<!-- Стили слайдера и видео -->
 <style>
     .slider {
         position: relative;
@@ -86,6 +89,11 @@ else
 
     .slide {
         flex: 0 0 100%;
+        display: none; /* Скрываем все слайды по умолчанию */
+    }
+
+    .active-slide {
+        display: block; /* Отображаем активный слайд */
     }
 
     .prev, .next {
@@ -109,16 +117,34 @@ else
 
     .next {
         right: 0;
-        border-radius: 50%;
     }
 
         .prev:hover, .next:hover {
-            color: #c0add6; /* Цвет при наведении */
+            color: #c0add6;
         }
 
         .prev.active, .next.active {
             color: #c0add6;
         }
+
+    .rounded-video {
+        border-radius: 50px; /* Скругленные углы */
+        overflow: hidden; /* Обрезка содержимого за пределами углов */
+        display: block; /* Блочная модель для правильной обработки размеров */
+        max-width: 100%; /* Максимальная ширина 100% */
+        max-height: 1080px; /* Ограничение высоты для вертикальных видео */
+        object-fit: cover; /* Увеличение для заполнения контейнера */
+    }
+
+    .video-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
 </style>
 
 <!-- Скрипт слайдера -->
@@ -183,9 +209,9 @@ else
         }
         catch (Exception ex)
         {
-            // Лог ошибки и возврат стандартных размеров, если изображение не загрузилось
+            // Логируем ошибку и возвращаем стандартные размеры
             Console.WriteLine($"Ошибка при загрузке изображения: {ex.Message}");
-            return (1280, 720); // Минимальные размеры для видео
+            return (1280, 720); // Стандартные размеры для видео
         }
     }
 }

@@ -1,47 +1,215 @@
-﻿@{
-    ViewData["Title"] = "Campus map";
-}
+﻿<style>
+    /* Основной контейнер страницы */
+    #mainContainer {
+        width: 100%;
+        max-width: 2560px;
+        margin: 0 auto;
+        padding: 20px 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-<title>@ViewData["Title"]</title>
+    /* Контейнер для SVG и кнопок */
+    #interactive-container {
+        margin-top: 250px;
+        position: relative;
+        width: 95%;
+        height: 1350px;
+        background-color: #9268C1;
+        border-radius: 50px;
+        overflow: hidden;
+    }
 
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    /* SVG-контейнер */
+    #svg-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        cursor: grab; /* Иконка перемещения */
+    }
 
-<style>
-    polygon.cls-5 {
+    /* Заголовок текущего этажа */
+    #floor-title {
+        font-size: 192px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        color: #ffffff;
+        position: absolute;
+        top: 20px;
+        z-index: 10;
+    }
+
+    /* Кнопки выбора этажей */
+    #floor-buttons {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+
+    .floor-button {
+        background-color: #270F3B;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        width: 130px;
+        height: 130px;
+        font-size: 48px;
+        font-weight: bold;
         cursor: pointer;
-        pointer-events: all;
+    }
+
+    /* Кнопки зума */
+    #zoom-buttons {
+        display: flex;
+        flex-direction: column; /* Кнопки расположены в столбик */
+        gap: 20px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .zoom-button {
+        background-color: #270F3B;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        width: 130px;
+        height: 130px;
+        font-size: 48px;
+        font-weight: bold;
+        cursor: pointer;
     }
 </style>
 
 <div id="mainContainer">
-    <div class="text-center mb-4" style="margin: 75px 150px 75px;">
-        <h1 id="floor-title">1 этаж</h1> <!-- Заголовок этажа -->
+    <h1 id="floor-title">1 этаж</h1>
+
+    <div id="interactive-container">        
+        <!-- Кнопки зума -->
+        <div id="zoom-buttons">
+            <button class="zoom-button" onclick="zoomIn()">+</button>
+            <button class="zoom-button" onclick="zoomOut()">−</button>
+        </div>
+
+        <!-- SVG-контейнер -->
+        <div id="svg-container">
+            <svg id="svg-content" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+        </div>
+
+        <!-- Кнопки выбора этажей -->
+        <div id="floor-buttons">
+            <button class="floor-button" onclick="changeFloor(1)">1</button>
+            <button class="floor-button" onclick="changeFloor(2)">2</button>
+            <button class="floor-button" onclick="changeFloor(3)">3</button>
+            <button class="floor-button" onclick="changeFloor(4)">4</button>
+            <button class="floor-button" onclick="changeFloor(5)">5</button>
+        </div>
     </div>
-
-    <div id="floor-buttons" class="text-center mb-4">
-        <!-- Кнопки выбора этажа -->
-        <button onclick="changeFloor(1)">1 этаж</button>
-        <button onclick="changeFloor(2)">2 этаж</button>
-        <button onclick="changeFloor(3)">3 этаж</button>
-        <button onclick="changeFloor(4)">4 этаж</button>
-        <button onclick="changeFloor(5)">5 этаж</button>
-    </div>
-
-    <!-- Кнопки масштабирования -->
-    <div id="zoom-buttons" class="text-center mb-4">
-        <button onclick="zoomIn()">+</button>
-        <button onclick="zoomOut()">−</button>
-    </div>
-
-    <div id="svg-container" style="width: 100%; height: 1250px; overflow: hidden; border: 1px solid #000;">
-        <svg id="svg-content" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <!-- SVG содержимое будет загружаться сюда -->
-        </svg>
-    </div>
-
-
 </div>
 
 @section Scripts {
-    <script src="~/js/MapScript.js"></script>
+    <script>
+        let currentZoom = 1;
+        const zoomStep = 0.3;
+        const minZoom = 1;
+        const maxZoom = 4;
+        let isPanning = false, startX, startY;
+        let viewBoxX = 0, viewBoxY = 0, viewBoxWidth, viewBoxHeight;
+
+        const svgFiles = {
+            1: '/img/FloorPlans/1fl.svg',
+            2: '/img/FloorPlans/2fl.svg',
+            3: '/img/FloorPlans/3fl.svg',
+            4: '/img/FloorPlans/4fl.svg',
+            5: '/img/FloorPlans/5fl.svg'
+        };
+
+        function changeFloor(floorNumber) {
+            document.getElementById("floor-title").innerText = floorNumber + " этаж";
+
+            fetch(svgFiles[floorNumber])
+                .then(response => response.text())
+                .then(svgContent => {
+                    const svgContainer = document.getElementById("svg-container");
+                    svgContainer.innerHTML = svgContent;
+                    const svgElement = svgContainer.querySelector("svg");
+
+                    const viewBox = svgElement.viewBox.baseVal;
+                    viewBoxWidth = viewBox.width;
+                    viewBoxHeight = viewBox.height;
+                    viewBoxX = viewBox.x;
+                    viewBoxY = viewBox.y;
+
+                    currentZoom = 1;
+                    updateSvgViewBox();
+                })
+                .catch(error => console.error('Ошибка при загрузке SVG:', error));
+        }
+
+        function zoomIn() {
+            if (currentZoom < maxZoom) {
+                currentZoom += zoomStep;
+                updateSvgViewBox();
+            }
+        }
+
+        function zoomOut() {
+            if (currentZoom > minZoom) {
+                currentZoom -= zoomStep;
+                updateSvgViewBox();
+            }
+        }
+
+        function updateSvgViewBox() {
+            const svgElement = document.querySelector("#svg-container svg");
+            if (svgElement) {
+                const newViewBoxWidth = viewBoxWidth / currentZoom;
+                const newViewBoxHeight = viewBoxHeight / currentZoom;
+                svgElement.setAttribute('viewBox', `${viewBoxX} ${viewBoxY} ${newViewBoxWidth} ${newViewBoxHeight}`);
+            }
+        }
+
+        // Логика для перемещения карты
+        const svgContainer = document.getElementById("svg-container");
+        svgContainer.addEventListener('mousedown', (e) => {
+            isPanning = true;
+            startX = e.clientX;
+            startY = e.clientY;
+            svgContainer.style.cursor = 'grabbing';
+        });
+
+        svgContainer.addEventListener('mousemove', (e) => {
+            if (!isPanning) return;
+            const dx = (startX - e.clientX) / currentZoom;
+            const dy = (startY - e.clientY) / currentZoom;
+            viewBoxX += dx;
+            viewBoxY += dy;
+            updateSvgViewBox();
+            startX = e.clientX;
+            startY = e.clientY;
+        });
+
+        svgContainer.addEventListener('mouseup', () => {
+            isPanning = false;
+            svgContainer.style.cursor = 'grab';
+        });
+
+        svgContainer.addEventListener('mouseleave', () => {
+            isPanning = false;
+            svgContainer.style.cursor = 'grab';
+        });
+
+        changeFloor(1); 
+    </script>
 }

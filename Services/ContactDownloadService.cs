@@ -42,11 +42,10 @@ namespace MyMvcApp.Services
             {
                 var now = DateTime.Now;
 
-                // Проверяем, 22:00 ли сейчас
+                //// Проверяем, 22:00 ли сейчас
                 if (now.Hour == 22 && now.Minute == 0)
-                {
-                    // Вызов метода для парсинга и сохранения контактов
-                    await ParseAndSavePersonContact();
+                {                    
+                   await ParseAndSavePersonContact();
                 }
 
                 // Вычисляем время до следующего запуска: следующий день в 22:00

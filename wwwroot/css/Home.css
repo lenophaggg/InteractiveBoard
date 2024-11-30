@@ -21,6 +21,7 @@
     padding: 80px 120px;
     color: white;
 }
+
     .modal.fade#docPreviewModal .modal-content h2 {
         line-height: 135px;
         font-weight: bold;
@@ -28,23 +29,58 @@
         text-align: center;
     }
 
-    .modal.fade#docPreviewModal .modal-dialog {
-        margin: 260px;
-    }
+.modal.fade#docPreviewModal .modal-dialog {
+    margin: 260px;
+}
 
 .modal.fade#docPreviewModal .modal-pdf-body img {
     border-radius: 50px;
-    margin: auto; /* Располагаем изображение по центру */
-    display: block; /* Обеспечиваем блочное расположение изображения */
+    margin: auto;
+    display: block;
     max-width: 100%;
     height: auto;
 }
 
 .modal.fade#docPreviewModal .modal-pdf-body .col {
-    padding: 0 50px; /* Добавляем небольшие отступы по бокам */
+    padding: 0 50px;
 }
 
-.video-container iframe {
-    /* Полностью убираем контролы плеера */
-    pointer-events: none; /* Отключает возможность взаимодействия */
+.image-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+    .image-container img {
+        display: block;
+        width: auto; /* Авто ширина для пропорциональности */
+       
+        object-fit: contain; /* Показать изображение полностью, по умолчанию */
+    }
+
+    .image-container[data-multiple="true"] img {
+        object-fit: cover; /* Обрезка изображения, если несколько */
+        width: auto;
+        height: 100%;
+    }
+
+.image-single img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.masonry-grid {
+    column-count: 3; /* Количество столбцов */
+    column-gap: 30px; /* Отступы между колонками */
+}
+
+.masonry-grid-item {
+    width: 100%; /* Делаем элементы адаптивными */
+    margin-bottom: 30px;
+    break-inside: avoid; /* Избегаем разрыва внутри колонок */
 }

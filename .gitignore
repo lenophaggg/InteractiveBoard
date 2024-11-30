@@ -1,8 +1,24 @@
 # Игнорирование папок настроек Visual Studio
 .vs/
-# Игнорирование папок сборки
 bin/
 obj/
+Release/
+Debug/
+publish/
+publishс/
+
 # Игнорирование временных файлов и папок
-*.log
+*.user
+*.lock.json
+*.lock
+*.pdb
 *.tmp
+*.log
+*.cache
+*.config
+
+
+
+# Игнорирование автоматически генерируемых файлов и статических веб-ресурсов
+scopedcss/
+staticwebassets/

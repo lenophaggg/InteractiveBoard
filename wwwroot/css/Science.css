@@ -73,7 +73,8 @@ p {
 #content {
     flex-grow: 1;
     overflow-y: auto;
-    height: 1250px;
+    height: 1450px;
+    margin-top: 150px;
 }
 
 li {
@@ -85,4 +86,7 @@ img {
     width: auto; /* �������������� ������ ��� ���������� ��������� */
     
 }
-
+strong{
+    font-size:72px;
+}
+ 

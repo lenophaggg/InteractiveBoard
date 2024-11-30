@@ -1,37 +1,18 @@
-version: '3.8'
-
 services:
-  db:
-    image: postgres:latest
-    container_name: postgres_db
-    environment:
-      POSTGRES_DB: InteractiveBoardEntities
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 228228228
-    ports:
-      - "5488:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    networks:
-      - my_network
-
-  web:
+  mymvcapp:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: dotnet_app
+    container_name: dotnet_app_mymvcapp
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ConnectionStrings__DefaultConnection: Host=db;Port=5432;Database=InteractiveBoardEntities;Username=postgres;Password=228228228
+      ConnectionStrings__DefaultConnection: Host=db;Port=5432;Database=interactiveboardentities;Username=postgres;Password=228228228
+      TZ: Europe/Moscow
     ports:
-      - 127.0.0.1:3000:8080
-    depends_on:
-      - db
+      - "8082:8082"
     networks:
       - my_network
 
 networks:
   my_network:
-
-volumes:
-  postgres_data:
+    external: true

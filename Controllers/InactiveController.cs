@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using MyMvcApp.Models;
 using Newtonsoft.Json;
-using static iTextSharp.text.pdf.AcroFields;
 
 
 namespace MyMvcApp.Controllers
@@ -108,7 +107,7 @@ namespace MyMvcApp.Controllers
                         Group = scheduleGroup.Group,
                         Subject = scheduleGroup.Subject,
                         Classroom = scheduleGroup.Classroom,
-                        InstructorName = scheduleGroup.Instructor.NameContact,
+                        InstructorName = scheduleGroup.Instructor?.NameContact ?? "", // Обрабатываем null
                         Status = status, 
                         ScheduleInfo = scheduleGroup.ScheduleInfo
                     });

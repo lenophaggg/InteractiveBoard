@@ -22,7 +22,7 @@ builder.Services.AddHostedService(provider =>
 
 builder.Services.AddHostedService<DocumentCleanupService>();
 builder.Services.AddHostedService<NewsEventsDownloadService>();
-//builder.Services.AddHostedService<ContactDownloadService>();
+builder.Services.AddHostedService<ContactDownloadService>();
 builder.Services.AddHostedService<ScheduleDownloadService>();
 // ...
 

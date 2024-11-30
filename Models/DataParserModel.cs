@@ -8,32 +8,75 @@ namespace MyMvcApp.Models
 {
     public class DataParserModel
     {
-        public List<T> LoadDataFromJson<T>(string filePath)
+        public Dictionary<string, List<VkPost>> LoadVkGroupData(string filePath)
         {
             if (!System.IO.File.Exists(filePath))
             {
-                // Обработка случая, когда файл не найден
-                // Возвращаем null, чтобы показать, что группа не найдена
-                return null;
+                // Если файл не найден, возвращаем пустой словарь
+                return new Dictionary<string, List<VkPost>>();
             }
 
-            // Загрузка данных из JSON файла
             string jsonData = System.IO.File.ReadAllText(filePath);
 
             try
             {
-                // Десериализация JSON в список ScheduleData
-                List<T> data = JsonConvert.DeserializeObject<List<T>>(jsonData);
+                // Десериализация JSON в словарь с группами и их постами
+                var data = JsonConvert.DeserializeObject<Dictionary<string, List<VkPost>>>(jsonData);
+
+                if (data == null)
+                {
+                    // Если десериализация вернула null, возвращаем пустой словарь
+                    return new Dictionary<string, List<VkPost>>();
+                }
+
+                // Сортируем посты каждой группы по дате
+                foreach (var group in data.Keys.ToList())
+                {
+                    data[group] = data[group]
+                        .OrderByDescending(post => post.DatePost)
+                        .ToList();
+                }
+
                 return data;
             }
             catch (JsonReaderException ex)
             {
-                // Логируем ошибку и выводим проблемный участок
                 Console.WriteLine($"Ошибка при чтении JSON файла: {ex.Message}");
                 Console.WriteLine($"Путь к ошибке: {ex.Path}, строка: {ex.LineNumber}, позиция: {ex.LinePosition}");
 
-                // Возвращаем null или пустой список для продолжения работы
-                return null;
+                // Возвращаем пустой словарь для продолжения работы
+                return new Dictionary<string, List<VkPost>>();
+            }
+        }
+
+        public List<VkPost> LoadVkPostData(string filePath)
+        {
+            if (!System.IO.File.Exists(filePath))
+            {
+                // Если файл не найден, возвращаем пустой список
+                return new List<VkPost>();
+            }
+
+            try
+            {
+                // Загрузка данных из JSON файла
+                string jsonData = System.IO.File.ReadAllText(filePath);
+
+                // Десериализация JSON в Dictionary<string, List<VkPost>>
+                var allGroupsPosts = JsonConvert.DeserializeObject<Dictionary<string, List<VkPost>>>(jsonData)
+                                     ?? new Dictionary<string, List<VkPost>>();
+
+                // Объединяем все списки постов в один
+                var posts = allGroupsPosts.Values.SelectMany(groupPosts => groupPosts).ToList();
+
+                // Сортировка постов по дате
+                return posts.OrderByDescending(post => post.DatePost).ToList();
+            }
+            catch (JsonException ex)
+            {
+                // Логируем ошибку и возвращаем пустой список
+                Console.WriteLine($"Ошибка при чтении JSON: {ex.Message}");
+                return new List<VkPost>();
             }
         }
 
@@ -182,11 +225,14 @@ namespace MyMvcApp.Models
     {
         public long Id { get; set; }           // Уникальный идентификатор поста
         public string Text { get; set; }        // Текст поста
-        public List<string> ImageUrl { get; set; }
-        public List<string> VideoUrl { get; set; }
+        public List<string> ImageUrl { get; set; }  // URL изображений
+        public List<int> ImageHeight { get; set; }  // Высота изображений для ширины 646px
+        public List<string> VideoUrl { get; set; }  // URL видео
+        public List<int> VideoHeight { get; set; }  // Высота видео для ширины 646px
         public DateTime DatePost { get; set; }
         public string Link { get; set; }
     }
+
 
     #endregion
 }
