@@ -15,7 +15,7 @@ builder.Services.AddHostedService<TypeWeekDownloadService>();
 
 builder.Services.AddHostedService(provider =>
 {
-    var botToken = "6715640503:AAH0j3XDbuWuAo2mSIULSrNct_8mj5Y41wY"; // Получить токен бота из конфигурации
+    var botToken = ""; // Получить токен бота из конфигурации
     var configuration = provider.GetRequiredService<IConfiguration>();
     return new TelegramBotHostedService(botToken, configuration);
 });
