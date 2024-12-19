@@ -1,4 +1,5 @@
 ﻿@model List<ScheduleData>
+@using System.Text.RegularExpressions
 
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 <script src="~/js/ScheduleScript.js"></script>
@@ -47,16 +48,20 @@ else if (Model != null && Model.Any())
                             <td>@($"{item.StartTime:hh\\:mm} - {item.EndTime:hh\\:mm}")</td>
                             <td>
                                 @{
-                                    var classroom = item.Classroom;
+                                    // Убираем пробелы спереди и сзади
+                                    var classroom = item.Classroom?.Trim();
                                     string roomId = null;
 
                                     if (!string.IsNullOrEmpty(classroom) && classroom.StartsWith("У"))
                                     {
-                                        // Убираем "У", получаем остаток
+                                        // Убираем "У", убираем оставшиеся пробелы
                                         var remainingText = classroom.Substring(1).Trim();
 
-                                        // Проверяем длину текста после "У" (4, 5 или 6 символов)
-                                        if (remainingText.Length == 4 || remainingText.Length == 5 || remainingText.Length == 6)
+                                        // Регулярное выражение: 2-3 цифры, опционально одна буква
+                                        var regex = new Regex(@"^\d{2,3}[a-z]?$", RegexOptions.IgnoreCase);
+
+                                        // Проверяем формат текста после "У"
+                                        if (regex.IsMatch(remainingText))
                                         {
                                             roomId = remainingText.ToLower(); // Приводим к нижнему регистру
                                         }
@@ -65,7 +70,7 @@ else if (Model != null && Model.Any())
                                     // Если roomId сформирован, делаем ссылку
                                     if (roomId != null)
                                     {
-                                        <a style="text-decoration:underline;" href="@($"http://localhost:8082/Map/Index?roomId={roomId}")">@classroom</a>
+                                        <a style="color:#361778;" href="@($"http://localhost:8082/Map/Index?roomId={roomId}")">@classroom</a>
                                     }
                                     else
                                     {
@@ -74,7 +79,6 @@ else if (Model != null && Model.Any())
                                     }
                                 }
                             </td>
-
                             @if (!string.IsNullOrEmpty(item.Subject))
                             {
                                 <td style="max-width:1050px;">@Html.Raw(@item.Subject)<br><small>@Html.Raw(@item.ScheduleInfo)</small></td>

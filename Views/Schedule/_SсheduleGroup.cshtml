@@ -1,5 +1,5 @@
 ﻿@model List<ScheduleData>
-
+@using System.Text.RegularExpressions
 
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 <script src="~/js/ScheduleScript.js"></script>
@@ -49,7 +49,7 @@ else if (Model != null && Model.Any())  // Проверка на наличие 
                             <td>
                                 @{
                                     // Убираем пробелы спереди и сзади
-                                    var classroom = item.Classroom;
+                                    var classroom = item.Classroom?.Trim();
                                     string roomId = null;
 
                                     if (!string.IsNullOrEmpty(classroom) && classroom.StartsWith("У"))
@@ -57,8 +57,11 @@ else if (Model != null && Model.Any())  // Проверка на наличие 
                                         // Убираем "У", убираем оставшиеся пробелы
                                         var remainingText = classroom.Substring(1).Trim();
 
-                                        // Проверяем длину текста после "У" (4, 5 или 6 символов)
-                                        if (remainingText.Length == 3 || remainingText.Length == 2 || remainingText.Length == 4)
+                                        // Регулярное выражение: 2-3 цифры, опционально одна буква
+                                        var regex = new Regex(@"^\d{2,3}[a-z]?$", RegexOptions.IgnoreCase);
+
+                                        // Проверяем формат текста после "У"
+                                        if (regex.IsMatch(remainingText))
                                         {
                                             roomId = remainingText.ToLower(); // Приводим к нижнему регистру
                                         }
@@ -67,7 +70,7 @@ else if (Model != null && Model.Any())  // Проверка на наличие 
                                     // Если roomId сформирован, делаем ссылку
                                     if (roomId != null)
                                     {
-                                        <a style="text-decoration:underline;" href="@($"http://localhost:8082/Map/Index?roomId={roomId}")">@classroom</a>
+                                        <a style="color:#361778;" href="@($"http://localhost:8082/Map/Index?roomId={roomId}")">@classroom</a>
                                     }
                                     else
                                     {
@@ -88,7 +91,7 @@ else if (Model != null && Model.Any())  // Проверка на наличие 
 
                             @if (item.Instructor != null)
                             {
-                                <td style="text-decoration:underline;" onclick="openModalInfo('@item.Instructor.NameContact','@item.Instructor.UniversityIdContact')">
+                                <td style="color:#361778;" onclick="openModalInfo('@item.Instructor.NameContact','@item.Instructor.UniversityIdContact')">
                                     @item.Instructor.NameContact
                                 </td>
                             }
