@@ -1,25 +1,20 @@
-@model (List<byte[]>, string nameDoc)
+@model (List<byte[]> imageBytesList, string directoryName)
 
-<h2>@Model.nameDoc</h2>
-@for (var i = 0; i < Model.Item1.Count; i += 2)
-{
-    <div class="row">
-        <div class="col">
-            <img class="max-width-1760" src="data:image/png;base64,@Convert.ToBase64String(Model.Item1[i])" alt="Page @((i + 1))" />
-        </div>
-        @if (i + 1 < Model.Item1.Count)
-        {
-            <div class="col">
-                <img class="max-width-1760" src="data:image/png;base64,@Convert.ToBase64String(Model.Item1[i + 1])" alt="Page @((i + 2))" />
+<h3 class="text-center display-4 mt-4">@Model.directoryName</h3>
+<div class="container-fluid">
+    @for (int i = 0; i < Model.imageBytesList.Count; i += 2)
+    {
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4">
+                <img src="data:image/png;base64,@Convert.ToBase64String(Model.imageBytesList[i])" class="img-fluid rounded shadow-lg" style="height: 1700px !important; object-fit: contain; border-radius:50px !important" />
             </div>
-        }
-    </div>
-    
-}
 
-<style>
-    .max-width-1760 {
-        width: 2360px;
-        height: auto;
+            @if (i + 1 < Model.imageBytesList.Count)
+            {
+                <div class="col-md-6 mb-4">
+                    <img src="data:image/png;base64,@Convert.ToBase64String(Model.imageBytesList[i + 1])" class="img-fluid rounded shadow-lg" style="height: 1700px !important; object-fit: contain; border-radius:50px !important" />
+                </div>
+            }
+        </div>
     }
-</style>
+</div>

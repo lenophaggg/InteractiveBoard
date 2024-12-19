@@ -1,0 +1,209 @@
+{
+  "rooms": [
+    {
+      "room": "101",
+      "id": "polyline93"
+    },
+    {
+      "room": "103",
+      "id": "polyline92"
+    },
+    {
+      "room": "105",
+      "id": "polyline91"
+    },
+    {
+      "room": "107",
+      "id": "polyline87"
+    },
+    {
+      "room": "115",
+      "id": "path170"
+    },
+    {
+      "room": "10",
+      "id": "path170"
+    },
+    {
+      "room": "9",
+      "id": "path170"
+    },
+    {
+      "room": "137",
+      "id": "polygon26"
+    },
+    {
+      "room": "134",
+      "id": "polygon19"
+    },
+    {
+      "room": "138",
+      "id": "path28"
+    },
+    {
+      "room": "141",
+      "id": "polygon21"
+    },
+    {
+      "room": "143",
+      "id": "polygon21"
+    },
+    {
+      "room": "195",
+      "id": "polyline86"
+    },
+    {
+      "room": "143",
+      "id": "path27"
+    },
+    {
+      "room": "143а",
+      "id": "path26"
+    },
+    {
+      "room": "144",
+      "id": "path26"
+    },
+    {
+      "room": "191",
+      "id": "polyline81"
+    },
+    {
+      "room": "146",
+      "id": "path23"
+    },
+    {
+      "room": "147",
+      "id": "path23"
+    },
+    {
+      "room": "148",
+      "id": "path23"
+    },
+    {
+      "room": "191а",
+      "id": "polyline80"
+    },
+    {
+      "room": "150",
+      "id": "path24"
+    },
+    {
+      "room": "158",
+      "id": "polyline78"
+    },
+    {
+      "room": "150а",
+      "id": "polyline33"
+    },
+    {
+      "room": "183",
+      "id": "polyline100"
+    },
+    {
+      "room": "153",
+      "id": "polyline37"
+    },
+    {
+      "room": "154",
+      "id": "polyline38"
+    },
+    {
+      "room": "155",
+      "id": "polyline39"
+    },
+    {
+      "room": "156",
+      "id": "polyline40"
+    },
+    {
+      "room": "157",
+      "id": "polyline43"
+    },
+    {
+      "room": "161",
+      "id": "polyline48"
+    },
+    {
+      "room": "163",
+      "id": "polyline49"
+    },
+    {
+      "room": "165",
+      "id": "polyline50"
+    },
+    {
+      "room": "167",
+      "id": "polyline51"
+    },
+    {
+      "room": "168",
+      "id": "polyline52"
+    },
+    {
+      "room": "178",
+      "id": "room-178"
+    },
+    {
+      "room": "177",
+      "id": "polyline58"
+    },
+    {
+      "room": "176",
+      "id": "polyline58"
+    },
+    {
+      "room": "175",
+      "id": "polyline58"
+    },
+    {
+      "room": "174",
+      "id": "polyline58"
+    },
+    {
+      "room": "169",
+      "id": "polyline53"
+    }
+    ,
+    {
+      "room": "01ю",
+      "id": "polyline74"
+    },
+    {
+      "room": "1ю",
+      "id": "polyline74"
+    },
+    {
+      "room": "2ю",
+      "id": "polyline75"
+    },
+    {
+      "room": "02ю",
+      "id": "polyline75"
+    },
+    {
+      "room": "3ю",
+      "id": "polyline95"
+    },
+    {
+      "room": "03ю",
+      "id": "polyline95"     
+    },
+    {
+      "room": "5ю",
+      "id": "polyline72"
+    },
+    {
+      "room": "05ю",
+      "id": "polyline72"     
+    },
+    {
+      "room": "6ю",
+      "id": "polyline67"
+    },
+    {
+      "room": "06ю",
+      "id": "polyline67"     
+    }
+  ]
+}

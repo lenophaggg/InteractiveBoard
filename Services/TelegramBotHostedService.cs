@@ -24,11 +24,7 @@ namespace MyMvcApp.Services
 {
     public class TelegramBotHostedService : IHostedService
     {
-        private readonly TelegramBotClient _botClient;
-        private CancellationTokenSource _cts;
-        private readonly IConfiguration _configuration;
-
-        private readonly List<string> _allowedUsernames;
+      
 
         private readonly List<string> mySolutions = new List<string> { "Моя кармическая карма чиста, я в этом деле не виноват!🧞‍♂️", "Я всего лишь бездушная программа, чем могу помочь?🧞‍♂️",
             "Прошу прощения, я в отпуске на карантине от решения проблем. Попробуйте позже!🧞‍♂️", "Я всего лишь скромная программка, почи нять мировые проблемы не в моих компетенциях.🧞‍♂️",
@@ -36,27 +32,66 @@ namespace MyMvcApp.Services
             "Моя цифровая магия сильна, но не настолько, чтобы решить эту задачу. Может, еще какой вопросик?🧞‍♂️","Кажется, это за пределами моих вычислительных способностей. Но я всегда готов помочь чем-то другим!🧞‍♂️"
         };
 
+        private readonly TelegramBotClient _botClient;
+        private readonly IConfiguration _configuration;
+        private readonly List<string> _allowedUsernames;
+        private CancellationTokenSource _cts;
 
-        public TelegramBotHostedService(string botToken, IConfiguration _configuration)
+        public TelegramBotHostedService(string botToken, IConfiguration configuration)
         {
+            _configuration = configuration;
             _botClient = new TelegramBotClient(botToken);
-            _configuration = _configuration;
-            _allowedUsernames = _configuration.GetSection("TelegramBotSettings:AllowedUsernames").Get<List<string>>();
+
+            _allowedUsernames = _configuration
+                .GetSection("TelegramBotSettings:AllowedUsernames")
+                .Get<List<string>>() ?? new List<string>();
         }
 
         public async Task StartAsync(CancellationToken cancellationToken)
         {
             _cts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
 
-            // Запуск цикла в отдельной задаче
+            // Удаляем все накопившиеся обновления.
+            await ClearPendingUpdatesAsync(cancellationToken);
+
+            // Запускаем асинхронный цикл обработки сообщений.
             _ = ReceiveMessagesAsync(0, _cts.Token);
+
+            // Отключаем webhook (если используем long polling).
+            await _botClient.DeleteWebhookAsync(cancellationToken: cancellationToken);
         }
 
-        public Task StopAsync(CancellationToken cancellationToken)
+        public async Task StopAsync(CancellationToken cancellationToken)
         {
-            _cts.Cancel();
+            // Отключаем webhook, чтобы освободить бота от старых настроек.
+            await _botClient.DeleteWebhookAsync(cancellationToken: cancellationToken);
 
-            return Task.CompletedTask;
+            // Завершаем цикл, отменяя токен.
+            _cts.Cancel();
+        }
+
+        private async Task ClearPendingUpdatesAsync(CancellationToken cancellationToken)
+        {
+            try
+            {
+                // Получаем все существующие обновления и сбрасываем их.
+                var updates = await _botClient.GetUpdatesAsync(cancellationToken: cancellationToken);
+                if (updates.Any())
+                {
+                    // Устанавливаем offset на последний update.Id + 1, чтобы сбросить старые обновления.
+                    var lastUpdateId = updates.Last().Id;
+                    await _botClient.GetUpdatesAsync(lastUpdateId + 1, cancellationToken: cancellationToken);
+                    Console.WriteLine($"Очищено {updates.Length} старых обновлений.");
+                }
+                else
+                {
+                    Console.WriteLine("Нет накопившихся обновлений для очистки.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка очистки накопившихся обновлений: {ex.Message}");
+            }
         }
 
         private async Task ReceiveMessagesAsync(int offset, CancellationToken cancellationToken)

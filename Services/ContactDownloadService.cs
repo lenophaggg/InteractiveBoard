@@ -44,8 +44,8 @@ namespace MyMvcApp.Services
 
                 //// Проверяем, 22:00 ли сейчас
                 if (now.Hour == 22 && now.Minute == 0)
-                {                    
-                   await ParseAndSavePersonContact();
+                {
+                    await ParseAndSavePersonContact();
                 }
 
                 // Вычисляем время до следующего запуска: следующий день в 22:00

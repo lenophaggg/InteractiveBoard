@@ -1,0 +1,216 @@
+{
+  "rooms": [
+    {
+      "room": "401",
+      "id": "polygon4"
+    },
+    {
+      "room": "402",
+      "id": "polygon5"
+    },
+    {
+      "room": "452",
+      "id": "path4"
+    },
+    {
+      "room": "451",
+      "id": "polygon8"
+    },
+    {
+      "room": "403",
+      "id": "polygon6"
+    },
+    {
+      "room": "404",
+      "id": "polygon40"
+    },
+    {
+      "room": "450",
+      "id": "polygon9"
+    },
+    {
+      "room": "449",
+      "id": "polygon11"
+    },
+    {
+      "room": "405",
+      "id": "polygon12"
+    },
+    {
+      "room": "448",
+      "id": "polygon10"
+    },
+    {
+      "room": "447",
+      "id": "polygon22"
+    },
+    {
+      "room": "406",
+      "id": "polygon21"
+    },
+    {
+      "room": "446",
+      "id": "polygon23"
+    },
+    {
+      "room": "445",
+      "id": "polygon15"
+    },
+    {
+      "room": "444",
+      "id": "polygon24"
+    },
+    {
+      "room": "443",
+      "id": "polygon25"
+    },
+    {
+      "room": "407",
+      "id": "polygon26"
+    },
+    {
+      "room": "408",
+      "id": "polygon20"
+    },
+    {
+      "room": "409",
+      "id": "polygon19"
+    },
+    {
+      "room": "410",
+      "id": "polygon27"
+    },
+    {
+      "room": "440",
+      "id": "polygon28"
+    },
+    {
+      "room": "411",
+      "id": "path5"
+    },
+    {
+      "room": "412",
+      "id": "path5"
+    },
+    {
+      "room": "439",
+      "id": "polygon39"
+    },
+    {
+      "room": "438",
+      "id": "polygon29"
+    },
+    {
+      "room": "437",
+      "id": "polygon30"
+    },
+    {
+      "room": "436",
+      "id": "polygon33"
+    },
+    {
+      "room": "413",
+      "id": "polygon31"
+    },
+    {
+      "room": "414",
+      "id": "polygon32"
+    },
+    {
+      "room": "415",
+      "id": "polygon38"
+    },
+    {
+      "room": "435",
+      "id": "polygon34"
+    },
+    {
+      "room": "434",
+      "id": "polygon35"
+    },
+    {
+      "room": "416",
+      "id": "polygon37"
+    },
+    {
+      "room": "433",
+      "id": "polygon36"
+    },
+    {
+      "room": "432",
+      "id": "polygon17"
+    },
+    {
+      "room": "431",
+      "id": "polygon7"
+    },
+    {
+      "room": "415",
+      "id": "path9"
+    },
+    {
+      "room": "417",
+      "id": "polygon55"
+    },
+    {
+      "room": "430",
+      "id": "polygon42"
+    },
+    {
+      "room": "418",
+      "id": "polygon52"
+    },
+    {
+      "room": "419",
+      "id": "polygon51"
+    },
+    {
+      "room": "429",
+      "id": "path10"
+    },
+    {
+      "room": "428",
+      "id": "path10"
+    },
+    {
+      "room": "427",
+      "id": "polygon44"
+    },
+    {
+      "room": "426",
+      "id": "polygon43"
+    },
+    {
+      "room": "420",
+      "id": "polygon50"
+    },
+    {
+      "room": "425",
+      "id": "polygon45"
+    },
+    {
+      "room": "421",
+      "id": "polygon49"
+    },
+    {
+      "room": "424",
+      "id": "path11"
+    },
+    {
+      "room": "422",
+      "id": "polygon48"
+    },
+    {
+      "room": "422а",
+      "id": "polyline1"
+    },
+    {
+      "room": "423",
+      "id": "polygon46"
+    },
+    {
+      "room": "423а",
+      "id": "polygon47"
+    }
+  ]
+}

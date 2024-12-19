@@ -45,7 +45,35 @@ else if (Model != null && Model.Any())
                         <tr class="tableRow rounded-bottom">
                             <td>@item.WeekType</td>
                             <td>@($"{item.StartTime:hh\\:mm} - {item.EndTime:hh\\:mm}")</td>
-                            <td>@item.Classroom</td>
+                            <td>
+                                @{
+                                    var classroom = item.Classroom;
+                                    string roomId = null;
+
+                                    if (!string.IsNullOrEmpty(classroom) && classroom.StartsWith("У"))
+                                    {
+                                        // Убираем "У", получаем остаток
+                                        var remainingText = classroom.Substring(1).Trim();
+
+                                        // Проверяем длину текста после "У" (4, 5 или 6 символов)
+                                        if (remainingText.Length == 4 || remainingText.Length == 5 || remainingText.Length == 6)
+                                        {
+                                            roomId = remainingText.ToLower(); // Приводим к нижнему регистру
+                                        }
+                                    }
+
+                                    // Если roomId сформирован, делаем ссылку
+                                    if (roomId != null)
+                                    {
+                                        <a style="text-decoration:underline;" href="@($"http://localhost:8082/Map/Index?roomId={roomId}")">@classroom</a>
+                                    }
+                                    else
+                                    {
+                                        // Иначе просто выводим текст
+                                        @classroom
+                                    }
+                                }
+                            </td>
 
                             @if (!string.IsNullOrEmpty(item.Subject))
                             {
@@ -56,7 +84,7 @@ else if (Model != null && Model.Any())
                                 <td style="max-width:1050px;">@Html.Raw(@item.ScheduleInfo)</td>
                             }
 
-                            <td>
+                            <td style="text-decoration:underline;">
                                 @item.Group
                             </td>
                         </tr>

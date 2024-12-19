@@ -1,0 +1,208 @@
+{
+  "rooms": [
+    {
+      "room": "501",
+      "id": "polygon_18"
+    },
+    {
+      "room": "502",
+      "id": "polygon_17"
+    },
+    {
+      "room": "503",
+      "id": "polygon_16"
+    },
+    {
+      "room": "547",
+      "id": "polygon_20"
+    },
+    {
+      "room": "546",
+      "id": "polygon_19"
+    },
+    {
+      "room": "545",
+      "id": "polygon_15"
+    },
+    {
+      "room": "544",
+      "id": "polygon_14"
+    },
+    {
+      "room": "543",
+      "id": "polygon_13"
+    },
+    {
+      "room": "542",
+      "id": "polygon_12"
+    },
+    {
+      "room": "541",
+      "id": "polygon_11"
+    },
+    {
+      "room": "504",
+      "id": "path_3"
+    },
+    {
+      "room": "540",
+      "id": "polygon_10"
+    },
+    {
+      "room": "539",
+      "id": "polygon_9"
+    },
+    {
+      "room": "538",
+      "id": "polygon_21"
+    },
+    {
+      "room": "505",
+      "id": "path_4"
+    },
+    {
+      "room": "537",
+      "id": "polygon_8"
+    },
+    {
+      "room": "536",
+      "id": "path_7"
+    },
+    {
+      "room": "535",
+      "id": "path_7"
+    },
+    {
+      "room": "506",
+      "id": "polygon_22"
+    },
+    {
+      "room": "507",
+      "id": "path_5"
+    },
+    {
+      "room": "508",
+      "id": "path_5"
+    },
+    {
+      "room": "509",
+      "id": "path_6"
+    },
+    {
+      "room": "510",
+      "id": "path_6"
+    },
+    {
+      "room": "534",
+      "id": "path_8"
+    },
+    {
+      "room": "534а",
+      "id": "path_8"
+    },
+    {
+      "room": "511",
+      "id": "polygon_6"
+    },
+    {
+      "room": "512",
+      "id": "polygon_5"
+    },
+    {
+      "room": "533",
+      "id": "polygon_7"
+    },
+    {
+      "room": "532",
+      "id": "polygon_4"
+    },
+    {
+      "room": "531",
+      "id": "polygon_3"
+    },
+    {
+      "room": "513",
+      "id": "polygon_2"
+    },
+    {
+      "room": "514",
+      "id": "path_2"
+    },
+    {
+      "room": "530а",
+      "id": "path_11"
+    },
+    {
+      "room": "530",
+      "id": "path_11"
+    },
+    {
+      "room": "529",
+      "id": "polygon_38"
+    },
+    {
+      "room": "515",
+      "id": "path_10"
+    },
+    {
+      "room": "515а",
+      "id": "path_10"
+    },
+    {
+      "room": "516",
+      "id": "polygon_35"
+    },
+    {
+      "room": "517",
+      "id": "polygon_34"
+    },
+    {
+      "room": "528",
+      "id": "polygon_37"
+    },
+    {
+      "room": "527",
+      "id": "polygon_33"
+    },
+    {
+      "room": "518",
+      "id": "polygon_41"
+    },
+    {
+      "room": "526",
+      "id": "path_9"
+    },
+    {
+      "room": "525",
+      "id": "path_9"
+    },
+    {
+      "room": "524",
+      "id": "path_9"
+    },
+    {
+      "room": "519",
+      "id": "polygon_40"
+    },
+    {
+      "room": "521",
+      "id": "polygon_29"
+    },
+    {
+      "room": "522",
+      "id": "polygon_31"
+    },
+    {
+      "room": "523",
+      "id": "polygon_32"
+    },
+    {
+      "room": "520",
+      "id": "polygon_28"
+    },
+    {
+      "room": "520б",
+      "id": "polygon_30"
+    }
+  ]
+}
