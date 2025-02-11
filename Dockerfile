@@ -3,20 +3,20 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 
 # Удаляем кэш apt, удаляем дублирующийся файл источников и задаём нужный репозиторий (с HTTPS)
-RUN apt-get clean && \
-    rm -rf /var/lib/apt/lists/* && \
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* && \
     rm -f /etc/apt/sources.list.d/debian.sources && \
-    echo "deb https://deb.debian.org/debian bookworm main" > /etc/apt/sources.list && \
-    apt-get update && \
+    echo "deb http://deb.debian.org/debian bookworm main" > /etc/apt/sources.list && \
+    echo 'Acquire::Retries "3";' > /etc/apt/apt.conf.d/80-retries && \
+    apt-get update -o Acquire::ForceIPv4=true && \
     apt-get install -y --no-install-recommends \
         poppler-utils \
         ca-certificates \
         openssl \
         yt-dlp \
         ffmpeg && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* && \
+    apt-get clean && rm -rf /var/lib/apt/lists/* && \
     chmod -R 777 /app
+
 
 # Этап сборки приложения
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
