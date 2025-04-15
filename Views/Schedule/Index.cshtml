@@ -28,18 +28,11 @@
             <div class="container">
                 <h2 class="text-center">@facultySchedule.Key</h2>
                 <div class="row">
-                    @if (facultySchedule.Value.Any())
+                    @foreach (var scheduleItem in facultySchedule.Value)
                     {
-                        foreach (var scheduleItem in facultySchedule.Value)
-                        {
-                            <div class="col-lg-2" onclick="openScheduleByGroup('@scheduleItem')">
-                                <p class="schedule-item">@scheduleItem</p>
-                            </div>
-                        }
-                    }
-                    else
-                    {
-                        <p class="col-lg-12">Нет данных о группах для данного факультета.</p>
+                        <div class="col-lg-2" onclick="openScheduleByGroup('@scheduleItem')">
+                            <p class="schedule-item">@scheduleItem</p>
+                        </div>
                     }
                 </div>
             </div>

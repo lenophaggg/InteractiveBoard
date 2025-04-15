@@ -22,7 +22,7 @@ function openScheduleByGroup(groupNumber) {
             $('#mainContainer').html(response);
         },
         error: function () {
-            alert('Произошла ошибка при загрузке расписания.');
+            console.error('Произошла ошибка при загрузке расписания:', error);
         }
     });
 }
@@ -41,7 +41,6 @@ function openPersonSchedule(personName, universityIdContact) {
             console.error('Произошла ошибка при загрузке расписания:', error);
             console.error('Статус запроса:', status);
             console.error('Текст ошибки:', xhr.statusText);
-            alert('Произошла ошибка при загрузке расписания.');
         }
     });
 }
@@ -58,7 +57,6 @@ function clarifyPersonForSchedule(personTerm) {
             console.error('Произошла ошибка при загрузке расписания:', error);
             console.error('Статус запроса:', status);
             console.error('Текст ошибки:', xhr.statusText);
-            alert('Произошла ошибка при загрузке расписания.');
         }
     });
 }
@@ -82,7 +80,6 @@ function openModalInfo(personName, universityIdContact) {
             console.error('Произошла ошибка при загрузке контакта:', error);
             console.error('Статус запроса:', status);
             console.error('Текст ошибки:', xhr.statusText);
-            alert('Произошла ошибка при контакта.');
         }
     });
 }

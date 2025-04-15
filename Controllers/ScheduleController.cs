@@ -24,16 +24,30 @@ namespace MyMvcApp.Controllers
         {
             Dictionary<string, string[]> facultyGroups = new Dictionary<string, string[]>();
 
-            string[] faculties = _context.Faculties.Select(f => f.Name).ToArray();
+            // Получаем только те факультеты, у которых есть актуальные группы и FacultyName не null
+            var facultiesWithActualGroups = _context.Groups
+                .Where(g => g.FacultyName != null && // Добавляем проверку на null
+                    _context.ActualGroups
+                        .Select(ag => ag.GroupNumber)
+                        .Contains(g.Number))
+                .Select(g => g.FacultyName)
+                .Distinct()
+                .ToArray();
 
-            foreach (var faculty in faculties.Reverse())
+            foreach (var faculty in facultiesWithActualGroups.Reverse())
             {
-                var groups = _context.Groups
-                    .Where(g => g.FacultyName == faculty)
-                    .Select(g => g.Number)
+                var groups = _context.ActualGroups
+                    .Where(ag => _context.Groups
+                        .Where(g => g.FacultyName == faculty)
+                        .Select(g => g.Number)
+                        .Contains(ag.GroupNumber))
+                    .Select(ag => ag.GroupNumber)
                     .ToArray();
 
-                facultyGroups.Add(faculty, groups);
+                if (groups.Any()) // Добавляем только если есть актуальные группы
+                {
+                    facultyGroups.Add(faculty, groups);
+                }
             }
 
             return View(facultyGroups);
@@ -44,9 +58,7 @@ namespace MyMvcApp.Controllers
         {
             if (personTerm.Length < 3)
             {
-                // Файл не найден, добавляем сообщение об ошибке в ModelState
                 ViewBag.ErrorMessage = $"Никого не найдено. Попробуйте изменить запрос.";
-                // Возвращаем частичное представление с сообщением об ошибке
                 return PartialView("_SchedulePerson", new List<ScheduleData>());
             }
 
@@ -66,7 +78,6 @@ namespace MyMvcApp.Controllers
 
             return PartialView("~/Views/Shared/_PotentialPersonList.cshtml", similarContacts);
         }
-
 
         [HttpGet]
         public IActionResult GetScheduleForSearchTerm(string searchTerm)

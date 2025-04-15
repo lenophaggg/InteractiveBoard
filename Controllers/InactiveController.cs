@@ -35,14 +35,17 @@ namespace MyMvcApp.Controllers
 
             var dataParser = new DataParserModel();
             string nameFaculty = _configuration["ScheduleOptions:Faculty"];
-            
+
 
             var allScheduleForFaculty = _context.ScheduleData
-                .Where(s => _context.Groups
-                                .Where(g => g.FacultyName == nameFaculty)
-                                .Select(g => g.Number)
+               .Where(s => _context.ActualGroups
+                    .Where(ag => _context.Groups
+                        .Where(g => g.FacultyName == nameFaculty)
+                        .Select(g => g.Number)
+                        .Contains(ag.GroupNumber))
+                    .Select(ag => ag.GroupNumber)
                     .Contains(s.Group))
-                    .Include(s => s.Instructor)
+                .Include(s => s.Instructor)
                 .ToList();
 
             // Получение текущего дня недели

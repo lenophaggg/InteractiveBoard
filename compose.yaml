@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   mymvcapp:
     build:
@@ -6,13 +8,18 @@ services:
     container_name: dotnet_app_mymvcapp
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ConnectionStrings__DefaultConnection: Host=db;Port=5432;Database=interactiveboardentities;Username=postgres;Password=228228228
+      # Строка подключения будет перекрываться переменной окружения
+      ConnectionStrings__DefaultConnection: "Host=db;Port=5432;Database=interactiveboardentities;Username=postgres;Password=228228228"
       TZ: Europe/Moscow
     ports:
       - "8082:8082"
     networks:
       - my_network
 
+ 
+
+
 networks:
   my_network:
-    external: true
+    external:
+      name: diary_my_network

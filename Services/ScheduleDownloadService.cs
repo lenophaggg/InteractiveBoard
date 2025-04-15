@@ -176,6 +176,12 @@ namespace MyMvcApp.Services
                             {
                                 var group = new Groups { Number = groupNumber, FacultyName = facultyName };
                                 context.Groups.Add(group);
+
+                                var actualGroupExists = await context.ActualGroups.AnyAsync(g => g.GroupNumber == groupNumber);
+                                if (!actualGroupExists)
+                                {
+                                    context.ActualGroups.Add(new ActualGroup { GroupNumber = groupNumber });
+                                }
                             }
                         }
                     }
@@ -229,8 +235,8 @@ namespace MyMvcApp.Services
         /// </summary>
         private async Task ProcessItemSchedule(string baseUrl, string item, ApplicationDbContext context)
         {
-            // Если baseUrl уже содержит "{teacher}/", то item — это ID преподавателя
-            // Иначе baseUrl + item + "/" — это расписание для группы
+            // Если baseUrl уже содержит "{teacher}/", то item — это ID преподавателя,
+            // иначе составляем URL для расписания группы
             var url = baseUrl.EndsWith("/") ? (baseUrl + item + "/") : baseUrl;
             _logger.LogDebug("Парсим расписание: {Url}", url);
 
@@ -243,7 +249,6 @@ namespace MyMvcApp.Services
             }
             catch (Exception ex)
             {
-                // Первая неудачная попытка
                 _logger.LogWarning(ex, "Ошибка при загрузке {Url}, вторая попытка через 10сек", url);
                 await Task.Delay(10000);
 
@@ -354,29 +359,38 @@ namespace MyMvcApp.Services
                         subjectName = null;
                     }
 
-                    // Проверяем аудиторию, группу в базе
-                    var existingClassroom = await context.Classrooms
-                        .FirstOrDefaultAsync(c => c.ClassroomNumber == classroomNumber);
+                    // Проверяем аудиторию в базе
+                    var existingClassroom = await context.Classrooms.FirstOrDefaultAsync(c => c.ClassroomNumber == classroomNumber);
                     if (existingClassroom == null && !string.IsNullOrEmpty(classroomNumber))
                     {
-                        var classroom = new Classrooms { ClassroomNumber = classroomNumber };
-                        context.Classrooms.Add(classroom);
+                        context.Classrooms.Add(new Classrooms { ClassroomNumber = classroomNumber });
                         await context.SaveChangesAsync();
                     }
 
-                    var existingGroup = await context.Groups.FirstOrDefaultAsync(g => g.Number == groupNumber);
-                    if (existingGroup == null && !string.IsNullOrEmpty(groupNumber))
+                    // Обновляем таблицы групп (Diary и ActualGroups)
+                    if (!string.IsNullOrWhiteSpace(groupNumber))
                     {
-                        var group = new Groups { Number = groupNumber };
-                        context.Groups.Add(group);
+                        // Проверка и добавление в таблицу всех групп (Diary)
+                        var existingGroup = await context.Groups.FirstOrDefaultAsync(g => g.Number == groupNumber);
+                        if (existingGroup == null)
+                        {
+                            context.Groups.Add(new Groups { Number = groupNumber });
+                        }
+
+                        // Проверка и добавление в таблицу актуальных групп (Interactive Board)
+                        var actualGroupExists = await context.ActualGroups.AnyAsync(ag => ag.GroupNumber == groupNumber);
+                        if (!actualGroupExists)
+                        {
+                            context.ActualGroups.Add(new ActualGroup { GroupNumber = groupNumber });
+                        }
+
                         await context.SaveChangesAsync();
                     }
 
                     PersonContact existingInstructor = null;
                     if (!string.IsNullOrEmpty(extractedInstructorId))
                     {
-                        existingInstructor = await context.PersonContacts
-                            .FirstOrDefaultAsync(p => p.UniversityIdContact == extractedInstructorId);
+                        existingInstructor = await context.PersonContacts.FirstOrDefaultAsync(p => p.UniversityIdContact == extractedInstructorId);
                     }
 
                     // Сохраняем IdContact в локальной переменной
@@ -395,7 +409,7 @@ namespace MyMvcApp.Services
                         sd.ScheduleInfo == subjectInfo
                     );
 
-                    // Если нет — добавляем
+                    // Если такой записи нет – добавляем её
                     if (!scheduleExists)
                     {
                         var newScheduleData = new ScheduleData

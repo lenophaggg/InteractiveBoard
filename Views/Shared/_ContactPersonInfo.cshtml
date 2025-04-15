@@ -74,7 +74,7 @@
     <div class="col-md-4" style="margin-right:-200px;">
         @if (!string.IsNullOrEmpty(@Model.ImgPath))
         {
-            <img src="@Model.ImgPath.Replace("small", "big")" alt="Contact Photo" class="img-fluid" style="max-width:120%;">
+            <img src="@Model.ImgPath" alt="Contact Photo" class="img-fluid" style="max-width:120%;">
         }
         else
         {

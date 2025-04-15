@@ -12,7 +12,6 @@
             console.error('Статус запроса:', status);
             console.error('Текст ошибки:', error);
             console.error('Сообщение об ошибке:', xhr.responseText);
-            alert('Произошла скибиди доп ес ес.');
         }
     });
 }
@@ -31,7 +30,6 @@ function openPersonSchedule(personName, universityIdContact) {
             console.error('Произошла ошибка при загрузке расписания:', error);
             console.error('Статус запроса:', status);
             console.error('Текст ошибки:', xhr.statusText);
-            alert('Произошла ошибка при загрузке расписания.');
         }
     });
 }
@@ -55,7 +53,6 @@ function openModalInfo(personName, universityIdContact) {
             console.error('Произошла ошибка при загрузке контакта:', error);
             console.error('Статус запроса:', status);
             console.error('Текст ошибки:', xhr.statusText);
-            alert('Произошла ошибка при контакта.');
         }
     });
 }

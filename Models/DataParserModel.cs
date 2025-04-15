@@ -208,7 +208,15 @@ namespace MyMvcApp.Models
         [Column("facultyname")]
         public string? FacultyName { get; set; }
         [ForeignKey("FacultyName")]
-        public Faculties Faculty { get; set; }
+        public Faculties? Faculty { get; set; }
+    }
+
+    [Table("actual_groups")]
+    [PrimaryKey("GroupNumber")]
+    public class ActualGroup
+    {
+        [Column("groupnumber")]
+        public string GroupNumber { get; set; }
     }
 
     [PrimaryKey("ClassroomNumber")]

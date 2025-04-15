@@ -16,11 +16,10 @@ namespace MyMvcApp.Models
 
             await Database.ExecuteSqlRawAsync("ALTER SEQUENCE public.schedules_scheduleid_seq RESTART WITH 1");
 
-            await Database.ExecuteSqlRawAsync("DELETE FROM public.groups");
+            await Database.ExecuteSqlRawAsync("DELETE FROM public.actual_groups");
 
             await Database.ExecuteSqlRawAsync("DELETE FROM public.classrooms");
 
-            await Database.ExecuteSqlRawAsync("DELETE FROM public.faculties");
         }
 
         public DbSet<ScheduleData> ScheduleData { get; set; }
@@ -33,6 +32,8 @@ namespace MyMvcApp.Models
 
         public DbSet<Faculties> Faculties { get; set; }
         public DbSet<Groups> Groups { get; set; }
+        public DbSet<ActualGroup> ActualGroups { get; set; }
+
 
         public DbSet<Classrooms> Classrooms { get; set; }
     }
