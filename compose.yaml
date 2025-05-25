@@ -14,12 +14,11 @@ services:
     ports:
       - "8082:8082"
     networks:
-      - my_network
+      - shared_db_net
 
  
 
 
 networks:
-  my_network:
-    external:
-      name: diary_my_network
+  shared_db_net:
+    external: true    
