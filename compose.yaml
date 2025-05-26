@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      network: host   
     container_name: dotnet_app_mymvcapp
     environment:
       ASPNETCORE_ENVIRONMENT: Development
