@@ -3,24 +3,22 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 
 # Настройка репозитория и установка необходимых утилит
-RUN rm -rf /etc/apt/sources.list.d/*.list \
- && printf '%s\n' \
-    'deb https://deb.debian.org/debian bookworm main' \
-    'deb https://deb.debian.org/debian bookworm-updates main' \
-    'deb https://security.debian.org/debian-security bookworm-security main' \
+RUN rm -rf /etc/apt/sources.list /etc/apt/sources.list.d/*
+
+RUN printf 'deb https://deb.debian.org/debian bookworm main\n\
+deb https://deb.debian.org/debian bookworm-updates main\n\
+deb https://security.debian.org/debian-security bookworm-security main\n' \
     > /etc/apt/sources.list
 
-RUN printf '%s\n' \
-    'Acquire::ForceIPv4 "true";' \
-    'Acquire::Retries "3";' \
+RUN printf 'Acquire::ForceIPv4 \"true\";\nAcquire::Retries \"3\";\n' \
     > /etc/apt/apt.conf.d/99-force-ipv4-retries \
  && apt-get update \
  && apt-get install -y --no-install-recommends \
-       ca-certificates \
-       poppler-utils \
-       openssl \
-       ffmpeg \
-       python3-pip \
+      ca-certificates \
+      poppler-utils \
+      openssl \
+      ffmpeg \
+      python3-pip \
  && rm -rf /var/lib/apt/lists/*
  
 # Ставим yt-dlp через pip
