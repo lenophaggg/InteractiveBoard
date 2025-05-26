@@ -3,11 +3,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 
 # Настройка репозитория и установка необходимых утилит
-RUN echo 'Acquire::ForceIPv4 "true";'      > /etc/apt/apt.conf.d/99force-ipv4 \
- && echo 'Acquire::Retries "3";'           > /etc/apt/apt.conf.d/99retries \
-# 2) Переключаем все HTTP → HTTPS
- && sed -i 's|http://deb.debian.org|https://deb.debian.org|g' /etc/apt/sources.list \
-# 3) Обновляем и ставим утилиты
+RUN echo 'Acquire::ForceIPv4 "true";' > /etc/apt/apt.conf.d/99force-ipv4 \
+ && echo 'Acquire::Retries "3";'      > /etc/apt/apt.conf.d/99retries \
  && apt-get update \
  && apt-get install -y --no-install-recommends \
       ca-certificates \
