@@ -9,11 +9,9 @@ deb https://deb.debian.org/debian bookworm-updates main
 deb https://security.debian.org/debian-security bookworm-security main
 EOF
 
-RUN echo 'Acquire::ForceIPv4 "true";'  > /etc/apt/apt.conf.d/99force-ipv4 \
- && echo 'Acquire::Retries "3";'       > /etc/apt/apt.conf.d/99retries
-
-
-RUN apt-get update \
+RUN echo 'Acquire::ForceIPv4 "true";' > /etc/apt/apt.conf.d/99force-ipv4 \
+ && echo 'Acquire::Retries "3";'      > /etc/apt/apt.conf.d/99retries \
+ && apt-get update \
  && apt-get install -y --no-install-recommends \
       ca-certificates \
       poppler-utils \
