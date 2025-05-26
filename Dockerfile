@@ -3,9 +3,17 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 
 # Настройка репозитория и установка необходимых утилит
-RUN echo 'Acquire::ForceIPv4 "true";' > /etc/apt/apt.conf.d/99force-ipv4 \
- && echo 'Acquire::Retries "3";'      > /etc/apt/apt.conf.d/99retries \
- && apt-get update \
+RUN cat << 'EOF' > /etc/apt/sources.list
+deb https://deb.debian.org/debian bookworm main
+deb https://deb.debian.org/debian bookworm-updates main
+deb https://security.debian.org/debian-security bookworm-security main
+EOF
+
+RUN echo 'Acquire::ForceIPv4 "true";'  > /etc/apt/apt.conf.d/99force-ipv4 \
+ && echo 'Acquire::Retries "3";'       > /etc/apt/apt.conf.d/99retries
+
+
+RUN apt-get update \
  && apt-get install -y --no-install-recommends \
       ca-certificates \
       poppler-utils \
