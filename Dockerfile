@@ -3,7 +3,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 
 # Настройка репозитория и установка необходимых утилит
-RUN printf '%s\n' \
+RUN rm -rf /etc/apt/sources.list.d/*.list \
+ && printf '%s\n' \
     'deb https://deb.debian.org/debian bookworm main' \
     'deb https://deb.debian.org/debian bookworm-updates main' \
     'deb https://security.debian.org/debian-security bookworm-security main' \
@@ -21,7 +22,7 @@ RUN printf '%s\n' \
        ffmpeg \
        python3-pip \
  && rm -rf /var/lib/apt/lists/*
-
+ 
 # Ставим yt-dlp через pip
 RUN pip3 install --no-cache-dir yt-dlp
 
