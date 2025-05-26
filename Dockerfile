@@ -18,11 +18,16 @@ RUN printf 'Acquire::ForceIPv4 \"true\";\nAcquire::Retries \"3\";\n' \
       poppler-utils \
       openssl \
       ffmpeg \
-      python3-pip \
+      python3 \
  && rm -rf /var/lib/apt/lists/*
  
-# Ставим yt-dlp через pip
-RUN pip3 install --no-cache-dir yt-dlp
+# Скачиваем статический бинарник yt-dlp
+RUN apt-get update \
+&& apt-get install -y --no-install-recommends curl \
+&& rm -rf /var/lib/apt/lists/* \
+&& curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp \
+     -o /usr/local/bin/yt-dlp \
+&& chmod a+rx /usr/local/bin/yt-dlp
 
 # Этап сборки приложения
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
