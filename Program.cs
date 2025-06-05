@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using MyMvcApp.Models;
 using MyMvcApp.Services;
+using MyMvcApp.Hubs;
 using System.Configuration; // Replace "YourNamespace" with the actual namespace of the TelegramBotHostedService class
 
 
@@ -11,19 +12,25 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddHostedService<TypeWeekDownloadService>();
+//builder.Services.AddHostedService<TypeWeekDownloadService>();
 
-builder.Services.AddHostedService(provider =>
-{
-    var botToken = "6715640503:AAEyix5YebsK3FOJHK9G76fBMXjyVM4uHus"; // Получить токен бота из конфигурации
-    var configuration = provider.GetRequiredService<IConfiguration>();
-    return new TelegramBotHostedService(botToken, configuration);
-});
+//builder.Services.AddHostedService(provider =>
+//{
+//    var botToken = "6715640503:AAEyix5YebsK3FOJHK9G76fBMXjyVM4uHus"; // Получить токен бота из конфигурации
+//    var configuration = provider.GetRequiredService<IConfiguration>();
+//    return new TelegramBotHostedService(botToken, configuration);
+//});
 
 builder.Services.AddHostedService<DocumentCleanupService>();
 builder.Services.AddHostedService<NewsEventsDownloadService>();
 builder.Services.AddHostedService<ScheduleDownloadService>();
 // ...
+builder.Services.AddHttpClient<ChatService>(client =>
+{
+    client.BaseAddress = new Uri("http://192.168.0.102:8000/");
+});
+
+builder.Services.AddSignalR();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -48,5 +55,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapHub<ChatHub>("/chathub");
 
 app.Run();

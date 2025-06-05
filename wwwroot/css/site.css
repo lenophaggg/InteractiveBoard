@@ -150,8 +150,6 @@ header {
 .card {
     border-radius: 50px;
     width: 650px;
-    margin-right: 30px;
-    margin-bottom: 30px;
     color: white; /* Устанавливаем белый цвет текста */
     background-color: #361778;
     box-shadow: 15px rgba(39, 15, 59, 0.5); /* Горизонтальное смещение, вертикальное смещение, цвет */

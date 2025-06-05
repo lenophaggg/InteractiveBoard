@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Chat";
+}
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/Chat.css" asp-append-version="true" />
+
+<div id="mainContainer">
+    <div id="content">
+        <h1>Чат-ассистент</h1>
+
+        <div id="chatContainer">
+            @* Здесь будут накапливаться сообщения *@
+        </div>
+
+        <div id="inputArea">
+            <form onsubmit="return false;">
+                <div class="input-group">
+                    <input type="text"
+                           class="form-control"
+                           id="searchInput"
+                           placeholder="задайте вопрос" />
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary search-button"
+                                id="sendButton"
+                                type="button">
+                            <img src="~/img/search_button.png" alt="Send" />
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Нужно JQuery для openModalInfo -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- SignalR client lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+
+    <script>
+        // 1) создаём подключение к хабу
+        const connection = new signalR.HubConnectionBuilder()
+          .withUrl("/chathub")
+          .build();
+
+        // 2) на каждое входящее сообщение
+        connection.on("ReceiveMessage", (textHtml, isUser) => {
+          const container = document.getElementById("chatContainer");
+          // Собираем точную разметку вашего partial:
+          const bubble = `
+            <div class="chat-item ${isUser ? "user" : "bot"}">
+              <div class="avatar-circle">
+                ${isUser ? "usr" : "bot"}
+              </div>
+              <div class="message ${isUser ? "user-message" : "bot-message"}">
+                ${textHtml}
+              </div>
+            </div>`;
+          container.insertAdjacentHTML("beforeend", bubble);
+          container.scrollTop = container.scrollHeight;
+        });
+
+        // 3) запускаем соединение
+        connection.start().catch(err => console.error(err.toString()));
+
+        // 4) отправка по кнопке
+        document.getElementById("sendButton").addEventListener("click", () => {
+          const inp = document.getElementById("searchInput");
+          const txt = inp.value.trim();
+          if (!txt) return;
+          connection.invoke("SendMessage", txt);
+          inp.value = "";
+        });
+
+        // 5) и Enter тоже
+        document
+          .getElementById("searchInput")
+          .addEventListener("keydown", e => {
+            if (e.key === "Enter")
+              document.getElementById("sendButton").click();
+          });
+
+        // 6) ваша модалка «Подробнее»
+        function openModalInfo(personName, universityIdContact) {
+          $.ajax({
+            url: '/Contacts/GetContactPerson',
+            type: 'GET',
+            data: { personName, universityIdContact },
+            success: data => {
+              $('#myModal .modal-body').html(data);
+              $('#myModal').modal('show');
+            }
+          });
+        }
+    </script>
+}

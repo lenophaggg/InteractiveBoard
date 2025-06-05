@@ -23,16 +23,30 @@ public class HomeController : Controller
     {
         var dataParser = new DataParserModel();
 
-        // Загружаем данные о постах VK из JSON
-        var vkGroupData = dataParser.LoadVkGroupData(Path.Combine(_hostingEnvironment.WebRootPath, "documents-news-events/vk_groups_info.json"));
+        // Грузим все посты из всех групп и объединяем в один список
+        string jsonPath = Path.Combine(_hostingEnvironment.WebRootPath, "documents-news-events/vk_groups_info.json");
+        var groupDict = dataParser.LoadVkGroupData(jsonPath);
 
-        // Если нужны все посты, объединяем их из всех групп
-        var vkInfoDataList = vkGroupData.Values.SelectMany(posts => posts).ToList();
+        var allPosts = groupDict.Values
+            .SelectMany(list => list)
+            .OrderByDescending(p => p.DatePost)
+            .ToList();
 
-        // Загрузка документов
         var documents = dataParser.LoadFilesFromDocumentsFolder(_hostingEnvironment.WebRootPath);
 
-        return View((documents, vkInfoDataList));
+        // --- Masonry-раскладка по рядам, не по колонкам! ---
+        int columns = 3; // сколько столбцов надо
+        var masonryColumns = Enumerable.Range(0, columns)
+            .Select(_ => new List<VkPost>())
+            .ToList();
+
+        for (int i = 0; i < allPosts.Count; i++)
+        {
+            masonryColumns[i % columns].Add(allPosts[i]);
+        }
+
+        // Передаем masonryColumns в View вместо списка!
+        return View((documents, masonryColumns));
     }
 
     [HttpGet]

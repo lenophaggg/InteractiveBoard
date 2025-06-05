@@ -7,6 +7,7 @@
     justify-content: flex-start; /* Изначально было center, заменено на flex-start для смещения */
     align-items: flex-start;
     padding: 50px;
+    position: relative;
 }
 
 .contact {
@@ -76,4 +77,42 @@ h2 {
 
     .contact p img {
         padding-right: 20px;
+    }
+
+
+.alphabet-nav {
+    position: fixed;
+    right: 175px; /* прижать к правому краю окна */
+    top: 615px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 99;
+    border-radius: 18px;
+    padding: 10px 5px;
+    max-height: 1450px;
+    overflow-y:scroll;
+}
+
+.alphabet-link {
+    display: inline-block; /* или flex, если хочется по центру по вертикали */
+    width: 48px; /* ширина кнопки (регулируй под свой дизайн) */
+    height: 48px; /* высота кнопки, чтобы был "квадрат" */
+    line-height: 48px; /* по высоте по центру (если не flex) */
+    margin: 5px 0;
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
+    background: #8f7abe;
+    border-radius: 8px;
+    padding: 0; /* обнуляем, чтобы не мешал размеру */
+    text-align: center; /* по центру по горизонтали */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    box-sizing: border-box; /* чтобы border-radius и ширина не конфликтовали */
+}
+    .alphabet-link:hover {
+        background: #fff;
+        color: #502591;
     }

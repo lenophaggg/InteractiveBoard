@@ -11,7 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using HtmlAgilityPack;  // Убедитесь, что пакет установлен
 using System.IO;
 
 namespace MyMvcApp.Services
@@ -31,40 +30,28 @@ namespace MyMvcApp.Services
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            _logger.LogInformation("ScheduleDownloadService запускается...");
             _cts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
-            // Запускаем задачу в фоне
             _executingTask = ExecuteAsync(_cts.Token);
             return Task.CompletedTask;
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
-            _logger.LogInformation("ScheduleDownloadService останавливается...");
             _cts?.Cancel();
             return Task.CompletedTask;
         }
 
-        /// <summary>
-        /// Основной метод фоновой задачи:
-        /// 1) Немедленно вызывает парсинг расписания.
-        /// 2) Ждёт до 2:00 следующего дня и повторяет парсинг.
-        /// </summary>
         private async Task ExecuteAsync(CancellationToken cancellationToken)
         {
-            // Первый запуск сразу
             await RunSchedulesDownload(cancellationToken);
 
-            // Затем каждый день в 2:00
             while (!cancellationToken.IsCancellationRequested)
             {
                 var now = DateTime.Now;
-                // Следующий запуск — завтра в 2:00
                 DateTime nextRunTime = now.Date.AddDays(1).AddHours(2);
                 TimeSpan delay = nextRunTime - now;
 
-                _logger.LogInformation("Следующий запуск парсинга расписания запланирован на {NextRunTime}, через {Seconds} секунд",
-                    nextRunTime, delay.TotalSeconds);
+                _logger.LogInformation("Следующий запуск парсинга расписания запланирован на {NextRunTime}, через {Seconds} секунд", nextRunTime, delay.TotalSeconds);
 
                 try
                 {
@@ -72,61 +59,68 @@ namespace MyMvcApp.Services
                 }
                 catch (TaskCanceledException)
                 {
-                    break; // Остановка
+                    break; // Остановка по требованию
                 }
 
                 await RunSchedulesDownload(cancellationToken);
             }
         }
 
-        /// <summary>
-        /// Выполняет логику:
-        /// 1) Очистка старых данных.
-        /// 2) Парсинг факультетов/групп.
-        /// 3) Парсинг расписаний групп.
-        /// 4) Парсинг расписаний преподавателей.
-        /// </summary>
         private async Task RunSchedulesDownload(CancellationToken cancellationToken)
         {
-            _logger.LogInformation("Начинаем обновление расписаний в {Time}", DateTime.Now);
-
             try
             {
                 using var scope = _serviceProvider.CreateScope();
                 var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
                 // 1) Очистка старых расписаний и связанных данных
-                await context.ClearOldSchedulesFacultiesClassroomsGroupsAsync();
-                _logger.LogInformation("Старые расписания, факультеты, аудитории, группы - очищены");
+                try
+                {
+                    await context.ClearOldSchedulesFacultiesClassroomsGroupsAsync();
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Ошибка при очистке старых данных расписания.");
+                }
 
                 // 2) Загрузка и сохранение факультетов и групп
-                await ManageAndSaveFacultiesAndGroups("https://www.smtu.ru/ru/listschedule/", context);
-                _logger.LogInformation("Завершена загрузка и сохранение факультетов и групп");
+                try
+                {
+                    await ManageAndSaveFacultiesAndGroups("https://www.smtu.ru/ru/listschedule/", context);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Ошибка при загрузке и сохранении факультетов и групп.");
+                }
 
                 // 3) Загрузка и сохранение расписаний для групп
-                await ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/viewschedule/", context);
-                _logger.LogInformation("Завершена загрузка и сохранение расписаний для групп");
+                try
+                {
+                    await ParseAndSaveGroupSchedule("https://www.smtu.ru/ru/viewschedule/", context);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Ошибка при загрузке и сохранении расписаний для групп.");
+                }
 
                 // 4) Загрузка и сохранение расписаний для преподавателей
-                await ParseAndSavePersonSchedule(context);
-                _logger.LogInformation("Завершена загрузка и сохранение расписаний для преподавателей");
+                try
+                {
+                    await ParseAndSavePersonSchedule(context);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Ошибка при загрузке и сохранении расписаний для преподавателей.");
+                }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Ошибка в процессе обновления расписаний");
-            }
-            finally
-            {
-                _logger.LogInformation("Обновление расписаний завершено в {Time}", DateTime.Now);
+                _logger.LogError(ex, "Ошибка в процессе обновления расписаний (корневой блок)");
             }
         }
 
-        /// <summary>
-        /// Парсит страницу /ru/listschedule/, формирует список факультетов/групп и сохраняет в БД.
-        /// </summary>
         private async Task ManageAndSaveFacultiesAndGroups(string universityUrl, ApplicationDbContext context)
         {
-            _logger.LogInformation("Загрузка факультетов/групп с {Url}", universityUrl);
             var web = new HtmlWeb();
             HtmlDocument doc;
 
@@ -136,17 +130,13 @@ namespace MyMvcApp.Services
             }
             catch (Exception ex)
             {
-                _logger.LogWarning(ex, "Ошибка при загрузке страницы {Url}", universityUrl);
+                _logger.LogError(ex, "Ошибка при загрузке страницы {Url}", universityUrl);
                 return;
             }
 
-            // Ищем <h3 style="clear:both">..., как в вашем исходном примере
             var nodes = doc.DocumentNode.SelectNodes("//h3[contains(@style, 'clear:both')]");
             if (nodes == null)
-            {
-                _logger.LogInformation("Не найдено ни одного факультета (h3 style='clear:both') на {Url}", universityUrl);
                 return;
-            }
 
             foreach (var node in nodes)
             {
@@ -159,7 +149,6 @@ namespace MyMvcApp.Services
                     context.Faculties.Add(existingFaculty);
                 }
 
-                // Вёрстка: после <h3> идут <div class="gr"> с группами, пока не встретим следующий <h3>
                 var next = node.NextSibling;
                 while (next != null && next.Name != "h3" && !next.OuterHtml.Contains("<br><br><br><br><br>"))
                 {
@@ -189,36 +178,57 @@ namespace MyMvcApp.Services
                 }
             }
 
-            await context.SaveChangesAsync();
-            _logger.LogInformation("Сохранены факультеты/группы, всего факультетов: {Count}", nodes.Count);
+            try
+            {
+                await context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Ошибка при сохранении факультетов и групп в БД.");
+            }
         }
 
-        /// <summary>
-        /// Получаем список групп из БД и парсим расписание для каждой.
-        /// </summary>
         private async Task ParseAndSaveGroupSchedule(string baseUrl, ApplicationDbContext context)
         {
-            _logger.LogInformation("Загрузка расписаний групп из {BaseUrl}", baseUrl);
-            var groupNumberList = await context.Groups.Select(g => g.Number).ToListAsync();
-
-            if (groupNumberList == null || !groupNumberList.Any())
+            List<string> groupNumberList = null;
+            try
             {
-                _logger.LogInformation("Список групп пуст, пропускаем парсинг расписания групп");
+                groupNumberList = await context.Groups.Select(g => g.Number).ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Ошибка при получении списка групп из БД.");
                 return;
             }
 
+            if (groupNumberList == null || !groupNumberList.Any())
+                return;
+
             foreach (var groupNumber in groupNumberList)
             {
-                await ProcessItemSchedule(baseUrl, groupNumber, context);
+                try
+                {
+                    await ProcessItemSchedule(baseUrl, groupNumber, context);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Ошибка при обработке расписания для группы {GroupNumber}", groupNumber);
+                }
             }
         }
 
-        /// <summary>
-        /// Для каждого преподавателя парсим расписание по ссылке /ru/viewschedule/teacher/{UniversityIdContact}/
-        /// </summary>
         private async Task ParseAndSavePersonSchedule(ApplicationDbContext context)
         {
-            var personList = await context.PersonContacts.ToListAsync();
+            List<PersonContact> personList = null;
+            try
+            {
+                personList = await context.PersonContacts.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Ошибка при получении списка преподавателей.");
+                return;
+            }
 
             foreach (var person in personList)
             {
@@ -226,50 +236,36 @@ namespace MyMvcApp.Services
                     continue;
 
                 var url = $"https://www.smtu.ru/ru/viewschedule/teacher/{person.UniversityIdContact}/";
-                await ProcessItemSchedule(url, person.UniversityIdContact, context);
+                try
+                {
+                    await ProcessItemSchedule(url, person.UniversityIdContact, context);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Ошибка при обработке расписания для преподавателя {TeacherId}", person.UniversityIdContact);
+                }
             }
         }
 
-        /// <summary>
-        /// Унифицированный метод парсинга расписания (для группы или преподавателя).
-        /// </summary>
         private async Task ProcessItemSchedule(string baseUrl, string item, ApplicationDbContext context)
         {
-            // Если baseUrl уже содержит "{teacher}/", то item — это ID преподавателя,
-            // иначе составляем URL для расписания группы
             var url = baseUrl.EndsWith("/") ? (baseUrl + item + "/") : baseUrl;
-            _logger.LogDebug("Парсим расписание: {Url}", url);
 
-            var web = new HtmlWeb();
             HtmlDocument doc = null;
-
             try
             {
+                var web = new HtmlWeb();
                 doc = await Task.Run(() => web.Load(url));
             }
             catch (Exception ex)
             {
-                _logger.LogWarning(ex, "Ошибка при загрузке {Url}, вторая попытка через 10сек", url);
-                await Task.Delay(10000);
-
-                try
-                {
-                    doc = await Task.Run(() => web.Load(url));
-                }
-                catch (Exception ex2)
-                {
-                    _logger.LogError(ex2, "Вторая попытка загрузки {Url} также неудачна, пропускаем", url);
-                    return;
-                }
-            }
-
-            // Ищем блоки дня: <div class="card my-4">
-            var dayNodes = doc.DocumentNode.SelectNodes("//div[@class='card my-4']");
-            if (dayNodes == null)
-            {
-                _logger.LogInformation("На странице {Url} нет блоков расписания (card my-4)", url);
+                _logger.LogError(ex, "Ошибка при загрузке {Url}, пропускаем", url);
                 return;
             }
+
+            var dayNodes = doc.DocumentNode.SelectNodes("//div[@class='card my-4']");
+            if (dayNodes == null)
+                return;
 
             foreach (var dayNode in dayNodes)
             {
@@ -286,32 +282,35 @@ namespace MyMvcApp.Services
                     if (timeParts == null || timeParts.Length != 2)
                         continue;
 
-                    // Парсим время начала и конца
-                    DateTime startDateTime = DateTime.ParseExact(timeParts[0], "HH:mm", CultureInfo.InvariantCulture);
+                    DateTime startDateTime, endDateTime;
+                    try
+                    {
+                        startDateTime = DateTime.ParseExact(timeParts[0], "HH:mm", CultureInfo.InvariantCulture);
+                        endDateTime = DateTime.ParseExact(timeParts[1], "HH:mm", CultureInfo.InvariantCulture);
+                    }
+                    catch
+                    {
+                        continue; // Невалидное время, пропустить
+                    }
                     TimeSpan startTime = startDateTime.TimeOfDay;
-
-                    DateTime endDateTime = DateTime.ParseExact(timeParts[1], "HH:mm", CultureInfo.InvariantCulture);
                     TimeSpan endTime = endDateTime.TimeOfDay;
 
-                    // Тип недели (подсветка: text-warning, text-success, text-info)
                     var weekTypeNode = timeNode.ParentNode.SelectSingleNode(
                         ".//td[contains(@class, 'text-warning')]/i " +
                         "| .//td[contains(@class, 'text-success')]/i " +
                         "| .//td[contains(@class, 'text-info')]/i");
                     var weekType = weekTypeNode?.Attributes["data-bs-title"]?.Value.Trim();
 
-                    // Аудитория, группа, предмет
                     var classroomNumber = GetColumnValue(timeNode.ParentNode, 2);
                     var groupNumber = GetColumnValue(timeNode.ParentNode, 3);
 
                     var instructorNode = timeNode.ParentNode.SelectSingleNode(".//td[last()]");
 
                     string instructorName = string.Empty;
-                    string extractedInstructorId = string.Empty; // ID, извлекаемый из изображения
+                    string extractedInstructorId = string.Empty;
 
                     if (instructorNode != null)
                     {
-                        // Извлекаем ID
                         var imgNode = instructorNode.SelectSingleNode(".//img");
                         if (imgNode != null)
                         {
@@ -326,7 +325,6 @@ namespace MyMvcApp.Services
                             }
                         }
 
-                        // ФИО преподавателя
                         var anchorNode = instructorNode.SelectSingleNode(".//a");
                         if (anchorNode != null)
                         {
@@ -345,96 +343,93 @@ namespace MyMvcApp.Services
                     var subjectNode = timeNode.ParentNode.SelectSingleNode(".//td/span");
                     var subjectName = subjectNode?.InnerText?.Trim();
 
-                    // Доп. информация (например, тип пары)
                     var subjectInfoNode = timeNode.ParentNode.SelectSingleNode(
                         ".//td//small[not(contains(@class, 'text-muted'))]");
                     var subjectInfo = subjectInfoNode?.InnerText.Trim();
 
-                    // Если не нашли такой предмет в справочнике, считаем всё subjectInfo
                     var existingSubject = await context.Subjects.FirstOrDefaultAsync(s => s.SubjectName == subjectName);
                     if (existingSubject == null)
                     {
-                        // Допускаем, что subjectName может быть null, а всё хранится в subjectInfo
                         subjectInfo = subjectName ?? subjectInfo;
                         subjectName = null;
                     }
 
-                    // Проверяем аудиторию в базе
+                    // Проверяем аудиторию
                     var existingClassroom = await context.Classrooms.FirstOrDefaultAsync(c => c.ClassroomNumber == classroomNumber);
                     if (existingClassroom == null && !string.IsNullOrEmpty(classroomNumber))
                     {
-                        context.Classrooms.Add(new Classrooms { ClassroomNumber = classroomNumber });
-                        await context.SaveChangesAsync();
+                        try
+                        {
+                            context.Classrooms.Add(new Classrooms { ClassroomNumber = classroomNumber });
+                            await context.SaveChangesAsync();
+                        }
+                        catch (Exception ex)
+                        {
+                            _logger.LogError(ex, "Ошибка при добавлении аудитории {Classroom}", classroomNumber);
+                        }
                     }
 
-                    // Обновляем таблицы групп (Diary и ActualGroups)
+                    // Проверяем, существует ли группа перед добавлением расписания
                     if (!string.IsNullOrWhiteSpace(groupNumber))
                     {
-                        // Проверка и добавление в таблицу всех групп (Diary)
-                        var existingGroup = await context.Groups.FirstOrDefaultAsync(g => g.Number == groupNumber);
-                        if (existingGroup == null)
+                        var groupExists = await context.Groups.AnyAsync(g => g.Number == groupNumber);
+                        if (!groupExists)
                         {
-                            context.Groups.Add(new Groups { Number = groupNumber });
+                            _logger.LogError("Попытка добавить расписание для несуществующей группы: {Group}", groupNumber);
+                            continue; // Пропустить этот слот расписания!
                         }
-
-                        // Проверка и добавление в таблицу актуальных групп (Interactive Board)
-                        var actualGroupExists = await context.ActualGroups.AnyAsync(ag => ag.GroupNumber == groupNumber);
-                        if (!actualGroupExists)
-                        {
-                            context.ActualGroups.Add(new ActualGroup { GroupNumber = groupNumber });
-                        }
-
-                        await context.SaveChangesAsync();
                     }
 
+                    // Инструктор (опционально)
                     PersonContact existingInstructor = null;
                     if (!string.IsNullOrEmpty(extractedInstructorId))
                     {
                         existingInstructor = await context.PersonContacts.FirstOrDefaultAsync(p => p.UniversityIdContact == extractedInstructorId);
                     }
-
-                    // Сохраняем IdContact в локальной переменной
                     int? instructorDbId = existingInstructor?.IdContact;
 
-                    // Проверка: нет ли уже такой записи в расписании
-                    bool scheduleExists = await context.ScheduleData.AnyAsync(sd =>
-                        sd.DayOfWeek == dayOfWeek &&
-                        sd.StartTime == startTime &&
-                        sd.EndTime == endTime &&
-                        sd.WeekType == weekType &&
-                        sd.Classroom == classroomNumber &&
-                        sd.Group == groupNumber &&
-                        sd.Subject == subjectName &&
-                        sd.InstructorId == instructorDbId &&
-                        sd.ScheduleInfo == subjectInfo
-                    );
-
-                    // Если такой записи нет – добавляем её
-                    if (!scheduleExists)
+                    try
                     {
-                        var newScheduleData = new ScheduleData
-                        {
-                            DayOfWeek = dayOfWeek,
-                            StartTime = startTime,
-                            EndTime = endTime,
-                            WeekType = weekType,
-                            Classroom = classroomNumber,
-                            Group = groupNumber,
-                            Subject = subjectName,
-                            InstructorId = instructorDbId,
-                            ScheduleInfo = subjectInfo
-                        };
+                        bool scheduleExists = await context.ScheduleData.AnyAsync(sd =>
+                            sd.DayOfWeek == dayOfWeek &&
+                            sd.StartTime == startTime &&
+                            sd.EndTime == endTime &&
+                            sd.WeekType == weekType &&
+                            sd.Classroom == classroomNumber &&
+                            sd.Group == groupNumber &&
+                            sd.Subject == subjectName &&
+                            sd.InstructorId == instructorDbId &&
+                            sd.ScheduleInfo == subjectInfo
+                        );
 
-                        context.ScheduleData.Add(newScheduleData);
-                        await context.SaveChangesAsync();
+                        if (!scheduleExists)
+                        {
+                            var newScheduleData = new ScheduleData
+                            {
+                                DayOfWeek = dayOfWeek,
+                                StartTime = startTime,
+                                EndTime = endTime,
+                                WeekType = weekType,
+                                Classroom = classroomNumber,
+                                Group = groupNumber,
+                                Subject = subjectName,
+                                InstructorId = instructorDbId,
+                                ScheduleInfo = subjectInfo
+                            };
+
+                            context.ScheduleData.Add(newScheduleData);
+                            await context.SaveChangesAsync();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Ошибка при добавлении расписания для группы {Group}", groupNumber);
+                        continue;
                     }
                 }
             }
         }
 
-        /// <summary>
-        /// Простая утилита получения текста колонки <td[columnNumber]>
-        /// </summary>
         private string GetColumnValue(HtmlNode parentRow, int columnNumber)
         {
             var columnNode = parentRow.SelectSingleNode($".//td[{columnNumber}]");

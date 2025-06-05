@@ -1,5 +1,4 @@
-﻿@model (List<Document> Documents, List<VkPost> VkPostData)
-@using System.Text.RegularExpressions
+﻿@model (List<Document> Documents, List<List<VkPost>> MasonryColumns)
 @using System.Text.Json
 @using System.Text
 
@@ -18,65 +17,71 @@
 </div>
 
 <div class="right-content">
-    <div class="masonry-grid" style="gap: 30px !important;">
-        @if (Model.VkPostData != null)
+    <div class="masonry-grid">
+        @for (int col = 0; col < Model.MasonryColumns.Count; col++)
         {
-            @foreach (var post in Model.VkPostData)
-            {
-                <div class="masonry-grid-item" onclick="openModal(@post.Id)">
-                    <div class="card">
-                        @if (post.VideoUrl != null && post.VideoUrl.Any())
-                        {
-                            <div class="video-container">
-                                <video class="card-img-top"
-                                       src="@post.VideoUrl[0]"
-                                       autoplay muted loop
-                                       playsinline
-                                       style="width: 100%; height: auto; pointer-events: none;">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        }
-                        else if (post.ImageUrl != null && post.ImageUrl.Count > 1)
-                        {
-                            var imageUrlsJson = JsonSerializer.Serialize(post.ImageUrl);
-                            var imageUrlsBase64 = Convert.ToBase64String(Encoding.UTF8.GetBytes(imageUrlsJson));
+            <div class="masonry-column">
+                @foreach (var post in Model.MasonryColumns[col])
+                {
+                    <div class="masonry-grid-item" onclick="openModal(@post.Id)">
+                        <div class="card">
+                            @if (post.VideoUrl != null && post.VideoUrl.Any())
+                            {
+                                <div class="video-container">
+                                    <video class="card-img-top"
+                                           src="@post.VideoUrl[0]"
+                                           autoplay muted loop
+                                           playsinline
+                                           style="width: 100%; height: auto; pointer-events: none;">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            }
+                            else if (post.ImageUrl != null && post.ImageUrl.Count > 1)
+                            {
+                                var imageUrlsJson = JsonSerializer.Serialize(post.ImageUrl);
+                                var imageUrlsBase64 = Convert.ToBase64String(Encoding.UTF8.GetBytes(imageUrlsJson));
 
-                            <div class="image-carousel" data-images-base64="@imageUrlsBase64" data-height="@post.ImageHeight[0]">
+                                <div class="image-carousel" data-images-base64="@imageUrlsBase64" data-height="@post.ImageHeight[0]">
+                                    <img class="card-img-top" src="@post.ImageUrl[0]" alt="" style="width: 646px; height: @post.ImageHeight[0]px;" />
+                                </div>
+                            }
+                            else if (post.ImageUrl != null && post.ImageUrl.Count == 1)
+                            {
                                 <img class="card-img-top" src="@post.ImageUrl[0]" alt="" style="width: 646px; height: @post.ImageHeight[0]px;" />
+                            }
+                            <div class="card-body">
+                                <p class="card-text">
+                                    @CleanPreview(post.Text)
+                                </p>
                             </div>
-                        }
-                        else if (post.ImageUrl != null && post.ImageUrl.Count == 1)
-                        {
-                            <img class="card-img-top" src="@post.ImageUrl[0]" alt="" style="width: 646px; height: @post.ImageHeight[0]px;" />
-                        }
-
-                        <div class="card-body">
-                            <p class="card-text">
-                                @Html.Raw(@GetFirstThreeWords(post.Text)
-                                         .Replace("____________________________________ ", "")
-                                         .Replace("——————————————————", "")
-                                         .Replace("—— ", ""))
-                            </p>
                         </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
         }
     </div>
 </div>
 
 <!-- Модальное окно для предпросмотра документа -->
-<div class="modal fade" id="docPreviewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <!-- Содержимое модального окна -->
+<div class="modal fade" id="docPreviewModal" tabindex="-1" role="dialog" aria-labelledby="docPreviewLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <!-- Заголовок можно оставить пустым или убрать -->
+            <div class="modal-body" style="position: relative; min-height: 200px;">
+                <!-- сюда будет подставляться либо спиннер, либо содержимое PDF -->
+            </div>
+        </div>
+    </div>
 </div>
-
 @functions {
-    // Функция для получения первых семи слов
-    string GetFirstThreeWords(string text)
+    string CleanPreview(string text)
     {
-        return string.Join(" ", text.Split(' ').Take(7)) + "...";
+        if (string.IsNullOrEmpty(text)) return "";
+        string cleaned = System.Text.RegularExpressions.Regex.Replace(text, "_+", "");
+        cleaned = cleaned.Replace("—", "").Replace("–", "");
+        var words = cleaned.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Take(7);
+        return string.Join(" ", words) + "...";
     }
 }
 <script src="~/js/HomeScript.js" asp-append-version="true"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>

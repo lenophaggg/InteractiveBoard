@@ -1,0 +1,107 @@
+#mainContainer {
+    width: 3370px; /* Задана фиксированная ширина, но это может быть изменено на 100%, если требуется адаптивность */
+    height: 1250px;
+   
+   
+    
+}
+
+/* Каждый «ряд» — аватар + пузырёк */
+
+/* Заголовок */
+h1 {
+    font-size: 192px;
+    text-align: center;
+    
+    font-weight: bold;
+    line-height: inherit;
+    
+   
+    text-align: center;
+    margin: 0 auto;
+}
+
+.chat-item.bot .avatar-circle {
+    background-color: #9780ba;
+}
+
+
+
+
+/* Контейнер для SVG и кнопок */
+#interactive-container {
+    position: relative;
+   
+    height: 1250px;
+    background-color: #9268C1;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 275px 85px 49px;
+}
+
+/* SVG-контейнер */
+#svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: grab; /* Иконка перемещения */
+}
+
+/* Заголовок текущего этажа */
+#floor-title {
+    font-size: 192px;
+    font-weight: bold;
+    padding-left: 37%;
+    color: #ffffff;
+    position: absolute;
+    z-index: 10;
+}
+
+/* Кнопки выбора этажей */
+#floor-buttons {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.floor-button {
+    background-color: #270F3B;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    width: 130px;
+    height: 130px;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Кнопки зума */
+#zoom-buttons {
+    display: flex;
+    flex-direction: column; /* Кнопки расположены в столбик */
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.zoom-button {
+    background-color: #270F3B;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    width: 130px;
+    height: 130px;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+}

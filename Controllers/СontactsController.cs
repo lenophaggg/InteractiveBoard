@@ -22,16 +22,11 @@ namespace MyMvcApp.Controllers
 
         public IActionResult Index()
         {
-            List<MainUniversityContact> contactDataList = _context.MainUniversityContacts.ToList();
+            var contactDataList = _context.MainUniversityContacts
+              .OrderBy(c => c.NameContact)
+              .ToList();
 
-            // Инвертировать список без изменения исходного списка
-            List<MainUniversityContact> reversedContactDataList = new List<MainUniversityContact>(contactDataList.Reverse<MainUniversityContact>());
-
-            // Или инвертировать исходный список на месте
-            contactDataList.Reverse();
-
-            // Теперь reversedContactDataList содержит инвертированный список, а contactDataList - инвертированный список
-            return View(reversedContactDataList);
+            return View(contactDataList);
         }
 
         [HttpGet]

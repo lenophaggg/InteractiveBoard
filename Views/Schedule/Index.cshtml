@@ -39,12 +39,16 @@
         }
     </div>
 
-    <form>
-        <div class="input-group">
-            <input type="text" class="form-control" id="searchInput" placeholder="введите номер группы или ФИО преподавателя">
+    <form onsubmit="getSchedule(document.getElementById('searchInput').value); return false;">
+        <div class="input-group" style="margin-top:20px;">
+            <input type="text"
+                   class="form-control"
+                   id="searchInput"
+                   placeholder="введите номер группы или ФИО преподавателя" />
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary search-button" type="button" onclick="getSchedule(document.getElementById('searchInput').value)">
-                    <img src="../img/search_button.png" alt="Search">
+                <button class="btn btn-outline-secondary search-button"
+                        type="submit">
+                    <img src="../img/search_button.png" alt="Search" />
                 </button>
             </div>
         </div>

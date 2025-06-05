@@ -75,12 +75,42 @@
 }
 
 .masonry-grid {
-    column-count: 3; /* Количество столбцов */
-    column-gap: 30px; /* Отступы между колонками */
+    display: flex;
+    gap: 30px; /* отступы между столбцами */
+}
+
+.masonry-column {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* отступы между карточками в колонке */
 }
 
 .masonry-grid-item {
-    width: 100%; /* Делаем элементы адаптивными */
-    margin-bottom: 30px;
-    break-inside: avoid; /* Избегаем разрыва внутри колонок */
+    width: 100%;
+    /* остальные стили карточек */
+}
+
+.modal-body .h2 {
+  
+}
+
+.spinner {
+    width: 250px;
+    height: 250px;
+    border: 15px solid #f3f3f3;
+    border-top: 25px solid #361778;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 100px auto; /* центрируем внутри модалки */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

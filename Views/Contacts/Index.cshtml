@@ -10,44 +10,75 @@
 
 <script src="~/js/ContactScript.js"></script>
 
+@{
+    // Получить уникальные буквы, к которым будет навигация
+    var firstLetters = Model
+        .Select(c => c.NameContact.Substring(0, 1).ToUpper())
+        .Distinct()
+        .OrderBy(ch => ch)
+        .ToList();
+}
 <!-- Контейнер для отображения данных о расписании -->
 <div id="mainContainer">
     <h1>Структуры университета</h1>
+
+    <div class="alphabet-nav">
+        @foreach (var letter in firstLetters)
+        {
+            <a href="javascript:void(0);" class="alphabet-link" data-letter="@letter">@letter</a>
+        }
+    </div>
+
     <div class="contactContainer">
+        @{
+            // Для каждой первой буквы выводим якорь только один раз
+            string prevLetter = null;
+        }
         @foreach (var contact in Model)
         {
+            var thisLetter = contact.NameContact.Substring(0, 1).ToUpper();
+            if (thisLetter != prevLetter)
+            {
+                <div id="letter-@thisLetter"></div>
+                prevLetter = thisLetter;
+            }
+
             <div class="contact" onclick="toggleDetails(this)">
-                <h2>@contact.NameContact</h2>
-                <h4>@contact.AdditionalName</h4>
+                <h2 class="contact-name">@contact.NameContact</h2>
+                <h4 class="contact-additional">@contact.AdditionalName</h4>
                 <div class="contact-details" style="display: none;">
                     @if (!string.IsNullOrEmpty(contact.Telephone))
                     {
-                        <p><img src="/img/phone_img.png">@contact.Telephone</p>
+                        <p><img src="/img/phone_img.png" /> @contact.Telephone</p>
                     }
                     @if (!string.IsNullOrEmpty(contact.WorkTime))
                     {
-                        <p><img src="/img/clock.png">@contact.WorkTime</p>
+                        <p><img src="/img/clock.png" /> @contact.WorkTime</p>
                     }
                     @if (!string.IsNullOrEmpty(contact.Address))
                     {
-                        <p><img src="/img/address_img.png">@contact.Address</p>
+                        <p><img src="/img/address_img.png" /> @contact.Address</p>
                     }
                     @if (!string.IsNullOrEmpty(contact.Information))
                     {
-                        <p>
-                            @Html.Raw(contact.Information.Replace("\\n", "<br>"))
-                        </p>
+                        <p>@Html.Raw(contact.Information.Replace("\\n", "<br>"))</p>
                     }
                 </div>
             </div>
         }
     </div>
-    <form>
+
+    <!-- Форма поиска: теперь onsubmit ловит Enter и вызывает searchLocal -->
+    <form onsubmit="searchLocal(document.getElementById('searchInput1').value); return false;">
         <div class="input-group">
-            <input type="text" class="form-control" id="searchInput1" placeholder="введите ФИО преподавателя">
+            <input type="text"
+                   class="form-control"
+                   id="searchInput1"
+                   placeholder="введите организацию или ФИО преподавателя" />
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary search-button" type="button" onclick="clarifyPersonForContact(document.getElementById('searchInput1').value)">
-                    <img src="../img/search_button.png" alt="Search">
+                <button class="btn btn-outline-secondary search-button"
+                        type="submit">
+                    <img src="../img/search_button.png" alt="Search" />
                 </button>
             </div>
         </div>
@@ -55,20 +86,85 @@
 </div>
 
 <script>
+    // Показ/скрытие деталей контакта (как было)
     function toggleDetails(contact) {
         var details = contact.querySelector('.contact-details');
         if (details.style.display === 'none') {
-            // Скрываем все открытые детали
+            // Скрываем все открытые
             document.querySelectorAll('.contact-details').forEach(function (detail) {
                 detail.style.display = 'none';
-                detail.parentElement.style.position = 'relative'; // Возвращаем нормальное состояние
+                detail.parentElement.style.position = 'relative';
             });
-            // Показываем выбранные детали
+            // Показываем этот
             details.style.display = 'block';
-            contact.style.position = 'static'; // Убираем влияние на соседние блоки
+            contact.style.position = 'static';
         } else {
             details.style.display = 'none';
-            contact.style.position = 'relative'; // Возвращаем нормальное состояние
+            contact.style.position = 'relative';
+        }
+    }
+
+    // Алфавитная навигация (как было)
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.alphabet-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                var letter = this.getAttribute('data-letter');
+                var anchor = document.getElementById('letter-' + letter);
+                if (anchor) {
+                    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    });
+
+    // ========= Поиск по организациям/контактам с удалением последней буквы и однократной мигающей подсветкой =========
+    function searchLocal(term) {
+        if (!term || term.trim() === '') {
+            return;
+        }
+        var lowerTerm = term.trim().toLowerCase();
+
+        // Формируем варианты: полное слово и слово без последней буквы (если длина > 1)
+        var variants = [lowerTerm];
+        if (lowerTerm.length > 1) {
+            variants.push(lowerTerm.slice(0, -1));
+        }
+
+        var contacts = document.querySelectorAll('.contact');
+        var foundElem = null;
+
+        // Убираем предыдущие подсветки
+        contacts.forEach(function(elem) {
+            elem.style.backgroundColor = '';
+        });
+
+        // Ищем первое совпадение по любому из вариантов, только в <h2 class="contact-name">
+        contacts.forEach(function(elem) {
+            if (foundElem) return;
+
+            var nameText = elem.querySelector('.contact-name').innerText.trim().toLowerCase();
+
+            for (var i = 0; i < variants.length; i++) {
+                if (nameText.indexOf(variants[i]) !== -1) {
+                    foundElem = elem;
+                    break;
+                }
+            }
+        });
+
+        if (foundElem) {
+            // Скроллим к найденному элементу
+            foundElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // Однократная мигающая подсветка: сначала ставим цвет, через 1500ms возвращаем исходный
+            foundElem.style.backgroundColor = '#c0add6';
+            setTimeout(function() {
+                foundElem.style.backgroundColor = '';
+            }, 1500);
+
+        } else {
+            // Если ничего не найдено — AJAX поиск преподавателя
+            clarifyPersonForContact(term);
         }
     }
 </script>

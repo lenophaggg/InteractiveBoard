@@ -63,10 +63,7 @@
 
     <!-- Вывод текста поста -->
     <p>
-        @Html.Raw(Model.Text
-                .Replace("____________________________________ ", "</p><p>")
-                .Replace("——————————————————", "</p><p>")
-                .Replace("—— ", ""))
+        @Html.Raw(CleanText(Model.Text))
     </p>
 }
 else
@@ -190,6 +187,17 @@ else
 </script>
 
 @functions {
+    // Очищаем любые цепочки _ - — =
+    string CleanText(string text)
+    {
+        if (string.IsNullOrEmpty(text)) return "";
+        // удаляем любые подряд идущие _, -, —, =
+        string cleaned = Regex.Replace(text, @"[_\-—=]+", " ");
+        // Можно убрать лишние пробелы
+        cleaned = Regex.Replace(cleaned, @"\s{2,}", " ").Trim();
+        return cleaned;
+    }
+    
     // Функция для получения размеров удаленного изображения
     (int width, int height) GetRemoteImageDimensions(string imageUrl)
     {
@@ -211,7 +219,8 @@ else
         {
             // Логируем ошибку и возвращаем стандартные размеры
             Console.WriteLine($"Ошибка при загрузке изображения: {ex.Message}");
-            return (1280, 720); // Стандартные размеры для видео
+            return (1920, 1080); // Стандартные размеры для видео
         }
+   
     }
 }

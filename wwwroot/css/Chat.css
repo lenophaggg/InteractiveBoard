@@ -1,0 +1,85 @@
+#chatContainer {
+    width: 100%;
+    height: 1250px;
+    padding: 2rem 5rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Каждый «ряд» — аватар + пузырёк */
+.chat-item {
+    display: flex;
+    align-items: flex-end;
+    clear: both;
+    margin-bottom: 1rem;
+}
+
+    /* Бот (avatar слева) */
+    .chat-item.bot {
+        flex-direction: row;
+    }
+
+    /* Пользователь (avatar справа) */
+    .chat-item.user {
+        flex-direction: row-reverse;
+    }
+
+/* Круг-аватар */
+.avatar-circle {
+    width: 145px;
+    height: 145px;
+    border-radius: 25px;
+    background: rgba(39,15,59,0.8);
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    flex-shrink: 0;
+}
+
+/* Сам пузырёк — больше никаких float/clear */
+.message {
+    max-width: 70%;
+    padding: 1rem 1.5rem;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+/* Цвет и скругление бота */
+.bot .message {
+    background: rgba(192,173,214,0.7);
+    color: #270F3B;
+    border-radius: 50px 50px 50px 10px;
+}
+
+/* Цвет и скругление пользователя */
+.user .message {
+    background: rgba(39,15,59,0.7);
+    color: #fff;
+    border-radius: 50px 50px 10px 50px;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 192px;
+    text-align: center;
+    
+    font-weight: bold;
+    line-height: inherit;
+    
+   
+    text-align: center;
+    margin: 0 auto;
+}
+
+.chat-item.bot .avatar-circle {
+    background-color: #9780ba;
+}

@@ -54,18 +54,24 @@ function openModal(postId) {
  * Открывает модальное окно для просмотра PDF-документа.
  */
 function openModalPDF(documentPath, nameDoc) {
+    var $modal = $('#docPreviewModal');
+    var $body = $modal.find('.modal-body');
+
+    // Вставляем спиннер и сразу показываем модалку
+    $body.html('<div class="spinner"></div>');
+    $modal.modal('show');
+
     $.ajax({
         url: '/Home/GetDocument',
         type: 'GET',
         data: { directoryPath: documentPath, directoryName: nameDoc },
         success: function (data) {
-            const $modalBody = $('#myModal .modal-body');
-            $modalBody.empty();
-            $modalBody.html(data);
-            $('#myModal').modal('show');
+            // Заменяем спиннер на полученный HTML
+            $body.html(data);
         },
         error: function () {
             alert('Произошла ошибка при загрузке документа.');
+            $modal.modal('hide');
         }
     });
 }

@@ -1,8 +1,7 @@
 namespace MyMvcApp.Models;
 
-public class ErrorViewModel
+public class PostModel
 {
-    public string? RequestId { get; set; }
-
-    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    public string Text { get; set; }
+    public bool IsUser { get; set; }
 }

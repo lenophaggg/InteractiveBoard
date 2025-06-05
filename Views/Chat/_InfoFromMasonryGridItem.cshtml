@@ -1,0 +1,11 @@
+﻿
+@model MyMvcApp.Models.PostModel
+
+<div class="chat-item @(Model.IsUser ? "user" : "bot")">
+    <div class="avatar-circle">
+        @(Model.IsUser ? "usr" : "bot")
+    </div>
+    <div class="message @(Model.IsUser ? "user-message" : "bot-message")">
+        @Html.Raw(Model.Text)
+    </div>
+</div>
