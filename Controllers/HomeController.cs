@@ -54,35 +54,39 @@ public class HomeController : Controller
     {
         try
         {
-            // Проверяем, существует ли директория
             if (!Directory.Exists(directoryPath))
-            {
                 return NotFound("Директория не найдена.");
-            }
 
-            // Получаем все файлы изображений в папке, сортируем их по имени (числовой порядок)
-            string[] imageFiles = Directory.GetFiles(directoryPath, "*.png")
-                                           .OrderBy(f =>
-                                           {
-                                               string fileName = Path.GetFileNameWithoutExtension(f);
-                                               return int.TryParse(fileName, out int pageNumber) ? pageNumber : int.MaxValue;
-                                           })
-                                           .ToArray();
+            var imageFiles = Directory.GetFiles(directoryPath, "*.png")
+                                      .OrderBy(f =>
+                                      {
+                                          var name = Path.GetFileNameWithoutExtension(f);
+                                          return int.TryParse(name, out var p) ? p : int.MaxValue;
+                                      })
+                                      .ToArray();
 
-            // Загружаем каждое изображение в список в виде байтовых массивов
-            List<byte[]> imageBytesList = imageFiles.Select(file => System.IO.File.ReadAllBytes(file)).ToList();
+            var bytesList = imageFiles
+                            .Select(System.IO.File.ReadAllBytes)
+                            .ToList();
 
-            // Возвращаем частичное представление с передачей списка байтовых массивов изображений и имени директории
-            return PartialView("_PDFDocument", (imageBytesList, directoryName));
+            var model = new PdfDocumentViewModel
+            {
+                ImageBytesList = bytesList,
+                DirectoryName = directoryName
+            };
+
+            // Указываем полный путь с расширением, чтобы Razor точно нашёл файл
+            return PartialView(
+                "~/Views/Shared/_PDFDocument.cshtml",
+                model
+            );
         }
         catch (Exception ex)
         {
-            // Логируем ошибку и возвращаем 500
-            Console.WriteLine($"Ошибка: {ex.Message}");
+            _logger.LogError(ex, "Ошибка при формировании PDF-документа");
             return StatusCode(500, "Произошла ошибка при обработке запроса.");
         }
     }
-
 
     // Метод GetPostData
     [HttpGet]

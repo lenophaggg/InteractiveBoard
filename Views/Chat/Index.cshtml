@@ -4,13 +4,17 @@
 
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/Chat.css" asp-append-version="true" />
-
+<link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
 <div id="mainContainer">
     <div id="content">
         <h1>Чат-ассистент</h1>
 
         <div id="chatContainer">
             @* Здесь будут накапливаться сообщения *@
+            @if (ViewBag.Html != null)
+            {
+                @Html.Raw(ViewBag.Html)
+            }
         </div>
 
         <div id="inputArea">
@@ -33,66 +37,127 @@
     </div>
 </div>
 
+<div class="modal fade" id="docPreviewModal" tabindex="-1" role="dialog" aria-labelledby="docPreviewLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <!-- Заголовок можно оставить пустым или убрать -->
+            <div class="modal-body" style="position: relative; min-height: 200px;">
+                <!-- сюда будет подставляться либо спиннер, либо содержимое PDF -->
+            </div>
+        </div>
+    </div>
+</div>
+
 @section Scripts {
-    <!-- Нужно JQuery для openModalInfo -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- SignalR client lib -->
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+    <script src="~/js/HomeScript.js" asp-append-version="true"></script>
 
+    <script src="~/js/ContactScript.js" asp-append-version="true"></script>
     <script>
-        // 1) создаём подключение к хабу
+        let connectionId;
+
+        // Инициализация подключения к SignalR
         const connection = new signalR.HubConnectionBuilder()
-          .withUrl("/chathub")
-          .build();
+            .withUrl("/chathub")
+            .configureLogging(signalR.LogLevel.Information)
+            .build();
 
-        // 2) на каждое входящее сообщение
-        connection.on("ReceiveMessage", (textHtml, isUser) => {
-          const container = document.getElementById("chatContainer");
-          // Собираем точную разметку вашего partial:
-          const bubble = `
-            <div class="chat-item ${isUser ? "user" : "bot"}">
-              <div class="avatar-circle">
-                ${isUser ? "usr" : "bot"}
-              </div>
-              <div class="message ${isUser ? "user-message" : "bot-message"}">
-                ${textHtml}
-              </div>
-            </div>`;
-          container.insertAdjacentHTML("beforeend", bubble);
-          container.scrollTop = container.scrollHeight;
-        });
+        const chatContainer = document.getElementById("chatContainer");
+        const searchInput = document.getElementById("searchInput");
+        const sendButton = document.getElementById("sendButton");
 
-        // 3) запускаем соединение
-        connection.start().catch(err => console.error(err.toString()));
-
-        // 4) отправка по кнопке
-        document.getElementById("sendButton").addEventListener("click", () => {
-          const inp = document.getElementById("searchInput");
-          const txt = inp.value.trim();
-          if (!txt) return;
-          connection.invoke("SendMessage", txt);
-          inp.value = "";
-        });
-
-        // 5) и Enter тоже
-        document
-          .getElementById("searchInput")
-          .addEventListener("keydown", e => {
-            if (e.key === "Enter")
-              document.getElementById("sendButton").click();
-          });
-
-        // 6) ваша модалка «Подробнее»
-        function openModalInfo(personName, universityIdContact) {
-          $.ajax({
-            url: '/Contacts/GetContactPerson',
-            type: 'GET',
-            data: { personName, universityIdContact },
-            success: data => {
-              $('#myModal .modal-body').html(data);
-              $('#myModal').modal('show');
+        // Функция для отправки сообщения
+        function sendMessage() {
+            const text = searchInput.value.trim();
+            if (!text) {
+                alert("Введите сообщение!");
+                return;
             }
-          });
+            addUserMessage(text); // Показываем сообщение пользователя сразу
+            $.ajax({
+                url: '/Chat/SendMessage',
+                method: 'POST',
+                data: { message: text, connectionId: connectionId },
+                success: function() {
+                    // Успешная отправка (можно ничего не делать)
+                },
+                error: function(err) {
+                    console.error("Ошибка отправки:", err);
+                    addBotMessage("Не удалось отправить сообщение.");
+                }
+            });
+            searchInput.value = ""; // Очистка поля ввода
+        }
+
+        // Добавление сообщения бота
+        function addBotMessage(text) {
+            const bubble = `
+                <div class="chat-item bot">
+                    <div class="avatar-circle">bot</div>
+                     <div class="message bot-message">
+                    <div class="bot-message-hint">${text}</div>
+                    </div>
+                </div>`;
+            chatContainer.insertAdjacentHTML("beforeend", bubble);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        // Запуск подключения и сохранение connectionId
+        connection.start().then(() => {
+            connectionId = connection.connectionId;
+            addBotMessage("Привет, сформулируй свой вопрос, а я постараюсь на него ответить");
+        }).catch(err => {
+            console.error("Ошибка подключения:", err.toString());
+            addBotMessage("Не удалось подключиться. Повторная попытка через 5 секунд...");
+            setTimeout(() => connection.start(), 5000);
+        });
+
+        // Обработка входящих сообщений от SignalR
+        connection.on("ReceiveMessage", (textHtml, isUser) => {
+            const bubble = `
+                <div class="chat-item ${isUser ? 'user' : 'bot'}">
+                    <div class="avatar-circle">
+                        ${isUser ? 'usr' : 'bot'}
+                    </div>
+                    <div class="message ${isUser ? 'user-message' : 'bot-message'}">
+                        ${textHtml}
+                    </div>
+                </div>`;
+            chatContainer.insertAdjacentHTML("beforeend", bubble);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        });
+
+        // Отправка сообщения по клику на кнопку
+        sendButton.addEventListener("click", sendMessage);
+
+        // Отправка сообщения по нажатию Enter
+        searchInput.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault(); // Предотвращаем отправку формы
+                sendMessage();
+            }
+        });
+
+        // Добавление сообщения пользователя в чат
+        function addUserMessage(text) {
+            const bubble = `
+                <div class="chat-item user">
+                    <div class="avatar-circle">usr</div>
+                    <div class="message user-message">${text}</div>
+                </div>`;
+            chatContainer.insertAdjacentHTML("beforeend", bubble);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        // Добавление системного сообщения
+        function addSystemMessage(message) {
+            const systemBubble = `
+                <div class="chat-item system">
+                    <div class="message system-message">${message}</div>
+                </div>`;
+            chatContainer.insertAdjacentHTML("beforeend", systemBubble);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
         }
     </script>
 }

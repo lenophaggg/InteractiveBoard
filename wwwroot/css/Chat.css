@@ -48,7 +48,6 @@
     padding: 1rem 1.5rem;
     font-size: 48px;
     font-weight: 700;
-    line-height: normal;
     word-wrap: break-word;
     box-sizing: border-box;
 }
@@ -82,4 +81,78 @@ h1 {
 
 .chat-item.bot .avatar-circle {
     background-color: #9780ba;
+}
+
+.contact-list {
+    margin: 0.5rem 1rem;
+    padding: 0;
+}
+
+.btn-contact {
+    background: #270f3b; /* тёмно-фиолетовый фон */
+    color: #ffffff; /* белый текст */
+    font-size: 32px; /* размер шрифта в 32px */
+    font-weight: 700; /* жирный текст */
+    padding: 0.5rem 1.5rem; /* вертикальные и горизонтальные отступы */
+    border: none; /* без границы */
+    border-radius: 25px; /* скруглённые углы */
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+    .btn-contact:hover,
+    .doc-link:hover {
+        color: #ffffff !important; /* текст остаётся белым */
+    }
+
+/* ===== Документы (doc) — по одной строке ===== */
+.document-list {
+    margin: 1.5rem 1rem;
+    padding: 0;
+  
+}
+
+.doc-preview {
+    background: #270f3b; /* лёгкий фиолетовый фон */
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 1.25rem 2rem;
+    display: inline-block;
+}
+
+/* ===== Кнопки «Подробнее» и «Открыть документ» ===== */
+
+.doc-link {
+    background: #270f3b;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 48px;
+    border-radius: 15px;
+    border: none;
+    text-decoration: none !important;
+}
+
+
+/* ===== QA-ответы — одна строка на сообщение ===== */
+.answer-list {
+    margin: 0.5rem 1rem;
+    padding: 0;
+}
+
+    .answer-list .bot-message {
+       
+        font-weight: bold;
+        padding: 0.75rem 1rem;
+        border-radius: 15px;
+        margin-bottom: 0.5rem;
+    }
+
+/* маленький разделитель между ответами */
+.answer-separator {
+    height: 3px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 2px;
+    margin: 0.5rem 0;
 }

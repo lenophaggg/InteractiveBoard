@@ -53,8 +53,8 @@ namespace MyMvcApp.Controllers
         public IActionResult GetContactPerson(string personName, string universityIdContact)
         {
             var personContact = _context.PersonContacts
-                .Where(p => p.NameContact == personName && p.UniversityIdContact == universityIdContact)
-                    .Include(p => p.TaughtSubjects)  // Убедитесь, что у вас есть навигационное свойство TaughtSubjects в классе PersonContact
+                .Where(p => p.NameContact == personName || p.UniversityIdContact == universityIdContact)
+                    .Include(p => p.TaughtSubjects)  
                 .FirstOrDefault();
 
             if (personContact != null)

@@ -1,108 +1,89 @@
 ﻿using System;
-using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using MyMvcApp.Models;
 
 namespace MyMvcApp.Services
 {
+    /// <summary>
+    /// Сервис для обращения к API и получения структурированного ответа.
+    /// JWT-токен добавляется в заголовок каждого запроса здесь, без изменения Program.cs.
+    /// </summary>
     public class ChatService
     {
         private readonly HttpClient _http;
+        private const string _testToken = "test-token-123";
 
         public ChatService(HttpClient http)
         {
             _http = http;
         }
 
-        public async Task<string> ProcessMessageAsync(string connectionId, string message)
+        /// <summary>
+        /// Отправляет сообщение в API и возвращает десериализованный ApiResponse.
+        /// В случае ошибки возвращает ApiResponse с сообщением об ошибке.
+        /// </summary>
+        /// <param name="userId">Идентификатор пользователя или соединения.</param>
+        /// <param name="text">Текст сообщения.</param>
+        public async Task<ApiResponse> ProcessMessageAsync(string userId, string text)
         {
+            var requestObj = new
+            {
+                id = Guid.NewGuid().ToString(),
+                timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
+                payload = new { query = text },
+                meta = new { source = "unified", user = userId }
+            };
+
+            var json = JsonSerializer.Serialize(requestObj);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            // Формируем HttpRequestMessage, чтобы добавить заголовок авторизации здесь
+            var requestMessage = new HttpRequestMessage(HttpMethod.Post, "/api/v1/query")
+            {
+                Content = content
+            };
+            requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _testToken);
+
             try
             {
-                // 1) HTTP-запрос
-                var resp = await _http.GetAsync($"search?q={Uri.EscapeDataString(message)}");
+                using var resp = await _http.SendAsync(requestMessage);
+                resp.EnsureSuccessStatusCode();
+
                 var body = await resp.Content.ReadAsStringAsync();
-
-                if (!resp.IsSuccessStatusCode)
+                var apiResponse = JsonSerializer.Deserialize<ApiResponse>(body, new JsonSerializerOptions
                 {
-                    // пытаемся прочитать поле "detail"
-                    string detail;
-                    try
-                    {
-                        using var errDoc = JsonDocument.Parse(body);
-                        detail = errDoc.RootElement.GetProperty("detail").GetString()!;
-                    }
-                    catch
-                    {
-                        detail = body;
-                    }
+                    PropertyNameCaseInsensitive = true
+                });
 
-                    return $@"
-                        <p class=""error-message"">
-                            <strong>{System.Net.WebUtility.HtmlEncode(detail)}!</strong>
-                        </p>";
-                }
-
-                // 2) Разбор успешного JSON
-                using var doc = JsonDocument.Parse(body);
-                var results = doc.RootElement.GetProperty("results");
-                if (results.GetArrayLength() == 0)
-                {
-                    return @"<p>Ничего не найдено. Попробуйте уточнить запрос.</p>";
-                }
-
-                // 3) Берём первое совпадение
-                var first = results[0];
-                var id = first.GetProperty("university_idcontact").GetString();
-                var name = first.GetProperty("namecontact").GetString();
-
-                // 4) Список первых трёх позиций
-                var positions = first.GetProperty("position")
-                                     .EnumerateArray()
-                                     .Select((j, i) => new { j, i })
-                                     .Where(x => x.i < 3)
-                                     .Select(x => x.j.GetString()!)
-                                     .ToList();
-
-                // 5) Собираем HTML внутри одного .message
-                var sb = new StringBuilder();
-
-                // Заголовок
-                sb.Append($@"<strong class=""contact-name"">{System.Net.WebUtility.HtmlEncode(name)}</strong>");
-
-                // Позиции
-                sb.Append(@"<ul class=""contact-positions"">");
-                foreach (var pos in positions)
-                {
-                    sb.Append($"<li>{System.Net.WebUtility.HtmlEncode(pos)}</li>");
-                }
-                sb.Append("</ul>");
-
-                // Эскейпим одинарные кавычки в name/id для JS
-                var jsName = name.Replace("'", "\\'");
-
-                sb.Append($@"
-                    <button class=""details-btn""
-                            onclick=""openModalInfo('{jsName}','{id}')"">
-                        Подробнее
-                    </button>");
-
-                return sb.ToString();
+                return apiResponse ?? new ApiResponse();
             }
-            catch (HttpRequestException ex)
+            catch (HttpRequestException httpEx)
             {
-                return $@"
-                    <p class=""error-message"">
-                        Сетевая ошибка: <strong>{System.Net.WebUtility.HtmlEncode(ex.Message)}</strong>
-                    </p>";
+                return new ApiResponse
+                {
+                    Answers = Array.Empty<string>(),
+                    Message = "Ошибка при обращении к API"
+                };
+            }
+            catch (JsonException jsonEx)
+            {
+                return new ApiResponse
+                {
+                    Answers = Array.Empty<string>(),
+                    Message = $"Невозможно обработать ответ API: {jsonEx.Message}"
+                };
             }
             catch (Exception ex)
             {
-                return $@"
-                    <p class=""error-message"">
-                        Ошибка: <strong>{System.Net.WebUtility.HtmlEncode(ex.Message)}</strong>
-                    </p>";
+                return new ApiResponse
+                {
+                    Answers = Array.Empty<string>(),
+                    Message = $"Произошла ошибка: {ex.Message}"
+                };
             }
         }
     }

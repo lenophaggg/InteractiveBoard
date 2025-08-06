@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using MyMvcApp.Models;
 using MyMvcApp.Services;
 using MyMvcApp.Hubs;
-using System.Configuration; // Replace "YourNamespace" with the actual namespace of the TelegramBotHostedService class
+using Microsoft.AspNetCore.SignalR;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,25 +13,44 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-//builder.Services.AddHostedService<TypeWeekDownloadService>();
-
-//builder.Services.AddHostedService(provider =>
-//{
-//    var botToken = "6715640503:AAEyix5YebsK3FOJHK9G76fBMXjyVM4uHus"; // Получить токен бота из конфигурации
-//    var configuration = provider.GetRequiredService<IConfiguration>();
-//    return new TelegramBotHostedService(botToken, configuration);
-//});
-
-builder.Services.AddHostedService<DocumentCleanupService>();
-builder.Services.AddHostedService<NewsEventsDownloadService>();
-builder.Services.AddHostedService<ScheduleDownloadService>();
-// ...
-builder.Services.AddHttpClient<ChatService>(client =>
+builder.Services.AddHttpClient("UaiApi", c =>
 {
-    client.BaseAddress = new Uri("http://192.168.0.102:8000/");
+    c.BaseAddress = new Uri("http://192.168.0.101:8001/");
 });
 
+builder.Services.AddHttpClient("Smtu", c =>
+{
+    c.BaseAddress = new Uri("https://www.smtu.ru/");
+});
+
+builder.Services.AddHostedService<TypeWeekDownloadService>();
+
 builder.Services.AddSignalR();
+builder.Services.AddHostedService(provider =>
+{
+    var botToken = "6715640503:AAGpLQ4y3oneUL5dAqPBfzKzbgFvIwccS-Q";
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    var hub = provider.GetRequiredService<IHubContext<ChatHub>>();
+    var httpClientFactory = provider.GetRequiredService<IHttpClientFactory>(); // Внедряем фабрику
+    return new TelegramBotHostedService(botToken, configuration, hub, httpClientFactory);
+});
+
+//builder.Services.AddHostedService<DocumentCleanupService>();
+//builder.Services.AddHostedService<NewsEventsDownloadService>();
+
+builder.Services.AddHostedService<ScheduleDownloadService>();
+builder.Services.AddHostedService<ContactForNLPDownloadService>();
+
+builder.Services.AddScoped<ChatService>(sp =>
+{
+    var http = sp.GetRequiredService<IHttpClientFactory>().CreateClient("UaiApi");
+    return new ChatService(http);
+});
+
+builder.Services.AddScoped<ChatFormatter>();
+
+// ...
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

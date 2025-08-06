@@ -17,6 +17,12 @@ using Microsoft.Extensions.Options;
 using MyMvcApp.Models;
 
 using System.Diagnostics;
+using Microsoft.AspNetCore.SignalR;
+using MyMvcApp.Hubs;
+using System.IO.Compression;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
+using System.Net.Http;
 
 
 
@@ -36,12 +42,18 @@ namespace MyMvcApp.Services
         private readonly IConfiguration _configuration;
         private readonly List<string> _allowedUsernames;
         private CancellationTokenSource _cts;
+        private readonly IHubContext<ChatHub> _hub;
+        private readonly HttpClient _api;
+        private readonly IHttpClientFactory _httpClientFactory; // Добавляем поле для фабрики
 
-        public TelegramBotHostedService(string botToken, IConfiguration configuration)
+        public TelegramBotHostedService(string botToken, IConfiguration configuration,
+            IHubContext<ChatHub> hub, IHttpClientFactory httpClientFactory)
         {
             _configuration = configuration;
             _botClient = new TelegramBotClient(botToken);
-
+            _hub = hub;
+            _httpClientFactory = httpClientFactory;
+            _api = _httpClientFactory.CreateClient("UaiApi"); // Получаем именованный клиент
             _allowedUsernames = _configuration
                 .GetSection("TelegramBotSettings:AllowedUsernames")
                 .Get<List<string>>() ?? new List<string>();
@@ -173,6 +185,13 @@ namespace MyMvcApp.Services
                     await RenameFileAsync(chatId, oldName, newName);
                     return; // Прерываем выполнение метода, если была обработана команда /rename
                 }
+
+                if (command == "/add_faq")
+                {
+                    // Вызов метода для переименования файла
+                    await AddFaqAsync(chatId, oldName, newName);
+                    return; // Прерываем выполнение метода, если была обработана команда /rename
+                }
             }
 
             switch (messageText)
@@ -193,6 +212,12 @@ namespace MyMvcApp.Services
                 case "Переименовать документ ✏️":
                     await AskRenameFileForBoardAsync(chatId, cancellationToken);
                     break;
+                case "Загрузить документ в AI🗂️":
+                    await AskUploadDocListAsync(chatId, cancellationToken);   
+                    break;
+                case "Добавить FAQ ❓":
+                    await AskAddFaqAsync(chatId, cancellationToken);
+                    break;
 
                 //Дефолт(Старт)
                 case "Отмена":
@@ -212,6 +237,11 @@ namespace MyMvcApp.Services
                         {
                             new KeyboardButton("Предоставить доступ 👥"),
                             new KeyboardButton("Закрыть доступ 🚷")
+                        },
+                        new[]
+                        {
+                            new KeyboardButton("Загрузить документ в AI🗂️"),   // ← новая
+                            new KeyboardButton("Добавить FAQ ❓")
                         }
                     });
 
@@ -540,6 +570,9 @@ namespace MyMvcApp.Services
                     case "getAccesUser":
                         await AskGetAccesToUserAsync(chatId, cancellationToken);
                         break;
+                    case "upload_doc":           
+                        await UploadDocAndSendAsync(param /* = FolderName */, chatId, cancellationToken);
+                        break;
 
                 }
             }
@@ -682,32 +715,39 @@ namespace MyMvcApp.Services
             }
         }
 
-        static void ConvertPdfToImages(string sourcePath, string destinationFolder)
+        static void ConvertPdfToImages(string sourcePath, string destDir)
         {
-            var startInfo = new ProcessStartInfo
+            // 1) Определяем, где лежит бинарник
+            var popplerPath = System.IO.File.Exists("/usr/bin/pdftoppm")               // Linux-контейнер
+                              ? "/usr/bin/pdftoppm"
+                              : "pdftoppm";                                   // fallback (возможно в $PATH на Win)
+
+            if (!System.IO.File.Exists(popplerPath) && popplerPath != "pdftoppm")
+                throw new FileNotFoundException("pdftoppm not found in container");
+
+            // 2) Гарантируем, что путь без пробелов обрамлён кавычками
+            var src = $"\"{sourcePath}\"";
+            var dst = $"\"{Path.Combine(destDir, "page")}\"";                // будет page-1.png, page-2.png …
+
+            var psi = new ProcessStartInfo
             {
-                FileName = "pdftoppm", // Убедитесь, что pdftoppm доступен в PATH или используйте полный путь
-                Arguments = $"-png -r 300 {sourcePath} {Path.Combine(destinationFolder, "page")}",
-                UseShellExecute = false,
-                RedirectStandardOutput = true,
+                FileName = popplerPath,
+                Arguments = $"-png -r 300 {src} {dst}",
                 RedirectStandardError = true,
-                CreateNoWindow = true
+                UseShellExecute = false,
+                CreateNoWindow = true,
+                Environment =
+        {
+            ["LANG"] = "C.UTF-8"   // чтобы кириллица в пути не сломала poppler
+        }
             };
 
-            using (var process = new Process { StartInfo = startInfo })
-            {
-                process.Start();
-                string error = process.StandardError.ReadToEnd();
-                process.WaitForExit();
+            using var p = Process.Start(psi);
+            string err = p!.StandardError.ReadToEnd();
+            p.WaitForExit();
 
-                if (process.ExitCode != 0)
-                {
-                    throw new Exception($"pdftoppm завершился с ошибкой: {error}");
-                }
-            }
-
-            // Переименовываем файлы для сохранения в формате 1.png, 2.png и т.д.
-            RenameImages(destinationFolder);
+            if (p.ExitCode != 0)
+                throw new Exception($"pdftoppm error ({p.ExitCode}): {err}");
         }
 
         static void RenameImages(string directoryPath)
@@ -723,6 +763,206 @@ namespace MyMvcApp.Services
 
                 System.IO.File.Move(filePath, newPath, overwrite: true);
                 pageIndex++;
+            }
+        }
+
+        private async Task UploadDocAndSendAsync(
+    string folder,
+    long chatId,
+    CancellationToken ct)
+        {
+            // id соединения можно сделать уникальным для Телеграм-пользователя,
+            // чтобы фронт фильтровал события именно для него
+            var connId = $"tg_{chatId}";
+
+            try
+            {
+                // ── подготовка пути ──────────────────────────────────────────────
+                var root = Path.Combine("wwwroot", "documents-news-events", "documents");
+                var folderPath = Path.Combine(root, folder);
+
+                if (!Directory.Exists(folderPath))
+                {
+                    await _botClient.SendTextMessageAsync(
+                        chatId,
+                        "❌ Папка не найдена.",
+                        cancellationToken: ct);
+                    return;
+                }
+
+                // ── прогресс: старт ─────────────────────────────────────────────
+                await _hub.Clients.All.SendAsync(
+                    "DocProgress",
+                    connId,
+                    folder,
+                    "start",
+                    cancellationToken: ct);
+
+                await _botClient.SendTextMessageAsync(
+                    chatId,
+                    "⏳ Архивирую…",
+                    cancellationToken: ct);
+
+                // ── 1. ZIP в память ─────────────────────────────────────────────
+                await using var zipStream = new MemoryStream();
+                using (var zip = new ZipArchive(zipStream, ZipArchiveMode.Create, true))
+                {
+                    foreach (var file in Directory.GetFiles(folderPath))
+                    {
+                        await using var fs = System.IO.File.OpenRead(file);
+                        await using var zs = zip.CreateEntry(Path.GetFileName(file)).Open();
+                        await fs.CopyToAsync(zs, ct);
+                    }
+                }
+                zipStream.Position = 0;
+
+                await _hub.Clients.All.SendAsync(
+                    "DocProgress",
+                    connId,
+                    folder,
+                    "zipped",
+                    cancellationToken: ct);
+
+                // ── 2. POST → FastAPI ───────────────────────────────────────────
+                await _botClient.SendTextMessageAsync(
+                    chatId,
+                    "📤 Загружаю в AI…",
+                    cancellationToken: ct);
+
+                await _hub.Clients.All.SendAsync(
+                    "DocProgress",
+                    connId,
+                    folder,
+                    "uploading",
+                    cancellationToken: ct);
+
+                var mp = new MultipartFormDataContent
+        {
+            {
+                new StreamContent(zipStream)
+                {
+                    Headers = { ContentType = new MediaTypeHeaderValue("application/zip") }
+                },
+                "file",
+                $"{folder}.zip"
+            }
+        };
+
+                _api.DefaultRequestHeaders.Authorization =
+                    new AuthenticationHeaderValue(
+                        "Basic",
+                        Convert.ToBase64String(Encoding.ASCII.GetBytes("admin:secret"))
+                    );
+
+                var resp = await _api.PostAsync("/api/v1/documents/upload", mp, ct);
+                resp.EnsureSuccessStatusCode();
+
+                // ── успех ───────────────────────────────────────────────────────
+                await _hub.Clients.All.SendAsync(
+                    "DocProgress",
+                    connId,
+                    folder,
+                    "done",
+                    cancellationToken: ct);
+
+                await _botClient.SendTextMessageAsync(
+                    chatId,
+                    $"✅ Документ «{folder}» загружен!",
+                    cancellationToken: ct);
+            }
+            catch (Exception ex)
+            {
+                // ── ошибка ──────────────────────────────────────────────────────
+                await _hub.Clients.All.SendAsync(
+                    "DocProgress",
+                    connId,
+                    folder,
+                    $"error:{ex.Message}",
+                    cancellationToken: ct);
+
+                await _botClient.SendTextMessageAsync(
+                    chatId,
+                    $"❌ Ошибка: {ex.Message}",
+                    cancellationToken: ct);
+            }
+        }
+
+
+        private async Task AskUploadDocListAsync(long chatId, CancellationToken ct)
+        {
+            var root = Path.Combine("wwwroot", "documents-news-events", "documents");
+            var dirs = Directory.Exists(root)
+                ? Directory.GetDirectories(root).OrderBy(Path.GetFileName).ToList()
+                : new List<string>();
+
+            if (!dirs.Any())
+            {
+                await _botClient.SendTextMessageAsync(chatId, "❌ Документы не найдены.", cancellationToken: ct);
+                return;
+            }
+
+            var buttons = dirs.Select(d =>
+                InlineKeyboardButton.WithCallbackData(
+                    Path.GetFileNameWithoutExtension(d),          // текст на кнопке
+                    $"upload_doc:{Path.GetFileName(d)}"           // callback-data
+                )
+            ).Select(b => new[] { b }).ToArray();                 // по одной кнопке в строке
+
+            await _botClient.SendTextMessageAsync(
+                chatId,
+                "🤖 Выберите документ для отправки в AI-ассистент доски:",
+                replyMarkup: new InlineKeyboardMarkup(buttons),
+                cancellationToken: ct);
+        }
+
+        private async Task AskAddFaqAsync(long chatId, CancellationToken ct)
+        {
+            const string tpl =
+                "<b>Добавление FAQ-пары</b>\n\n" +
+                "Скопируйте шаблон, впишите свой вопрос и краткий ответ:\n\n" +
+                "<code>/add_faq [Как оформить академ?] [Обратитесь в деканат с заявлением]</code>\n\n" +
+                "После отправки я передам данные в FAQ-сервис и сообщу результат ✅";
+
+            await _botClient.SendTextMessageAsync(
+                chatId,
+                tpl,
+                parseMode: ParseMode.Html,
+                cancellationToken: ct);
+        }
+
+        private async Task AddFaqAsync(long chatId, string q, string a)
+        {
+            try
+            {
+                var payload = new
+                {
+                    question = q,
+                    answer = a
+                };
+                var jsonPayload = JsonConvert.SerializeObject(payload);
+                var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+
+                // Добавляем заголовок Basic Auth
+                var byteArray = Encoding.ASCII.GetBytes("admin:secret");
+                _api.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
+
+                var response = await _api.PostAsync("/api/v1/faq/add", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    var responseData = JsonConvert.DeserializeObject<dynamic>(responseContent);
+                    await _botClient.SendTextMessageAsync(chatId, $"✅ Запись FAQ успешно добавлена");
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    await _botClient.SendTextMessageAsync(chatId, $"❌ Не удалось добавить запись FAQ: {errorContent}");
+                }
+            }
+            catch (Exception ex)
+            {
+                await _botClient.SendTextMessageAsync(chatId, $"❌ Ошибка при добавлении записи FAQ: {ex.Message}\n\n{mySolutions[new Random().Next(0, mySolutions.Count())]}");
             }
         }
 

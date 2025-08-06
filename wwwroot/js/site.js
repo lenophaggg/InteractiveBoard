@@ -39,7 +39,7 @@ var idleInterval = setInterval(timerIncrement, 1000);
 
 function timerIncrement() {
     idleTime++;
-    if (idleTime > 90) { // 30 секунд бездействия
+    if (idleTime > 500) { // 90 секунд бездействия
         window.location.href = "/Inactive/Index"; // Перенаправление на указанный адрес
     }
 }

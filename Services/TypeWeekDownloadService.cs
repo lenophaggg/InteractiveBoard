@@ -10,11 +10,19 @@ namespace MyMvcApp.Services
         private CancellationTokenSource _cts;
         private readonly IConfiguration _configuration;
         private readonly IOptionsMonitor<ScheduleOptions> _scheduleOptions;
+        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly ILogger<TypeWeekDownloadService> _logger;
 
-        public TypeWeekDownloadService(IConfiguration configuration, IOptionsMonitor<ScheduleOptions> scheduleOptions)
+        public TypeWeekDownloadService(
+            IConfiguration configuration,
+            IOptionsMonitor<ScheduleOptions> scheduleOptions,
+            IHttpClientFactory httpClientFactory,
+            ILogger<TypeWeekDownloadService> logger)
         {
             _configuration = configuration;
             _scheduleOptions = scheduleOptions;
+            _httpClientFactory = httpClientFactory;
+            _logger = logger;
         }
 
         public async Task StartAsync(CancellationToken cancellationToken)
@@ -37,8 +45,24 @@ namespace MyMvcApp.Services
             while (!cancellationToken.IsCancellationRequested)
             {
 
-                var web = new HtmlWeb();
-                var doc = web.Load("https://www.smtu.ru/ru/listschedule/");
+                var client = _httpClientFactory.CreateClient("Smtu");
+                HttpResponseMessage response;
+
+                try
+                {
+                    response = await client.GetAsync("ru/listschedule/", cancellationToken);
+                    response.EnsureSuccessStatusCode();
+                }
+                catch (HttpRequestException ex)
+                {
+                    _logger.LogError(ex, "Ошибка при загрузке страницы https://www.smtu.ru/ru/listschedule/");
+                    await Task.Delay(TimeSpan.FromMinutes(5), cancellationToken);
+                    continue;
+                }
+
+                var htmlContent = await response.Content.ReadAsStringAsync();
+                var doc = new HtmlDocument();
+                doc.LoadHtml(htmlContent);
 
                 string xpath = "//h4[contains(.,'Сегодня')]";
 

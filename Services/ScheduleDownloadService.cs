@@ -19,13 +19,15 @@ namespace MyMvcApp.Services
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly ILogger<ScheduleDownloadService> _logger;
+        private readonly IHttpClientFactory _httpClientFactory; // Добавлено
         private CancellationTokenSource _cts;
         private Task _executingTask;
 
-        public ScheduleDownloadService(IServiceProvider serviceProvider, ILogger<ScheduleDownloadService> logger)
+        public ScheduleDownloadService(IServiceProvider serviceProvider, ILogger<ScheduleDownloadService> logger, IHttpClientFactory httpClientFactory)
         {
             _serviceProvider = serviceProvider;
             _logger = logger;
+            _httpClientFactory = httpClientFactory;
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
@@ -121,18 +123,23 @@ namespace MyMvcApp.Services
 
         private async Task ManageAndSaveFacultiesAndGroups(string universityUrl, ApplicationDbContext context)
         {
-            var web = new HtmlWeb();
-            HtmlDocument doc;
+            var client = _httpClientFactory.CreateClient("Smtu");
+            HttpResponseMessage response;
 
             try
             {
-                doc = await Task.Run(() => web.Load(universityUrl));
+                response = await client.GetAsync(universityUrl);
+                response.EnsureSuccessStatusCode();
             }
-            catch (Exception ex)
+            catch (HttpRequestException ex)
             {
                 _logger.LogError(ex, "Ошибка при загрузке страницы {Url}", universityUrl);
                 return;
             }
+
+            var htmlContent = await response.Content.ReadAsStringAsync();
+            var doc = new HtmlDocument();
+            doc.LoadHtml(htmlContent);
 
             var nodes = doc.DocumentNode.SelectNodes("//h3[contains(@style, 'clear:both')]");
             if (nodes == null)
@@ -250,18 +257,23 @@ namespace MyMvcApp.Services
         private async Task ProcessItemSchedule(string baseUrl, string item, ApplicationDbContext context)
         {
             var url = baseUrl.EndsWith("/") ? (baseUrl + item + "/") : baseUrl;
+            var client = _httpClientFactory.CreateClient("Smtu");
+            HttpResponseMessage response;
 
-            HtmlDocument doc = null;
             try
             {
-                var web = new HtmlWeb();
-                doc = await Task.Run(() => web.Load(url));
+                response = await client.GetAsync(url);
+                response.EnsureSuccessStatusCode();
             }
-            catch (Exception ex)
+            catch (HttpRequestException ex)
             {
                 _logger.LogError(ex, "Ошибка при загрузке {Url}, пропускаем", url);
                 return;
             }
+
+            var htmlContent = await response.Content.ReadAsStringAsync();
+            var doc = new HtmlDocument();
+            doc.LoadHtml(htmlContent);
 
             var dayNodes = doc.DocumentNode.SelectNodes("//div[@class='card my-4']");
             if (dayNodes == null)
